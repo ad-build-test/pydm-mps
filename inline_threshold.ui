@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>438</width>
+    <height>254</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>1:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Thresholds...</string>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>mps_linknode_analog_thresholds_hps.edl</string>
+        </stringlist>
+       </property>
+       <property name="titles" stdset="0">
+        <stringlist>
+         <string>Thresholds...</string>
+        </stringlist>
+       </property>
+       <property name="showIcon" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="macros" stdset="0">
+        <stringlist>
+         <string>CH_NAME=${CH_NAME},P=${P_CH},CH=I0,CH_NUM=${CH_NUM}</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Thresholds...</string>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>mps_linknode_analog_thresholds_hps.edl</string>
+        </stringlist>
+       </property>
+       <property name="titles" stdset="0">
+        <stringlist>
+         <string>Thresholds...</string>
+        </stringlist>
+       </property>
+       <property name="showIcon" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="macros" stdset="0">
+        <stringlist>
+         <string>CH_NAME=${CH_NAME},P=${P_CH},CH=I1,CH_NUM=${CH_NUM}</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P_CH}:I1_${P_TYPE}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="integrator1_time">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>1</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="precisionFromPV" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P_CH}:I0_${P_TYPE}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="integrator0_time">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Value</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Integration
+Time</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Adjust
+Thresholds</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Integrator</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Expert...</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>mps_analog_core_hps.edl</string>
+      </stringlist>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>P=${P}</string>
+      </stringlist>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

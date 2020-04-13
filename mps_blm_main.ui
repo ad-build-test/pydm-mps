@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1017</width>
+    <height>847</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    border: 1px solid #FF17365D;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #FF9C9C;
+    padding: 5px 0px;
+    color: rgb(0, 0, 0);
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+       </property>
+       <property name="text">
+        <string>${CH_NAME} - ${P_CH}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMWaveformPlot" name="waveform">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="showXGrid">
+        <bool>true</bool>
+       </property>
+       <property name="showYGrid">
+        <bool>true</bool>
+       </property>
+       <property name="xLabels">
+        <stringlist>
+         <string>Time (us)</string>
+        </stringlist>
+       </property>
+       <property name="yLabels">
+        <stringlist>
+         <string>Amplitud (mv)</string>
+        </stringlist>
+       </property>
+       <property name="curves">
+        <stringlist>
+         <string>{&quot;y_channel&quot;: null, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="minimumSize">
+        <size>
+         <width>350</width>
+         <height>254</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame#frame{
+    border: 1px solid #FF17365D;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    border: 1px solid #FF17365D;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #FF9C9C;
+    padding: 5px 0px;
+    color: rgb(0, 0, 0);
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Timing Window Configuration</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;BAY&quot;:&quot;${BAY}&quot;,&quot;CH&quot;:&quot;${CH}&quot;,&quot;CH_NUM&quot;:&quot;${CH_NUM}&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>inline_timing.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_3">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="styleSheet">
+              <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    border: 1px solid #FF17365D;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #FF9C9C;
+    padding: 5px 0px;
+    color: rgb(0, 0, 0);
+    max-height: 25px;
+    font-size: 14px;
+}</string>
+             </property>
+             <property name="text">
+              <string>Threshold Configuration</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="filename" stdset="0">
+              <string>inline_threshold.py</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMWaveformPlot</class>
+   <extends>QGraphicsView</extends>
+   <header>pydm.widgets.waveformplot</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
