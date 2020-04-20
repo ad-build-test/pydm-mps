@@ -126,7 +126,7 @@
               <string/>
              </property>
              <property name="macros" stdset="0">
-              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;BAY&quot;:&quot;${BAY}&quot;,&quot;CH&quot;:&quot;${CH}&quot;,&quot;CH_NUM&quot;:&quot;${CH_NUM}&quot;}</string>
+              <string>{&quot;INST&quot;:&quot;${INST}&quot;,&quot;LOCA&quot;:&quot;${LOCA}&quot;,&quot;IOC_UNIT&quot;:&quot;${IOC_UNIT}&quot;,&quot;P&quot;:&quot;${P}&quot;,&quot;BAY&quot;:&quot;${BAY}&quot;,&quot;CH&quot;:&quot;${CH}&quot;,&quot;CH_NUM&quot;:&quot;${CH_NUM}&quot;}</string>
              </property>
              <property name="filename" stdset="0">
               <string>inline_timing.ui</string>

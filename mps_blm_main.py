@@ -23,8 +23,9 @@ class mps_blm_main(Display):
     self.full_mv_range = 1200.
     self.adc_factor = self.full_mv_range / self.full_adc_range
 
+    PV = "ca://TPR:{LOCA}:{IOC_UNIT}:{INST}:TRG1{CH_NUM}_SYS0_TDES".format(**macros)
     self.coarse_delay_line = InfiniteLine(pos=0, angle=90, movable=False,pen={'color': (218,243,186), 'width': 2})
-    self.coarse_position_channel = PyDMChannel(address="ca://TPR:BSYH:MP03:1:TRG10_SYS0_TDES", value_slot=self.move_coarse)
+    self.coarse_position_channel = PyDMChannel(address=PV, value_slot=self.move_coarse)
     self.waveform.addItem(self.coarse_delay_line)
     self.coarse_position_channel.connect()
 
