@@ -19,24 +19,14 @@ class inline_threshold(Display):
     pv = "ca://{p}:LC1_ANA_INTCNT_{int1ch}_RBV".format(p=macros['P'],int1ch=self.int1_ch)
     self.int0_channel = PyDMChannel(address=pv, value_slot=self.int1_update)
     self.int0_channel.connect()
-
-    pv = "{P_CH}:I0_{P_TYPE}".format(**macros)
-    int0 = PV(pv)
-    isInt0 = int0.connect()
-    if not isInt0:
-      self.ui.i0_name.setVisible(False)
-      self.ui.int0_val.setVisible(False)
-      self.ui.integrator0_time.setVisible(False)
-      self.ui.I0_thresh.setVisible(False)
-
-    pv = "{P_CH}:I1_{P_TYPE}".format(**macros)
-    int1 = PV(pv)
-    isInt1 = int1.connect()
-    if not isInt1:
-      self.ui.i1_name.setVisible(False)
-      self.ui.int1_val.setVisible(False)
-      self.ui.integrator1_time.setVisible(False)
-      self.ui.I1_thresh.setVisible(False)
+    
+    pv = "ca://{p}:I0_{tp}1H".format(p=macros['P_CH'],tp=macros['P_TYPE'])
+    self.int0_val = PyDMChannel(address=pv, value_slot=self.int0_val_calc)
+    self.int0_val.connect()
+    
+    pv = "ca://{p}:I1_{tp}1H".format(p=macros['P_CH'],tp=macros['P_TYPE'])
+    self.int1_val = PyDMChannel(address=pv, value_slot=self.int1_val_calc)
+    self.int1_val.connect()
 
   def ui_filename(self):
       # Point to our UI file
@@ -53,3 +43,11 @@ class inline_threshold(Display):
   def int1_update(self, new_value):
       newTime = (new_value + 1) * (2.778)
       self.ui.integrator1_time.setText('{val} ms'.format(val=newTime))
+      
+  def int0_val_calc(self, new_value):
+  		newVal = (new_value) * 2 * 600 / 65536
+  		self.ui.convert_i0.setText('{val} mV'.format(val=round(newVal,4)))
+  		
+  def int1_val_calc(self, new_value):
+  		newVal = (new_value) * 2 * 600 / 65536
+  		self.ui.convert_i1.setText('{val} mV'.format(val=round(newVal,4)))
