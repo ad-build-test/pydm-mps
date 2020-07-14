@@ -82,6 +82,9 @@
     font-size: 14px;
 }</string>
        </property>
+       <property name="text">
+        <string/>
+       </property>
        <property name="precision" stdset="0">
         <number>0</number>
        </property>
@@ -220,6 +223,9 @@ Time</string>
          <string>{&quot;DEVICE&quot;:&quot;${CH_NAME}&quot;,&quot;INT&quot;:&quot;0&quot;,&quot;P&quot;:&quot;${P_CH}&quot;,&quot;CH&quot;:&quot;I0&quot;}</string>
         </stringlist>
        </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
+       </property>
       </widget>
      </item>
      <item row="2" column="3">
@@ -244,6 +250,9 @@ Time</string>
         <stringlist>
          <string>{&quot;DEVICE&quot;:&quot;${CH_NAME}&quot;,&quot;INT&quot;:&quot;1&quot;,&quot;P&quot;:&quot;${P_CH}&quot;,&quot;CH&quot;:&quot;I1&quot;}</string>
         </stringlist>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -314,6 +323,12 @@ Thresholds</string>
  </widget>
  <customwidgets>
   <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
@@ -322,12 +337,6 @@ Thresholds</string>
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.related_display_button</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>
