@@ -58,6 +58,7 @@ class mps_blm_main(Display):
     self.peak_width = 0
     self.ped_val = 0
     self.ped_width = 0
+    self.init = 0
 
   def ui_filename(self):
       # Point to our UI file
@@ -108,3 +109,9 @@ class mps_blm_main(Display):
     self.peak_width_line.setValue(line3_pos)
     self.ped_delay_line.setValue(line4_pos)
     self.ped_width_line.setValue(line5_pos)
+    if (self.init < 5):
+    	self.waveform.setXRange(line2_pos-1, line3_pos+1)
+    	self.init += 1
+    if line3_pos == 373.631699:
+    	self.waveform.enableAutoRange()
+    	

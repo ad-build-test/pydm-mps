@@ -990,6 +990,9 @@
        <property name="precisionFromPV" stdset="0">
         <bool>true</bool>
        </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P}:I${INT}_T0_LC1_L_RBV</string>
+       </property>
       </widget>
      </item>
      <item row="3" column="4">
@@ -1012,6 +1015,9 @@
        </property>
        <property name="rules" stdset="0">
         <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:I${INT}_T0_LC1_H_EN_RBV\n\n&quot;}, {&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:I${INT}_T0_LC1_H_RBV\n\n&quot;}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str(ch[1]) if ch[0]==1 else \&quot;Disabled\&quot;&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+       </property>
+       <property name="channel" stdset="0">
+        <string>ca://${P}:I${INT}_T0_LC1_H_RBV</string>
        </property>
       </widget>
      </item>

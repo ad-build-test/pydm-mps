@@ -46,8 +46,8 @@ class inline_threshold(Display):
       
   def int0_val_calc(self, new_value):
   		newVal = (new_value) * 2 * 600 / 65536
-  		self.ui.convert_i0.setText('{val} mV'.format(val=round(newVal,4)))
+  		#self.ui.convert_i0.setText('{val} mV'.format(val=round(newVal,4)))
   		
   def int1_val_calc(self, new_value):
   		newVal = (new_value) * 2 * 600 / 65536
-  		self.ui.convert_i1.setText('{val} mV'.format(val=round(newVal,4)))
+  		#self.ui.convert_i1.setText('{val} mV'.format(val=round(newVal,4)))

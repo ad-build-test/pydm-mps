@@ -86,13 +86,13 @@
         <string/>
        </property>
        <property name="precision" stdset="0">
-        <number>0</number>
+        <number>3</number>
        </property>
        <property name="showUnits" stdset="0">
         <bool>true</bool>
        </property>
        <property name="precisionFromPV" stdset="0">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${P_CH}:I1_${P_TYPE}</string>
@@ -169,13 +169,13 @@
         <set>Qt::AlignCenter</set>
        </property>
        <property name="precision" stdset="0">
-        <number>0</number>
+        <number>3</number>
        </property>
        <property name="showUnits" stdset="0">
         <bool>true</bool>
        </property>
        <property name="precisionFromPV" stdset="0">
-        <bool>true</bool>
+        <bool>false</bool>
        </property>
        <property name="channel" stdset="0">
         <string>ca://${P_CH}:I0_${P_TYPE}</string>
@@ -323,12 +323,6 @@ Thresholds</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
@@ -337,6 +331,12 @@ Thresholds</string>
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>
