@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>296</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>296</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    padding: 5px 0px;
+    max-height: 55px;
+    font-size: 24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>I0
+Inst. Loss</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    padding: 5px 0px;
+    max-height: 55px;
+    font-size: 24px;
+}</string>
+       </property>
+       <property name="text">
+        <string>I1
+500 ms</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_2">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 24px;
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>${P}:I1_LOSS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 24px;
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="precision" stdset="0">
+        <number>0</number>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>${P}:I0_LOSS</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="PyDMLabel" name="PyDMLabel_3">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 24px;
+}</string>
+       </property>
+       <property name="showUnits" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="alarmSensitiveContent" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="channel" stdset="0">
+        <string>${P}:I0_LOSSNORML</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="PyDMLabel" name="PyDMLabel_4">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    qproperty-alignment: AlignCenter;
+    background-color: #1D1716;
+    padding: 5px 0px;
+    color:#0ECD3C;
+    max-height: 25px;
+    font-size: 24px;
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="PyDMScaleIndicator" name="PyDMScaleIndicator">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="channel" stdset="0">
+        <string>${P}:I0_LOSSNORML</string>
+       </property>
+       <property name="showValue" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="flipScale" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="invertedAppearance" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="barIndicator" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="indicatorColor" stdset="0">
+        <color>
+         <red>24</red>
+         <green>218</green>
+         <blue>239</blue>
+        </color>
+       </property>
+       <property name="backgroundSizeRate" stdset="0">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="limitsFromChannel" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="userUpperLimit" stdset="0">
+        <double>100.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMScaleIndicator" name="PyDMScaleIndicator_2">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="showValue" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="orientation" stdset="0">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="barIndicator" stdset="0">
+        <bool>true</bool>
+       </property>
+       <property name="indicatorColor" stdset="0">
+        <color>
+         <red>21</red>
+         <green>5</green>
+         <blue>243</blue>
+        </color>
+       </property>
+       <property name="backgroundSizeRate" stdset="0">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="limitsFromChannel" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="userUpperLimit" stdset="0">
+        <double>100.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMScaleIndicator</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.scale</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
