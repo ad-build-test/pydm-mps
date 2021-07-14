@@ -38,11 +38,11 @@ class inline_threshold(Display):
 
   def int0_update(self, new_value):
       newTime = (new_value + 1) * (2.778)
-      self.ui.integrator0_time.setText('{val} ms'.format(val=newTime))
+      #self.ui.integrator0_time.setText('{val} ms'.format(val=newTime))
 
   def int1_update(self, new_value):
       newTime = (new_value + 1) * (2.778)
-      self.ui.integrator1_time.setText('{val} ms'.format(val=newTime))
+      #self.ui.integrator1_time.setText('{val} ms'.format(val=newTime))
       
   def int0_val_calc(self, new_value):
   		newVal = (new_value) * 2 * 600 / 65536
