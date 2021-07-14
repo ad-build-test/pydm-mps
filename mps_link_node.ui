@@ -445,17 +445,14 @@ background-color: rgb(70, 70, 70);</string>
       <x>10</x>
       <y>85</y>
       <width>480</width>
-      <height>200</height>
+      <height>202</height>
      </rect>
     </property>
     <property name="toolTip">
      <string/>
     </property>
-    <property name="macros" stdset="0">
-     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;CN&quot;:&quot;${CN}&quot;,&quot;AID&quot;:&quot;${AID}&quot;,&quot;SLOT_FILE&quot;:&quot;${SLOT_FILE}&quot;}</string>
-    </property>
     <property name="filename" stdset="0">
-     <string>mps_crate.ui</string>
+     <string>$PHYSICS_TOP/mps_configuration/current/display/slots/${SLOT_FILE}</string>
     </property>
    </widget>
   </widget>

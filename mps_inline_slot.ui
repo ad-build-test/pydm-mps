@@ -33,19 +33,19 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>20</width>
+     <width>25</width>
      <height>20</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>20</width>
+     <width>25</width>
      <height>20</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>20</width>
+     <width>25</width>
      <height>20</height>
     </size>
    </property>
@@ -68,22 +68,22 @@ color: rgb(12, 255, 68);</string>
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>25</x>
      <y>0</y>
-     <width>465</width>
-     <height>22</height>
+     <width>440</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>465</width>
-     <height>22</height>
+     <width>440</width>
+     <height>20</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>465</width>
-     <height>22</height>
+     <width>440</width>
+     <height>20</height>
     </size>
    </property>
    <property name="toolTip">
@@ -94,6 +94,9 @@ color: rgb(12, 255, 68);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
    </property>
    <property name="lineWidth">
     <number>1</number>
@@ -201,7 +204,7 @@ background-color: rgb(70, 70, 70);</string>
      <set>Qt::AlignCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${MPS_PREFIX}:APP_ID</string>
+     <string>ca://${MPS_PREFIX}:${POSTFIX}</string>
     </property>
    </widget>
    <widget class="PyDMEnumButton" name="PyDMEnumButton">
@@ -316,13 +319,13 @@ background-color: rgb(70, 70, 70);</string>
      <rect>
       <x>290</x>
       <y>0</y>
-      <width>100</width>
+      <width>150</width>
       <height>20</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>100</width>
+      <width>150</width>
       <height>20</height>
      </size>
     </property>
