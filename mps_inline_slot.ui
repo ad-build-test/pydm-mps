@@ -346,8 +346,21 @@ background-color: rgb(70, 70, 70);</string>
     <property name="text">
      <string>${DESC}</string>
     </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>${FILENAME}</string>
+     </stringlist>
+    </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;P&quot;:&quot;${MPS_PREFIX}&quot;,&quot;CRATE&quot;:&quot;${CRATE}&quot;}</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
