@@ -31,27 +31,11 @@
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
-    <property name="geometry">
-     <rect>
-      <x>480</x>
-      <y>30</y>
-      <width>110</width>
-      <height>100</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="filename" stdset="0">
-     <string>right_arrow.png</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>485</x>
-      <y>130</y>
+      <y>10</y>
       <width>100</width>
       <height>30</height>
      </rect>
@@ -73,7 +57,7 @@ Status</string>
     <property name="geometry">
      <rect>
       <x>485</x>
-      <y>165</y>
+      <y>45</y>
       <width>100</width>
       <height>20</height>
      </rect>
@@ -136,7 +120,7 @@ color: rgb(12, 255, 68);</string>
     <property name="geometry">
      <rect>
       <x>485</x>
-      <y>190</y>
+      <y>130</y>
       <width>100</width>
       <height>24</height>
      </rect>
@@ -159,6 +143,77 @@ color: rgb(12, 255, 68);</string>
      <stringlist>
       <string>P=${P_IN},N=${PGP}</string>
      </stringlist>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>80</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tx Bandwidth</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>105</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(70, 70, 70);
+color: rgb(12, 255, 68);</string>
+    </property>
+    <property name="text">
+     <string>Connection</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:PGP_TX_MON_BANDWIDTH_${PGP}</string>
+    </property>
+   </widget>
+   <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>160</y>
+      <width>110</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="filename" stdset="0">
+     <string>right-arrow.png</string>
+    </property>
+    <property name="aspectRatioMode" stdset="0">
+     <enum>Qt::IgnoreAspectRatio</enum>
     </property>
    </widget>
   </widget>
