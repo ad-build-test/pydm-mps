@@ -317,7 +317,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:PGP_LINK_DOWN_CNT_${N}</string>
+      <string>ca://${P}:PGP_RX_LINK_DOWN_CNT_${N}</string>
      </property>
     </widget>
     <widget class="PyDMLabel" name="PyDMLabel_7">
@@ -343,7 +343,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:PGP_FRAME_ERR_CNT_${N}</string>
+      <string>ca://${P}:PGP_RX_FRAME_ERR_CNT_${N}</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_10">
@@ -867,7 +867,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:PGP_FRAME_ERR_CNT_${N}</string>
+      <string>ca://${P}:PGP_TX_FRAME_ERR_CNT_${N}</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_24">
@@ -1158,7 +1158,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="showUnits" stdset="0">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${P}:PGP_TX_MON_FRAME_CNT_${N}</string>

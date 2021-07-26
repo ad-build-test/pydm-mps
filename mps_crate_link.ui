@@ -218,6 +218,9 @@ color: rgb(12, 255, 68);</string>
       <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;0&quot;}</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
     <property name="geometry">
@@ -246,6 +249,9 @@ color: rgb(12, 255, 68);</string>
      <stringlist>
       <string>{&quot;P&quot;:&quot;${P_IN}&quot;,&quot;N&quot;:&quot;${PGP}&quot;}</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
