@@ -589,112 +589,6 @@ background-color: rgb(70, 70, 70);</string>
      <string>MPS Application Information</string>
     </property>
    </widget>
-   <widget class="QFrame" name="frame_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>230</y>
-      <width>652</width>
-      <height>306</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="QScrollArea" name="scrollArea">
-     <property name="geometry">
-      <rect>
-       <x>1</x>
-       <y>30</y>
-       <width>645</width>
-       <height>275</height>
-      </rect>
-     </property>
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="verticalScrollBarPolicy">
-      <enum>Qt::ScrollBarAlwaysOn</enum>
-     </property>
-     <property name="widgetResizable">
-      <bool>false</bool>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>645</width>
-        <height>275</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <property name="sizeConstraint">
-        <enum>QLayout::SetNoConstraint</enum>
-       </property>
-       <item>
-        <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_2">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="toolTip">
-          <string/>
-         </property>
-         <property name="layoutSpacing" stdset="0">
-          <number>5</number>
-         </property>
-         <property name="templateFilename" stdset="0">
-          <string>mps_inline_digital.ui</string>
-         </property>
-         <property name="dataSource" stdset="0">
-          <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_rtm.json</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_13">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>220</y>
-      <width>90</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Digital Inputs</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
     <property name="geometry">
      <rect>
@@ -709,6 +603,109 @@ background-color: rgb(70, 70, 70);</string>
     </property>
     <property name="filename" stdset="0">
      <string>lcls_mps_lockup_sidebyside_digital.png</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>651</width>
+      <height>306</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>649</width>
+       <height>304</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="layoutSpacing" stdset="0">
+         <number>0</number>
+        </property>
+        <property name="countShownInDesigner" stdset="0">
+         <number>1</number>
+        </property>
+        <property name="templateFilename" stdset="0">
+         <string>mps_inline_digital.ui</string>
+        </property>
+        <property name="dataSource" stdset="0">
+         <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_rtm.json</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>85</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Digital Inputs</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
