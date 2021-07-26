@@ -116,35 +116,6 @@ color: rgb(12, 255, 68);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
-    <property name="geometry">
-     <rect>
-      <x>485</x>
-      <y>130</y>
-      <width>100</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>PGP Link...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_pgp_port_hps.edl</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>P=${P_IN},N=${PGP}</string>
-     </stringlist>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
@@ -188,7 +159,7 @@ color: rgb(12, 255, 68);</string>
 color: rgb(12, 255, 68);</string>
     </property>
     <property name="text">
-     <string>Connection</string>
+     <string>Bandwidth</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -197,7 +168,7 @@ color: rgb(12, 255, 68);</string>
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:PGP_TX_MON_BANDWIDTH_${PGP}</string>
+     <string>ca://${P}:PGP_TX_MON_BANDWIDTH_0</string>
     </property>
    </widget>
    <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
@@ -219,6 +190,64 @@ color: rgb(12, 255, 68);</string>
      <enum>Qt::IgnoreAspectRatio</enum>
     </property>
    </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+    <property name="geometry">
+     <rect>
+      <x>485</x>
+      <y>135</y>
+      <width>50</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>PGP Tx</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>mps_pgp_status.ui</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;0&quot;}</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+    <property name="geometry">
+     <rect>
+      <x>535</x>
+      <y>135</y>
+      <width>50</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>PGP Rx</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>mps_pgp_status.ui</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;P&quot;:&quot;${P_IN}&quot;,&quot;N&quot;:&quot;${PGP}&quot;}</string>
+     </stringlist>
+    </property>
+   </widget>
   </widget>
   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
    <property name="geometry">
@@ -238,12 +267,6 @@ color: rgb(12, 255, 68);</string>
   </widget>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
