@@ -79,7 +79,12 @@
      </stringlist>
     </property>
     <property name="titles" stdset="0">
-     <stringlist/>
+     <stringlist>
+      <string>port0</string>
+      <string>port1</string>
+      <string>port2</string>
+      <string>port3</string>
+     </stringlist>
     </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
@@ -418,7 +423,7 @@
     </property>
     <property name="macros" stdset="0">
      <stringlist>
-      <string>LOCA=$(LOCA), IOC_UNIT=$(IOC_UNIT), INST=$(INST), SYS=SYS0, IOC=$(IOC), CPU=$(CPU)</string>
+      <string>LOCA=$(LOCA), IOC_UNIT=$(IOC_UNIT), INST=${INST}, SYS=SYS0, IOC=${IOC}, CPU=${CPU}</string>
      </stringlist>
     </property>
    </widget>
@@ -439,7 +444,7 @@
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
-      <string>$(LN_SIOC)_digital_inputs.edl</string>
+      <string>$EDM/mps/$(LN_SIOC)_digital_inputs.edl</string>
      </stringlist>
     </property>
     <property name="titles" stdset="0">
