@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>676</width>
+    <height>173</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>652</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>20</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Concentrator...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_concentrator_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>PGP Links...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
+      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
+      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
+      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>N=0, P=${P}</string>
+      <string>N=1, P=${P}</string>
+      <string>N=2, P=${P}</string>
+      <string>N=3, P=${P}</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>80</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Save/Load Config...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_saveLoadConfig_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Mitigation...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_mitigation_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Analog AMCs...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_analog_amc_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_6">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>RTM Digital IO...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_rtm_dio_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Crossbar...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_timing_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>110</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ASM Core...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_asm_core_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Analog Core...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_analog_core_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_10">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>50</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Digital Core...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_digital_core_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_11">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>80</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>NC Core...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_lcls1_core_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_12">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>110</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Tx message info...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_debug_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_13">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>20</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>SALT Registers...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_linknode_salt_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_14">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Timing Setup...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_evr_diags_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>LOCA=$(LOCA), IOC_UNIT=$(IOC_UNIT), INST=$(INST), SYS=SYS0, IOC=$(IOC), CPU=$(CPU)</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_15">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>80</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Digital Inputs...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$(LN_SIOC)_digital_inputs.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>150</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Link Node Application</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
