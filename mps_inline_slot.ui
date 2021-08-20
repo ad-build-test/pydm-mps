@@ -33,19 +33,19 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>25</width>
+     <width>35</width>
      <height>20</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>25</width>
+     <width>30</width>
      <height>20</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>25</width>
+     <width>35</width>
      <height>20</height>
     </size>
    </property>
@@ -68,15 +68,15 @@ color: rgb(12, 255, 68);</string>
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
-     <x>25</x>
+     <x>35</x>
      <y>0</y>
-     <width>440</width>
+     <width>430</width>
      <height>20</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>440</width>
+     <width>430</width>
      <height>20</height>
     </size>
    </property>
@@ -93,7 +93,7 @@ color: rgb(12, 255, 68);</string>
     <string notr="true">border-color: rgb(0, 0, 0);</string>
    </property>
    <property name="frameShape">
-    <enum>QFrame::Box</enum>
+    <enum>QFrame::NoFrame</enum>
    </property>
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
@@ -109,7 +109,7 @@ color: rgb(12, 255, 68);</string>
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>20</width>
+      <width>10</width>
       <height>20</height>
      </rect>
     </property>
@@ -122,52 +122,11 @@ color: rgb(12, 255, 68);</string>
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
-     <property name="geometry">
-      <rect>
-       <x>1</x>
-       <y>1</y>
-       <width>16</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>16</width>
-       <height>16</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16</width>
-       <height>16</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${CN}:APP${AID}_STATUS</string>
-     </property>
-     <property name="offColor" stdset="0">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="circles" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="labels" stdset="0">
-      <stringlist/>
-     </property>
-    </widget>
    </widget>
    <widget class="PyDMLabel" name="PyDMLabel">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>0</y>
       <width>40</width>
       <height>20</height>
@@ -210,7 +169,7 @@ background-color: rgb(70, 70, 70);</string>
    <widget class="PyDMEnumButton" name="PyDMEnumButton">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>50</x>
       <y>0</y>
       <width>120</width>
       <height>20</height>
@@ -267,21 +226,21 @@ background-color: rgb(70, 70, 70);</string>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>304</x>
       <y>0</y>
-      <width>66</width>
+      <width>62</width>
       <height>20</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>66</width>
+      <width>60</width>
       <height>20</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>50</width>
+      <width>65</width>
       <height>20</height>
      </size>
     </property>
@@ -314,61 +273,12 @@ background-color: rgb(70, 70, 70);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-    <property name="geometry">
-     <rect>
-      <x>306</x>
-      <y>0</y>
-      <width>66</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>66</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>100</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>LN</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>${FILENAME}</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>{&quot;P&quot;:&quot;${MPS_PREFIX}&quot;,&quot;CRATE&quot;:&quot;${CRATE}&quot;}</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>170</x>
       <y>0</y>
-      <width>60</width>
+      <width>70</width>
       <height>20</height>
      </rect>
     </property>
@@ -386,15 +296,15 @@ color: rgb(12, 255, 68);</string>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
     <property name="geometry">
      <rect>
-      <x>372</x>
+      <x>367</x>
       <y>0</y>
-      <width>67</width>
+      <width>62</width>
       <height>20</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>66</width>
+      <width>60</width>
       <height>20</height>
      </size>
     </property>
@@ -413,7 +323,7 @@ color: rgb(12, 255, 68);</string>
      <string/>
     </property>
     <property name="text">
-     <string>Logic</string>
+     <string>Logic...</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
@@ -432,7 +342,107 @@ color: rgb(12, 255, 68);</string>
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>63</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>LN...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>${FILENAME}</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;P&quot;:&quot;${MPS_PREFIX}&quot;,&quot;CRATE&quot;:&quot;${CRATE}&quot;}</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>3</y>
+      <width>6</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>5</width>
+      <height>5</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <stylestrategy>PreferDefault</stylestrategy>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${CN}:APP${AID}_STATUS</string>
+    </property>
+    <property name="offColor" stdset="0">
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="labels" stdset="0">
+     <stringlist/>
+    </property>
+   </widget>
   </widget>
+  <zorder>PyDMFrame</zorder>
+  <zorder>label</zorder>
  </widget>
  <customwidgets>
   <customwidget>

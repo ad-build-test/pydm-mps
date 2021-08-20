@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>260</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>260</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(200, 200, 200);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>240</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="PyDMLabel" name="PyDMLabel_7">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>15</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>Message Count</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:MSG_CNT</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>15</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Message Count</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>35</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Last Msg App ID</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>55</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Last Msg NC Flag</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>75</y>
+       <width>120</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Last Msg TS</string>
+     </property>
+    </widget>
+    <widget class="PyDMLabel" name="PyDMLabel_8">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>35</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>App ID</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:LAST_MSG_APP_ID</string>
+     </property>
+    </widget>
+    <widget class="PyDMLabel" name="PyDMLabel_9">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>55</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>NC Flag</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:LAST_MSG_LC1_EN</string>
+     </property>
+    </widget>
+    <widget class="PyDMLabel" name="PyDMLabel_10">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>75</y>
+       <width>100</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>TS</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:LAST_MSG_TMSTMP</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>120</y>
+       <width>230</width>
+       <height>145</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <widget class="PyDMLabel" name="PyDMLabel_11">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>35</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+      </property>
+      <property name="text">
+       <string>TS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${P}:LAST_MSG_BYTE_1</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_12">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>55</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+      </property>
+      <property name="text">
+       <string>TS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${P}:LAST_MSG_BYTE_2</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_13">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>75</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+      </property>
+      <property name="text">
+       <string>TS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${P}:LAST_MSG_BYTE_3</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_14">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>95</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+      </property>
+      <property name="text">
+       <string>TS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${P}:LAST_MSG_BYTE_4</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_15">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>115</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+      </property>
+      <property name="text">
+       <string>TS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${P}:LAST_MSG_BYTE_5</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_16">
+      <property name="geometry">
+       <rect>
+        <x>125</x>
+        <y>15</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+      </property>
+      <property name="text">
+       <string>TS</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${P}:LAST_MSG_BYTE_0</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>15</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Byte 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>35</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Byte 1</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>55</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Byte 2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>75</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Byte 3</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>95</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Byte 4</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>115</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Byte 5</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>112</y>
+       <width>130</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Last Message Bytes</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>2</y>
+      <width>165</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tx Message Information</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -301,14 +301,16 @@ background-color: rgb(70, 70, 70);</string>
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(12, 255, 68);
-background-color: rgb(70, 70, 70);</string>
+     <string notr="true">background-color: rgb(70, 70, 70);</string>
     </property>
     <property name="text">
      <string>FPGA Heartbeat</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
+    </property>
+    <property name="alarmSensitiveContent" stdset="0">
+     <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:FPGA_UPTIMECNT</string>
@@ -372,7 +374,7 @@ background-color: rgb(70, 70, 70);</string>
      <set>Qt::AlignCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:LC1_MODE</string>
+     <string>ca://${P}:TIMING_MODE_RBV</string>
     </property>
    </widget>
   </widget>
@@ -445,7 +447,7 @@ background-color: rgb(70, 70, 70);</string>
       <x>10</x>
       <y>85</y>
       <width>480</width>
-      <height>202</height>
+      <height>205</height>
      </rect>
     </property>
     <property name="toolTip">

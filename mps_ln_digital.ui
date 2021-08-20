@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MPSApplication ${CRATE}-S${SLOT}</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -145,7 +145,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:APP_ID</string>
+      <string>ca://${P}:DIG_APPID_RBV</string>
      </property>
     </widget>
     <widget class="PyDMLabel" name="PyDMLabel_3">
@@ -549,7 +549,7 @@ background-color: rgb(70, 70, 70);</string>
       <enum>PyDMLabel::String</enum>
      </property>
     </widget>
-    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -566,13 +566,11 @@ background-color: rgb(70, 70, 70);</string>
      </property>
      <property name="filenames" stdset="0">
       <stringlist>
-       <string>mps_linknode_app_expert_hps.edl</string>
+       <string>mps_application_expert.ui</string>
       </stringlist>
      </property>
-     <property name="macros" stdset="0">
-      <stringlist>
-       <string>P=${P}</string>
-      </stringlist>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
      </property>
     </widget>
    </widget>
@@ -711,12 +709,6 @@ background-color: rgb(70, 70, 70);</string>
   </widget>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
