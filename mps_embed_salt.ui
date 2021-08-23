@@ -216,12 +216,12 @@ background-color: rgb(70, 70, 70);</string>
       <rect>
        <x>60</x>
        <y>12</y>
-       <width>114</width>
+       <width>50</width>
        <height>15</height>
       </rect>
      </property>
      <property name="text">
-      <string>Link Up</string>
+      <string>Link</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -232,7 +232,7 @@ background-color: rgb(70, 70, 70);</string>
       <rect>
        <x>60</x>
        <y>30</y>
-       <width>114</width>
+       <width>50</width>
        <height>20</height>
       </rect>
      </property>
@@ -244,7 +244,7 @@ background-color: rgb(70, 70, 70);</string>
 background-color: rgb(70, 70, 70);</string>
      </property>
      <property name="text">
-      <string>Link Up</string>
+      <string>Link</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -256,9 +256,9 @@ background-color: rgb(70, 70, 70);</string>
     <widget class="PyDMLabel" name="PyDMLabel_6">
      <property name="geometry">
       <rect>
-       <x>184</x>
+       <x>110</x>
        <y>30</y>
-       <width>114</width>
+       <width>50</width>
        <height>20</height>
       </rect>
      </property>
@@ -270,7 +270,7 @@ background-color: rgb(70, 70, 70);</string>
 background-color: rgb(70, 70, 70);</string>
      </property>
      <property name="text">
-      <string>Link Up Counter</string>
+      <string>0x78</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -285,9 +285,9 @@ background-color: rgb(70, 70, 70);</string>
     <widget class="PyDMLabel" name="PyDMLabel_7">
      <property name="geometry">
       <rect>
-       <x>308</x>
+       <x>160</x>
        <y>30</y>
-       <width>114</width>
+       <width>95</width>
        <height>20</height>
       </rect>
      </property>
@@ -299,7 +299,7 @@ background-color: rgb(70, 70, 70);</string>
 background-color: rgb(70, 70, 70);</string>
      </property>
      <property name="text">
-      <string>Packet Sent Counter</string>
+      <string>-0x4f6a5b8e</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -314,14 +314,14 @@ background-color: rgb(70, 70, 70);</string>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>184</x>
+       <x>110</x>
        <y>12</y>
-       <width>114</width>
+       <width>50</width>
        <height>15</height>
       </rect>
      </property>
      <property name="text">
-      <string>Link Up Counter</string>
+      <string>Up Cnt</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -330,17 +330,177 @@ background-color: rgb(70, 70, 70);</string>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>308</x>
+       <x>160</x>
        <y>12</y>
-       <width>114</width>
+       <width>95</width>
        <height>15</height>
       </rect>
      </property>
      <property name="text">
-      <string>Packet Sent Cntr</string>
+      <string>Pkt Snt Cnt</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>1</y>
+       <width>170</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Packet Period (ns)</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>12</y>
+       <width>55</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Curr</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>311</x>
+       <y>12</y>
+       <width>55</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Max</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>367</x>
+       <y>12</y>
+       <width>55</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Min</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="PyDMLabel" name="PyDMLabel_8">
+     <property name="geometry">
+      <rect>
+       <x>255</x>
+       <y>30</y>
+       <width>55</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>Curr</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[]</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:TX_PKT_PERIOD</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
+     </property>
+    </widget>
+    <widget class="PyDMLabel" name="PyDMLabel_9">
+     <property name="geometry">
+      <rect>
+       <x>311</x>
+       <y>30</y>
+       <width>55</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>Max</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[]</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:TX_PKT_PERIOD_MAX</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
+     </property>
+    </widget>
+    <widget class="PyDMLabel" name="PyDMLabel_10">
+     <property name="geometry">
+      <rect>
+       <x>367</x>
+       <y>30</y>
+       <width>55</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>Min</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[]</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:TX_PKT_PERIOD_MIN</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
      </property>
     </widget>
    </widget>
@@ -375,54 +535,6 @@ background-color: rgb(70, 70, 70);</string>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
     </property>
-    <widget class="QLabel" name="label_12">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>10</y>
-       <width>114</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Link Up</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_13">
-     <property name="geometry">
-      <rect>
-       <x>184</x>
-       <y>10</y>
-       <width>114</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Link Up Counter</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_14">
-     <property name="geometry">
-      <rect>
-       <x>308</x>
-       <y>10</y>
-       <width>114</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Packet Sent Cntr</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
      <property name="geometry">
       <rect>
