@@ -153,11 +153,14 @@ background-color: rgb(70, 70, 70);</string>
     <property name="rules" stdset="0">
      <string>[]</string>
     </property>
+    <property name="precisionFromPV" stdset="0">
+     <bool>false</bool>
+    </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:RX_PKT_PERIOD_${CH}</string>
     </property>
     <property name="displayFormat" stdset="0">
-     <enum>PyDMLabel::Hex</enum>
+     <enum>PyDMLabel::Decimal</enum>
     </property>
    </widget>
    <widget class="PyDMLabel" name="PyDMLabel_12">
@@ -185,11 +188,14 @@ background-color: rgb(70, 70, 70);</string>
     <property name="rules" stdset="0">
      <string>[]</string>
     </property>
+    <property name="precisionFromPV" stdset="0">
+     <bool>false</bool>
+    </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:RX_PKT_PERIOD_MAX_${CH}</string>
     </property>
     <property name="displayFormat" stdset="0">
-     <enum>PyDMLabel::Hex</enum>
+     <enum>PyDMLabel::Decimal</enum>
     </property>
    </widget>
    <widget class="PyDMLabel" name="PyDMLabel_13">
@@ -217,11 +223,14 @@ background-color: rgb(70, 70, 70);</string>
     <property name="rules" stdset="0">
      <string>[]</string>
     </property>
+    <property name="precisionFromPV" stdset="0">
+     <bool>false</bool>
+    </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:RX_PKT_PERIOD_MIN_${CH}</string>
     </property>
     <property name="displayFormat" stdset="0">
-     <enum>PyDMLabel::Hex</enum>
+     <enum>PyDMLabel::Decimal</enum>
     </property>
    </widget>
   </widget>
