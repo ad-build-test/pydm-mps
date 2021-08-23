@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>SC MPS Link Node Groups</string>
   </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
@@ -93,6 +93,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup0.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
     <property name="geometry">
@@ -113,6 +116,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup1.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
@@ -135,6 +141,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup2.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
     <property name="geometry">
@@ -155,6 +164,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup3.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
@@ -177,6 +189,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup4.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
     <property name="geometry">
@@ -197,6 +212,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup5.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
@@ -219,6 +237,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup6.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_8">
     <property name="geometry">
@@ -239,6 +260,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup7.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_9">
@@ -261,6 +285,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup8.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_10">
     <property name="geometry">
@@ -281,6 +308,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup9.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_11">
@@ -303,6 +333,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup10.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_12">
     <property name="geometry">
@@ -323,6 +356,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup11.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_13">
@@ -345,6 +381,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup16.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_14">
     <property name="geometry">
@@ -365,6 +404,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup22.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_15">
@@ -387,6 +429,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup21.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_16">
     <property name="geometry">
@@ -407,6 +452,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup18.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_17">
@@ -429,6 +477,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup19.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_18">
     <property name="geometry">
@@ -449,6 +500,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup20.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_19">
@@ -471,6 +525,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup13.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_20">
     <property name="geometry">
@@ -491,6 +548,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup15.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_21">
@@ -513,6 +573,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup12.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_22">
     <property name="geometry">
@@ -533,6 +596,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup14.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_23">
@@ -555,6 +621,9 @@
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup17.ui</string>
      </stringlist>
     </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_24">
     <property name="geometry">
@@ -575,6 +644,9 @@
      <stringlist>
       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup23.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
