@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(200, 200, 200);</string>
+  </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
@@ -54,47 +57,9 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
-   </widget>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>50</y>
-      <width>121</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>PGP Links...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
-      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
-      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
-      <string>$EDM/mps/mps_linknode_pgp_port_hps.edl</string>
-     </stringlist>
-    </property>
-    <property name="titles" stdset="0">
-     <stringlist>
-      <string>port0</string>
-      <string>port1</string>
-      <string>port2</string>
-      <string>port3</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
     <property name="macros" stdset="0">
      <stringlist>
-      <string>N=0, P=${P}</string>
-      <string>N=1, P=${P}</string>
-      <string>N=2, P=${P}</string>
-      <string>N=3, P=${P}</string>
+      <string>P=${P}</string>
      </stringlist>
     </property>
    </widget>
@@ -111,7 +76,7 @@
      <string/>
     </property>
     <property name="text">
-     <string>Save/Load Config...</string>
+     <string>Save/Load Config</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
@@ -123,6 +88,11 @@
     </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P}</string>
+     </stringlist>
     </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
@@ -151,6 +121,11 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P}</string>
+     </stringlist>
+    </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_5">
     <property name="geometry">
@@ -177,6 +152,11 @@
     </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P}</string>
+     </stringlist>
     </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_6">
@@ -205,32 +185,10 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
-   </widget>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>80</y>
-      <width>121</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Crossbar...</string>
-    </property>
-    <property name="filenames" stdset="0">
+    <property name="macros" stdset="0">
      <stringlist>
-      <string>$EDM/mps/mps_linknode_timing_hps.edl</string>
+      <string>P=${P}</string>
      </stringlist>
-    </property>
-    <property name="titles" stdset="0">
-     <stringlist/>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
     </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
@@ -259,6 +217,11 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P}</string>
+     </stringlist>
+    </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
     <property name="geometry">
@@ -285,6 +248,11 @@
     </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P}</string>
+     </stringlist>
     </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_10">
@@ -313,6 +281,11 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P}</string>
+     </stringlist>
+    </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_11">
     <property name="geometry">
@@ -340,6 +313,11 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P}</string>
+     </stringlist>
+    </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_12">
     <property name="geometry">
@@ -354,7 +332,7 @@
      <string/>
     </property>
     <property name="text">
-     <string>Tx message info...</string>
+     <string>Tx message info</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
@@ -367,32 +345,10 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
-   </widget>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_13">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>20</y>
-      <width>121</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>SALT Registers...</string>
-    </property>
-    <property name="filenames" stdset="0">
+    <property name="macros" stdset="0">
      <stringlist>
-      <string>$EDM/mps/mps_linknode_salt_hps.edl</string>
+      <string>P=${P}</string>
      </stringlist>
-    </property>
-    <property name="titles" stdset="0">
-     <stringlist/>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
     </property>
    </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_14">
@@ -423,14 +379,78 @@
     </property>
     <property name="macros" stdset="0">
      <stringlist>
-      <string>LOCA=$(LOCA), IOC_UNIT=$(IOC_UNIT), INST=${INST}, SYS=SYS0, IOC=${IOC}, CPU=${CPU}</string>
+      <string>P=${P},LOCA=$(LOCA), IOC_UNIT=$(IOC_UNIT), INST=${INST}, SYS=SYS0, IOC=${IOC}, CPU=${CPU}</string>
      </stringlist>
     </property>
    </widget>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_15">
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>PGP Links...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>mps_pgp_status.ui</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist>
+      <string>Port 0</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;N&quot;:&quot;0&quot;}</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
     <property name="geometry">
      <rect>
       <x>450</x>
+      <y>20</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>SALT Registers</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>mps_embed_salt.ui</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
       <y>80</y>
       <width>121</width>
       <height>24</height>
@@ -440,18 +460,18 @@
      <string/>
     </property>
     <property name="text">
-     <string>Digital Inputs...</string>
+     <string>Crossbar</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
-      <string>$EDM/mps/$(LN_SIOC)_digital_inputs.edl</string>
+      <string>mps_crossbar.ui</string>
      </stringlist>
-    </property>
-    <property name="titles" stdset="0">
-     <stringlist/>
     </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

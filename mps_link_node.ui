@@ -415,32 +415,6 @@ background-color: rgb(70, 70, 70);</string>
      <string>lcls_mps_lockup_sidebyside_digital.png</string>
     </property>
    </widget>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>330</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Expert...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_linknode_expert_hps.edl</string>
-     </stringlist>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>P=${P}</string>
-     </stringlist>
-    </property>
-   </widget>
    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
     <property name="geometry">
      <rect>
@@ -457,6 +431,30 @@ background-color: rgb(70, 70, 70);</string>
      <string>$PHYSICS_TOP/mps_configuration/current/display/slots/${SLOT_FILE}</string>
     </property>
    </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>330</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Expert...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$PYDM/mps/mps_expert.ui</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <zorder>frame_5</zorder>
   <zorder>PyDMLabel</zorder>
@@ -464,12 +462,6 @@ background-color: rgb(70, 70, 70);</string>
   <zorder>frame_4</zorder>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
   <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>260</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>260</width>
+     <height>180</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(200, 200, 200);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>240</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>121</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Crossbar</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>mps_crossbar.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_5">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>121</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Analog AMCs...</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$EDM/mps/mps_linknode_analog_amc_hps.edl</string>
+      </stringlist>
+     </property>
+     <property name="titles" stdset="0">
+      <stringlist/>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>P=${P}</string>
+      </stringlist>
+     </property>
+    </widget>
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>121</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Analog Core...</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$EDM/mps/mps_analog_core_hps.edl</string>
+      </stringlist>
+     </property>
+     <property name="titles" stdset="0">
+      <stringlist/>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>P=${P}</string>
+      </stringlist>
+     </property>
+    </widget>
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_14">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>121</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Timing Setup...</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$EDM/mps/mps_evr_diags_hps.edl</string>
+      </stringlist>
+     </property>
+     <property name="titles" stdset="0">
+      <stringlist/>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>P=${P},LOCA=$(LOCA), IOC_UNIT=$(IOC_UNIT), INST=${INST}, SYS=SYS0, IOC=${IOC}, CPU=${CPU}</string>
+      </stringlist>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>155</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MPS Analog Application</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

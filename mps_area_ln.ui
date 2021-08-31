@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>875</width>
+    <height>35</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>875</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(200, 200, 200);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Link Node ${ID}</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>lcls_mps_lockup_stacked_digital.png</normaloff>lcls_mps_lockup_stacked_digital.png</iconset>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$PYDM/mps/mps_link_node.ui</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;P&quot;:&quot;${P}&quot;}</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>5</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Group</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:LN_GROUP</string>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>5</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>FPGA Heartbeat</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:FPGA_UPTIMECNT</string>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_3">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>5</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Mode</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:TIMING_MODE_RBV</string>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_4">
+    <property name="geometry">
+     <rect>
+      <x>365</x>
+      <y>5</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Config Version</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:CONFIG_VERSION</string>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_5">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>5</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Location</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:LN_LOCATION</string>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_6">
+    <property name="geometry">
+     <rect>
+      <x>615</x>
+      <y>5</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Computer</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:LN_CPU_NAME</string>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_7">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>5</y>
+      <width>130</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Shelf Manager</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:LN_SHM_NAME</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

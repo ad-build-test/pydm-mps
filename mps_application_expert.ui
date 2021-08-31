@@ -93,6 +93,28 @@
      <string>mps_embed_tx_msg.ui</string>
     </property>
    </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>350</y>
+      <width>260</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="rules" stdset="0">
+     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:BYTE_COUNT&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]&gt;10&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_embed_analog.ui</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <customwidgets>

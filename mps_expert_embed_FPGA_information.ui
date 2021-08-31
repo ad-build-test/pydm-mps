@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(200, 200, 200);</string>
+  </property>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
@@ -83,6 +86,9 @@
      <string notr="true">color: rgb(12, 255, 68);
 background-color: rgb(70, 70, 70);</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:FPGA_UPTIMECNT</string>
     </property>
@@ -103,8 +109,14 @@ background-color: rgb(70, 70, 70);</string>
      <string notr="true">color: rgb(12, 255, 68);
 background-color: rgb(70, 70, 70);</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:FPGA_VER</string>
+    </property>
+    <property name="displayFormat" stdset="0">
+     <enum>PyDMLabel::Hex</enum>
     </property>
    </widget>
    <widget class="PyDMLabel" name="PyDMLabel_3">
@@ -125,6 +137,9 @@ background-color: rgb(70, 70, 70);</string>
     </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:FPGA_BUILDSTAMP</string>
+    </property>
+    <property name="displayFormat" stdset="0">
+     <enum>PyDMLabel::String</enum>
     </property>
    </widget>
   </widget>

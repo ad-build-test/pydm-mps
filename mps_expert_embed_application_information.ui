@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(200, 200, 200);</string>
+  </property>
   <widget class="QFrame" name="frame_2">
    <property name="geometry">
     <rect>
@@ -21,6 +24,9 @@
      <width>652</width>
      <height>150</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(200, 200, 200);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Box</enum>
@@ -526,6 +532,9 @@ background-color: rgb(70, 70, 70);</string>
      <stringlist>
       <string>mps_application_expert.ui</string>
      </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>

@@ -179,8 +179,11 @@
     <property name="toolTip">
      <string/>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
     <property name="filename" stdset="0">
-     <string>mps_expert_embed.ui</string>
+     <string>mps_expert_embed_application_information.ui</string>
     </property>
    </widget>
   </widget>
