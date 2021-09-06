@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>670</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>670</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(200, 200, 200);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>2</y>
+      <width>200</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>${DEVICE}</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>2</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Hard Value</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="precision" stdset="0">
+     <number>3</number>
+    </property>
+    <property name="precisionFromPV" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${PV1}</string>
+    </property>
+   </widget>
+   <widget class="PyDMLabel" name="PyDMLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>2</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="text">
+     <string>Soft Value</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="rules" stdset="0">
+     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${PV2}&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${VISIBLE}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+    </property>
+    <property name="precision" stdset="0">
+     <number>3</number>
+    </property>
+    <property name="precisionFromPV" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${PV2}</string>
+    </property>
+   </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>2</y>
+      <width>100</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Details...</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
