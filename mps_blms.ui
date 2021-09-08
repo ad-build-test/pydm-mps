@@ -253,6 +253,30 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_10">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>50</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>DMP0...</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$PHYSICS_TOP/mps_configuration/current/display/blms/blms_DMP0.ui</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
