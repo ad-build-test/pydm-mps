@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>661</width>
+     <height>602</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>4</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:2610&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:2710&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>56</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:2810&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>82</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:2910&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>108</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3010&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>134</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3110&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3210&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>186</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3310&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>212</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3410&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>238</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3510&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>264</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3610&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3710&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>316</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3810&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>342</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:3910&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>368</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4010&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_16">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>394</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4110&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_18">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4210&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_19">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>446</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4310&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_20">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>472</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4410&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_21">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>498</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4510&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_22">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>524</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4610&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_23">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4710&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_24">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>576</y>
+      <width>641</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDS:4810&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>mps_wdog_inline.ui</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 150, 168);</string>
+   </property>
+   <property name="text">
+    <string notr="true">MPS UNDS BLM HV Status</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>672</y>
+     <width>250</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="filename" stdset="0">
+    <string>lcls_mps_lockup_sidebyside_digital.png</string>
+   </property>
+  </widget>
+  <widget class="PyDMLabel" name="PyDMLabel_3">
+   <property name="geometry">
+    <rect>
+     <x>521</x>
+     <y>670</y>
+     <width>150</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(70, 70, 70);</string>
+   </property>
+   <property name="text">
+    <string>Faulted</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="precisionFromPV" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="alarmSensitiveContent" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string>ca://MPS:UNDS:1:CBLM_WDOG_STATE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>670</y>
+     <width>225</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MPS:UNDS:1:CBLM_WDOG_STATE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>45</y>
+     <width>120</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Device</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>151</x>
+     <y>45</y>
+     <width>100</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Value (1=Good)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>254</x>
+     <y>45</y>
+     <width>100</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bypassed</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>45</y>
+     <width>100</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>State</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
