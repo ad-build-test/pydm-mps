@@ -304,7 +304,7 @@
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
-      <string>$EDM/mps/mps_lcls1_core_hps.edl</string>
+      <string>$EDM/mps/mps_linknode_lcls1_core_hps.edl</string>
      </stringlist>
     </property>
     <property name="titles" stdset="0">
@@ -348,6 +348,38 @@
     <property name="macros" stdset="0">
      <stringlist>
       <string>P=${P}</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_14">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>50</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Timing Setup...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/mps/mps_evr_diags_hps.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>P=${P},LOCA=$(LOCA), IOC_UNIT=$(IOC_UNIT), INST=${INST}, SYS=SYS0, IOC=${IOC}, CPU=${CPU}</string>
      </stringlist>
     </property>
    </widget>
@@ -442,33 +474,6 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="PyDMShellCommand" name="PyDMShellCommand">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>50</y>
-      <width>121</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Timing Setup...</string>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="allowMultipleExecutions" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="commands" stdset="0">
-     <stringlist>
-      <string>edm -x -m P=${P},LOCA=${LOCA},IOC_UNIT=${IOC_UNIT},INST=${INST},SYS=SYS0,IOC=${IOC},CPU=${CPU} $EDM/mps/mps_evr_diags_hps.edl</string>
-     </stringlist>
-    </property>
-   </widget>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
@@ -493,11 +498,6 @@
    <extends>PyDMRelatedDisplayButton</extends>
    <header>edmbutton.edm_button</header>
    <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>PyDMShellCommand</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.shell_command</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
