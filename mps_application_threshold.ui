@@ -1013,8 +1013,14 @@ background-color: rgb(70, 70, 70);</string>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
+    <property name="precision" stdset="0">
+     <number>3</number>
+    </property>
     <property name="showUnits" stdset="0">
      <bool>true</bool>
+    </property>
+    <property name="precisionFromPV" stdset="0">
+     <bool>false</bool>
     </property>
     <property name="channel" stdset="0">
      <string>ca://${DEVICE}:${THR}</string>
