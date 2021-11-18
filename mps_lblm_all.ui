@@ -74,6 +74,9 @@
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
    </property>
+   <property name="rules" stdset="0">
+    <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P2}:DM${BAY2}_HW_ARM&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${VISIBLE}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+   </property>
    <property name="macros" stdset="0">
     <string>{&quot;TITLE&quot;:&quot;${TITLE2}&quot;,&quot;PV&quot;:&quot;${PV2}&quot;,&quot;P&quot;:&quot;${P2}&quot;,&quot;BAY&quot;:&quot;${BAY2}&quot;,&quot;CH&quot;:&quot;${CH2}&quot;}</string>
    </property>

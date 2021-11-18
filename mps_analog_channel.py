@@ -101,7 +101,7 @@ class mps_blm_main(Display):
 
   def update_lines(self):
     line1_pos = self.coarse_val
-    line2_pos = self.peak_val + line1_pos + .2
+    line2_pos = self.peak_val + line1_pos
     line3_pos = self.peak_width + line2_pos
     line4_pos = self.ped_val + line1_pos
     line5_pos = self.ped_width + line4_pos

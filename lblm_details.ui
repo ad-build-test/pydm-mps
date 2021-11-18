@@ -47,7 +47,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:GUNB:212:A","PV1":"MPLN:L0B:MP04:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L0B:MP03:1","P1":"LBLM:GUNB:212:A","P2":"None","P3":"LBLM:GUNB:212:AS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:GUNB:212:A","PV1":"LBLM:GUNB:212:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:GUNB:212:AS","P1":"MPLN:L0B:MP04:1","P2":"None","P3":"MPLN:L0B:MP03:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -69,7 +69,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:GUNB:212:B","PV1":"MPLN:L0B:MP04:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L0B:MP03:1","P1":"LBLM:GUNB:212:B","P2":"None","P3":"LBLM:GUNB:212:BS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"2","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:GUNB:212:B","PV1":"LBLM:GUNB:212:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:GUNB:212:BS","P1":"MPLN:L0B:MP04:1","P2":"None","P3":"MPLN:L0B:MP03:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"2","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -91,7 +91,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:HTR:167:A","PV1":"MPLN:L0B:MP04:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L0B:MP03:1","P1":"LBLM:HTR:167:A","P2":"None","P3":"LBLM:GUNB:212:BS","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:HTR:167:A","PV1":"LBLM:HTR:167:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:GUNB:212:BS","P1":"MPLN:L0B:MP04:1","P2":"None","P3":"MPLN:L0B:MP03:1","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -113,7 +113,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:HTR:167:B","PV1":"MPLN:L0B:MP04:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L0B:MP04:1","P1":"LBLM:HTR:167:B","P2":"None","P3":"LBLM:HTR:167:BS","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:HTR:167:B","PV1":"LBLM:HTR:167:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:HTR:167:BS","P1":"MPLN:L0B:MP04:1","P2":"None","P3":"MPLN:L0B:MP04:1","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -135,7 +135,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:COL0:862:A","PV1":"MPLN:BC1B:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BC1B:MP01:1","P1":"LBLM:COL0:862:A","P2":"None","P3":"LBLM:COL0:862:AS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:COL0:862:A","PV1":"LBLM:COL0:862:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:COL0:862:AS","P1":"MPLN:BC1B:MP01:1","P2":"None","P3":"MPLN:BC1B:MP01:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -157,7 +157,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:COL0:862:B","PV1":"MPLN:BC1B:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BC1B:MP01:1","P1":"LBLM:COL0:862:B","P2":"None","P3":"LBLM:COL0:862:BS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:COL0:862:B","PV1":"LBLM:COL0:862:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:COL0:862:BS","P1":"MPLN:BC1B:MP01:1","P2":"None","P3":"MPLN:BC1B:MP01:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -179,7 +179,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L1B:H282:A","PV1":"MPLN:BC1B:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BC1B:MP01:1","P1":"LBLM:L1B:H282:A","P2":"None","P3":"LBLM:COL0:862:BS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"2","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L1B:H282:A","PV1":"LBLM:L1B:H282:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:COL0:862:BS","P1":"MPLN:BC1B:MP01:1","P2":"None","P3":"MPLN:BC1B:MP01:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"2","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -201,7 +201,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L1B:H282:B","PV1":"MPLN:BC1B:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BC1B:MP03:1","P1":"LBLM:L1B:H282:B","P2":"None","P3":"LBLM:L1B:H282:BS","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L1B:H282:B","PV1":"LBLM:L1B:H282:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:L1B:H282:BS","P1":"MPLN:BC1B:MP01:1","P2":"None","P3":"MPLN:BC1B:MP03:1","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -223,7 +223,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L2B:0400:A","PV1":"MPLN:L2B:MP03:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BC1B:MP03:1","P1":"LBLM:L2B:0400:A","P2":"None","P3":"LBLM:L1B:H282:BS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L2B:0400:A","PV1":"LBLM:L2B:0400:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L1B:H282:BS","P1":"MPLN:L2B:MP03:1","P2":"None","P3":"MPLN:BC1B:MP03:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -245,7 +245,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L2B:0400:B","PV1":"MPLN:L2B:MP03:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L2B:MP03:1","P1":"LBLM:L2B:0400:B","P2":"None","P3":"LBLM:L2B:0400:BS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"0","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L2B:0400:B","PV1":"LBLM:L2B:0400:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:L2B:0400:BS","P1":"MPLN:L2B:MP03:1","P2":"None","P3":"MPLN:L2B:MP03:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"0","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -267,7 +267,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L2B:1587:A","PV1":"MPLN:BC2B:MP02:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L2B:MP03:1","P1":"LBLM:L2B:1587:A","P2":"None","P3":"LBLM:L2B:0400:BS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"0","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L2B:1587:A","PV1":"LBLM:L2B:1587:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L2B:0400:BS","P1":"MPLN:BC2B:MP02:1","P2":"None","P3":"MPLN:L2B:MP03:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"0","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -289,7 +289,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L2B:1587:B","PV1":"MPLN:BC2B:MP02:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BC2B:MP02:1","P1":"LBLM:L2B:1587:B","P2":"None","P3":"LBLM:L2B:1587:BS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L2B:1587:B","PV1":"LBLM:L2B:1587:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:L2B:1587:BS","P1":"MPLN:BC2B:MP02:1","P2":"None","P3":"MPLN:BC2B:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -311,7 +311,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L3B:1600:A","PV1":"MPLN:L3B:MP02:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BC2B:MP02:1","P1":"LBLM:L3B:1600:A","P2":"None","P3":"LBLM:L2B:1587:BS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L3B:1600:A","PV1":"LBLM:L3B:1600:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L2B:1587:BS","P1":"MPLN:L3B:MP02:1","P2":"None","P3":"MPLN:BC2B:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -333,7 +333,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L3B:1600:B","PV1":"MPLN:L3B:MP02:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L3B:MP02:1","P1":"LBLM:L3B:1600:B","P2":"None","P3":"LBLM:L3B:1600:BS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L3B:1600:B","PV1":"LBLM:L3B:1600:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:1600:BS","P1":"MPLN:L3B:MP02:1","P2":"None","P3":"MPLN:L3B:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -355,7 +355,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L3B:2600:A","PV1":"MPLN:L3B:MP03:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L3B:MP03:1","P1":"LBLM:L3B:2600:A","P2":"None","P3":"LBLM:L3B:2600:AS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"0","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L3B:2600:A","PV1":"LBLM:L3B:2600:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:2600:AS","P1":"MPLN:L3B:MP03:1","P2":"None","P3":"MPLN:L3B:MP03:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"0","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -377,7 +377,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L3B:2600:B","PV1":"MPLN:L3B:MP03:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:L3B:MP03:1","P1":"LBLM:L3B:2600:B","P2":"None","P3":"LBLM:L3B:2600:BS","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L3B:2600:B","PV1":"LBLM:L3B:2600:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:2600:BS","P1":"MPLN:L3B:MP03:1","P2":"None","P3":"MPLN:L3B:MP03:1","BAY1":"0","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -399,7 +399,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:L3B:3578:A","PV1":"MPLN:DOG:MP02:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:DOG:MP02:1","P1":"LBLM:L3B:3578:A","P2":"None","P3":"LBLM:L3B:3578:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:L3B:3578:A","PV1":"LBLM:L3B:3578:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:3578:AS","P1":"MPLN:DOG:MP02:1","P2":"None","P3":"MPLN:DOG:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -421,7 +421,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:DOG:381:A","PV1":"MPLN:DOG:MP04:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:DOG:MP02:1","P1":"LBLM:DOG:381:A","P2":"None","P3":"LBLM:L3B:3578:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:DOG:381:A","PV1":"LBLM:DOG:381:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:3578:AS","P1":"MPLN:DOG:MP04:1","P2":"None","P3":"MPLN:DOG:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -443,7 +443,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:DOG:740:A","PV1":"MPLN:BPN13:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:DOG:MP02:1","P1":"LBLM:DOG:740:A","P2":"None","P3":"LBLM:L3B:3578:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:DOG:740:A","PV1":"LBLM:DOG:740:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:3578:AS","P1":"MPLN:BPN13:MP01:1","P2":"None","P3":"MPLN:DOG:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -465,7 +465,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN13:410:A","PV1":"MPLN:BPN15:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:DOG:MP02:1","P1":"LBLM:BPN13:410:A","P2":"None","P3":"LBLM:L3B:3578:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN13:410:A","PV1":"LBLM:BPN13:410:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:3578:AS","P1":"MPLN:BPN15:MP01:1","P2":"None","P3":"MPLN:DOG:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -487,7 +487,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN15:410:A","PV1":"MPLN:BPN17:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:DOG:MP02:1","P1":"LBLM:BPN15:410:A","P2":"None","P3":"LBLM:L3B:3578:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN15:410:A","PV1":"LBLM:BPN15:410:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:L3B:3578:AS","P1":"MPLN:BPN17:MP01:1","P2":"None","P3":"MPLN:DOG:MP02:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -509,7 +509,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN17:517:A","PV1":"MPLN:BPN19:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BPN19:MP01:1","P1":"LBLM:BPN17:517:A","P2":"None","P3":"LBLM:BPN17:517:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN17:517:A","PV1":"LBLM:BPN17:517:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:BPN17:517:AS","P1":"MPLN:BPN19:MP01:1","P2":"None","P3":"MPLN:BPN19:MP01:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -531,7 +531,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN19:635:A","PV1":"MPLN:BPN21:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BPN21:MP01:1","P1":"LBLM:BPN19:635:A","P2":"None","P3":"LBLM:BPN19:635:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN19:635:A","PV1":"LBLM:BPN19:635:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:BPN19:635:AS","P1":"MPLN:BPN21:MP01:1","P2":"None","P3":"MPLN:BPN21:MP01:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -553,7 +553,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN21:635:A","PV1":"MPLN:BPN23:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BPN23:MP01:1","P1":"LBLM:BPN21:635:A","P2":"None","P3":"LBLM:BPN21:635:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN21:635:A","PV1":"LBLM:BPN21:635:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:BPN21:635:AS","P1":"MPLN:BPN23:MP01:1","P2":"None","P3":"MPLN:BPN23:MP01:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -575,7 +575,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN23:739:A","PV1":"MPLN:BPN25:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BPN25:MP01:1","P1":"LBLM:BPN23:739:A","P2":"None","P3":"LBLM:BPN23:739:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN23:739:A","PV1":"LBLM:BPN23:739:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:BPN23:739:AS","P1":"MPLN:BPN25:MP01:1","P2":"None","P3":"MPLN:BPN25:MP01:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -597,7 +597,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN25:739:A","PV1":"MPLN:BPN27:MP01:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:BPN27:MP01:1","P1":"LBLM:BPN25:739:A","P2":"None","P3":"LBLM:BPN25:739:AS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN25:739:A","PV1":"LBLM:BPN25:739:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:BPN25:739:AS","P1":"MPLN:BPN27:MP01:1","P2":"None","P3":"MPLN:BPN27:MP01:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -619,7 +619,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN27:739:A","PV1":"MPLN:SPS:MP02:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:SPS:MP02:1","P1":"LBLM:BPN27:739:A","P2":"None","P3":"LBLM:BPN27:739:AS","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN27:739:A","PV1":"LBLM:BPN27:739:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:BPN27:739:AS","P1":"MPLN:SPS:MP02:1","P2":"None","P3":"MPLN:SPS:MP02:1","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"2","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -641,7 +641,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BPN28:739:B","PV1":"MPLN:SPH:MP05:1","PV2":"MPLN:SPS:MP04:1","VISIBLE":"1","PV3":"MPLN:SPS:MP04:1","P1":"LBLM:BPN28:739:BH","P2":"LBLM:BPN28:739:BS","P3":"LBLM:BPN28:739:BS","BAY1":"0","BAY2":"0","BAY3":"0","CH1":"0","CH2":"0","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BPN28:739:B","PV1":"LBLM:BPN28:739:BH","PV2":"LBLM:BPN28:739:BS","VISIBLE":"1","PV3":"LBLM:BPN28:739:BS","P1":"MPLN:SPH:MP05:1","P2":"MPLN:SPS:MP04:1","P3":"MPLN:SPS:MP04:1","BAY1":"0","BAY2":"0","BAY3":"0","CH1":"0","CH2":"0","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -663,7 +663,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:SPS:443:A","PV1":"MPLN:SPH:MP07:5","PV2":"None","VISIBLE":"0","PV3":"MPLN:SPS:MP04:1","P1":"LBLM:SPS:443:A","P2":"None","P3":"LBLM:BPN28:739:BS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"2","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:SPS:443:A","PV1":"LBLM:SPS:443:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:BPN28:739:BS","P1":"MPLN:SPH:MP07:5","P2":"None","P3":"MPLN:SPS:MP04:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"2","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -685,7 +685,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUH:846:A","PV1":"MPLN:UNDH:MP06:1","PV2":"MPLN:UNDS:MP03:6","VISIBLE":"1","PV3":"MPLN:UNDH:MP10:3","P1":"LBLM:LTUH:846:AH","P2":"LBLM:LTUH:846:AS","P3":"LBLM:LTUH:846:AS","BAY1":"1","BAY2":"0","BAY3":"0","CH1":"2","CH2":"2","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUH:846:A","PV1":"LBLM:LTUH:846:AH","PV2":"LBLM:LTUH:846:AS","VISIBLE":"1","PV3":"LBLM:LTUH:846:AS","P1":"MPLN:UNDH:MP06:1","P2":"MPLN:UNDS:MP03:6","P3":"MPLN:UNDH:MP10:3","BAY1":"1","BAY2":"0","BAY3":"0","CH1":"2","CH2":"2","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -707,7 +707,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:UNDH:4050:A","PV1":"MPLN:UNDH:MP07:6","PV2":"MPLN:UNDS:MP04:7","VISIBLE":"1","PV3":"MPLN:UNDH:MP10:3","P1":"LBLM:UNDH:4050:AH","P2":"LBLM:UNDH:4050:AS","P3":"LBLM:UNDH:4050:AS","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"1","CH2":"0","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:UNDH:4050:A","PV1":"LBLM:UNDH:4050:AH","PV2":"LBLM:UNDH:4050:AS","VISIBLE":"1","PV3":"LBLM:UNDH:4050:AS","P1":"MPLN:UNDH:MP07:6","P2":"MPLN:UNDS:MP04:7","P3":"MPLN:UNDH:MP10:3","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"1","CH2":"0","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -729,7 +729,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:UNDH:4750:A","PV1":"MPLN:UNDH:MP07:6","PV2":"MPLN:UNDS:MP03:6","VISIBLE":"1","PV3":"MPLN:UNDH:MP10:3","P1":"LBLM:UNDH:4750:AH","P2":"LBLM:UNDH:4750:AS","P3":"LBLM:UNDH:4750:AS","BAY1":"1","BAY2":"1","BAY3":"1","CH1":"1","CH2":"2","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:UNDH:4750:A","PV1":"LBLM:UNDH:4750:AH","PV2":"LBLM:UNDH:4750:AS","VISIBLE":"1","PV3":"LBLM:UNDH:4750:AS","P1":"MPLN:UNDH:MP07:6","P2":"MPLN:UNDS:MP03:6","P3":"MPLN:UNDH:MP10:3","BAY1":"1","BAY2":"1","BAY3":"1","CH1":"1","CH2":"2","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -751,7 +751,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:UNDH:4750:B","PV1":"MPLN:UNDH:MP07:6","PV2":"MPLN:UNDS:MP04:7","VISIBLE":"1","PV3":"MPLN:UNDH:MP10:3","P1":"LBLM:UNDH:4750:BH","P2":"LBLM:UNDH:4750:BS","P3":"LBLM:UNDH:4750:BS","BAY1":"1","BAY2":"0","BAY3":"1","CH1":"2","CH2":"2","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:UNDH:4750:B","PV1":"LBLM:UNDH:4750:BH","PV2":"LBLM:UNDH:4750:BS","VISIBLE":"1","PV3":"LBLM:UNDH:4750:BS","P1":"MPLN:UNDH:MP07:6","P2":"MPLN:UNDS:MP04:7","P3":"MPLN:UNDH:MP10:3","BAY1":"1","BAY2":"0","BAY3":"1","CH1":"2","CH2":"2","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -773,7 +773,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:SPS:870:B","PV1":"MPLN:BSYH:MP02:6","PV2":"MPLN:BSYS:MP03:6","VISIBLE":"1","PV3":"MPLN:BSYS:MP02:5","P1":"LBLM:SPS:870:BH","P2":"LBLM:SPS:870:BS","P3":"LBLM:SPS:870:BS","BAY1":"0","BAY2":"1","BAY3":"1","CH1":"0","CH2":"2","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:SPS:870:B","PV1":"LBLM:SPS:870:BH","PV2":"LBLM:SPS:870:BS","VISIBLE":"1","PV3":"LBLM:SPS:870:BS","P1":"MPLN:BSYH:MP02:6","P2":"MPLN:BSYS:MP03:6","P3":"MPLN:BSYS:MP02:5","BAY1":"0","BAY2":"1","BAY3":"1","CH1":"0","CH2":"2","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -795,7 +795,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:BSY0:247:A","PV1":"MPLN:BSYH:MP02:6","PV2":"MPLN:BSYS:MP02:5","VISIBLE":"1","PV3":"MPLN:BSYS:MP02:5","P1":"LBLM:BSY0:247:AH","P2":"LBLM:BSY0:247:AS","P3":"LBLM:BSY0:247:AS","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"1","CH2":"0","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:BSY0:247:A","PV1":"LBLM:BSY0:247:AH","PV2":"LBLM:BSY0:247:AS","VISIBLE":"1","PV3":"LBLM:BSY0:247:AS","P1":"MPLN:BSYH:MP02:6","P2":"MPLN:BSYS:MP02:5","P3":"MPLN:BSYS:MP02:5","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"1","CH2":"0","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -817,7 +817,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUS:105:A","PV1":"MPLN:LTUH:MP04:1","PV2":"MPLN:LTUS:MP02:1","VISIBLE":"1","PV3":"MPLN:LTUS:MP02:1","P1":"LBLM:LTUS:105:AH","P2":"LBLM:LTUS:105:AS","P3":"LBLM:LTUS:105:AS","BAY1":"1","BAY2":"0","BAY3":"1","CH1":"0","CH2":"2","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUS:105:A","PV1":"LBLM:LTUS:105:AH","PV2":"LBLM:LTUS:105:AS","VISIBLE":"1","PV3":"LBLM:LTUS:105:AS","P1":"MPLN:LTUH:MP04:1","P2":"MPLN:LTUS:MP02:1","P3":"MPLN:LTUS:MP02:1","BAY1":"1","BAY2":"0","BAY3":"1","CH1":"0","CH2":"2","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -839,7 +839,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUH:105:B","PV1":"MPLN:LTUH:MP04:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:LTUS:MP02:1","P1":"LBLM:LTUH:105:B","P2":"None","P3":"LBLM:LTUS:105:AS","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUH:105:B","PV1":"LBLM:LTUH:105:B","PV2":"None","VISIBLE":"0","PV3":"LBLM:LTUS:105:AS","P1":"MPLN:LTUH:MP04:1","P2":"None","P3":"MPLN:LTUS:MP02:1","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -861,7 +861,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUS:433:A","PV1":"MPLN:LTUH:MP05:1","PV2":"MPLN:LTUS:MP04:1","VISIBLE":"1","PV3":"MPLN:LTUS:MP05:6","P1":"LBLM:LTUS:433:AH","P2":"LBLM:LTUS:433:AS","P3":"LBLM:LTUS:433:AS","BAY1":"1","BAY2":"1","BAY3":"1","CH1":"2","CH2":"2","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUS:433:A","PV1":"LBLM:LTUS:433:AH","PV2":"LBLM:LTUS:433:AS","VISIBLE":"1","PV3":"LBLM:LTUS:433:AS","P1":"MPLN:LTUH:MP05:1","P2":"MPLN:LTUS:MP04:1","P3":"MPLN:LTUS:MP05:6","BAY1":"1","BAY2":"1","BAY3":"1","CH1":"2","CH2":"2","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -883,7 +883,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUS:433:B","PV1":"MPLN:LTUH:MP06:6","PV2":"MPLN:LTUS:MP05:6","VISIBLE":"1","PV3":"MPLN:LTUS:MP05:6","P1":"LBLM:LTUS:433:BH","P2":"LBLM:LTUS:433:BS","P3":"LBLM:LTUS:433:BS","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"0","CH2":"0","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUS:433:B","PV1":"LBLM:LTUS:433:BH","PV2":"LBLM:LTUS:433:BS","VISIBLE":"1","PV3":"LBLM:LTUS:433:BS","P1":"MPLN:LTUH:MP06:6","P2":"MPLN:LTUS:MP05:6","P3":"MPLN:LTUS:MP05:6","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"0","CH2":"0","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -905,7 +905,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUH:433:A","PV1":"MPLN:LTUH:MP06:6","PV2":"MPLN:LTUS:MP05:6","VISIBLE":"0","PV3":"MPLN:LTUS:MP05:6","P1":"LBLM:LTUH:433:A","P2":"LBLM:LTUH:433:AS","P3":"LBLM:LTUS:433:BS","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"1","CH2":"1","CH3":"1","TITLE1":"SC Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUH:433:A","PV1":"LBLM:LTUH:433:A","PV2":"LBLM:LTUH:433:AS","VISIBLE":"0","PV3":"LBLM:LTUS:433:BS","P1":"MPLN:LTUH:MP06:6","P2":"MPLN:LTUS:MP05:6","P3":"MPLN:LTUS:MP05:6","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"1","CH2":"1","CH3":"1","TITLE1":"SC Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -927,7 +927,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUH:433:B","PV1":"MPLN:LTUH:MP06:6","PV2":"MPLN:LTUS:MP05:6","VISIBLE":"1","PV3":"MPLN:LTUH:MP06:6","P1":"LBLM:LTUH:433:BH","P2":"LBLM:LTUH:433:BS","P3":"LBLM:LTUH:433:BS","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"2","CH2":"2","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUH:433:B","PV1":"LBLM:LTUH:433:BH","PV2":"LBLM:LTUH:433:BS","VISIBLE":"1","PV3":"LBLM:LTUH:433:BS","P1":"MPLN:LTUH:MP06:6","P2":"MPLN:LTUS:MP05:6","P3":"MPLN:LTUH:MP06:6","BAY1":"0","BAY2":"0","BAY3":"1","CH1":"2","CH2":"2","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -949,7 +949,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUS:738:B","PV1":"MPLN:UNDH:MP02:7","PV2":"MPLN:LTUS:MP06:1","VISIBLE":"1","PV3":"MPLN:UNDS:MP01:1","P1":"LBLM:LTUS:738:BH","P2":"LBLM:LTUS:738:BS","P3":"LBLM:LTUS:738:BS","BAY1":"0","BAY2":"1","BAY3":"0","CH1":"1","CH2":"1","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUS:738:B","PV1":"LBLM:LTUS:738:BH","PV2":"LBLM:LTUS:738:BS","VISIBLE":"1","PV3":"LBLM:LTUS:738:BS","P1":"MPLN:UNDH:MP02:7","P2":"MPLN:LTUS:MP06:1","P3":"MPLN:UNDS:MP01:1","BAY1":"0","BAY2":"1","BAY3":"0","CH1":"1","CH2":"1","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -971,7 +971,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUS:738:A","PV1":"MPLN:UNDH:MP04:1","PV2":"None","VISIBLE":"0","PV3":"MPLN:UNDS:MP01:1","P1":"LBLM:LTUS:738:A","P2":"None","P3":"LBLM:LTUS:738:BS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUS:738:A","PV1":"LBLM:LTUS:738:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:LTUS:738:BS","P1":"MPLN:UNDH:MP04:1","P2":"None","P3":"MPLN:UNDS:MP01:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"1","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -993,7 +993,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUH:738:A","PV1":"MPLN:UNDH:MP02:7","PV2":"None","VISIBLE":"0","PV3":"MPLN:UNDS:MP01:1","P1":"LBLM:LTUH:738:A","P2":"None","P3":"LBLM:LTUS:738:BS","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUH:738:A","PV1":"LBLM:LTUH:738:A","PV2":"None","VISIBLE":"0","PV3":"LBLM:LTUS:738:BS","P1":"MPLN:UNDH:MP02:7","P2":"None","P3":"MPLN:UNDS:MP01:1","BAY1":"0","BAY2":"None","BAY3":"0","CH1":"0","CH2":"None","CH3":"1","TITLE1":"SC Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -1015,7 +1015,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUH:738:B","PV1":"MPLN:UNDH:MP02:7","PV2":"MPLN:LTUS:MP06:1","VISIBLE":"1","PV3":"MPLN:UNDH:MP01:1","P1":"LBLM:LTUH:738:BH","P2":"LBLM:LTUH:738:BS","P3":"LBLM:LTUH:738:BS","BAY1":"0","BAY2":"1","BAY3":"1","CH1":"2","CH2":"2","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUH:738:B","PV1":"LBLM:LTUH:738:BH","PV2":"LBLM:LTUH:738:BS","VISIBLE":"1","PV3":"LBLM:LTUH:738:BS","P1":"MPLN:UNDH:MP02:7","P2":"MPLN:LTUS:MP06:1","P3":"MPLN:UNDH:MP01:1","BAY1":"0","BAY2":"1","BAY3":"1","CH1":"2","CH2":"2","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -1037,7 +1037,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:UNDS:4050:A","PV1":"MPLN:UNDH:MP07:6","PV2":"MPLN:UNDS:MP03:6","VISIBLE":"1","PV3":"MPLN:UNDS:MP08:5","P1":"LBLM:UNDS:4050:AH","P2":"LBLM:UNDS:4050:AS","P3":"LBLM:UNDS:4050:AS","BAY1":"0","BAY2":"1","BAY3":"0","CH1":"0","CH2":"0","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:UNDS:4050:A","PV1":"LBLM:UNDS:4050:AH","PV2":"LBLM:UNDS:4050:AS","VISIBLE":"1","PV3":"LBLM:UNDS:4050:AS","P1":"MPLN:UNDH:MP07:6","P2":"MPLN:UNDS:MP03:6","P3":"MPLN:UNDS:MP08:5","BAY1":"0","BAY2":"1","BAY3":"0","CH1":"0","CH2":"0","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -1059,7 +1059,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:UNDS:4650:A","PV1":"MPLN:UNDH:MP07:6","PV2":"MPLN:UNDS:MP03:6","VISIBLE":"1","PV3":"MPLN:UNDS:MP08:5","P1":"LBLM:UNDS:4650:AH","P2":"LBLM:UNDS:4650:AS","P3":"LBLM:UNDS:4650:AS","BAY1":"0","BAY2":"1","BAY3":"0","CH1":"2","CH2":"1","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:UNDS:4650:A","PV1":"LBLM:UNDS:4650:AH","PV2":"LBLM:UNDS:4650:AS","VISIBLE":"1","PV3":"LBLM:UNDS:4650:AS","P1":"MPLN:UNDH:MP07:6","P2":"MPLN:UNDS:MP03:6","P3":"MPLN:UNDS:MP08:5","BAY1":"0","BAY2":"1","BAY3":"0","CH1":"2","CH2":"1","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -1081,7 +1081,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:UNDS:4650:B","PV1":"MPLN:UNDH:MP07:6","PV2":"MPLN:UNDS:MP04:7","VISIBLE":"1","PV3":"MPLN:UNDS:MP08:5","P1":"LBLM:UNDS:4650:BH","P2":"LBLM:UNDS:4650:BS","P3":"LBLM:UNDS:4650:BS","BAY1":"1","BAY2":"0","BAY3":"0","CH1":"0","CH2":"1","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:UNDS:4650:B","PV1":"LBLM:UNDS:4650:BH","PV2":"LBLM:UNDS:4650:BS","VISIBLE":"1","PV3":"LBLM:UNDS:4650:BS","P1":"MPLN:UNDH:MP07:6","P2":"MPLN:UNDS:MP04:7","P3":"MPLN:UNDS:MP08:5","BAY1":"1","BAY2":"0","BAY3":"0","CH1":"0","CH2":"1","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -1103,7 +1103,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"PMT:DMPS:431","PV1":"MPLN:UNDH:MP07:6","PV2":"None","VISIBLE":"0","PV3":"MPLN:UNDS:MP08:5","P1":"LBLM:UNDS:4650:BH","P2":"None","P3":"PMT:DMPS:431S","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"PMT:DMPS:431","PV1":"LBLM:UNDS:4650:BH","PV2":"None","VISIBLE":"0","PV3":"PMT:DMPS:431S","P1":"MPLN:UNDH:MP07:6","P2":"None","P3":"MPLN:UNDS:MP08:5","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"0","TITLE1":"Hard Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -1125,7 +1125,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"PMT:DMPH:431","PV1":"MPLN:UNDH:MP07:6","PV2":"None","VISIBLE":"0","PV3":"MPLN:UNDS:MP08:5","P1":"LBLM:UNDS:4650:BH","P2":"None","P3":"PMT:DMPH:431S","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"None","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"PMT:DMPH:431","PV1":"LBLM:UNDS:4650:BH","PV2":"None","VISIBLE":"0","PV3":"PMT:DMPH:431S","P1":"MPLN:UNDH:MP07:6","P2":"None","P3":"MPLN:UNDS:MP08:5","BAY1":"1","BAY2":"None","BAY3":"1","CH1":"0","CH2":"None","CH3":"1","TITLE1":"Hard Line LN","TITLE2":"None","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
@@ -1147,7 +1147,7 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="macros" stdset="0">
-     <string>{"DEVICE":"LBLM:LTUS:846:A","PV1":"MPLN:UNDH:MP06:1","PV2":"MPLN:UNDS:MP03:6","VISIBLE":"1","PV3":"MPLN:UNDS:MP04:7","P1":"LBLM:LTUS:846:AH","P2":"LBLM:LTUS:846:AS","P3":"LBLM:LTUS:846:AS","BAY1":"1","BAY2":"0","BAY3":"1","CH1":"1","CH2":"1","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Soft Line LN"}</string>
+     <string>{"DEVICE":"LBLM:LTUS:846:A","PV1":"LBLM:LTUS:846:AH","PV2":"LBLM:LTUS:846:AS","VISIBLE":"1","PV3":"LBLM:LTUS:846:AS","P1":"MPLN:UNDH:MP06:1","P2":"MPLN:UNDS:MP03:6","P3":"MPLN:UNDS:MP04:7","BAY1":"1","BAY2":"0","BAY3":"1","CH1":"1","CH2":"1","CH3":"2","TITLE1":"Hard Line LN","TITLE2":"Soft Line LN","TITLE3":"Fast Output"}</string>
     </property>
     <property name="filename" stdset="0">
      <string>$PYDM/mps/mps_blm_embed.ui</string>
