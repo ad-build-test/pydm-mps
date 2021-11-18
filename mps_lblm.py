@@ -22,6 +22,7 @@ class mps_blm_main(Display):
     self.full_adc_range = 65536.
     self.full_mv_range = 1200.
     self.adc_factor = self.full_mv_range / self.full_adc_range
+    self.adc_factor = 1
 
   def ui_filename(self):
       # Point to our UI file
