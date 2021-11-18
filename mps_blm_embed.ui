@@ -150,6 +150,11 @@ background-color: rgb(70, 70, 70);</string>
     <property name="text">
      <string>Details...</string>
     </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$PYDM/mps/mps_lblm_all.ui</string>
+     </stringlist>
+    </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
