@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1060</width>
+    <height>1120</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1060</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 150, 168);</string>
+   </property>
+   <property name="text">
+    <string>MPS LBLM - ${DEVICE}</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>1060</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="macros" stdset="0">
+    <string>{&quot;TITLE&quot;:&quot;${TITLE1}&quot;,&quot;PV&quot;:&quot;${PV1}&quot;,&quot;P&quot;:&quot;${P1}&quot;,&quot;BAY&quot;:&quot;${BAY1}&quot;,&quot;CH&quot;:&quot;${CH1}&quot;}</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string>mps_lblm.py</string>
+   </property>
+  </widget>
+  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>400</y>
+     <width>1060</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="macros" stdset="0">
+    <string>{&quot;TITLE&quot;:&quot;${TITLE2}&quot;,&quot;PV&quot;:&quot;${PV2}&quot;,&quot;P&quot;:&quot;${P2}&quot;,&quot;BAY&quot;:&quot;${BAY2}&quot;,&quot;CH&quot;:&quot;${CH2}&quot;}</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string>mps_lblm.py</string>
+   </property>
+  </widget>
+  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>760</y>
+     <width>1060</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="macros" stdset="0">
+    <string>{&quot;TITLE&quot;:&quot;${TITLE3}&quot;,&quot;PV&quot;:&quot;${PV3}&quot;,&quot;P&quot;:&quot;${P3}&quot;,&quot;BAY&quot;:&quot;${BAY3}&quot;,&quot;CH&quot;:&quot;${CH3}&quot;}</string>
+   </property>
+   <property name="filename" stdset="0">
+    <string>mps_lblm.py</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
