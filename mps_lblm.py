@@ -25,7 +25,7 @@ class mps_blm_main(Display):
 
   def ui_filename(self):
       # Point to our UI file
-      return 'mps_analog_channel.ui'
+      return 'mps_lblm.ui'
 
   def ui_filepath(self):
       # Return the full path to the UI file
