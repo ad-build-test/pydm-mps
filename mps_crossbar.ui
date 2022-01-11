@@ -191,11 +191,13 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(12, 255, 68);
-background-color: rgb(70, 70, 70);</string>
+      <string notr="true">background-color: rgb(70, 70, 70);</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:RXLNKSTATUS</string>
