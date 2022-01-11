@@ -157,7 +157,7 @@ background-color: rgb(70, 70, 70);</string>
      <set>Qt::AlignCenter</set>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:TIMING_MODE_RBV</string>
+     <string>ca://SIOC:${LOCA}:${IOC_UNIT}:LCLSMODE_RBV</string>
     </property>
    </widget>
    <widget class="PyDMLabel" name="PyDMLabel_4">

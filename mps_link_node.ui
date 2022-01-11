@@ -337,7 +337,7 @@ background-color: rgb(70, 70, 70);</string>
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:LCLSMODE_RBV</string>
+     <string>ca://SIOC:${LOCA}:${IOC_UNIT}:LCLSMODE_RBV</string>
     </property>
    </widget>
   </widget>
