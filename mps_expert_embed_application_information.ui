@@ -236,7 +236,7 @@ background-color: rgb(70, 70, 70);</string>
      </rect>
     </property>
     <property name="text">
-     <string>Application Type</string>
+     <string>Alternate Dest</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_12">

@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>465</width>
+    <width>337</width>
     <height>20</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>465</width>
+    <width>337</width>
     <height>20</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>465</width>
+    <width>337</width>
     <height>20</height>
    </size>
   </property>
@@ -70,19 +70,19 @@ color: rgb(12, 255, 68);</string>
     <rect>
      <x>35</x>
      <y>0</y>
-     <width>430</width>
+     <width>302</width>
      <height>20</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>430</width>
+     <width>302</width>
      <height>20</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>440</width>
+     <width>302</width>
      <height>20</height>
     </size>
    </property>
@@ -99,7 +99,7 @@ color: rgb(12, 255, 68);</string>
     <enum>QFrame::Plain</enum>
    </property>
    <property name="lineWidth">
-    <number>1</number>
+    <number>0</number>
    </property>
    <property name="rules" stdset="0">
     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${SLOT2_PREFIX}:SLOT${SLOT}_SPARE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] == 0&quot;, &quot;name&quot;: &quot;Hide&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
@@ -109,7 +109,7 @@ color: rgb(12, 255, 68);</string>
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>10</width>
+      <width>22</width>
       <height>20</height>
      </rect>
     </property>
@@ -117,16 +117,63 @@ color: rgb(12, 255, 68);</string>
      <string notr="true">background-color: rgb(70, 70, 70);</string>
     </property>
     <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
+     <enum>QFrame::Plain</enum>
     </property>
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>10</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alarmSensitiveBorder" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${CN1}:APP${AID}_STATUS</string>
+     </property>
+     <property name="orientation" stdset="0">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="showLabels" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>1</y>
+       <width>10</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alarmSensitiveBorder" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${CN2}:APP${AID}_STATUS</string>
+     </property>
+     <property name="showLabels" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="PyDMLabel" name="PyDMLabel">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>22</x>
       <y>0</y>
       <width>40</width>
       <height>20</height>
@@ -166,117 +213,10 @@ background-color: rgb(70, 70, 70);</string>
      <string>ca://${MPS_PREFIX}:${POSTFIX}</string>
     </property>
    </widget>
-   <widget class="PyDMEnumButton" name="PyDMEnumButton">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>0</y>
-      <width>120</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>120</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>120</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(200, 200, 200);</string>
-    </property>
-    <property name="channel" stdset="0">
-     <string>ca://${MPS_PREFIX}:MPS_EN</string>
-    </property>
-    <property name="orientation" stdset="0">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <property name="marginTop" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="marginBottom" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="marginLeft" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="marginRight" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="horizontalSpacing" stdset="0">
-     <number>2</number>
-    </property>
-    <property name="verticalSpacing" stdset="0">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-    <property name="geometry">
-     <rect>
-      <x>304</x>
-      <y>0</y>
-      <width>62</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>60</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>65</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(200, 200, 200);</string>
-    </property>
-    <property name="text">
-     <string>CN...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>$PHYSICS_TOP/mps_configuration/current/display/inputs/app_${AID}_inputs.ui</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist/>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>132</x>
       <y>0</y>
       <width>70</width>
       <height>20</height>
@@ -293,61 +233,12 @@ color: rgb(12, 255, 68);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
-    <property name="geometry">
-     <rect>
-      <x>367</x>
-      <y>0</y>
-      <width>62</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>60</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>100</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Logic...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_logic.ui</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>{&quot;AID&quot;:&quot;${AID}&quot;}</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
     <property name="geometry">
      <rect>
-      <x>240</x>
+      <x>202</x>
       <y>0</y>
-      <width>63</width>
+      <width>100</width>
       <height>20</height>
      </rect>
     </property>
@@ -359,7 +250,7 @@ color: rgb(12, 255, 68);</string>
     </property>
     <property name="maximumSize">
      <size>
-      <width>100</width>
+      <width>150</width>
       <height>20</height>
      </size>
     </property>
@@ -372,7 +263,7 @@ color: rgb(12, 255, 68);</string>
      <string/>
     </property>
     <property name="text">
-     <string>LN...</string>
+     <string>Thr / Expert...</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
@@ -391,53 +282,32 @@ color: rgb(12, 255, 68);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+   <widget class="PyDMLabel" name="PyDMLabel_2">
     <property name="geometry">
      <rect>
-      <x>1</x>
-      <y>3</y>
-      <width>6</width>
-      <height>12</height>
+      <x>62</x>
+      <y>0</y>
+      <width>70</width>
+      <height>20</height>
      </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>5</width>
-      <height>5</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>16</width>
-      <height>16</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <stylestrategy>PreferDefault</stylestrategy>
-     </font>
     </property>
     <property name="toolTip">
      <string/>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="alarmSensitiveContent" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="alarmSensitiveBorder" stdset="0">
+     <bool>false</bool>
+    </property>
     <property name="channel" stdset="0">
-     <string>ca://${CN}:APP${AID}_STATUS</string>
-    </property>
-    <property name="offColor" stdset="0">
-     <color>
-      <red>255</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </property>
-    <property name="showLabels" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="circles" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="labels" stdset="0">
-     <stringlist/>
+     <string>ca://${MPS_PREFIX}:MPS_EN</string>
     </property>
    </widget>
   </widget>
@@ -449,11 +319,6 @@ color: rgb(12, 255, 68);</string>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMEnumButton</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
