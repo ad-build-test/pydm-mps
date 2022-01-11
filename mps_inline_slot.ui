@@ -140,6 +140,13 @@ color: rgb(12, 255, 68);</string>
      <property name="channel" stdset="0">
       <string>ca://${CN1}:APP${AID}_STATUS</string>
      </property>
+     <property name="offColor" stdset="0">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
      <property name="orientation" stdset="0">
       <enum>Qt::Vertical</enum>
      </property>
@@ -164,6 +171,13 @@ color: rgb(12, 255, 68);</string>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${CN2}:APP${AID}_STATUS</string>
+     </property>
+     <property name="offColor" stdset="0">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
      </property>
      <property name="showLabels" stdset="0">
       <bool>false</bool>
