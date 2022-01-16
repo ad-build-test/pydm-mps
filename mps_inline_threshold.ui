@@ -31,44 +31,12 @@
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
    </property>
-   <widget class="PyDMLabel" name="PyDMLabel">
-    <property name="geometry">
-     <rect>
-      <x>90</x>
-      <y>1</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(12, 255, 68);
-background-color: rgb(70, 70, 70);</string>
-    </property>
-    <property name="text">
-     <string>Low threshold</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-    </property>
-    <property name="showUnits" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>ca://${P}_${THR}_L_RBV</string>
-    </property>
-   </widget>
    <widget class="PyDMLabel" name="PyDMLabel_2">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>75</x>
       <y>21</y>
-      <width>100</width>
+      <width>97</width>
       <height>20</height>
      </rect>
     </property>
@@ -98,7 +66,7 @@ background-color: rgb(70, 70, 70);</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>45</x>
       <y>1</y>
       <width>30</width>
       <height>20</height>
@@ -111,7 +79,7 @@ background-color: rgb(70, 70, 70);</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>45</x>
       <y>21</y>
       <width>30</width>
       <height>20</height>
@@ -126,7 +94,7 @@ background-color: rgb(70, 70, 70);</string>
      <rect>
       <x>1</x>
       <y>11</y>
-      <width>50</width>
+      <width>40</width>
       <height>20</height>
      </rect>
     </property>
@@ -137,7 +105,68 @@ background-color: rgb(70, 70, 70);</string>
      </font>
     </property>
     <property name="text">
-     <string>Thr ${NUM}</string>
+     <string>Thr ${THR}</string>
+    </property>
+   </widget>
+   <widget class="PyDMCheckbox" name="PyDMCheckbox">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>4</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}_${THR}_L_EN</string>
+    </property>
+   </widget>
+   <widget class="PyDMCheckbox" name="PyDMCheckbox_2">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>25</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}_${THR}_H_EN</string>
+    </property>
+   </widget>
+   <widget class="PyDMLineEdit" name="PyDMLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>75</x>
+      <y>1</y>
+      <width>97</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="rules" stdset="0">
+     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+    </property>
+    <property name="showUnits" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}_${THR}_L</string>
     </property>
    </widget>
   </widget>
@@ -147,6 +176,16 @@ background-color: rgb(70, 70, 70);</string>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMCheckbox</class>
+   <extends>QCheckBox</extends>
+   <header>pydm.widgets.checkbox</header>
   </customwidget>
  </customwidgets>
  <resources/>
