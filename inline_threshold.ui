@@ -82,32 +82,6 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel {
-    qproperty-alignment: AlignCenter;
-    background-color: #1D1716;
-    padding: 5px 0px;
-    color:#0ECD3C;
-    max-height: 25px;
-    font-size: 14px;
-}</string>
-       </property>
-       <property name="precision" stdset="0">
-        <number>3</number>
-       </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${P_CH}:I0_${P_TYPE}HXR</string>
-       </property>
-      </widget>
-     </item>
      <item row="2" column="0">
       <widget class="QLabel" name="i1_name">
        <property name="font">
@@ -168,47 +142,6 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_4">
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel {
-    qproperty-alignment: AlignCenter;
-    background-color: #1D1716;
-    padding: 5px 0px;
-    color:#0ECD3C;
-    max-height: 25px;
-    font-size: 14px;
-}</string>
-       </property>
-       <property name="precision" stdset="0">
-        <number>3</number>
-       </property>
-       <property name="precisionFromPV" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://${P_CH}:I1_${P_TYPE}SXR</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Loss From
-SXR Shots</string>
-       </property>
-      </widget>
-     </item>
      <item row="1" column="0">
       <widget class="QLabel" name="i0_name">
        <property name="font">
@@ -226,73 +159,52 @@ SXR Shots</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Loss From
-HXR Shots</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="PyDMLabel" name="PyDMLabel_3">
+     <item row="1" column="2">
+      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
        <property name="toolTip">
         <string/>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel {
-    qproperty-alignment: AlignCenter;
-    background-color: #1D1716;
-    padding: 5px 0px;
-    color:#0ECD3C;
-    max-height: 25px;
-    font-size: 14px;
-}</string>
+       <property name="text">
+        <string>I0_${P_TYPE} Thresholds</string>
        </property>
-       <property name="precision" stdset="0">
-        <number>3</number>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>mps_application_threshold.ui</string>
+        </stringlist>
        </property>
-       <property name="precisionFromPV" stdset="0">
+       <property name="showIcon" stdset="0">
         <bool>false</bool>
        </property>
-       <property name="channel" stdset="0">
-        <string>ca://${P_CH}:I0_${P_TYPE}SXR</string>
+       <property name="macros" stdset="0">
+        <stringlist>
+         <string>{&quot;DEVICE&quot;:&quot;${P_CH}&quot;,&quot;THR&quot;:&quot;I0_${P_TYPE}&quot;}</string>
+        </stringlist>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
      <item row="2" column="2">
-      <widget class="PyDMLabel" name="PyDMLabel_2">
+      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
        <property name="toolTip">
         <string/>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel {
-    qproperty-alignment: AlignCenter;
-    background-color: #1D1716;
-    padding: 5px 0px;
-    color:#0ECD3C;
-    max-height: 25px;
-    font-size: 14px;
-}</string>
+       <property name="text">
+        <string>I1_${P_TYPE} Thresholds</string>
        </property>
-       <property name="precision" stdset="0">
-        <number>3</number>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>mps_application_threshold.ui</string>
+        </stringlist>
        </property>
-       <property name="precisionFromPV" stdset="0">
+       <property name="showIcon" stdset="0">
         <bool>false</bool>
        </property>
-       <property name="channel" stdset="0">
-        <string>ca://${P_CH}:I1_${P_TYPE}HXR</string>
+       <property name="macros" stdset="0">
+        <stringlist>
+         <string>{&quot;DEVICE&quot;:&quot;${P_CH}&quot;,&quot;THR&quot;:&quot;I1_${P_TYPE}&quot;}</string>
+        </stringlist>
        </property>
       </widget>
      </item>

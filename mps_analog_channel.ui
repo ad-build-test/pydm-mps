@@ -21,14 +21,12 @@
        <property name="styleSheet">
         <string notr="true">QLabel {
     qproperty-alignment: AlignCenter;
-    border: 1px solid #FF17365D;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     background-color: #FF9C9C;
     padding: 5px 0px;
     color: rgb(0, 0, 0);
-    max-height: 25px;
-    font-size: 14px;
+    max-height: 40px;
+	min-height: 40px;
+    font-size: 20px;
 }</string>
        </property>
        <property name="text">
@@ -52,19 +50,22 @@
        <property name="showYGrid">
         <bool>true</bool>
        </property>
+       <property name="yAxes">
+        <stringlist>
+         <string>{&quot;name&quot;: &quot;Amplitude (mv)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true}</string>
+        </stringlist>
+       </property>
        <property name="xLabels">
         <stringlist>
          <string>Time (us)</string>
         </stringlist>
        </property>
        <property name="yLabels">
-        <stringlist>
-         <string>Amplitud (mv)</string>
-        </stringlist>
+        <stringlist/>
        </property>
        <property name="curves">
         <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;ca://${P}:BAY${BAY}_ADC${CH}_WF-BUF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;redraw_mode&quot;: 2}</string>
+         <string>{&quot;y_channel&quot;: &quot;ca://${P}:BAY${BAY}_ADC${CH}_WF-BUF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (mv)&quot;, &quot;redraw_mode&quot;: 2}</string>
         </stringlist>
        </property>
       </widget>
@@ -105,9 +106,6 @@
              <property name="styleSheet">
               <string notr="true">QLabel {
     qproperty-alignment: AlignCenter;
-    border: 1px solid #FF17365D;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     background-color: #FF9C9C;
     padding: 5px 0px;
     color: rgb(0, 0, 0);
@@ -150,9 +148,6 @@
              <property name="styleSheet">
               <string notr="true">QLabel {
     qproperty-alignment: AlignCenter;
-    border: 1px solid #FF17365D;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
     background-color: #FF9C9C;
     padding: 5px 0px;
     color: rgb(0, 0, 0);

@@ -135,8 +135,17 @@ background-color: rgb(70, 70, 70);</string>
      <string notr="true">color: rgb(12, 255, 68);
 background-color: rgb(70, 70, 70);</string>
     </property>
+    <property name="rules" stdset="0">
+     <string>[]</string>
+    </property>
+    <property name="precision" stdset="0">
+     <number>100</number>
+    </property>
+    <property name="precisionFromPV" stdset="0">
+     <bool>false</bool>
+    </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:FPGA_BUILDSTAMP</string>
+     <string notr="true">ca://${P}:FPGA_BUILDSTAMP</string>
     </property>
     <property name="displayFormat" stdset="0">
      <enum>PyDMLabel::String</enum>

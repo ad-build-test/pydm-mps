@@ -59,7 +59,7 @@ class mps_blm_main(Display):
     self.ped_val = 0
     self.ped_width = 0
     self.init = 0
-    print "init done"
+    print("init done")
 
   def ui_filename(self):
       # Point to our UI file
