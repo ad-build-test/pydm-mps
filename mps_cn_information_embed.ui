@@ -373,7 +373,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:APP_TIMEOUT_0</string>
+     <string>ca://${P}:APP_TIMEOUT_1</string>
     </property>
    </widget>
   </widget>
