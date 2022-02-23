@@ -191,38 +191,6 @@
      </stringlist>
     </property>
    </widget>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>110</y>
-      <width>121</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>ASM Core...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>$EDM/mps/mps_linknode_asm_core_hps.edl</string>
-     </stringlist>
-    </property>
-    <property name="titles" stdset="0">
-     <stringlist/>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>P=${P}</string>
-     </stringlist>
-    </property>
-   </widget>
    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
     <property name="geometry">
      <rect>
@@ -437,7 +405,7 @@
      <string/>
     </property>
     <property name="text">
-     <string>Crossbar</string>
+     <string>Crossbar...</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
@@ -476,6 +444,33 @@
      <stringlist>
       <string>SC Expert...</string>
       <string>NC Expert...</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>110</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ASM Core...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$PYDM/mps/mps_ln_asm.ui</string>
      </stringlist>
     </property>
     <property name="showIcon" stdset="0">

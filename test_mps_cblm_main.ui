@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>650</width>
-    <height>400</height>
+    <width>959</width>
+    <height>550</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>CN Connection Status</string>
+   <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -31,12 +31,6 @@
    </property>
    <item row="0" column="0">
     <widget class="QScrollArea" name="scrollArea">
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
@@ -45,8 +39,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>650</width>
-        <height>400</height>
+        <width>957</width>
+        <height>548</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -74,10 +68,10 @@
           <number>0</number>
          </property>
          <property name="templateFilename" stdset="0">
-          <string>mps_cn_status.ui</string>
+          <string>test_mps_cblm_embed.ui</string>
          </property>
          <property name="dataSource" stdset="0">
-          <string>$PHYSICS_TOP/mps_configuration/current/display/status/cn_status.json</string>
+          <string>$PHYSICS_TOP/mps_configuration/current/display/device/${FILE}</string>
          </property>
         </widget>
        </item>

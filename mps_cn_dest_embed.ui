@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>705</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>705</width>
+     <height>227</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>1</y>
+      <width>100</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DUMPBSY&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_control_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>1</y>
+      <width>100</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DIAG0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_control_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>1</y>
+      <width>100</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DUMPHXR&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_control_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>1</y>
+      <width>100</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DUMPSXR&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_control_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>31</y>
+      <width>95</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Allowed:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>71</y>
+      <width>95</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Slow Rules:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>111</y>
+      <width>95</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fast Rules:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>151</y>
+      <width>95</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Latched:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>195</y>
+      <width>95</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Forced:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>1</y>
+      <width>100</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;LASER&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_control_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>1</y>
+      <width>100</width>
+      <height>225</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;LESA&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_control_embed.ui</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>0</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Control</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

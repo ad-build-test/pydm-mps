@@ -125,7 +125,7 @@ background-color: rgb(70, 70, 70);</string>
       <x>120</x>
       <y>80</y>
       <width>450</width>
-      <height>20</height>
+      <height>40</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -135,14 +135,17 @@ background-color: rgb(70, 70, 70);</string>
      <string notr="true">color: rgb(12, 255, 68);
 background-color: rgb(70, 70, 70);</string>
     </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
     <property name="rules" stdset="0">
      <string>[]</string>
     </property>
     <property name="precision" stdset="0">
-     <number>100</number>
+     <number>0</number>
     </property>
     <property name="precisionFromPV" stdset="0">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">ca://${P}:FPGA_BUILDSTAMP</string>

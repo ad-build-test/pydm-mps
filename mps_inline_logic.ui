@@ -42,7 +42,7 @@
     <widget class="PyDMLabel" name="PyDMLabel_6">
      <property name="minimumSize">
       <size>
-       <width>545</width>
+       <width>200</width>
        <height>0</height>
       </size>
      </property>
@@ -59,6 +59,9 @@
      </property>
      <property name="text">
       <string>${DESCRIPTION}</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
      </property>
      <property name="rules" stdset="0">
       <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${FLT}_IGNORED.RVAL&quot;}], &quot;property&quot;: &quot;Opacity&quot;, &quot;expression&quot;: &quot;.25 if(ch[0]) else 1&quot;, &quot;name&quot;: &quot;Ignored&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
@@ -198,15 +201,21 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_4">
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>65</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="toolTip">
@@ -216,10 +225,13 @@
       <string notr="true">background-color: rgb(70, 70, 70);</string>
      </property>
      <property name="text">
-      <string>LINAC</string>
+      <string>Beam Off</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
      </property>
      <property name="rules" stdset="0">
       <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${FLT}_IGNORED.RVAL&quot;}], &quot;property&quot;: &quot;Opacity&quot;, &quot;expression&quot;: &quot;.8 if(ch[0]) else 1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
@@ -234,21 +246,27 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_LINAC_STATE</string>
+      <string>ca://${FLT}_DUMPBSY_STATE</string>
      </property>
     </widget>
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>65</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="toolTip">
@@ -282,15 +300,21 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>65</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="toolTip">
@@ -318,21 +342,27 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_HXU_STATE</string>
+      <string>ca://${FLT}_DUMPHXR_STATE</string>
      </property>
     </widget>
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel">
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>65</width>
+       <width>90</width>
        <height>16777215</height>
       </size>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <pointsize>12</pointsize>
       </font>
      </property>
      <property name="toolTip">
@@ -360,9 +390,25 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_SXU_STATE</string>
+      <string>ca://${FLT}_DUMPSXR_STATE</string>
      </property>
     </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>5</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
    </item>
    <item>
     <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">

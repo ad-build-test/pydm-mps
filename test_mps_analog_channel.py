@@ -14,6 +14,7 @@ class mps_blm_main(Display):
     PV = "ca://{P}:BAY{BAY}_ADC{CH}_WF-BUF".format(**macros)
     self.data_channel = PyDMChannel(address=PV, value_slot=self.data_change)
     self.data_channel.connect()
+    print(f'Connected to channel: {PV}')
 
     self.jesd_clock = 175.4 #MHz
     self.ns_spacing = self.jesd_clock* 2 * 1e6 / 1e6
@@ -63,7 +64,7 @@ class mps_blm_main(Display):
 
   def ui_filename(self):
       # Point to our UI file
-      return 'mps_analog_channel.ui'
+      return 'test_mps_analog_channel.ui'
 
   def ui_filepath(self):
       # Return the full path to the UI file
@@ -73,12 +74,12 @@ class mps_blm_main(Display):
       start = 0
       stop = new_point_value / self.ns_spacing
       x_axis_waveform = np.linspace(start, stop, int(new_point_value))
-      print(len(x_axis_waveform))
       self.c.receiveXWaveform(x_axis_waveform)
   
   def data_change(self, new_data):
-      print(new_data)
-      #self.c.receiveYWaveform(new_data)
+      print(f'Received new data: {new_data}')
+      data_converted = self.adc_factor * new_data
+      self.c.receiveYWaveform(data_converted)
  
   def move_coarse(self, new_line_value):
       self.coarse_val = new_line_value/1000.
@@ -111,9 +112,9 @@ class mps_blm_main(Display):
     self.peak_width_line.setValue(line3_pos)
     self.ped_delay_line.setValue(line4_pos)
     self.ped_width_line.setValue(line5_pos)
-    #if (self.init < 5):
-    # self.waveform.setXRange(line2_pos-1, line3_pos+1)
-    #	self.init += 1
-    #if line3_pos == 373.631699:
-    #	self.waveform.enableAutoRange()
+    if (self.init < 5):
+    	self.waveform.setXRange(line2_pos-1, line3_pos+1)
+    	self.init += 1
+    if line3_pos == 373.631699:
+    	self.waveform.enableAutoRange()
     	

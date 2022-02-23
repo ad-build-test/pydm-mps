@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>150</width>
+    <height>237</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>150</width>
+     <height>227</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>10</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;MPS Ready:&quot;,&quot;CHANNEL&quot;:&quot;${P}:MonitorReady&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>200</y>
+      <width>140</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Monitor Error Clear</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:MON_ERR_CLR</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>40</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Timeout Enabled:&quot;,&quot;CHANNEL&quot;:&quot;${P}:TIMEOUT_ENABLE_RBV&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>60</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Eval Enabled:&quot;,&quot;CHANNEL&quot;:&quot;${P}:EVALUATION_ENABLE_RBV&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>80</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Software Error:&quot;,&quot;CHANNEL&quot;:&quot;${P}:SW_ERR&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>100</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Timeout Error:&quot;,&quot;CHANNEL&quot;:&quot;${P}:TO_ERR&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>120</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Drop Count:&quot;,&quot;CHANNEL&quot;:&quot;${P}:MONITOR_DROP&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>160</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Over Count:&quot;,&quot;CHANNEL&quot;:&quot;${P}:MONITOR_OVERFLOW&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>140</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Message Pause:&quot;,&quot;CHANNEL&quot;:&quot;${P}:MONITOR_PAUSE&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_9">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>180</y>
+      <width>140</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="macros" stdset="0">
+     <string>{&quot;TEXT&quot;:&quot;Rx Error:&quot;,&quot;CHANNEL&quot;:&quot;${P}:MONITOR_RX_ERR&quot;,&quot;VIS&quot;:&quot;0&quot;}</string>
+    </property>
+    <property name="filename" stdset="0">
+     <string>$PYDM/mps/mps_cn_byte_embed.ui</string>
+    </property>
+   </widget>
+   <widget class="PyDMDrawingLine" name="PyDMDrawingLine">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>30</y>
+      <width>140</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>0</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MPS Status</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingLine</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

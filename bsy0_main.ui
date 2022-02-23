@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1170</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="PyDMTabWidget" name="PyDMTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1170</width>
+     <height>516</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="alarmChannels">
+    <stringlist>
+     <string></string>
+     <string></string>
+    </stringlist>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>BSY-Cu</string>
+    </attribute>
+    <widget class="PyDMFrame" name="PyDMFrame">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>168</y>
+       <width>984</width>
+       <height>296</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>Group 16</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup16.ui</string>
+       </stringlist>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>220</y>
+        <width>100</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>Group 15</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup15.ui</string>
+       </stringlist>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>875</width>
+        <height>205</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="filename" stdset="0">
+       <string>$PHYSICS_TOP/mps_configuration/current/display/areas/mps_bsycu_link_nodes.ui</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="PyDMFrame" name="PyDMFrame_2">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>16</y>
+       <width>536</width>
+       <height>128</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>516</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="macros" stdset="0">
+       <string>DEV=PICM,DEV2=MPS,DEV3=EIOC,LOCA=MCC0,IOC_UNIT=MP11,loca=mcc0,ioc_unit=mp11,file=mps_pic3_ln25_linknode</string>
+      </property>
+      <property name="filename" stdset="0">
+       <string>LinkNode_embeded_3.ui</string>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>24</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>PICM:BSY0:MP02:LN_ID</string>
+      </property>
+     </widget>
+     <widget class="PyDMFrame" name="PyDMFrame_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>68</y>
+        <width>112</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="alarmSensitiveBorder" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>EIOC:BSY0:MP02:STATSUMY.SEVR</string>
+      </property>
+      <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>4</y>
+         <width>104</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>eioc-bsy0-mp02</string>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>mps_pic_ln42_linknode</string>
+        </stringlist>
+       </property>
+       <property name="showIcon" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="macros" stdset="0">
+        <stringlist>
+         <string>PRIM=PICM,LOCA=BSY0,LOCA2=BSYA,UNIT=MP02</string>
+        </stringlist>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>158</x>
+        <y>70</y>
+        <width>72</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>EIOC:BSY0:MP02:HEARTBEAT</string>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>235</x>
+        <y>70</y>
+        <width>88</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>PICM:BSY0:MP02:LN_TYPE</string>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>328</x>
+        <y>70</y>
+        <width>48</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>PICM:BSY0:MP02:FPGA_VERSION</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>381</x>
+        <y>70</y>
+        <width>95</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>PICM:BSY0:MP02:DB_VERSION.SVAL</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>20</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>112</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Details</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>158</x>
+        <y>10</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Heartbeat</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>235</x>
+        <y>10</y>
+        <width>88</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Type</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>325</x>
+        <y>10</y>
+        <width>58</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>FPGA ver</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>381</x>
+        <y>10</y>
+        <width>95</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Database ver</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>30</y>
+       <width>181</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>MCC Alarms and Warnings...</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>Alarms_Warnings</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1100</width>
+       <height>488</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="brush" stdset="0">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>193</red>
+        <green>193</green>
+        <blue>193</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <zorder>PyDMDrawingRectangle_8</zorder>
+    <zorder>PyDMFrame</zorder>
+    <zorder>PyDMFrame_2</zorder>
+    <zorder>PyDMEDMDisplayButton_2</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>BSY-SC</string>
+    </attribute>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>875</width>
+       <height>170</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>$PHYSICS_TOP/mps_configuration/current/display/areas/mps_bsysc_link_nodes.ui</string>
+     </property>
+    </widget>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>310</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Group 15</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup15.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>310</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Group 16</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup16.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="PyDMFrame" name="PyDMFrame_4">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>330</y>
+       <width>168</width>
+       <height>130</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>152</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>BKRCUS...</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>mps_byk_new</string>
+       </stringlist>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>P=KICK:CLTS:185,DEVICE=BKRCUS</string>
+       </stringlist>
+      </property>
+     </widget>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>44</y>
+        <width>152</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>BRCUSDC...</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>mps_byk_new</string>
+       </stringlist>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>P=BEND:CLTS:180,DEVICE=BRCUSDC</string>
+       </stringlist>
+      </property>
+     </widget>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>68</y>
+        <width>152</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>BLRCUS...</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>mps_byk_new</string>
+       </stringlist>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>P=BEND:CLTS:280,DEVICE=BLRCUS</string>
+       </stringlist>
+      </property>
+     </widget>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>92</y>
+        <width>152</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>BRCUS1...</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>mps_byk_new</string>
+       </stringlist>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>P=BEND:CLTS:765,DEVICE=BRCUS1</string>
+       </stringlist>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>322</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 6px;</string>
+     </property>
+     <property name="text">
+      <string>CLTS Magnets</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1200</width>
+       <height>488</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="brush" stdset="0">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>193</red>
+        <green>193</green>
+        <blue>193</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <zorder>PyDMDrawingRectangle_9</zorder>
+    <zorder>PyDMEmbeddedDisplay_2</zorder>
+    <zorder>PyDMRelatedDisplayButton_3</zorder>
+    <zorder>PyDMRelatedDisplayButton_4</zorder>
+    <zorder>PyDMFrame_4</zorder>
+    <zorder>label_7</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingRectangle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>pydm.widgets.tab_bar</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMFrame</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.frame</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

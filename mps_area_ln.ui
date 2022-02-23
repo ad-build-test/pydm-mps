@@ -7,8 +7,20 @@
     <x>0</x>
     <y>0</y>
     <width>875</width>
-    <height>35</height>
+    <height>28</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>28</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>28</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -23,7 +35,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(200, 200, 200);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -35,7 +47,7 @@
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>5</y>
+      <y>2</y>
       <width>120</width>
       <height>25</height>
      </rect>
@@ -71,7 +83,7 @@
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>5</y>
+      <y>2</y>
       <width>50</width>
       <height>25</height>
      </rect>
@@ -102,7 +114,7 @@ background-color: rgb(70, 70, 70);</string>
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>5</y>
+      <y>2</y>
       <width>120</width>
       <height>25</height>
      </rect>
@@ -133,7 +145,7 @@ background-color: rgb(70, 70, 70);</string>
     <property name="geometry">
      <rect>
       <x>185</x>
-      <y>5</y>
+      <y>2</y>
       <width>50</width>
       <height>25</height>
      </rect>
@@ -164,7 +176,7 @@ background-color: rgb(70, 70, 70);</string>
     <property name="geometry">
      <rect>
       <x>365</x>
-      <y>5</y>
+      <y>2</y>
       <width>120</width>
       <height>25</height>
      </rect>
@@ -195,7 +207,7 @@ background-color: rgb(70, 70, 70);</string>
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>5</y>
+      <y>2</y>
       <width>120</width>
       <height>25</height>
      </rect>
@@ -226,7 +238,7 @@ background-color: rgb(70, 70, 70);</string>
     <property name="geometry">
      <rect>
       <x>615</x>
-      <y>5</y>
+      <y>2</y>
       <width>120</width>
       <height>25</height>
      </rect>
@@ -257,7 +269,7 @@ background-color: rgb(70, 70, 70);</string>
     <property name="geometry">
      <rect>
       <x>740</x>
-      <y>5</y>
+      <y>2</y>
       <width>130</width>
       <height>25</height>
      </rect>

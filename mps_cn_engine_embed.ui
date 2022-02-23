@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>237</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>237</width>
+     <height>420</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMEnumButton" name="PyDMEnumButton">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>25</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:ENABLE</string>
+    </property>
+    <property name="orientation" stdset="0">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="marginTop" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginBottom" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginLeft" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginRight" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>30</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:ENABLE_RBV</string>
+    </property>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>25</y>
+      <width>79</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MPS
+Enable</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>65</y>
+      <width>79</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MPS
+Software</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>105</y>
+      <width>79</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Evaluation
+Enable</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>145</y>
+      <width>79</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pattern
+Check</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>185</y>
+      <width>79</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Timeout
+Enable</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>70</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:SW_ENABLE_RBV</string>
+    </property>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>110</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:EVALUATION_ENABLE_RBV</string>
+    </property>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>190</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:TIMEOUT_ENABLE_RBV</string>
+    </property>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>150</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:TIMING_CHECK_ENABLE_RBV</string>
+    </property>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>65</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:SW_ENABLE</string>
+    </property>
+    <property name="orientation" stdset="0">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="marginTop" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginBottom" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginLeft" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginRight" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="PyDMEnumButton" name="PyDMEnumButton_3">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>105</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:EVALUATION_ENABLE</string>
+    </property>
+    <property name="orientation" stdset="0">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="marginTop" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginBottom" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginLeft" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginRight" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="PyDMEnumButton" name="PyDMEnumButton_4">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>145</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:TIMING_CHECK_ENABLE</string>
+    </property>
+    <property name="orientation" stdset="0">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="marginTop" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginBottom" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginLeft" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginRight" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="PyDMEnumButton" name="PyDMEnumButton_5">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>185</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:TIMEOUT_ENABLE</string>
+    </property>
+    <property name="orientation" stdset="0">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="marginTop" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginBottom" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginLeft" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginRight" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>225</y>
+      <width>79</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dual
+Core</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>230</y>
+      <width>15</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:DUAL_CORE_EN_RBV</string>
+    </property>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEnumButton" name="PyDMEnumButton_6">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>225</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:DUAL_CORE_EN</string>
+    </property>
+    <property name="orientation" stdset="0">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="marginTop" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginBottom" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginLeft" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="marginRight" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="horizontalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+    <property name="verticalSpacing" stdset="0">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>260</y>
+      <width>172</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Mitigation Unlatch</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:MITIGATION_UNLH</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>285</y>
+      <width>172</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>MPS Error Clear</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:MON_ERR_CLR</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>385</y>
+      <width>172</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>App Timeout Clear</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:TO_ERR_CLR</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>360</y>
+      <width>172</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Update Time Clear</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:UPDATE_TIME_CLR</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>335</y>
+      <width>172</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Concentrator Error Clear</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:MO_CONC_ERR_CLR</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>172</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Software Error Clear</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:SW_ERR_CLR</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>45</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Engine</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
