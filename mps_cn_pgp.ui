@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>425</width>
-    <height>380</height>
+    <width>800</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>425</width>
-    <height>380</height>
+    <width>800</width>
+    <height>400</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -119,8 +119,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>423</width>
-        <height>288</height>
+        <width>798</width>
+        <height>308</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -139,6 +139,125 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>1</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>PGP Port</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Status</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Bandwidth</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Rx Error Cnt</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Drop Cnt</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Pause Cnt</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Overflow Cnt</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>Details...</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
        <item>
         <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
          <property name="minimumSize">
@@ -160,7 +279,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;0&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;0&quot;,&quot;N1&quot;:&quot;0&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -188,7 +307,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;1&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;1&quot;,&quot;N1&quot;:&quot;1&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -216,7 +335,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;2&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;2&quot;,&quot;N1&quot;:&quot;2&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -244,7 +363,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;3&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;3&quot;,&quot;N1&quot;:&quot;3&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -272,7 +391,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;4&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;4&quot;,&quot;N1&quot;:&quot;4&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -300,7 +419,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;5&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;5&quot;,&quot;N1&quot;:&quot;5&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -328,7 +447,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;7&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;7&quot;,&quot;N1&quot;:&quot;6&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -356,7 +475,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;8&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;8&quot;,&quot;N1&quot;:&quot;7&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -384,7 +503,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;9&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;9&quot;,&quot;N1&quot;:&quot;8&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -412,7 +531,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;10&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;10&quot;,&quot;N1&quot;:&quot;9&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -440,7 +559,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;11&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;11&quot;,&quot;N1&quot;:&quot;10&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
@@ -468,7 +587,7 @@
           <enum>QFrame::NoFrame</enum>
          </property>
          <property name="macros" stdset="0">
-          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;12&quot;}</string>
+          <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;N&quot;:&quot;12&quot;,&quot;N1&quot;:&quot;11&quot;}</string>
          </property>
          <property name="filename" stdset="0">
           <string>$PYDM/mps/mps_cn_inline_pgp.ui</string>
