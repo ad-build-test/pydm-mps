@@ -426,6 +426,38 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_9">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>130</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Beam Class Defs...</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$PYDM/mps/mps_beam_class.ui</string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP03&quot;}</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
   </widget>
   <widget class="PyDMDrawingImage" name="PyDMDrawingImage_2">
    <property name="geometry">

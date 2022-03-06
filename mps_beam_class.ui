@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>781</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MPS Beam Class Definitions</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="11" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_10">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;9&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;6&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;1&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_12">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;11&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_11">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;10&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;3&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;5&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="15" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_14">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;13&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;2&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 150, 168);</string>
+     </property>
+     <property name="text">
+      <string>SC MPS Beam Classes</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_13">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;12&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_9">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;8&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;7&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;NUM&quot;:&quot;4&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_beam_class_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Number</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Name</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Q Int Time</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Int Charge</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Min Spacing</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="16" column="0">
+    <widget class="QFrame" name="frame_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>5</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>5</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="filename" stdset="0">
+         <string>lcls_mps_lockup_sidebyside_digital.png</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+        <property name="minimumSize">
+         <size>
+          <width>125</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>125</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>More Details...</string>
+        </property>
+        <property name="filenames" stdset="0">
+         <stringlist>
+          <string>mps_beam_class_expert.ui</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>26</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>26</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>26</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>${NUM}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Name</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:BC${NUM}_NAME</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_5">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:BC${NUM}_INTEGRATION_TIME_RAW_RBV</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_6">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:BC${NUM}_INTEGRATION_TIME_TPGS</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Exponential</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:BC${NUM}_INTEGRATION_TIME</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Exponential</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:BC${NUM}_INTEGRATED_CHARGE</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_7">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:BC${NUM}_MINIMUM_PERIOD_RAW</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Hex</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_4">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:BC${NUM}_MINIMUM_PERIOD</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Exponential</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
