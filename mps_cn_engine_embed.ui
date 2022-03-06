@@ -497,10 +497,10 @@ Core</string>
      <string/>
     </property>
     <property name="text">
-     <string>Mitigation Unlatch</string>
+     <string>TPG Monitor Error Clear</string>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:MITIGATION_UNLH</string>
+     <string>ca://${P}:BEAM_FAULT_CLR</string>
     </property>
     <property name="pressValue" stdset="0">
      <string>1</string>
@@ -522,7 +522,7 @@ Core</string>
      <string/>
     </property>
     <property name="text">
-     <string>MPS Error Clear</string>
+     <string>Monitor Error Clear</string>
     </property>
     <property name="channel" stdset="0">
      <string>ca://${P}:MON_ERR_CLR</string>

@@ -169,8 +169,8 @@
   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
    <property name="geometry">
     <rect>
-     <x>620</x>
-     <y>580</y>
+     <x>770</x>
+     <y>7</y>
      <width>100</width>
      <height>25</height>
     </rect>
@@ -191,38 +191,6 @@
    </property>
    <property name="macros" stdset="0">
     <stringlist/>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-   <property name="geometry">
-    <rect>
-     <x>620</x>
-     <y>610</y>
-     <width>100</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>Crossbar...</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$PYDM/mps/mps_crossbar.ui</string>
-    </stringlist>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;IOC_UNIT&quot;:&quot;MP0${CN}&quot;,&quot;INST&quot;:&quot;1&quot;,&quot;LOCA&quot;:&quot;SYS0&quot;}</string>
-    </stringlist>
    </property>
    <property name="openInNewWindow" stdset="0">
     <bool>true</bool>
@@ -251,7 +219,7 @@
    <property name="geometry">
     <rect>
      <x>616</x>
-     <y>410</y>
+     <y>405</y>
      <width>255</width>
      <height>160</height>
     </rect>
@@ -267,6 +235,25 @@
    </property>
    <property name="filename" stdset="0">
     <string>mps_cn_information_embed.ui</string>
+   </property>
+  </widget>
+  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
+   <property name="geometry">
+    <rect>
+     <x>616</x>
+     <y>565</y>
+     <width>255</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="filename" stdset="0">
+    <string>mps_cn_timing_embed.ui</string>
    </property>
   </widget>
  </widget>

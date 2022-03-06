@@ -321,7 +321,7 @@ color: rgb(12, 255, 68);</string>
      <bool>false</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${MPS_PREFIX}:MPS_EN</string>
+     <string>ca://${MPS_PREFIX}:MPS_EN_RBV</string>
     </property>
    </widget>
   </widget>
