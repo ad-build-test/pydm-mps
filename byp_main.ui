@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1168</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BYP Main</string>
+  </property>
+  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>881</width>
+     <height>591</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="filename" stdset="0">
+    <string>/afs/slac/g/lcls/physics/mps_configuration/current/display/areas/mps_byp_link_nodes</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>100</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Map and Status</string>
+   </property>
+  </widget>
+  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>620</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>Group 8</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup8.ui</string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>620</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>Group 9</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup9.ui</string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+   <property name="geometry">
+    <rect>
+     <x>225</x>
+     <y>620</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>Group 10</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup10.ui</string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>620</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>Group 11</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup11.ui</string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
+   <property name="geometry">
+    <rect>
+     <x>435</x>
+     <y>620</y>
+     <width>100</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>Group 12</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup12.ui</string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

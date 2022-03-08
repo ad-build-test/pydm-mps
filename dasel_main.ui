@@ -16,10 +16,10 @@
   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
    <property name="geometry">
     <rect>
-     <x>-50</x>
-     <y>-10</y>
-     <width>1100</width>
-     <height>488</height>
+     <x>0</x>
+     <y>0</y>
+     <width>1050</width>
+     <height>478</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -69,7 +69,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>No page exists for MPS/LI257 in PyDM or EDM</string>
+    <string>No page exists for MPS/DASEL in PyDM or EDM</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

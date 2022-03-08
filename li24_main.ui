@@ -16,8 +16,8 @@
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>110</y>
+     <x>10</x>
+     <y>10</y>
      <width>650</width>
      <height>181</height>
     </rect>
@@ -105,19 +105,6 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>442</x>
-      <y>25</y>
-      <width>58</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>FPGA ver</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
@@ -144,7 +131,7 @@
      <string/>
     </property>
     <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
@@ -208,6 +195,9 @@
     <property name="toolTip">
      <string/>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
     </property>
@@ -226,6 +216,9 @@
     </property>
     <property name="toolTip">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
@@ -249,6 +242,9 @@
     <property name="toolTip">
      <string/>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
     </property>
@@ -268,11 +264,31 @@
     <property name="toolTip">
      <string/>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
      <string>EIOC:LI24:MP11:HEARTBEAT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>10</y>
+      <width>48</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FPGA
+ ver</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>

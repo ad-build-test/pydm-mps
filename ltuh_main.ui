@@ -208,8 +208,8 @@ when TDUND Is In</string>
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>260</y>
+     <x>230</x>
+     <y>325</y>
      <width>56</width>
      <height>15</height>
     </rect>
@@ -227,8 +227,8 @@ when TDUND Is In</string>
   <widget class="PyDMFrame" name="PyDMFrame_3">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>280</y>
+     <x>230</x>
+     <y>345</y>
      <width>56</width>
      <height>32</height>
     </rect>
@@ -278,9 +278,9 @@ when TDUND Is In</string>
   <widget class="PyDMFrame" name="PyDMFrame_4">
    <property name="geometry">
     <rect>
-     <x>530</x>
+     <x>460</x>
      <y>250</y>
-     <width>490</width>
+     <width>493</width>
      <height>136</height>
     </rect>
    </property>
@@ -472,7 +472,7 @@ when TDUND Is In</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1200</width>
+     <width>1168</width>
      <height>488</height>
     </rect>
    </property>

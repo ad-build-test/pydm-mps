@@ -17,14 +17,13 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>122</y>
+     <y>12</y>
      <width>150</width>
      <height>15</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(214, 214, 214);
-border-radius: 6px;</string>
+    <string notr="true">border-radius: 6px;</string>
    </property>
    <property name="text">
     <string>LCLS-II Link Nodes</string>
@@ -37,9 +36,9 @@ border-radius: 6px;</string>
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>130</y>
-     <width>901</width>
-     <height>121</height>
+     <y>20</y>
+     <width>900</width>
+     <height>120</height>
     </rect>
    </property>
    <property name="toolTip">

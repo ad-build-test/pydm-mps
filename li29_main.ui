@@ -16,8 +16,8 @@
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>8</y>
+     <x>10</x>
+     <y>10</y>
      <width>610</width>
      <height>114</height>
     </rect>

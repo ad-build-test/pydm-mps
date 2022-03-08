@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
@@ -108,6 +111,9 @@
    <property name="toolTip">
     <string/>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
@@ -185,11 +191,14 @@
       <x>145</x>
       <y>10</y>
       <width>100</width>
-      <height>20</height>
+      <height>15</height>
      </rect>
     </property>
     <property name="toolTip">
      <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(70, 70, 70);</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -249,6 +258,9 @@ when TDUNDB is in</string>
     <property name="toolTip">
      <string/>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(70, 70, 70);</string>
+    </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
@@ -259,6 +271,9 @@ when TDUNDB is in</string>
      <bool>false</bool>
     </property>
     <property name="alarmSensitiveContent" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="alarmSensitiveBorder" stdset="0">
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">

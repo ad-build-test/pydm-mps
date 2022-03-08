@@ -16,7 +16,7 @@
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>24</x>
      <y>24</y>
      <width>176</width>
      <height>95</height>
@@ -106,7 +106,7 @@
   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
    <property name="geometry">
     <rect>
-     <x>61</x>
+     <x>45</x>
      <y>140</y>
      <width>136</width>
      <height>40</height>

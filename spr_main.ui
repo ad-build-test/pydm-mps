@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1168</width>
+    <height>488</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SPR Main</string>
+  </property>
+  <widget class="PyDMTabWidget" name="PyDMTabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <property name="alarmChannels">
+    <stringlist>
+     <string></string>
+     <string></string>
+     <string></string>
+    </stringlist>
+   </property>
+   <widget class="QWidget" name="SPH">
+    <attribute name="title">
+     <string>SPH</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Map and Status</string>
+     </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>881</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>/afs/slac/g/lcls/physics/mps_configuration/current/display/areas/mps_sph_link_nodes.ui</string>
+     </property>
+    </widget>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Group 13</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup13.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>290</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Group 15</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup15.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SPS">
+    <attribute name="title">
+     <string>SPS</string>
+    </attribute>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Map and Status</string>
+     </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>881</width>
+       <height>205</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>/afs/slac/g/lcls/physics/mps_configuration/current/display/areas/mps_sps_link_nodes.ui</string>
+     </property>
+    </widget>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Group 12</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup12.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>250</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Group 16</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup16.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="SPD">
+    <attribute name="title">
+     <string>SPD</string>
+    </attribute>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Map and Status</string>
+     </property>
+    </widget>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>881</width>
+       <height>205</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="filename" stdset="0">
+      <string>/afs/slac/g/lcls/physics/mps_configuration/current/display/areas/mps_spd_link_nodes.ui</string>
+     </property>
+    </widget>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Group 14</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup14.ui</string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>pydm.widgets.tab_bar</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

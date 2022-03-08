@@ -16,826 +16,20 @@
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>8</y>
-     <width>820</width>
-     <height>472</height>
+     <x>20</x>
+     <y>20</y>
+     <width>651</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="toolTip">
     <string/>
    </property>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>20</y>
-      <width>136</width>
-      <height>288</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="NoBrush">
-      <color alpha="255">
-       <red>214</red>
-       <green>214</green>
-       <blue>214</blue>
-      </color>
-     </brush>
-    </property>
-    <property name="penStyle" stdset="0">
-     <enum>Qt::DashLine</enum>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>369</x>
-      <y>15</y>
-      <width>40</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="text">
-     <string>FEE</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="PyDMFrame" name="PyDMFrame_8">
-    <property name="geometry">
-     <rect>
-      <x>56</x>
-      <y>60</y>
-      <width>200</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>VMPS:NEH1:HXTD:SUM_MPS_ALH</string>
-    </property>
-    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
-     <property name="geometry">
-      <rect>
-       <x>4</x>
-       <y>4</y>
-       <width>192</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>HXTD NEH ISO Valves...</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>HXTD_NEH_ISO_VALVES</string>
-      </stringlist>
-     </property>
-     <property name="showIcon" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </widget>
-   <widget class="PyDMFrame" name="PyDMFrame_9">
-    <property name="geometry">
-     <rect>
-      <x>56</x>
-      <y>228</y>
-      <width>200</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>VMPS:NEH:703:ISOL_SUM_MPS_ALH</string>
-    </property>
-    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_5">
-     <property name="geometry">
-      <rect>
-       <x>4</x>
-       <y>4</y>
-       <width>192</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>SOMS NEH S1/S2 ISO Valves</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>mps_neh_valves.edl</string>
-      </stringlist>
-     </property>
-     <property name="showIcon" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>56</y>
-      <width>232</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>133</red>
-       <green>133</green>
-       <blue>133</blue>
-      </color>
-     </brush>
-    </property>
-    <property name="penStyle" stdset="0">
-     <enum>Qt::SolidLine</enum>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_3">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>224</y>
-      <width>232</width>
-      <height>40</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>133</red>
-       <green>133</green>
-       <blue>133</blue>
-      </color>
-     </brush>
-    </property>
-    <property name="penStyle" stdset="0">
-     <enum>Qt::SolidLine</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>32</x>
-      <y>195</y>
-      <width>260</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string>IF S1 Stopper is IN, This input is BYPASSED</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>32</x>
-      <y>275</y>
-      <width>150</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>AMO S1 Stopper Status</string>
-    </property>
-   </widget>
-   <widget class="PyDMLabel" name="PyDMLabel">
-    <property name="geometry">
-     <rect>
-      <x>72</x>
-      <y>290</y>
-      <width>60</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="alarmSensitiveContent" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>PPS:NEH1:1:ST3K4INSUM</string>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine">
-    <property name="geometry">
-     <rect>
-      <x>255</x>
-      <y>240</y>
-      <width>100</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_2">
-    <property name="geometry">
-     <rect>
-      <x>255</x>
-      <y>250</y>
-      <width>100</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_4">
-    <property name="geometry">
-     <rect>
-      <x>338</x>
-      <y>200</y>
-      <width>100</width>
-      <height>86</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>133</red>
-       <green>133</green>
-       <blue>133</blue>
-      </color>
-     </brush>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_5">
-    <property name="geometry">
-     <rect>
-      <x>338</x>
-      <y>40</y>
-      <width>100</width>
-      <height>86</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>133</red>
-       <green>133</green>
-       <blue>133</blue>
-      </color>
-     </brush>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_3">
-    <property name="geometry">
-     <rect>
-      <x>255</x>
-      <y>76</y>
-      <width>100</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMFrame" name="PyDMFrame_2">
-    <property name="geometry">
-     <rect>
-      <x>345</x>
-      <y>225</y>
-      <width>85</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>PLC:FEE1:702:HEARTBEATSUM</string>
-    </property>
-    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
-     <property name="geometry">
-      <rect>
-       <x>7</x>
-       <y>10</y>
-       <width>71</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>SOMS PLC</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>plcAdminControlLogix.edl</string>
-      </stringlist>
-     </property>
-     <property name="showIcon" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="macros" stdset="0">
-      <stringlist>
-       <string>PLC=PLC:FEE1:702,IOC=SIOC:FEE1:E703</string>
-      </stringlist>
-     </property>
-    </widget>
-   </widget>
-   <widget class="PyDMFrame" name="PyDMFrame_3">
-    <property name="geometry">
-     <rect>
-      <x>345</x>
-      <y>65</y>
-      <width>85</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>IOC:FEE1:HXTD:VAC:HEARTBEAT</string>
-    </property>
-    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
-     <property name="geometry">
-      <rect>
-       <x>7</x>
-       <y>10</y>
-       <width>71</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>HXTD PLC</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>plcAdminControlLogix.edl</string>
-      </stringlist>
-     </property>
-     <property name="showIcon" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="macros" stdset="0">
-      <stringlist>
-       <string>PLC=PLC:FEE1:E101,IOC=SIOC:FEE1:E703</string>
-      </stringlist>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>205</y>
-      <width>58</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-    </property>
-    <property name="text">
-     <string>R11</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>45</y>
-      <width>58</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-    </property>
-    <property name="text">
-     <string>R23</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_4">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>250</y>
-      <width>120</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_5">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>240</y>
-      <width>100</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>518</x>
-      <y>181</y>
-      <width>3</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_2">
-    <property name="geometry">
-     <rect>
-      <x>537</x>
-      <y>201</y>
-      <width>3</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_6">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>70</y>
-      <width>100</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="Line" name="line_3">
-    <property name="geometry">
-     <rect>
-      <x>518</x>
-      <y>70</y>
-      <width>3</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_7">
-    <property name="geometry">
-     <rect>
-      <x>517</x>
-      <y>130</y>
-      <width>50</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_8">
-    <property name="geometry">
-     <rect>
-      <x>517</x>
-      <y>180</y>
-      <width>50</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_9">
-    <property name="geometry">
-     <rect>
-      <x>536</x>
-      <y>200</y>
-      <width>50</width>
-      <height>2</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingLine" name="PyDMDrawingLine_10">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>150</y>
-      <width>50</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alarmSensitiveContent" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>IOC:BSY0:MP01:RESP_LN38_MPS</string>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
-    </property>
-    <property name="arrowEndPoint" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="arrowStartPoint" stdset="0">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_7">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>140</y>
-      <width>130</width>
-      <height>44</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>IOC:BSY0:MP01:BYKIK_RATE</string>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>133</red>
-       <green>133</green>
-       <blue>133</blue>
-      </color>
-     </brush>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>142</y>
-      <width>130</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(214, 214, 214);</string>
-    </property>
-    <property name="text">
-     <string>BYKIK RATE LIMIT</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="PyDMLabel" name="PyDMLabel_2">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>160</y>
-      <width>110</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="alarmSensitiveContent" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>IOC:BSY0:MP01:BYKIK_RATE</string>
-    </property>
-   </widget>
-   <widget class="PyDMFrame" name="PyDMFrame_4">
-    <property name="geometry">
-     <rect>
-      <x>560</x>
-      <y>80</y>
-      <width>52</width>
-      <height>148</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>IOC:BSY0:MP01:RESP_LN38_MPS</string>
-    </property>
-    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
-     <property name="geometry">
-      <rect>
-       <x>8</x>
-       <y>60</y>
-       <width>36</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>LN38
-MPS</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>LinkNode38.edl</string>
-      </stringlist>
-     </property>
-     <property name="showIcon" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_6">
-     <property name="geometry">
-      <rect>
-       <x>4</x>
-       <y>4</y>
-       <width>44</width>
-       <height>140</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alarmSensitiveBorder" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string/>
-     </property>
-     <property name="brush" stdset="0">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>133</red>
-        <green>133</green>
-        <blue>133</blue>
-       </color>
-      </brush>
-     </property>
-     <property name="penStyle" stdset="0">
-      <enum>Qt::NoPen</enum>
-     </property>
-     <property name="penWidth" stdset="0">
-      <double>2.000000000000000</double>
-     </property>
-    </widget>
-    <zorder>PyDMDrawingRectangle_6</zorder>
-    <zorder>PyDMEDMDisplayButton_3</zorder>
-   </widget>
    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>380</y>
+      <x>69</x>
+      <y>60</y>
       <width>540</width>
       <height>32</height>
      </rect>
@@ -853,8 +47,8 @@ MPS</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>27</x>
-      <y>360</y>
+      <x>16</x>
+      <y>40</y>
       <width>75</width>
       <height>15</height>
      </rect>
@@ -866,8 +60,8 @@ MPS</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>228</x>
-      <y>360</y>
+      <x>217</x>
+      <y>40</y>
       <width>72</width>
       <height>15</height>
      </rect>
@@ -882,8 +76,8 @@ MPS</string>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>305</x>
-      <y>360</y>
+      <x>294</x>
+      <y>40</y>
       <width>88</width>
       <height>15</height>
      </rect>
@@ -898,8 +92,8 @@ MPS</string>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>388</x>
-      <y>360</y>
+      <x>377</x>
+      <y>40</y>
       <width>58</width>
       <height>15</height>
      </rect>
@@ -911,8 +105,8 @@ MPS</string>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>451</x>
-      <y>360</y>
+      <x>440</x>
+      <y>40</y>
       <width>95</width>
       <height>15</height>
      </rect>
@@ -924,67 +118,40 @@ MPS</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <zorder>PyDMDrawingRectangle</zorder>
-   <zorder>label</zorder>
-   <zorder>PyDMDrawingRectangle_2</zorder>
-   <zorder>PyDMDrawingRectangle_3</zorder>
-   <zorder>PyDMFrame_8</zorder>
-   <zorder>PyDMFrame_9</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>PyDMLabel</zorder>
-   <zorder>PyDMDrawingRectangle_4</zorder>
-   <zorder>PyDMDrawingRectangle_5</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>PyDMDrawingLine_4</zorder>
-   <zorder>PyDMDrawingLine</zorder>
-   <zorder>PyDMDrawingLine_2</zorder>
-   <zorder>PyDMDrawingLine_5</zorder>
-   <zorder>PyDMFrame_2</zorder>
-   <zorder>line</zorder>
-   <zorder>line_2</zorder>
-   <zorder>PyDMDrawingLine_6</zorder>
-   <zorder>PyDMDrawingLine_3</zorder>
-   <zorder>PyDMFrame_3</zorder>
-   <zorder>line_3</zorder>
-   <zorder>PyDMDrawingLine_7</zorder>
-   <zorder>PyDMDrawingLine_8</zorder>
-   <zorder>PyDMDrawingLine_9</zorder>
-   <zorder>PyDMDrawingLine_10</zorder>
-   <zorder>PyDMDrawingRectangle_7</zorder>
-   <zorder>label_6</zorder>
-   <zorder>PyDMLabel_2</zorder>
-   <zorder>PyDMFrame_4</zorder>
-   <zorder>PyDMEmbeddedDisplay</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
-   <zorder>label_9</zorder>
-   <zorder>label_10</zorder>
-   <zorder>label_11</zorder>
   </widget>
+  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>488</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="brush" stdset="0">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>193</red>
+      <green>193</green>
+      <blue>193</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
+  <zorder>PyDMDrawingRectangle_8</zorder>
+  <zorder>PyDMFrame</zorder>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>PyDMLabel</class>
-   <extends>QLabel</extends>
-   <header>pydm.widgets.label</header>
-  </customwidget>
   <customwidget>
    <class>PyDMDrawingRectangle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
@@ -996,11 +163,6 @@ MPS</string>
    <extends>QFrame</extends>
    <header>pydm.widgets.frame</header>
    <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingLine</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>

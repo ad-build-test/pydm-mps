@@ -16,9 +16,9 @@
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>100</y>
-     <width>600</width>
+     <x>10</x>
+     <y>10</y>
+     <width>621</width>
      <height>121</height>
     </rect>
    </property>
@@ -28,7 +28,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>20</y>
       <width>80</width>
       <height>15</height>
@@ -41,8 +41,8 @@
    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>50</y>
+      <x>60</x>
+      <y>45</y>
       <width>540</width>
       <height>32</height>
      </rect>
@@ -55,6 +55,84 @@
     </property>
     <property name="filename" stdset="0">
      <string>LinkNode_embeded_2.ui</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>20</y>
+      <width>104</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Details</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>20</y>
+      <width>72</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Heartbeat</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>355</x>
+      <y>20</y>
+      <width>88</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Type</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>10</y>
+      <width>48</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FPGA
+ ver</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>505</x>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Database ver</string>
     </property>
    </widget>
   </widget>

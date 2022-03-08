@@ -261,6 +261,9 @@
     <property name="toolTip">
      <string/>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
     </property>
@@ -279,6 +282,9 @@
     </property>
     <property name="toolTip">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
@@ -299,6 +305,9 @@
     <property name="toolTip">
      <string/>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
     </property>
@@ -317,6 +326,9 @@
     </property>
     <property name="toolTip">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
@@ -339,6 +351,9 @@
     </property>
     <property name="toolTip">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
     <property name="alarmSensitiveContent" stdset="0">
      <bool>true</bool>
@@ -759,27 +774,6 @@
     </stringlist>
    </property>
   </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
-   <property name="geometry">
-    <rect>
-     <x>910</x>
-     <y>240</y>
-     <width>168</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>MPS - SXRSS...</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>mps_sxrss</string>
-    </stringlist>
-   </property>
-  </widget>
   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
    <property name="geometry">
     <rect>
@@ -816,7 +810,6 @@
   <zorder>PyDMEDMDisplayButton_2</zorder>
   <zorder>PyDMShellCommand</zorder>
   <zorder>PyDMEDMDisplayButton_6</zorder>
-  <zorder>PyDMEDMDisplayButton_7</zorder>
  </widget>
  <customwidgets>
   <customwidget>

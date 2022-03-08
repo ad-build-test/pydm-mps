@@ -1707,7 +1707,7 @@ trip reset</string>
    <property name="channel" stdset="0">
     <string>MPS:IN20:MP11:STATSUMY.SEVR</string>
    </property>
-   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
+   <widget class="PyDMShellCommand" name="PyDMShellCommand">
     <property name="geometry">
      <rect>
       <x>4</x>
@@ -1722,17 +1722,12 @@ trip reset</string>
     <property name="text">
      <string>eioc-li20-mp11</string>
     </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_pic1_linknode_ln11</string>
-     </stringlist>
-    </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
-    <property name="macros" stdset="0">
+    <property name="commands" stdset="0">
      <stringlist>
-      <string>PRIM=PICM,LOCA=IN20,UNIT=MP11,UNIT1=665,UNIT2=775,UNIT3=933,UNIT4=185,UNIT5=232,UNIT6=245,UNIT7=11-7,UNIT8=11-8</string>
+      <string>edm -m &quot;PRIM=PICM,LOCA=IN20,UNIT=MP11,UNIT1=665,UNIT2=775,UNIT3=933,UNIT4=185,UNIT5=232,UNIT6=245,UNIT7=11-7,UNIT8=11-8&quot; -x mps_pic1_linknode_ln11</string>
      </stringlist>
     </property>
    </widget>
@@ -2410,6 +2405,11 @@ Shutter</string>
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMShellCommand</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.shell_command</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
