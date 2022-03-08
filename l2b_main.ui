@@ -39,7 +39,7 @@
     <string/>
    </property>
    <property name="filename" stdset="0">
-    <string>/afs/slac/g/lcls/physics/mps_configuration/current/display/areas/mps_l2b_link_nodes.ui</string>
+    <string>$PHYSICS_TOP/mps_configuration/current/display/areas/mps_l2b_link_nodes.ui</string>
    </property>
   </widget>
   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
