@@ -126,6 +126,9 @@
      <string>{&quot;BLM&quot;:&quot;PBLM:GUNB:622&quot;}</string>
     </stringlist>
    </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
    <property name="geometry">
@@ -160,6 +163,9 @@
     <stringlist>
      <string>{&quot;BLM&quot;:&quot;SBLM:GUNB:622&quot;}</string>
     </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
@@ -196,6 +202,9 @@
      <string>{&quot;BLM&quot;:&quot;PBLM:GUNB:753&quot;}</string>
     </stringlist>
    </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
    <property name="geometry">
@@ -230,6 +239,9 @@
     <stringlist>
      <string>{&quot;BLM&quot;:&quot;SBLM:GUNB:753&quot;}</string>
     </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
