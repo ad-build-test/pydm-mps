@@ -114,16 +114,14 @@
     </stringlist>
    </property>
    <property name="titles" stdset="0">
-    <stringlist>
-     <string>PBLM:GUNB:622</string>
-    </stringlist>
+    <stringlist/>
    </property>
    <property name="showIcon" stdset="0">
     <bool>false</bool>
    </property>
    <property name="macros" stdset="0">
     <stringlist>
-     <string>{&quot;BLM&quot;:&quot;PBLM:GUNB:622&quot;}</string>
+     <string>BLM=PBLM:GUNB:622</string>
     </stringlist>
    </property>
    <property name="openInNewWindow" stdset="0">
@@ -161,7 +159,7 @@
    </property>
    <property name="macros" stdset="0">
     <stringlist>
-     <string>{&quot;BLM&quot;:&quot;SBLM:GUNB:622&quot;}</string>
+     <string>BLM=SBLM:GUNB:622</string>
     </stringlist>
    </property>
    <property name="openInNewWindow" stdset="0">
@@ -199,7 +197,7 @@
    </property>
    <property name="macros" stdset="0">
     <stringlist>
-     <string>{&quot;BLM&quot;:&quot;PBLM:GUNB:753&quot;}</string>
+     <string>BLM=PBLM:GUNB:753</string>
     </stringlist>
    </property>
    <property name="openInNewWindow" stdset="0">
@@ -237,7 +235,7 @@
    </property>
    <property name="macros" stdset="0">
     <stringlist>
-     <string>{&quot;BLM&quot;:&quot;SBLM:GUNB:753&quot;}</string>
+     <string>BLM=SBLM:GUNB:753</string>
     </stringlist>
    </property>
    <property name="openInNewWindow" stdset="0">
