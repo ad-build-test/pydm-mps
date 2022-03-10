@@ -177,8 +177,160 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>730</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>PBLM:BPN25:424</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist>
+     <string></string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=PBLM:BPN25:424</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>700</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>PBLM:BPN22:424</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist>
+     <string></string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=PBLM:BPN22:424</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>760</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>PBLM:BPN26:424</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist>
+     <string></string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=PBLM:BPN26:424</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>670</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>PBLM:BPN21:424</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist/>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=PBLM:BPN21:424</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>

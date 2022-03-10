@@ -125,6 +125,115 @@
       <bool>true</bool>
      </property>
     </widget>
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>131</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>PBLM:SPS:470</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$EDM/bcs/bcs_pblm_status.edl</string>
+      </stringlist>
+     </property>
+     <property name="titles" stdset="0">
+      <stringlist>
+       <string></string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>BLM=PBLM:SPS:470</string>
+      </stringlist>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>131</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>PBLM:SLTS:428</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$EDM/bcs/bcs_pblm_status.edl</string>
+      </stringlist>
+     </property>
+     <property name="titles" stdset="0">
+      <stringlist>
+       <string></string>
+      </stringlist>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>BLM=PBLM:SLTS:428</string>
+      </stringlist>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>131</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>PBLM:SPH:170</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$EDM/bcs/bcs_pblm_status.edl</string>
+      </stringlist>
+     </property>
+     <property name="titles" stdset="0">
+      <stringlist/>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>BLM=PBLM:SPH:170</string>
+      </stringlist>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="SPS">
     <attribute name="title">
@@ -278,6 +387,12 @@
   </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
