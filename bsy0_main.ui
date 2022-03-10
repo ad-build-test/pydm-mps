@@ -29,7 +29,7 @@
     <string/>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <property name="alarmChannels">
     <stringlist>
@@ -709,6 +709,76 @@
       </property>
       <property name="showIcon" stdset="0">
        <bool>false</bool>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>230</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:BSYS:859</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:BSYS:859</string>
+       </stringlist>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>131</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:BSYH:892</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:BSYH:892</string>
+       </stringlist>
       </property>
       <property name="openInNewWindow" stdset="0">
        <bool>true</bool>

@@ -93,8 +93,163 @@
     </stringlist>
    </property>
   </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>PBLM:GUNB:622</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist/>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=PBLM:GUNB:622</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>SBLM:GUNB:622</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist>
+     <string>SBLM:GUNB:622</string>
+     <string></string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=SBLM:GUNB:622</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>PBLM:GUNB:753</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist>
+     <string>PBLM:GUNB:753</string>
+     <string></string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=PBLM:GUNB:753</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>330</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="text">
+    <string>SBLM:GUNB:753</string>
+   </property>
+   <property name="filenames" stdset="0">
+    <stringlist>
+     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+    </stringlist>
+   </property>
+   <property name="titles" stdset="0">
+    <stringlist>
+     <string>SBLM:GUNB:753</string>
+     <string></string>
+    </stringlist>
+   </property>
+   <property name="showIcon" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="macros" stdset="0">
+    <stringlist>
+     <string>BLM=SBLM:GUNB:753</string>
+    </stringlist>
+   </property>
+   <property name="openInNewWindow" stdset="0">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
   <customwidget>
    <class>PyDMShellCommand</class>
    <extends>QPushButton</extends>
