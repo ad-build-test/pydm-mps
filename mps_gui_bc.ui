@@ -580,7 +580,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST02:DESCINSTRS</string>
+      <string>ca://TPG:SYS0:1:DST02:RATE</string>
      </property>
     </widget>
    </item>
@@ -613,7 +613,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST01:DESCINSTRS</string>
+      <string>ca://TPG:SYS0:1:DST01:RATE</string>
      </property>
     </widget>
    </item>
@@ -646,7 +646,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST03:DESCINSTRS</string>
+      <string>ca://TPG:SYS0:1:DST03:RATE</string>
      </property>
     </widget>
    </item>
@@ -679,7 +679,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST04:DESCINSTRS</string>
+      <string>ca://TPG:SYS0:1:DST04:RATE</string>
      </property>
     </widget>
    </item>
@@ -712,7 +712,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST00:DESCINSTRS</string>
+      <string>ca://TPG:SYS0:1:DST00:RATE</string>
      </property>
     </widget>
    </item>
@@ -745,7 +745,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST05:DESCINSTRS</string>
+      <string>ca://TPG:SYS0:1:DST05:RATE</string>
      </property>
     </widget>
    </item>
