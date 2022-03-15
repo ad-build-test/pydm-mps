@@ -708,7 +708,7 @@
      <enum>Qt::SolidLine</enum>
     </property>
     <property name="penWidth" stdset="0">
-     <double>0.000000000000000</double>
+     <double>0.100000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
@@ -751,7 +751,7 @@
      <enum>Qt::SolidLine</enum>
     </property>
     <property name="penWidth" stdset="0">
-     <double>0.000000000000000</double>
+     <double>0.100000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
@@ -794,7 +794,7 @@
      <enum>Qt::SolidLine</enum>
     </property>
     <property name="penWidth" stdset="0">
-     <double>0.000000000000000</double>
+     <double>0.100000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_11">
@@ -1267,7 +1267,7 @@
      <enum>Qt::SolidLine</enum>
     </property>
     <property name="penWidth" stdset="0">
-     <double>0.000000000000000</double>
+     <double>0.100000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_22">
