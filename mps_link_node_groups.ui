@@ -707,8 +707,15 @@
     <property name="penStyle" stdset="0">
      <enum>Qt::SolidLine</enum>
     </property>
+    <property name="penColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </property>
     <property name="penWidth" stdset="0">
-     <double>0.100000000000000</double>
+     <double>1.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
@@ -750,8 +757,15 @@
     <property name="penStyle" stdset="0">
      <enum>Qt::SolidLine</enum>
     </property>
+    <property name="penColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </property>
     <property name="penWidth" stdset="0">
-     <double>0.100000000000000</double>
+     <double>1.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
@@ -793,8 +807,15 @@
     <property name="penStyle" stdset="0">
      <enum>Qt::SolidLine</enum>
     </property>
+    <property name="penColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </property>
     <property name="penWidth" stdset="0">
-     <double>0.100000000000000</double>
+     <double>1.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_11">
@@ -1266,8 +1287,15 @@
     <property name="penStyle" stdset="0">
      <enum>Qt::SolidLine</enum>
     </property>
+    <property name="penColor" stdset="0">
+     <color>
+      <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </property>
     <property name="penWidth" stdset="0">
-     <double>0.100000000000000</double>
+     <double>1.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_22">
