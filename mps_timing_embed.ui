@@ -79,7 +79,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:${DEST}_BC</string>
+      <string>ca://${P}:${DEST}_BC_NUM</string>
      </property>
     </widget>
    </item>

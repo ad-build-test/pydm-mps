@@ -260,54 +260,58 @@
      </property>
     </widget>
    </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_14">
+   <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
     <property name="geometry">
      <rect>
       <x>5</x>
-      <y>45</y>
-      <width>15</width>
-      <height>15</height>
+      <y>44</y>
+      <width>16</width>
+      <height>16</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>16</horstretch>
+      <verstretch>16</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
     </property>
     <property name="toolTip">
      <string/>
     </property>
-    <property name="styleSheet">
-     <string notr="true">border-color: rgba(255, 255, 255, 0);</string>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[]</string>
-    </property>
-    <property name="alarmSensitiveContent" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP03:MonitorReady</string>
+     <string>ca://SIOC:SYS0:MP03:MonitorReady</string>
     </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>0</red>
-       <green>220</green>
-       <blue>0</blue>
-      </color>
-     </brush>
-    </property>
-    <property name="penStyle" stdset="0">
-     <enum>Qt::SolidLine</enum>
-    </property>
-    <property name="penColor" stdset="0">
+    <property name="onColor" stdset="0">
      <color>
       <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </property>
+    <property name="offColor" stdset="0">
+     <color>
+      <red>255</red>
       <green>0</green>
       <blue>0</blue>
      </color>
     </property>
-    <property name="penWidth" stdset="0">
-     <double>2.000000000000000</double>
+    <property name="showLabels" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="circles" stdset="0">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
@@ -858,6 +862,11 @@
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>
