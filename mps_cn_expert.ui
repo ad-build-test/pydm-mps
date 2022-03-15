@@ -301,8 +301,133 @@
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>635</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="rules" stdset="0">
+    <string>[]</string>
+   </property>
+   <property name="alarmSensitiveContent" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="alarmSensitiveBorder" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string>MPS:SYS0:${LOCA}:TIM:STATSUMY</string>
+   </property>
+   <property name="brush" stdset="0">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+   <property name="penStyle" stdset="0">
+    <enum>Qt::SolidLine</enum>
+   </property>
+  </widget>
+  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>605</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="rules" stdset="0">
+    <string>[]</string>
+   </property>
+   <property name="alarmSensitiveContent" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="alarmSensitiveBorder" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string>MPS:SYS0:${LOCA}:CROSS:STATSUMY</string>
+   </property>
+   <property name="brush" stdset="0">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+   <property name="penStyle" stdset="0">
+    <enum>Qt::SolidLine</enum>
+   </property>
+  </widget>
+  <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>575</y>
+     <width>15</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="rules" stdset="0">
+    <string>[]</string>
+   </property>
+   <property name="alarmSensitiveContent" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="alarmSensitiveBorder" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="channel" stdset="0">
+    <string>MPS:SYS0:${LOCA}:PGP:STATSUMY</string>
+   </property>
+   <property name="brush" stdset="0">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>0</red>
+      <green>220</green>
+      <blue>0</blue>
+     </color>
+    </brush>
+   </property>
+   <property name="penStyle" stdset="0">
+    <enum>Qt::SolidLine</enum>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMDrawingRectangle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
