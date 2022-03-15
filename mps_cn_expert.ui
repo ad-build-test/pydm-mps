@@ -326,7 +326,7 @@
     <bool>true</bool>
    </property>
    <property name="channel" stdset="0">
-    <string>MPS:SYS0:${LOCA}:TIM:STATSUMY</string>
+    <string>MPS:SYS0:${MP}:TIM:STATSUMY</string>
    </property>
    <property name="brush" stdset="0">
     <brush brushstyle="SolidPattern">
@@ -339,6 +339,9 @@
    </property>
    <property name="penStyle" stdset="0">
     <enum>Qt::SolidLine</enum>
+   </property>
+   <property name="penWidth" stdset="0">
+    <double>0.000000000000000</double>
    </property>
   </widget>
   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
@@ -366,7 +369,7 @@
     <bool>true</bool>
    </property>
    <property name="channel" stdset="0">
-    <string>MPS:SYS0:${LOCA}:CROSS:STATSUMY</string>
+    <string>MPS:SYS0:${MP}:CROSS:STATSUMY</string>
    </property>
    <property name="brush" stdset="0">
     <brush brushstyle="SolidPattern">
@@ -379,6 +382,9 @@
    </property>
    <property name="penStyle" stdset="0">
     <enum>Qt::SolidLine</enum>
+   </property>
+   <property name="penWidth" stdset="0">
+    <double>0.000000000000000</double>
    </property>
   </widget>
   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
@@ -406,7 +412,7 @@
     <bool>true</bool>
    </property>
    <property name="channel" stdset="0">
-    <string>MPS:SYS0:${LOCA}:PGP:STATSUMY</string>
+    <string>MPS:SYS0:${MP}:PGP:STATSUMY</string>
    </property>
    <property name="brush" stdset="0">
     <brush brushstyle="SolidPattern">
@@ -419,6 +425,9 @@
    </property>
    <property name="penStyle" stdset="0">
     <enum>Qt::SolidLine</enum>
+   </property>
+   <property name="penWidth" stdset="0">
+    <double>0.000000000000000</double>
    </property>
   </widget>
  </widget>

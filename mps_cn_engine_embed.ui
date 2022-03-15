@@ -702,7 +702,7 @@ Core</string>
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>MPS:SYS0:${LOCA}:TIM:STATSUMY</string>
+     <string>MPS:SYS0:${MP}:TIM:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
