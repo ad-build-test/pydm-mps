@@ -555,7 +555,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>0.250000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
@@ -605,7 +605,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>0.250000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
@@ -655,7 +655,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>0.250000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_11">
@@ -705,7 +705,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>0.250000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_12">
@@ -755,7 +755,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>0.250000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_13">
@@ -805,7 +805,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>0.250000000000000</double>
     </property>
    </widget>
   </widget>
