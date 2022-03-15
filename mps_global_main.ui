@@ -372,9 +372,9 @@
     </property>
     <property name="macros" stdset="0">
      <stringlist>
-      <string>{&quot;MP&quot;:&quot;MP01&quot;,&quot;P&quot;:&quot;SIOC:SYS0:MP01&quot;,&quot;CN&quot;:&quot;1&quot;,&quot;MP&quot;:&quot;MP01&quot;}</string>
-      <string>{&quot;MP&quot;:&quot;MP02&quot;,&quot;P&quot;:&quot;SIOC:SYS0:MP02&quot;,&quot;CN&quot;:&quot;2&quot;,&quot;MP&quot;:&quot;MP02&quot;}</string>
-      <string>{&quot;MP&quot;:&quot;MP03&quot;,&quot;P&quot;:&quot;SIOC:SYS0:MP03&quot;,&quot;CN&quot;:&quot;3&quot;,&quot;MP&quot;:&quot;MP03&quot;}</string>
+      <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP01&quot;,&quot;CN&quot;:&quot;1&quot;,&quot;MP&quot;:&quot;MP01&quot;}</string>
+      <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP02&quot;,&quot;CN&quot;:&quot;2&quot;,&quot;MP&quot;:&quot;MP02&quot;}</string>
+      <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP03&quot;,&quot;CN&quot;:&quot;3&quot;,&quot;MP&quot;:&quot;MP03&quot;}</string>
      </stringlist>
     </property>
     <property name="openInNewWindow" stdset="0">
