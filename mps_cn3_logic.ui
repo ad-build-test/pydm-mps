@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>1400</width>
-    <height>600</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>SC MPS Gun Restart Faults</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -32,53 +32,7 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 150, 168);</string>
-     </property>
-     <property name="text">
-      <string>SC MPS Gun Restart Faults</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="macros" stdset="0">
-      <string>{&quot;FILE&quot;:&quot;cn3_logic.json&quot;}</string>
-     </property>
-     <property name="filename" stdset="0">
-      <string>mps_logic.ui</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
+   <item row="3" column="0">
     <widget class="QFrame" name="frame">
      <property name="minimumSize">
       <size>
@@ -111,12 +65,86 @@
        <string/>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(200, 200, 200);</string>
+       <string notr="true"/>
       </property>
       <property name="filename" stdset="0">
        <string>lcls_mps_lockup_sidebyside_digital.png</string>
       </property>
      </widget>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 150, 168);</string>
+     </property>
+     <property name="text">
+      <string>SC MPS &quot;GUI&quot;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;FILE&quot;:&quot;cn3_logic.json&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_logic.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>148</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>148</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP03&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mps_gui_bc.ui</string>
+     </property>
     </widget>
    </item>
   </layout>
