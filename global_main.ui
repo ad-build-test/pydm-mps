@@ -307,7 +307,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>0.500000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
   </widget>
@@ -345,7 +345,7 @@
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
     <property name="geometry">
      <rect>
-      <x>25</x>
+      <x>45</x>
       <y>10</y>
       <width>150</width>
       <height>24</height>
@@ -391,7 +391,7 @@
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
     <property name="geometry">
      <rect>
-      <x>25</x>
+      <x>45</x>
       <y>40</y>
       <width>150</width>
       <height>24</height>
@@ -425,7 +425,7 @@
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
     <property name="geometry">
      <rect>
-      <x>25</x>
+      <x>45</x>
       <y>70</y>
       <width>150</width>
       <height>24</height>
@@ -452,7 +452,7 @@
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_8">
     <property name="geometry">
      <rect>
-      <x>25</x>
+      <x>45</x>
       <y>100</y>
       <width>150</width>
       <height>24</height>
@@ -479,7 +479,7 @@
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_9">
     <property name="geometry">
      <rect>
-      <x>25</x>
+      <x>45</x>
       <y>130</y>
       <width>150</width>
       <height>24</height>
@@ -511,10 +511,10 @@
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>10</y>
+      <x>1</x>
+      <y>15</y>
       <width>15</width>
-      <height>8</height>
+      <height>15</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -550,21 +550,21 @@
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>18</y>
+      <x>15</x>
+      <y>15</y>
       <width>15</width>
-      <height>8</height>
+      <height>15</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -600,21 +600,21 @@
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>200</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>26</y>
+      <x>29</x>
+      <y>15</y>
       <width>15</width>
-      <height>8</height>
+      <height>15</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -650,21 +650,21 @@
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_11">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>116</y>
+      <x>29</x>
+      <y>105</y>
       <width>15</width>
-      <height>8</height>
+      <height>15</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -700,21 +700,21 @@
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>0.250000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_12">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>100</y>
+      <x>1</x>
+      <y>105</y>
       <width>15</width>
-      <height>8</height>
+      <height>15</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -750,21 +750,21 @@
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>0.250000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_13">
     <property name="geometry">
      <rect>
-      <x>5</x>
-      <y>108</y>
+      <x>15</x>
+      <y>105</y>
       <width>15</width>
-      <height>8</height>
+      <height>15</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -797,15 +797,8 @@
     <property name="penStyle" stdset="0">
      <enum>Qt::SolidLine</enum>
     </property>
-    <property name="penColor" stdset="0">
-     <color>
-      <red>0</red>
-      <green>220</green>
-      <blue>0</blue>
-     </color>
-    </property>
     <property name="penWidth" stdset="0">
-     <double>0.250000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
   </widget>
