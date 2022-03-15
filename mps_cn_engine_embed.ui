@@ -676,7 +676,7 @@ Core</string>
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
@@ -726,7 +726,7 @@ Core</string>
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
@@ -776,7 +776,7 @@ Core</string>
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
@@ -826,7 +826,7 @@ Core</string>
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
@@ -876,7 +876,7 @@ Core</string>
     <property name="penColor" stdset="0">
      <color>
       <red>0</red>
-      <green>220</green>
+      <green>0</green>
       <blue>0</blue>
      </color>
     </property>
