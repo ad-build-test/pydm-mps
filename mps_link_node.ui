@@ -30,7 +30,7 @@
     <normaloff>lcls_mps_lockup_stacked_digital.png</normaloff>lcls_mps_lockup_stacked_digital.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <string notr="true"/>
   </property>
   <widget class="PyDMLabel" name="PyDMLabel">
    <property name="geometry">
@@ -160,7 +160,7 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="toolTip">
@@ -191,7 +191,7 @@ background-color: rgb(70, 70, 70);</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="toolTip">
@@ -318,7 +318,7 @@ background-color: rgb(70, 70, 70);</string>
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <pointsize>8</pointsize>
      </font>
     </property>
     <property name="toolTip">
@@ -351,7 +351,7 @@ background-color: rgb(70, 70, 70);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(200, 200, 200);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -372,7 +372,7 @@ background-color: rgb(70, 70, 70);</string>
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(200, 200, 200);</string>
+     <string notr="true"/>
     </property>
     <property name="filename" stdset="0">
      <string>lcls_mps_lockup_sidebyside_digital.png</string>

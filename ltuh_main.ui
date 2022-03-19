@@ -18,7 +18,7 @@
     <rect>
      <x>32</x>
      <y>8</y>
-     <width>921</width>
+     <width>900</width>
      <height>234</height>
     </rect>
    </property>
@@ -278,7 +278,7 @@ when TDUND Is In</string>
   <widget class="PyDMFrame" name="PyDMFrame_4">
    <property name="geometry">
     <rect>
-     <x>460</x>
+     <x>440</x>
      <y>250</y>
      <width>493</width>
      <height>136</height>
@@ -495,7 +495,7 @@ when TDUND Is In</string>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
    <property name="geometry">
     <rect>
-     <x>1000</x>
+     <x>950</x>
      <y>20</y>
      <width>131</width>
      <height>24</height>
@@ -530,7 +530,7 @@ when TDUND Is In</string>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
    <property name="geometry">
     <rect>
-     <x>1000</x>
+     <x>950</x>
      <y>80</y>
      <width>131</width>
      <height>24</height>
@@ -565,7 +565,7 @@ when TDUND Is In</string>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
    <property name="geometry">
     <rect>
-     <x>1000</x>
+     <x>950</x>
      <y>50</y>
      <width>131</width>
      <height>24</height>
@@ -600,7 +600,7 @@ when TDUND Is In</string>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_10">
    <property name="geometry">
     <rect>
-     <x>1000</x>
+     <x>950</x>
      <y>110</y>
      <width>131</width>
      <height>24</height>
@@ -635,7 +635,7 @@ when TDUND Is In</string>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_11">
    <property name="geometry">
     <rect>
-     <x>1000</x>
+     <x>950</x>
      <y>140</y>
      <width>131</width>
      <height>24</height>
@@ -670,7 +670,7 @@ when TDUND Is In</string>
   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_12">
    <property name="geometry">
     <rect>
-     <x>1000</x>
+     <x>950</x>
      <y>170</y>
      <width>131</width>
      <height>24</height>

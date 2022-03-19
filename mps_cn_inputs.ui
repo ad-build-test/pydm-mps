@@ -32,7 +32,7 @@
    <string>SC MPS Link Node ${LN} Inputs</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">
@@ -179,7 +179,7 @@
        <string/>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(200, 200, 200);</string>
+       <string notr="true"/>
       </property>
       <property name="filename" stdset="0">
        <string>lcls_mps_lockup_sidebyside_digital.png</string>
