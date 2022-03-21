@@ -69,179 +69,6 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="PyDMShellCommand" name="PyDMShellCommand">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>190</y>
-     <width>100</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>SBLM HV..</string>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="commands" stdset="0">
-    <stringlist>
-     <string>edm -x -m &quot;dev=HVM:GUNB:MP01,dev0=SBLM:GUNB:622,dev1=SBLM:GUNB:753,dev2=HVM:GUNB:100,dev3=HVM:GUNB:200&quot; $EDM/ws/caen_hv_DT5533.edl</string>
-    </stringlist>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>240</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:GUNB:622</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist/>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:GUNB:622</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>270</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>SBLM:GUNB:622</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist>
-     <string>SBLM:GUNB:622</string>
-     <string></string>
-    </stringlist>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=SBLM:GUNB:622</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>300</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:GUNB:753</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist>
-     <string>PBLM:GUNB:753</string>
-     <string></string>
-    </stringlist>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:GUNB:753</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>330</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>SBLM:GUNB:753</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist>
-     <string>SBLM:GUNB:753</string>
-     <string></string>
-    </stringlist>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=SBLM:GUNB:753</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="PyDMDrawingImage" name="PyDMDrawingImage_2">
    <property name="geometry">
     <rect>
@@ -268,6 +95,211 @@
    </property>
    <property name="filename" stdset="0">
     <string>lcls_mps_lockup_stacked_digital.png</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>150</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>130</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>PBLM:GUNB:622</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/bcs/bcs_pblm_status.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>BLM=PBLM:GUNB:622</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>130</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>SBLM:GUNB:622</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/bcs/bcs_pblm_status.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist>
+      <string>SBLM:GUNB:622</string>
+      <string></string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>BLM=SBLM:GUNB:622</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>130</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>PBLM:GUNB:753</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/bcs/bcs_pblm_status.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist>
+      <string>PBLM:GUNB:753</string>
+      <string></string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>BLM=PBLM:GUNB:753</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>130</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>SBLM:GUNB:753</string>
+    </property>
+    <property name="filenames" stdset="0">
+     <stringlist>
+      <string>$EDM/bcs/bcs_pblm_status.edl</string>
+     </stringlist>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist>
+      <string>SBLM:GUNB:753</string>
+      <string></string>
+     </stringlist>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>BLM=SBLM:GUNB:753</string>
+     </stringlist>
+    </property>
+    <property name="openInNewWindow" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>130</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>SBLM HV..</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>edm -x -m &quot;dev=HVM:GUNB:MP01,dev0=SBLM:GUNB:622,dev1=SBLM:GUNB:753,dev2=HVM:GUNB:100,dev3=HVM:GUNB:200&quot; $EDM/ws/caen_hv_DT5533.edl</string>
+     </stringlist>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>170</y>
+     <width>115</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PBLM Diagnostics</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>
