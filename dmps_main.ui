@@ -160,9 +160,38 @@
     </brush>
    </property>
   </widget>
+  <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>400</y>
+     <width>80</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(193, 193, 193);</string>
+   </property>
+   <property name="brush" stdset="0">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>193</red>
+      <green>193</green>
+      <blue>195</blue>
+     </color>
+    </brush>
+   </property>
+   <property name="filename" stdset="0">
+    <string>lcls_mps_lockup_stacked_digital.png</string>
+   </property>
+  </widget>
   <zorder>PyDMDrawingRectangle_8</zorder>
   <zorder>PyDMFrame</zorder>
   <zorder>PyDMRelatedDisplayButton</zorder>
+  <zorder>PyDMDrawingImage</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -186,6 +215,11 @@
    <extends>QFrame</extends>
    <header>pydm.widgets.frame</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>

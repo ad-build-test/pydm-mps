@@ -78,8 +78,8 @@
   <widget class="PyDMDrawingImage" name="PyDMDrawingImage_2">
    <property name="geometry">
     <rect>
-     <x>980</x>
-     <y>380</y>
+     <x>970</x>
+     <y>400</y>
      <width>80</width>
      <height>75</height>
     </rect>
