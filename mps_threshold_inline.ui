@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
+    <width>700</width>
     <height>30</height>
    </rect>
   </property>
@@ -94,13 +94,121 @@
     </widget>
    </item>
    <item>
-    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-     <property name="toolTip">
-      <string/>
+    <widget class="QFrame" name="frame_2">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
      </property>
-     <property name="text">
-      <string>Waveform...</string>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
      </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>MPS WF</string>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;use_enum&quot;: true, &quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://SIOC:SYS0:AL00:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${SHOW_WF}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+        </property>
+        <property name="filenames" stdset="0">
+         <stringlist>
+          <string>mps_analog_channel.ui</string>
+         </stringlist>
+        </property>
+        <property name="macros" stdset="0">
+         <stringlist>
+          <string>{&quot;P&quot;:&quot;${PV_PREFIX}&quot;,&quot;WF&quot;:&quot;${WF}&quot;}</string>
+         </stringlist>
+        </property>
+        <property name="openInNewWindow" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Fast WF</string>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;use_enum&quot;: true, &quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://SIOC:SYS0:AL00:MODE&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${HAS_FAST}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+        </property>
+        <property name="filenames" stdset="0">
+         <stringlist>
+          <string>mps_analog_channel.ui</string>
+         </stringlist>
+        </property>
+        <property name="macros" stdset="0">
+         <stringlist>
+          <string>{&quot;P&quot;:&quot;${PV_PREFIX}&quot;,&quot;WF&quot;:&quot;FAST&quot;}</string>
+         </stringlist>
+        </property>
+        <property name="openInNewWindow" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
   </layout>

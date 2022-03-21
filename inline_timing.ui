@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>366</width>
-    <height>254</height>
+    <height>257</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -45,7 +45,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:LC1_ANA_PK_DEL_TRG_${CH_NUM}</string>
+      <string>ca://${P}:${MODE}_PEAK_START</string>
      </property>
     </widget>
    </item>
@@ -107,7 +107,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:LC1_ANA_PD_DEL_TRG_${CH_NUM}</string>
+      <string>ca://${P}:${MODE}_PED_START</string>
      </property>
     </widget>
    </item>
@@ -131,7 +131,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:TRG1${CH_NUM}_SYS0_TDES</string>
+      <string>ca://${P}:${MODE}_COARSE_START</string>
      </property>
     </widget>
    </item>
@@ -233,7 +233,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:DM${BAY}_BUFFER_SIZE</string>
+      <string>ca://${P}:${WF}_WF.NELM</string>
      </property>
     </widget>
    </item>
@@ -251,7 +251,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:LC1_ANA_PK_WDT_TRG_${CH_NUM}</string>
+      <string>ca://${P}:${MODE}_PEAK_WIDTH</string>
      </property>
     </widget>
    </item>
@@ -275,7 +275,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:LC1_ANA_PD_WDT_TRG_${CH_NUM}</string>
+      <string>ca://${P}:${MODE}_PED_WIDTH</string>
      </property>
     </widget>
    </item>

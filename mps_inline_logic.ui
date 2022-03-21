@@ -513,7 +513,7 @@
     </spacer>
    </item>
    <item>
-    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+    <widget class="QFrame" name="frame_2">
      <property name="minimumSize">
       <size>
        <width>90</width>
@@ -526,28 +526,101 @@
        <height>16777215</height>
       </size>
      </property>
-     <property name="toolTip">
-      <string/>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
      </property>
-     <property name="text">
-      <string>Bypass...</string>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
      </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>mps_bypass.ui</string>
-      </stringlist>
-     </property>
-     <property name="showIcon" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="macros" stdset="0">
-      <stringlist>
-       <string>{&quot;DEVICE_BYP&quot;:&quot;${FLT}&quot;}</string>
-      </stringlist>
-     </property>
-     <property name="openInNewWindow" stdset="0">
-      <bool>true</bool>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>90</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Bypass...</string>
+        </property>
+        <property name="filenames" stdset="0">
+         <stringlist>
+          <string>mps_bypass.ui</string>
+         </stringlist>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="macros" stdset="0">
+         <stringlist>
+          <string>{&quot;DEVICE_BYP&quot;:&quot;${FLT}&quot;}</string>
+         </stringlist>
+        </property>
+        <property name="openInNewWindow" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>10</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(192, 0, 0);</string>
+        </property>
+        <property name="rules" stdset="0">
+         <string>[{&quot;channels&quot;: [{&quot;use_enum&quot;: true, &quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${FLT}_SCBYPS&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] &gt; 0.9&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+        </property>
+        <property name="brush" stdset="0">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>192</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
   </layout>
@@ -557,6 +630,11 @@
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingRectangle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>

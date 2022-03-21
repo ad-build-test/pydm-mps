@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>SC MPS WF: ${P}</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -30,7 +30,7 @@
 }</string>
        </property>
        <property name="text">
-        <string>${CH_NAME}</string>
+        <string>${P}</string>
        </property>
       </widget>
      </item>
@@ -52,20 +52,22 @@
        </property>
        <property name="yAxes">
         <stringlist>
-         <string>{&quot;name&quot;: &quot;Amplitude (mv)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true}</string>
+         <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true}</string>
         </stringlist>
        </property>
        <property name="xLabels">
         <stringlist>
-         <string>Time (us)</string>
+         <string>Time (ns)</string>
         </stringlist>
-       </property>
-       <property name="yLabels">
-        <stringlist/>
        </property>
        <property name="curves">
         <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;ca://${P}:BAY${BAY}_ADC${CH}_WF-BUF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (mv)&quot;, &quot;redraw_mode&quot;: 2}</string>
+         <string>{&quot;y_channel&quot;: &quot;${P}:${WF}_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;redraw_mode&quot;: 2}</string>
+        </stringlist>
+       </property>
+       <property name="yLabels" stdset="0">
+        <stringlist>
+         <string>Amplitude (raw)</string>
         </stringlist>
        </property>
       </widget>
@@ -114,7 +116,7 @@
 }</string>
              </property>
              <property name="text">
-              <string>Timing Window Configuration</string>
+              <string>Timing Window Configuration: NC</string>
              </property>
             </widget>
            </item>
@@ -124,7 +126,7 @@
               <string/>
              </property>
              <property name="macros" stdset="0">
-              <string>{&quot;INST&quot;:&quot;${INST}&quot;,&quot;LOCA&quot;:&quot;${LOCA}&quot;,&quot;IOC_UNIT&quot;:&quot;${IOC_UNIT}&quot;,&quot;P&quot;:&quot;${P}&quot;,&quot;BAY&quot;:&quot;${BAY}&quot;,&quot;CH&quot;:&quot;${CH}&quot;,&quot;CH_NUM&quot;:&quot;${CH_NUM}&quot;}</string>
+              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;MODE&quot;:&quot;NC&quot;,&quot;WF&quot;:&quot;${WF}&quot;}</string>
              </property>
              <property name="filename" stdset="0">
               <string>inline_timing.ui</string>
@@ -156,7 +158,7 @@
 }</string>
              </property>
              <property name="text">
-              <string>Threshold Configuration</string>
+              <string>Timing Window Configuration: SC</string>
              </property>
             </widget>
            </item>
@@ -165,8 +167,11 @@
              <property name="toolTip">
               <string/>
              </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;MODE&quot;:&quot;SC&quot;,&quot;WF&quot;:&quot;${WF}&quot;}</string>
+             </property>
              <property name="filename" stdset="0">
-              <string>inline_threshold.ui</string>
+              <string>inline_timing.ui</string>
              </property>
             </widget>
            </item>
@@ -182,14 +187,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMWaveformPlot</class>
-   <extends>QGraphicsView</extends>
-   <header>pydm.widgets.waveformplot</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMWaveformPlot</class>
+   <extends>QGraphicsView</extends>
+   <header>pydm.widgets.waveformplot</header>
   </customwidget>
  </customwidgets>
  <resources/>
