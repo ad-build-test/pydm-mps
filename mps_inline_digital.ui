@@ -103,7 +103,7 @@
      <bool>true</bool>
     </property>
     <property name="shift" stdset="0">
-     <number>0</number>
+     <number>${SHIFT}</number>
     </property>
     <property name="labels" stdset="0">
      <stringlist/>
