@@ -607,7 +607,7 @@
          <string notr="true">color: rgb(192, 0, 0);</string>
         </property>
         <property name="rules" stdset="0">
-         <string>[{&quot;channels&quot;: [{&quot;use_enum&quot;: true, &quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${FLT}_SCBYPS&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] &gt; 0.9&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+         <string>[{&quot;channels&quot;: [{&quot;use_enum&quot;: true, &quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${FLT}_SCBYPS.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0] &gt; 0.9&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
         </property>
         <property name="brush" stdset="0">
          <brush brushstyle="SolidPattern">
