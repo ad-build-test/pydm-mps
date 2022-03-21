@@ -225,7 +225,7 @@
     </property>
     <property name="commands" stdset="0">
      <stringlist>
-      <string>python /usr/local/lcls/tools/python/BLM_CUD/blm_display.py --mode=sxr</string>
+      <string>python2 /usr/local/lcls/tools/python/BLM_CUD/blm_display.py --mode=sxr</string>
      </stringlist>
     </property>
    </widget>
