@@ -17,7 +17,7 @@
    <item row="0" column="0">
     <widget class="QFrame" name="frame_4">
      <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
+      <enum>QFrame::NoFrame</enum>
      </property>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
@@ -25,6 +25,9 @@
      <layout class="QGridLayout" name="gridLayout_5">
       <item row="0" column="0">
        <widget class="QScrollArea" name="scrollArea">
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
         <property name="widgetResizable">
          <bool>true</bool>
         </property>
@@ -32,9 +35,9 @@
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
-           <width>1031</width>
-           <height>852</height>
+           <y>-148</y>
+           <width>1033</width>
+           <height>885</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_2">
@@ -44,181 +47,6 @@
              <string>Map and Status</string>
             </property>
             <layout class="QGridLayout" name="gridLayout">
-             <item row="2" column="0">
-              <widget class="QFrame" name="frame">
-               <property name="minimumSize">
-                <size>
-                 <width>130</width>
-                 <height>140</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>150</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::Box</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Plain</enum>
-               </property>
-               <layout class="QGridLayout" name="gridLayout_3">
-                <item row="4" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="text">
-                   <string>PBLM:BPN21:424</string>
-                  </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
-                  </property>
-                  <property name="titles" stdset="0">
-                   <stringlist/>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=PBLM:BPN21:424</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
-                  <property name="minimumSize">
-                   <size>
-                    <width>150</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="text">
-                   <string>PBLM:BPN22:424</string>
-                  </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
-                  </property>
-                  <property name="titles" stdset="0">
-                   <stringlist>
-                    <string></string>
-                   </stringlist>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=PBLM:BPN22:424</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="text">
-                   <string>PBLM:BPN25:424</string>
-                  </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
-                  </property>
-                  <property name="titles" stdset="0">
-                   <stringlist>
-                    <string></string>
-                   </stringlist>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=PBLM:BPN25:424</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="0" column="0">
-                 <widget class="QLabel" name="label_2">
-                  <property name="text">
-                   <string>PBLM Diagnostics:</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="text">
-                   <string>PBLM:BPN26:424</string>
-                  </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
-                  </property>
-                  <property name="titles" stdset="0">
-                   <stringlist>
-                    <string></string>
-                   </stringlist>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=PBLM:BPN26:424</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="2" column="1">
-                 <spacer name="horizontalSpacer_2">
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-               </layout>
-              </widget>
-             </item>
              <item row="1" column="0">
               <widget class="QFrame" name="frame_2">
                <property name="maximumSize">
@@ -228,7 +56,7 @@
                 </size>
                </property>
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::NoFrame</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -401,8 +229,214 @@
                </property>
               </widget>
              </item>
+             <item row="2" column="0">
+              <widget class="QFrame" name="frame">
+               <property name="minimumSize">
+                <size>
+                 <width>130</width>
+                 <height>175</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Plain</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="0" column="0">
+                 <widget class="QFrame" name="frame_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>170</width>
+                    <height>150</height>
+                   </size>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Plain</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_7">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_2">
+                     <property name="text">
+                      <string>PBLM Diagnostics:</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>PBLM:BPN22:424</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                      </stringlist>
+                     </property>
+                     <property name="titles" stdset="0">
+                      <stringlist>
+                       <string></string>
+                      </stringlist>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="macros" stdset="0">
+                      <stringlist>
+                       <string>BLM=PBLM:BPN22:424</string>
+                      </stringlist>
+                     </property>
+                     <property name="openInNewWindow" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>PBLM:BPN25:424</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                      </stringlist>
+                     </property>
+                     <property name="titles" stdset="0">
+                      <stringlist>
+                       <string></string>
+                      </stringlist>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="macros" stdset="0">
+                      <stringlist>
+                       <string>BLM=PBLM:BPN25:424</string>
+                      </stringlist>
+                     </property>
+                     <property name="openInNewWindow" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>PBLM:BPN26:424</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                      </stringlist>
+                     </property>
+                     <property name="titles" stdset="0">
+                      <stringlist>
+                       <string></string>
+                      </stringlist>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="macros" stdset="0">
+                      <stringlist>
+                       <string>BLM=PBLM:BPN26:424</string>
+                      </stringlist>
+                     </property>
+                     <property name="openInNewWindow" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>PBLM:BPN21:424</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                      </stringlist>
+                     </property>
+                     <property name="titles" stdset="0">
+                      <stringlist/>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="macros" stdset="0">
+                      <stringlist>
+                       <string>BLM=PBLM:BPN21:424</string>
+                      </stringlist>
+                     </property>
+                     <property name="openInNewWindow" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
             </layout>
            </widget>
+          </item>
+          <item row="0" column="1">
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
