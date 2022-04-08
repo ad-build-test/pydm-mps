@@ -29,7 +29,20 @@
          <string>Map and Status</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_2">
-         <item row="3" column="0">
+         <item row="2" column="1">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
           <spacer name="verticalSpacer_2">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
@@ -427,15 +440,15 @@
            </property>
           </widget>
          </item>
-         <item row="2" column="1">
-          <spacer name="horizontalSpacer_3">
+         <item row="3" column="0">
+          <spacer name="verticalSpacer_4">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Vertical</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
-             <width>40</width>
-             <height>20</height>
+             <width>20</width>
+             <height>40</height>
             </size>
            </property>
           </spacer>

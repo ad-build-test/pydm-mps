@@ -492,216 +492,6 @@ when TDUND Is In</string>
     </brush>
    </property>
   </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
-   <property name="geometry">
-    <rect>
-     <x>950</x>
-     <y>20</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:LTUH:253</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist/>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:LTUH:253</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
-   <property name="geometry">
-    <rect>
-     <x>950</x>
-     <y>80</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:LTUH:393</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist/>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:LTUH:393</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
-   <property name="geometry">
-    <rect>
-     <x>950</x>
-     <y>50</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:LTUH:276</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist/>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:LTUH:276</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_10">
-   <property name="geometry">
-    <rect>
-     <x>950</x>
-     <y>110</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:LTUH:452</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist/>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:LTUH:452</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_11">
-   <property name="geometry">
-    <rect>
-     <x>950</x>
-     <y>140</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:LTUH:475</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist/>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:LTUH:475</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_12">
-   <property name="geometry">
-    <rect>
-     <x>950</x>
-     <y>170</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="text">
-    <string>PBLM:LTUH:980</string>
-   </property>
-   <property name="filenames" stdset="0">
-    <stringlist>
-     <string>$EDM/bcs/bcs_pblm_status.edl</string>
-    </stringlist>
-   </property>
-   <property name="titles" stdset="0">
-    <stringlist/>
-   </property>
-   <property name="showIcon" stdset="0">
-    <bool>false</bool>
-   </property>
-   <property name="macros" stdset="0">
-    <stringlist>
-     <string>BLM=PBLM:LTUH:980</string>
-    </stringlist>
-   </property>
-   <property name="openInNewWindow" stdset="0">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
    <property name="geometry">
     <rect>
@@ -730,6 +520,215 @@ when TDUND Is In</string>
     <string>lcls_mps_lockup_stacked_digital.png</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>980</x>
+     <y>10</y>
+     <width>115</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PBLM Diagnostics</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>975</x>
+     <y>20</y>
+     <width>151</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_10">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:LTUH:452</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:LTUH:452</string>
+       </stringlist>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:LTUH:276</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:LTUH:276</string>
+       </stringlist>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:LTUH:253</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:LTUH:253</string>
+       </stringlist>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_11">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:LTUH:475</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:LTUH:475</string>
+       </stringlist>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:LTUH:393</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:LTUH:393</string>
+       </stringlist>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_12">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="text">
+       <string>PBLM:LTUH:980</string>
+      </property>
+      <property name="filenames" stdset="0">
+       <stringlist>
+        <string>$EDM/bcs/bcs_pblm_status.edl</string>
+       </stringlist>
+      </property>
+      <property name="titles" stdset="0">
+       <stringlist/>
+      </property>
+      <property name="showIcon" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="macros" stdset="0">
+       <stringlist>
+        <string>BLM=PBLM:LTUH:980</string>
+       </stringlist>
+      </property>
+      <property name="openInNewWindow" stdset="0">
+       <bool>true</bool>
+      </property>
+      <zorder>PyDMDrawingRectangle_8</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <zorder>PyDMDrawingRectangle_8</zorder>
   <zorder>PyDMFrame</zorder>
   <zorder>PyDMFrame_2</zorder>
@@ -738,13 +737,9 @@ when TDUND Is In</string>
   <zorder>PyDMFrame_4</zorder>
   <zorder>PyDMEDMDisplayButton_2</zorder>
   <zorder>PyDMEDMDisplayButton_3</zorder>
-  <zorder>PyDMEDMDisplayButton_7</zorder>
-  <zorder>PyDMEDMDisplayButton_9</zorder>
-  <zorder>PyDMEDMDisplayButton_8</zorder>
-  <zorder>PyDMEDMDisplayButton_10</zorder>
-  <zorder>PyDMEDMDisplayButton_11</zorder>
-  <zorder>PyDMEDMDisplayButton_12</zorder>
   <zorder>PyDMDrawingImage</zorder>
+  <zorder>frame</zorder>
+  <zorder>label</zorder>
  </widget>
  <customwidgets>
   <customwidget>
