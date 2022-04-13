@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SPR Main</string>
+   <string>MPS SPR Main</string>
   </property>
   <widget class="PyDMTabWidget" name="PyDMTabWidget">
    <property name="geometry">
@@ -416,22 +416,6 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMEmbeddedDisplay</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.embedded_display</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMTabWidget</class>
    <extends>QTabWidget</extends>
    <header>pydm.widgets.tab_bar</header>
@@ -440,6 +424,22 @@
    <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MPS DMPS Main</string>
   </property>
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
@@ -195,20 +195,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMDrawingRectangle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMFrame</class>
@@ -217,9 +211,15 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

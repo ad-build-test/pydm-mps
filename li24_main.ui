@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MPS LI24 Main</string>
   </property>
   <widget class="PyDMFrame" name="PyDMFrame">
    <property name="geometry">
@@ -356,14 +356,14 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingRectangle</class>
+   <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
-   <class>PyDMShellCommand</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.shell_command</header>
+   <class>PyDMDrawingRectangle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
@@ -377,9 +377,9 @@
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMShellCommand</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.shell_command</header>
   </customwidget>
  </customwidgets>
  <resources/>

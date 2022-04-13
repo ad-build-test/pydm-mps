@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MPS LTUS Main</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -522,25 +522,19 @@ when TDUNDB is in</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingRectangle</class>
+   <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
+   <class>PyDMDrawingRectangle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
@@ -554,9 +548,15 @@ when TDUNDB is in</string>
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

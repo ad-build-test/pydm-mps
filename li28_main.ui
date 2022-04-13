@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MPS LI28 Main</string>
   </property>
   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle">
    <property name="geometry">
@@ -183,15 +183,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMDrawingRectangle</class>
@@ -204,9 +203,10 @@
    <header>pydm.widgets.related_display_button</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

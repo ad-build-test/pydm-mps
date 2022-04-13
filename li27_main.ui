@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MPS LI27 Main</string>
   </property>
   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
    <property name="geometry">
@@ -69,7 +69,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>No page exists for MPS/LI257 in PyDM or EDM</string>
+    <string>No page exists for MPS/LI27 in PyDM or EDM</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -106,12 +106,12 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMDrawingRectangle</class>
+   <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
+   <class>PyDMDrawingRectangle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
   </customwidget>
