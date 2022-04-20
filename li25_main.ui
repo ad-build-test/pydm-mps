@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>MPS LI25 Main</string>
   </property>
   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
    <property name="geometry">
@@ -106,12 +106,12 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMDrawingRectangle</class>
+   <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
+   <class>PyDMDrawingRectangle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
   </customwidget>
