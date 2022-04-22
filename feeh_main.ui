@@ -99,7 +99,7 @@
            <property name="minimumSize">
             <size>
              <width>875</width>
-             <height>40</height>
+             <height>100</height>
             </size>
            </property>
            <property name="toolTip">
