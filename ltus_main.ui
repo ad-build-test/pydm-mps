@@ -273,7 +273,7 @@ when TDUNDB is in</string>
                  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
                   <property name="minimumSize">
                    <size>
-                    <width>160</width>
+                    <width>180</width>
                     <height>20</height>
                    </size>
                   </property>
