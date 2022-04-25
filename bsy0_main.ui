@@ -54,7 +54,7 @@
              <item row="1" column="0">
               <widget class="QFrame" name="frame_3">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::NoFrame</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -149,7 +149,7 @@
              <item row="2" column="0">
               <widget class="QFrame" name="frame_4">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::NoFrame</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -532,7 +532,7 @@
              <item row="2" column="0">
               <widget class="QFrame" name="frame_10">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::NoFrame</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
@@ -800,7 +800,7 @@
              <item row="1" column="0">
               <widget class="QFrame" name="frame_7">
                <property name="frameShape">
-                <enum>QFrame::StyledPanel</enum>
+                <enum>QFrame::NoFrame</enum>
                </property>
                <property name="frameShadow">
                 <enum>QFrame::Raised</enum>
