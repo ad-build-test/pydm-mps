@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>415</width>
-    <height>400</height>
+    <width>565</width>
+    <height>420</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -169,7 +169,7 @@ Mismatch</string>
          </size>
         </property>
         <property name="text">
-         <string>Integrator
+         <string>Min Space
 Fault</string>
         </property>
         <property name="alignment">
@@ -179,6 +179,46 @@ Fault</string>
       </item>
       <item>
        <widget class="QLabel" name="label_7">
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Q Int
+Low</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Q Int
+High</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>Fault
 Counter</string>
@@ -206,7 +246,7 @@ Counter</string>
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DUMPBSY&quot;}</string>
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;SC_BSYD&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>mps_timing_embed.ui</string>
@@ -228,7 +268,7 @@ Counter</string>
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DIAG0&quot;}</string>
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;SC_DIAG0&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>mps_timing_embed.ui</string>
@@ -250,7 +290,7 @@ Counter</string>
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DUMPHXR&quot;}</string>
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;SC_HXR&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>mps_timing_embed.ui</string>
@@ -272,7 +312,7 @@ Counter</string>
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;DUMPSXR&quot;}</string>
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;SC_SXR&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>mps_timing_embed.ui</string>
@@ -316,7 +356,7 @@ Counter</string>
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;LESA&quot;}</string>
+      <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;DEST&quot;:&quot;SC_LESA&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>mps_timing_embed.ui</string>
@@ -328,13 +368,13 @@ Counter</string>
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>90</height>
+       <height>110</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>90</height>
+       <height>110</height>
       </size>
      </property>
      <property name="frameShape">
@@ -551,6 +591,48 @@ Counter</string>
        <enum>PyDMLabel::Hex</enum>
       </property>
      </widget>
+     <widget class="PyDMLabel" name="PyDMLabel_13">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>75</y>
+        <width>140</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(70, 70, 70);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="showUnits" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="alarmSensitiveContent" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${P}:FAULT_REASON_MSB</string>
+      </property>
+      <property name="displayFormat" stdset="0">
+       <enum>PyDMLabel::Hex</enum>
+      </property>
+     </widget>
     </widget>
    </item>
    <item>
@@ -603,6 +685,11 @@ Counter</string>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
@@ -611,11 +698,6 @@ Counter</string>
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>

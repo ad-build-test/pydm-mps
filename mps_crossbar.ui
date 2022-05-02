@@ -35,7 +35,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(200, 200, 200);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -597,10 +597,89 @@ background-color: rgb(70, 70, 70);</string>
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(200, 200, 200);</string>
+     <string notr="true"/>
     </property>
     <property name="filename" stdset="0">
      <string>lcls_mps_lockup_sidebyside_digital.png</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>350</y>
+      <width>200</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="PyDMPushButton" name="PyDMPushButton">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>100</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:TIMING_RX_ERR</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="PyDMLabel" name="PyDMLabel_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>66</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Error</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:TIMING_RX_ERR_RBV</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>340</y>
+      <width>125</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TPR Latching Fault</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
@@ -612,14 +691,19 @@ background-color: rgb(70, 70, 70);</string>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
  </customwidgets>
  <resources/>

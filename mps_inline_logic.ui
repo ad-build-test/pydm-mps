@@ -246,7 +246,7 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_DUMPBSY_STATE</string>
+      <string>ca://${FLT}_SC_BSYD_STATE</string>
      </property>
     </widget>
    </item>
@@ -294,7 +294,7 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_DIAG0_STATE</string>
+      <string>ca://${FLT}_SC_DIAG0_STATE</string>
      </property>
     </widget>
    </item>
@@ -342,7 +342,7 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_DUMPHXR_STATE</string>
+      <string>ca://${FLT}_SC_HXR_STATE</string>
      </property>
     </widget>
    </item>
@@ -390,7 +390,7 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_DUMPSXR_STATE</string>
+      <string>ca://${FLT}_SC_SXR_STATE</string>
      </property>
     </widget>
    </item>
@@ -492,7 +492,7 @@
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${FLT}_LESA_STATE</string>
+      <string>ca://${FLT}_SC_LESA_STATE</string>
      </property>
     </widget>
    </item>
@@ -632,6 +632,11 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMDrawingRectangle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
@@ -640,11 +645,6 @@
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.related_display_button</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMByteIndicator</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.byte</header>
   </customwidget>
  </customwidgets>
  <resources/>

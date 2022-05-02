@@ -6,13 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>405</width>
-    <height>35</height>
+    <width>500</width>
+    <height>37</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>405</width>
+    <width>407</width>
     <height>25</height>
    </size>
   </property>
@@ -139,7 +139,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:${DEST}_TIMING_BC_FAULT</string>
+      <string>ca://${P}:${DEST}_MPS_TIMING_FAULT</string>
      </property>
     </widget>
    </item>
@@ -169,7 +169,67 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:${DEST}_BC_INTEGRATION_FAULT</string>
+      <string>ca://${P}:${DEST}_MIN_SPACING_FAULT</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_7">
+     <property name="maximumSize">
+      <size>
+       <width>75</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Fault</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:${DEST}_CHRG_INT_LOW_FAULT</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMLabel" name="PyDMLabel_8">
+     <property name="maximumSize">
+      <size>
+       <width>75</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Fault</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:${DEST}_CHRG_INT_HIGH_FAULT</string>
      </property>
     </widget>
    </item>
