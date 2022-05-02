@@ -29,66 +29,6 @@
    <property name="spacing">
     <number>3</number>
    </property>
-   <item row="1" column="4">
-    <widget class="PyDMLabel" name="PyDMLabel_4">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>100% MAP</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${P}:DUMPSXR_BC</string>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>100% MAP</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${P}:DUMPBSY_BC</string>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="2">
     <widget class="PyDMLabel" name="PyDMLabel_2">
      <property name="maximumSize">
@@ -115,7 +55,76 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:DIAG0_BC</string>
+      <string>ca://${P}:SC_DIAG0_BC</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_8">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Timing BC:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="PyDMLabel" name="PyDMLabel_15">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPG:SYS0:1:DST03:RATE</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QLabel" name="label_6">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>LASER</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </item>
@@ -149,18 +158,132 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="2">
-    <widget class="QLabel" name="label_3">
+   <item row="2" column="3">
+    <widget class="PyDMLabel" name="PyDMLabel_9">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPG:SYS0:1:DST03:TPG_BC_RBV</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="PyDMLabel" name="PyDMLabel_4">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:SC_SXR_BC</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="PyDMLabel" name="PyDMLabel_14">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPG:SYS0:1:DST01:RATE</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_13">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
      <property name="font">
       <font>
        <pointsize>14</pointsize>
       </font>
      </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
      <property name="text">
-      <string>DIAG0</string>
+      <string>10 Hz</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
+     </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPG:SYS0:1:DST02:RATE</string>
      </property>
     </widget>
    </item>
@@ -176,132 +299,6 @@
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="5">
-    <widget class="QLabel" name="label_6">
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>LASER</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="4">
-    <widget class="QLabel" name="label_5">
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>DUMPSXR</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_7">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>100% MAP</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST02:TPG_BC_RBV</string>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="label_8">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Timing BC:</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0">
-    <widget class="QLabel" name="label">
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>MPS Permit:</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="2" column="6">
-    <widget class="PyDMLabel" name="PyDMLabel_12">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>100% MAP</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST05:TPG_BC_RBV</string>
      </property>
     </widget>
    </item>
@@ -331,12 +328,12 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:DUMPHXR_BC</string>
+      <string>ca://${P}:SC_HXR_BC</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="5">
-    <widget class="PyDMLabel" name="PyDMLabel_11">
+   <item row="3" column="5">
+    <widget class="PyDMLabel" name="PyDMLabel_17">
      <property name="maximumSize">
       <size>
        <width>16777215</width>
@@ -357,35 +354,62 @@
      <property name="alignment">
       <set>Qt::AlignCenter</set>
      </property>
+     <property name="showUnits" stdset="0">
+      <bool>true</bool>
+     </property>
      <property name="alarmSensitiveContent" stdset="0">
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST00:TPG_BC_RBV</string>
+      <string>ca://TPG:SYS0:1:DST00:RATE</string>
      </property>
     </widget>
    </item>
-   <item row="0" column="1">
-    <widget class="QLabel" name="label_2">
+   <item row="1" column="6">
+    <widget class="PyDMLabel" name="PyDMLabel_6">
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>30</height>
+       <height>50</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>30</height>
+       <height>50</height>
       </size>
      </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:SC_LESA_BC</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLabel" name="label_5">
      <property name="font">
       <font>
        <pointsize>14</pointsize>
       </font>
      </property>
      <property name="text">
-      <string>DUMPBSY</string>
+      <string>DUMPSXR</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -419,6 +443,96 @@
      </property>
      <property name="channel" stdset="0">
       <string>ca://TPG:SYS0:1:DST01:TPG_BC_RBV</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="PyDMLabel" name="PyDMLabel_12">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPG:SYS0:1:DST05:TPG_BC_RBV</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>MPS Permit:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="PyDMLabel" name="PyDMLabel_11">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://TPG:SYS0:1:DST00:TPG_BC_RBV</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_9">
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Timing Rate:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </item>
@@ -467,8 +581,8 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="3">
-    <widget class="PyDMLabel" name="PyDMLabel_9">
+   <item row="2" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_7">
      <property name="maximumSize">
       <size>
        <width>16777215</width>
@@ -493,63 +607,18 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST03:TPG_BC_RBV</string>
+      <string>ca://TPG:SYS0:1:DST02:TPG_BC_RBV</string>
      </property>
     </widget>
    </item>
-   <item row="1" column="6">
-    <widget class="PyDMLabel" name="PyDMLabel_6">
+   <item row="0" column="1">
+    <widget class="QLabel" name="label_2">
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>50</height>
+       <height>30</height>
       </size>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>100% MAP</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${P}:LESA_BC</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="0">
-    <widget class="QLabel" name="label_9">
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Timing Rate:</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1">
-    <widget class="PyDMLabel" name="PyDMLabel_13">
      <property name="maximumSize">
       <size>
        <width>16777215</width>
@@ -561,92 +630,11 @@
        <pointsize>14</pointsize>
       </font>
      </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
      <property name="text">
-      <string>10 Hz</string>
+      <string>DUMPBSY</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST02:RATE</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="2">
-    <widget class="PyDMLabel" name="PyDMLabel_14">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>100% MAP</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST01:RATE</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="3">
-    <widget class="PyDMLabel" name="PyDMLabel_15">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-      </font>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>100% MAP</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST03:RATE</string>
      </property>
     </widget>
    </item>
@@ -683,36 +671,18 @@
      </property>
     </widget>
    </item>
-   <item row="3" column="5">
-    <widget class="PyDMLabel" name="PyDMLabel_17">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>30</height>
-      </size>
-     </property>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label_3">
      <property name="font">
       <font>
-       <pointsize>16</pointsize>
+       <pointsize>14</pointsize>
       </font>
      </property>
-     <property name="toolTip">
-      <string/>
-     </property>
      <property name="text">
-      <string>100% MAP</string>
+      <string>DIAG0</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
-     </property>
-     <property name="showUnits" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://TPG:SYS0:1:DST00:RATE</string>
      </property>
     </widget>
    </item>
@@ -746,6 +716,36 @@
      </property>
      <property name="channel" stdset="0">
       <string>ca://TPG:SYS0:1:DST05:RATE</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>100% MAP</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${P}:SC_BSYD_BC</string>
      </property>
     </widget>
    </item>
