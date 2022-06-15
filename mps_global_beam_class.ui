@@ -44,7 +44,7 @@
      </font>
     </property>
     <property name="text">
-     <string>DUMPBSY</string>
+     <string>SC_BSYD</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -158,7 +158,7 @@
      </font>
     </property>
     <property name="text">
-     <string>DIAG0</string>
+     <string>SC_DIAG0</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -249,7 +249,7 @@
      </font>
     </property>
     <property name="text">
-     <string>DUMPHXR</string>
+     <string>SC_HXR</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -340,7 +340,7 @@
      </font>
     </property>
     <property name="text">
-     <string>DUMPSXR</string>
+     <string>SC_SXR</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -802,7 +802,7 @@
      </font>
     </property>
     <property name="text">
-     <string>LESA</string>
+     <string>SC_LESA</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -902,11 +902,6 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMByteIndicator</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.byte</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
@@ -915,6 +910,11 @@
    <class>PyDMEnumComboBox</class>
    <extends>QComboBox</extends>
    <header>pydm.widgets.enum_combo_box</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
   </customwidget>
  </customwidgets>
  <resources/>
