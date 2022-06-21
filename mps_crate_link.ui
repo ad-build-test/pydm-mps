@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(200, 200, 200);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -317,145 +317,6 @@ color: rgb(12, 255, 68);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="PyDMLabel" name="PyDMLabel">
-    <property name="geometry">
-     <rect>
-      <x>357</x>
-      <y>75</y>
-      <width>60</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>CN LI00</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:MPS_EN&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;int(${VIS})&gt;0&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-    </property>
-   </widget>
-   <widget class="PyDMFrame" name="PyDMFrame">
-    <property name="geometry">
-     <rect>
-      <x>352</x>
-      <y>85</y>
-      <width>100</width>
-      <height>60</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca:${P}:MPS_EN&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;int(${VIS})&gt;0&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-    </property>
-    <widget class="QFrame" name="frame_3">
-     <property name="geometry">
-      <rect>
-       <x>0</x>
-       <y>0</y>
-       <width>100</width>
-       <height>60</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::Box</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>34</y>
-        <width>15</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="rules" stdset="0">
-       <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:MPS_EN&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;int(${VIS})&gt;0&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-      </property>
-      <property name="channel" stdset="0">
-       <string>ca://${P_IN2}:PGP_RX_${TYPE}_RDY_${PGP}</string>
-      </property>
-      <property name="showLabels" stdset="0">
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
-      <property name="geometry">
-       <rect>
-        <x>25</x>
-        <y>30</y>
-        <width>50</width>
-        <height>24</height>
-       </rect>
-      </property>
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="text">
-       <string>PGP Rx</string>
-      </property>
-      <property name="rules" stdset="0">
-       <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:MPS_EN&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;int(${VIS})&gt;0&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-      </property>
-      <property name="filenames" stdset="0">
-       <stringlist>
-        <string>mps_pgp_status.ui</string>
-       </stringlist>
-      </property>
-      <property name="showIcon" stdset="0">
-       <bool>false</bool>
-      </property>
-      <property name="macros" stdset="0">
-       <stringlist>
-        <string>{&quot;P&quot;:&quot;${P_IN2}&quot;,&quot;N&quot;:&quot;${PGP}&quot;}</string>
-       </stringlist>
-      </property>
-      <property name="openInNewWindow" stdset="0">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="PyDMLabel" name="PyDMLabel_3">
-      <property name="geometry">
-       <rect>
-        <x>2</x>
-        <y>10</y>
-        <width>96</width>
-        <height>15</height>
-       </rect>
-      </property>
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="text">
-       <string>Rx Port ${PGP}</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="rules" stdset="0">
-       <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:MPS_EN&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;int(${VIS})&gt;0&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-      </property>
-     </widget>
-    </widget>
-   </widget>
    <zorder>PyDMRelatedDisplayButton</zorder>
    <zorder>PyDMDrawingImage</zorder>
    <zorder>PyDMRelatedDisplayButton_2</zorder>
@@ -464,8 +325,6 @@ color: rgb(12, 255, 68);</string>
    <zorder>frame_2</zorder>
    <zorder>label</zorder>
    <zorder>PyDMLabel_2</zorder>
-   <zorder>PyDMFrame</zorder>
-   <zorder>PyDMLabel</zorder>
   </widget>
   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
    <property name="geometry">
@@ -491,9 +350,14 @@ color: rgb(12, 255, 68);</string>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
@@ -501,20 +365,9 @@ color: rgb(12, 255, 68);</string>
    <header>pydm.widgets.embedded_display</header>
   </customwidget>
   <customwidget>
-   <class>PyDMByteIndicator</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.byte</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMFrame</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.frame</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>

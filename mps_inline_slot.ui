@@ -125,10 +125,10 @@ color: rgb(12, 255, 68);</string>
     <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
      <property name="geometry">
       <rect>
-       <x>1</x>
-       <y>1</y>
+       <x>5</x>
+       <y>5</y>
        <width>10</width>
-       <height>18</height>
+       <height>10</height>
       </rect>
      </property>
      <property name="toolTip">
@@ -138,7 +138,7 @@ color: rgb(12, 255, 68);</string>
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${CN1}:APP${AID}_STATUS</string>
+      <string>ca://${CN}:APP${AID}_STATUS</string>
      </property>
      <property name="offColor" stdset="0">
       <color>
@@ -149,35 +149,6 @@ color: rgb(12, 255, 68);</string>
      </property>
      <property name="orientation" stdset="0">
       <enum>Qt::Vertical</enum>
-     </property>
-     <property name="showLabels" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
-     <property name="geometry">
-      <rect>
-       <x>11</x>
-       <y>1</y>
-       <width>10</width>
-       <height>18</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alarmSensitiveBorder" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${CN2}:APP${AID}_STATUS</string>
-     </property>
-     <property name="offColor" stdset="0">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
      </property>
      <property name="showLabels" stdset="0">
       <bool>false</bool>
@@ -335,11 +306,6 @@ color: rgb(12, 255, 68);</string>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMByteIndicator</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.byte</header>
@@ -349,6 +315,11 @@ color: rgb(12, 255, 68);</string>
    <extends>QFrame</extends>
    <header>pydm.widgets.frame</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
