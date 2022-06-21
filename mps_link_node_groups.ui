@@ -668,60 +668,10 @@
      <string>lcls_mps_lockup_sidebyside_digital.png</string>
     </property>
    </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>55</y>
-      <width>15</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-color: rgba(255, 255, 255, 0);</string>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[]</string>
-    </property>
-    <property name="alarmSensitiveContent" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:0:STATSUMY</string>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>0</red>
-       <green>220</green>
-       <blue>0</blue>
-      </color>
-     </brush>
-    </property>
-    <property name="penStyle" stdset="0">
-     <enum>Qt::SolidLine</enum>
-    </property>
-    <property name="penColor" stdset="0">
-     <color>
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
-    </property>
-   </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
     <property name="geometry">
      <rect>
-      <x>5</x>
+      <x>20</x>
       <y>55</y>
       <width>15</width>
       <height>15</height>
@@ -765,57 +715,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
-    </property>
-   </widget>
-   <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>85</y>
-      <width>15</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-color: rgba(255, 255, 255, 0);</string>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[]</string>
-    </property>
-    <property name="alarmSensitiveContent" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="alarmSensitiveBorder" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:1:STATSUMY</string>
-    </property>
-    <property name="brush" stdset="0">
-     <brush brushstyle="SolidPattern">
-      <color alpha="255">
-       <red>0</red>
-       <green>220</green>
-       <blue>0</blue>
-      </color>
-     </brush>
-    </property>
-    <property name="penStyle" stdset="0">
-     <enum>Qt::SolidLine</enum>
-    </property>
-    <property name="penColor" stdset="0">
-     <color>
-      <red>0</red>
-      <green>0</green>
-      <blue>0</blue>
-     </color>
-    </property>
-    <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_11">
@@ -843,7 +743,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:2:STATSUMY</string>
+     <string>SIOC:SYS0:MP03:2:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -865,7 +765,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_12">
@@ -893,7 +793,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:3:STATSUMY</string>
+     <string>SIOC:SYS0:MP03:3:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -915,7 +815,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_13">
@@ -943,7 +843,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:4:STATSUMY</string>
+     <string>SIOC:SYS0:MP03:4:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -965,7 +865,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_14">
@@ -993,7 +893,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:5:STATSUMY</string>
+     <string>SIOC:SYS0:MP03:5:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -1015,7 +915,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_15">
@@ -1043,7 +943,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:6:STATSUMY</string>
+     <string>SIOC:SYS0:MP03:6:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -1065,7 +965,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_16">
@@ -1093,7 +993,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:7:STATSUMY</string>
+     <string>SIOC:SYS0:MP03:7:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -1115,7 +1015,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_17">
@@ -1165,7 +1065,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_18">
@@ -1215,7 +1115,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_19">
@@ -1265,7 +1165,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_20">
@@ -1315,13 +1215,13 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_21">
     <property name="geometry">
      <rect>
-      <x>5</x>
+      <x>20</x>
       <y>85</y>
       <width>15</width>
       <height>15</height>
@@ -1365,7 +1265,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_22">
@@ -1393,7 +1293,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP02:12:STATSUMY</string>
+     <string>SIOC:SYS0:MP01:12:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -1415,7 +1315,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_23">
@@ -1443,7 +1343,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP02:13:STATSUMY</string>
+     <string>SIOC:SYS0:MP01:13:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -1465,7 +1365,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_24">
@@ -1493,7 +1393,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP02:14:STATSUMY</string>
+     <string>SIOC:SYS0:MP01:14:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
@@ -1515,7 +1415,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_25">
@@ -1565,7 +1465,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_26">
@@ -1615,7 +1515,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_27">
@@ -1665,7 +1565,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_28">
@@ -1715,7 +1615,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_29">
@@ -1765,7 +1665,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_30">
@@ -1815,7 +1715,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_31">
@@ -1865,7 +1765,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_32">
@@ -1915,7 +1815,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_33">
@@ -1965,7 +1865,7 @@
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
   </widget>
@@ -1977,6 +1877,11 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMDrawingRectangle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
@@ -1985,11 +1890,6 @@
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.related_display_button</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>

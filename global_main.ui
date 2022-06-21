@@ -410,7 +410,6 @@
     <property name="filenames" stdset="0">
      <stringlist>
       <string>mps_global_inputs.ui</string>
-      <string>mps_cn3_global_inputs.ui</string>
      </stringlist>
     </property>
     <property name="titles" stdset="0">

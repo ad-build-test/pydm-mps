@@ -112,7 +112,7 @@
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;FILE&quot;:&quot;cn3_logic.json&quot;}</string>
+      <string>{&quot;FILE&quot;:&quot;all_logic.json&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>mps_logic.ui</string>
@@ -151,14 +151,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEmbeddedDisplay</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.embedded_display</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
   </customwidget>
  </customwidgets>
  <resources/>
