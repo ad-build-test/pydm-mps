@@ -176,7 +176,7 @@
          <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${FLT}&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${VIS}&quot;, &quot;name&quot;: &quot;Hidden&quot;, &quot;initial_value&quot;: &quot;&quot;}, {&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${FLT}_IGNORED.RVAL&quot;}], &quot;property&quot;: &quot;Opacity&quot;, &quot;expression&quot;: &quot;.25 if(ch[0]) else 1&quot;, &quot;name&quot;: &quot;Ignored&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
         </property>
         <property name="channel" stdset="0">
-         <string>ca://${FLT}</string>
+         <string>ca://${FLT}_MBBI</string>
         </property>
         <property name="onColor" stdset="0">
          <color>
