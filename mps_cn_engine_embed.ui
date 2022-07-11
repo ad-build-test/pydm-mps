@@ -460,7 +460,7 @@ Core</string>
      <string/>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:DUAL_CORE_EN</string>
+     <string>ca://${P}:CN_CHAIN_EN</string>
     </property>
     <property name="orientation" stdset="0">
      <enum>Qt::Horizontal</enum>
@@ -681,7 +681,7 @@ Core</string>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_8">
@@ -731,7 +731,7 @@ Core</string>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_9">
@@ -781,7 +781,7 @@ Core</string>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_10">
@@ -831,7 +831,7 @@ Core</string>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
    <widget class="PyDMDrawingRectangle" name="PyDMDrawingRectangle_11">
@@ -881,7 +881,7 @@ Core</string>
      </color>
     </property>
     <property name="penWidth" stdset="0">
-     <double>1.000000000000000</double>
+     <double>2.000000000000000</double>
     </property>
    </widget>
   </widget>
@@ -904,6 +904,11 @@ Core</string>
  </widget>
  <customwidgets>
   <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMDrawingRectangle</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
@@ -912,11 +917,6 @@ Core</string>
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMByteIndicator</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>
