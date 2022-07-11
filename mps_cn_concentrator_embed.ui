@@ -67,7 +67,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${P}:MonitorConcExtRxErr</string>
+     <string>ca://${P}:MonitorConcExtRxErr0</string>
     </property>
    </widget>
    <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
@@ -213,14 +213,14 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>pydm.widgets.line_edit</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMByteIndicator</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
   </customwidget>
  </customwidgets>
  <resources/>
