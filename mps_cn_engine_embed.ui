@@ -447,43 +447,6 @@ Core</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="PyDMEnumButton" name="PyDMEnumButton_6">
-    <property name="geometry">
-     <rect>
-      <x>105</x>
-      <y>225</y>
-      <width>125</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="channel" stdset="0">
-     <string>ca://${P}:CN_CHAIN_EN</string>
-    </property>
-    <property name="orientation" stdset="0">
-     <enum>Qt::Horizontal</enum>
-    </property>
-    <property name="marginTop" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="marginBottom" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="marginLeft" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="marginRight" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="horizontalSpacing" stdset="0">
-     <number>0</number>
-    </property>
-    <property name="verticalSpacing" stdset="0">
-     <number>0</number>
-    </property>
-   </widget>
    <widget class="PyDMPushButton" name="PyDMPushButton">
     <property name="geometry">
      <rect>
@@ -884,6 +847,22 @@ Core</string>
      <double>2.000000000000000</double>
     </property>
    </widget>
+   <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+    <property name="geometry">
+     <rect>
+      <x>105</x>
+      <y>225</y>
+      <width>125</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://${P}:CN_CHAIN_EN</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -917,6 +896,11 @@ Core</string>
    <class>PyDMEnumButton</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.enum_button</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumComboBox</class>
+   <extends>QComboBox</extends>
+   <header>pydm.widgets.enum_combo_box</header>
   </customwidget>
   <customwidget>
    <class>PyDMPushButton</class>
