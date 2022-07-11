@@ -786,6 +786,70 @@
      <double>2.000000000000000</double>
     </property>
    </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>188</y>
+      <width>170</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="PyDMLabel" name="PyDMLabel_9">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>6</y>
+       <width>100</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://SIOC:SYS0:MP03:SC_BSYD_MAX_PERMIT</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>60</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>100 MeV
+Max BC</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="PyDMDrawingImage" name="PyDMDrawingImage_2">
    <property name="geometry">
