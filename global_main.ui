@@ -442,11 +442,16 @@
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
-      <string>$PYDM/mps/mps_cn3_logic.ui</string>
+      <string>$PHYSICS_TOP/sc_mps_gui/mps_gui_main.py</string>
      </stringlist>
     </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
+    </property>
+    <property name="macros" stdset="0">
+     <stringlist>
+      <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP03&quot;, &quot;T&quot;:&quot;TPG:SYS0:1:DST0&quot;}</string>
+     </stringlist>
     </property>
     <property name="openInNewWindow" stdset="0">
      <bool>true</bool>
