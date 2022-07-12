@@ -65,7 +65,7 @@
       <enum>Qt::TabFocus</enum>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="BLMs">
       <attribute name="title">
@@ -232,6 +232,58 @@
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Magnets</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QScrollArea" name="scrollArea_4">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>776</width>
+            <height>459</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="templateFilename" stdset="0">
+              <string>mps_threshold_inline.ui</string>
+             </property>
+             <property name="dataSource" stdset="0">
+              <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/${AREA}_BCM_thr.json</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
    <item>
@@ -279,14 +331,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMTemplateRepeater</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.template_repeater</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMTemplateRepeater</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.template_repeater</header>
   </customwidget>
  </customwidgets>
  <resources/>
