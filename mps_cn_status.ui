@@ -143,7 +143,7 @@ background-color: rgb(70, 70, 70);</string>
     <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
      <property name="maximumSize">
       <size>
-       <width>10</width>
+       <width>20</width>
        <height>16777215</height>
       </size>
      </property>
@@ -151,7 +151,7 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${CN1}:APP${APP}_STATUS</string>
+      <string>ca://${CN}:APP${APP}_STATUS</string>
      </property>
      <property name="offColor" stdset="0">
       <color>
@@ -171,32 +171,6 @@ background-color: rgb(70, 70, 70);</string>
     </widget>
    </item>
    <item>
-    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
-     <property name="maximumSize">
-      <size>
-       <width>10</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${CN2}:APP${APP}_STATUS</string>
-     </property>
-     <property name="offColor" stdset="0">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="showLabels" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item>
     <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
      <property name="toolTip">
       <string/>
@@ -212,7 +186,7 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${CN1}:APP${APP}_ENABLE</string>
+      <string>ca://${CN}:APP${APP}_ENABLE</string>
      </property>
     </widget>
    </item>
@@ -231,49 +205,7 @@ background-color: rgb(70, 70, 70);</string>
       <bool>false</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${CN1}:APP${APP}_ENABLE_RBV</string>
-     </property>
-     <property name="offColor" stdset="0">
-      <color>
-       <red>255</red>
-       <green>0</green>
-       <blue>0</blue>
-      </color>
-     </property>
-     <property name="orientation" stdset="0">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="showLabels" stdset="0">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_3">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${CN2}:APP${APP}_ENABLE</string>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
-     <property name="maximumSize">
-      <size>
-       <width>20</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="alarmSensitiveBorder" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${CN2}:APP${APP}_ENABLE_RBV</string>
+      <string>ca://${CN}:APP${APP}_ENABLE_RBV</string>
      </property>
      <property name="offColor" stdset="0">
       <color>
@@ -294,14 +226,14 @@ background-color: rgb(70, 70, 70);</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEnumComboBox</class>
-   <extends>QComboBox</extends>
-   <header>pydm.widgets.enum_combo_box</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMByteIndicator</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEnumComboBox</class>
+   <extends>QComboBox</extends>
+   <header>pydm.widgets.enum_combo_box</header>
   </customwidget>
  </customwidgets>
  <resources/>
