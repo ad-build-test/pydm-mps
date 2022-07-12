@@ -261,7 +261,7 @@
               <string>mps_threshold_inline.ui</string>
              </property>
              <property name="dataSource" stdset="0">
-              <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/${AREA}_BCM_thr.json</string>
+              <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/${AREA}_BACT_thr.json</string>
              </property>
             </widget>
            </item>
