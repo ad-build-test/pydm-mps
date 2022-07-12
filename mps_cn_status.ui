@@ -188,10 +188,10 @@ background-color: rgb(70, 70, 70);</string>
       <number>0</number>
      </property>
      <property name="marginLeft" stdset="0">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="marginRight" stdset="0">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="horizontalSpacing" stdset="0">
       <number>0</number>
@@ -219,10 +219,10 @@ background-color: rgb(70, 70, 70);</string>
       <number>0</number>
      </property>
      <property name="marginLeft" stdset="0">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="marginRight" stdset="0">
-      <number>0</number>
+      <number>2</number>
      </property>
      <property name="horizontalSpacing" stdset="0">
       <number>0</number>
