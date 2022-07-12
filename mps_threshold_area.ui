@@ -65,7 +65,7 @@
       <enum>Qt::TabFocus</enum>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="BLMs">
       <attribute name="title">
