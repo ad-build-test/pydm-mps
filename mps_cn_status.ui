@@ -171,22 +171,64 @@ background-color: rgb(70, 70, 70);</string>
     </widget>
    </item>
    <item>
-    <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+    <widget class="PyDMEnumButton" name="PyDMEnumButton">
      <property name="toolTip">
       <string/>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${P}:MPS_EN</string>
      </property>
+     <property name="orientation" stdset="0">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="marginTop" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="marginBottom" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="marginLeft" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="marginRight" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="verticalSpacing" stdset="0">
+      <number>0</number>
+     </property>
     </widget>
    </item>
    <item>
-    <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox_2">
+    <widget class="PyDMEnumButton" name="PyDMEnumButton_2">
      <property name="toolTip">
       <string/>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${CN}:APP${APP}_ENABLE</string>
+     </property>
+     <property name="orientation" stdset="0">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="marginTop" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="marginBottom" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="marginLeft" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="marginRight" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="horizontalSpacing" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="verticalSpacing" stdset="0">
+      <number>0</number>
      </property>
     </widget>
    </item>
@@ -231,9 +273,9 @@ background-color: rgb(70, 70, 70);</string>
    <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
-   <class>PyDMEnumComboBox</class>
-   <extends>QComboBox</extends>
-   <header>pydm.widgets.enum_combo_box</header>
+   <class>PyDMEnumButton</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.enum_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
