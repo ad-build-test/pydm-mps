@@ -106,6 +106,12 @@
          </item>
          <item row="0" column="0">
           <widget class="QTabWidget" name="tabWidget_2">
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
+           </property>
            <property name="currentIndex">
             <number>0</number>
            </property>
