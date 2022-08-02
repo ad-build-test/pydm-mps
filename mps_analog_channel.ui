@@ -52,7 +52,7 @@
        </property>
        <property name="yAxes">
         <stringlist>
-         <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true}</string>
+         <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: null}</string>
         </stringlist>
        </property>
        <property name="xLabels">
@@ -62,7 +62,7 @@
        </property>
        <property name="curves">
         <stringlist>
-         <string>{&quot;y_channel&quot;: &quot;${P}:${WF}_WF&quot;, &quot;x_channel&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;redraw_mode&quot;: 2}</string>
+         <string>{&quot;y_channel&quot;: &quot;${P}:${WF}_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
         </stringlist>
        </property>
        <property name="yLabels" stdset="0">
@@ -126,7 +126,7 @@
               <string/>
              </property>
              <property name="macros" stdset="0">
-              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;MODE&quot;:&quot;NC&quot;,&quot;WF&quot;:&quot;${WF}&quot;}</string>
+              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;MODE&quot;:&quot;NC&quot;,&quot;WF&quot;:&quot;${WF}&quot;,&quot;P_APP&quot;:&quot;${P_APP}&quot;,&quot;BAY&quot;:&quot;${BAY}&quot;}</string>
              </property>
              <property name="filename" stdset="0">
               <string>inline_timing.ui</string>
@@ -168,7 +168,7 @@
               <string/>
              </property>
              <property name="macros" stdset="0">
-              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;MODE&quot;:&quot;SC&quot;,&quot;WF&quot;:&quot;${WF}&quot;}</string>
+              <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;MODE&quot;:&quot;SC&quot;,&quot;WF&quot;:&quot;${WF}&quot;,&quot;P_APP&quot;:&quot;${P_APP}&quot;,&quot;BAY&quot;:&quot;${BAY}&quot;}</string>
              </property>
              <property name="filename" stdset="0">
               <string>inline_timing.ui</string>
@@ -187,14 +187,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEmbeddedDisplay</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.embedded_display</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
    <header>pydm.widgets.waveformplot</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
   </customwidget>
  </customwidgets>
  <resources/>
