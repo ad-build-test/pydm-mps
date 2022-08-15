@@ -442,7 +442,7 @@
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
-      <string>$PHYSICS_TOP/sc_mps_gui/mps_gui_main.py</string>
+      <string>$PHYSICS_TOP/sc_mps_gui/gui/mps_gui_main.py</string>
      </stringlist>
     </property>
     <property name="showIcon" stdset="0">
