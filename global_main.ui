@@ -834,7 +834,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://SIOC:SYS0:MP03:SC_BSYD_MAX_PERMIT</string>
+      <string>ca://SIOC:SYS0:MP03:MAX_PERMIT</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
