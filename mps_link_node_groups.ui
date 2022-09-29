@@ -1917,7 +1917,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>SIOC:SYS0:MP01:24:STATSUMY</string>
+     <string>SIOC:SYS0:MP02:24:STATSUMY</string>
     </property>
     <property name="brush" stdset="0">
      <brush brushstyle="SolidPattern">
