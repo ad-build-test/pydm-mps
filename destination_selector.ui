@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>140</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="3" column="1">
+    <widget class="QPushButton" name="save_btn">
+     <property name="text">
+      <string>Save Selections</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos1">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="PyDMLabel" name="dest8">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST8}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos9">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos3">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos5">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos6">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="PyDMLabel" name="dest3">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST3}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos15">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos12">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="PyDMLabel" name="dest5">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST5}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos8">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="PyDMLabel" name="dest6">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST6}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos14">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos10">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="PyDMLabel" name="dest7">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST7}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos4">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1">
+       <widget class="PyDMLabel" name="dest14">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST14}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos11">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="PyDMLabel" name="dest4">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST4}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="PyDMLabel" name="dest2">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST2}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1">
+       <widget class="PyDMLabel" name="dest13">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST13}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="PyDMLabel" name="dest11">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST11}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="PyDMLabel" name="dest0">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST0}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos7">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="PyDMLabel" name="dest9">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST9}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="18" column="1">
+       <widget class="PyDMLabel" name="dest15">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST15}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="PyDMLabel" name="dest10">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST10}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="PyDMLabel" name="dest1">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST1}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos0">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="PyDMLabel" name="dest12">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>${DEST12}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos13">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="PyDMCheckbox" name="checkbox_bitpos2">
+        <property name="toolTip">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Readback:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${MPS_PREFIX}:BEAM_DEST_MASK_RBV</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMCheckbox</class>
+   <extends>QCheckBox</extends>
+   <header>pydm.widgets.checkbox</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
