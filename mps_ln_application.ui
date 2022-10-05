@@ -186,32 +186,6 @@
      <string>mps_expert_embed_application_information.ui</string>
     </property>
    </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>550</y>
-      <width>241</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>BPM Application Screen (TEST)</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_application_threshold_combined.ui</string>
-     </stringlist>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>{&quot;MPS_PREFIX&quot;:&quot;MPLN:BPN15:MP01:3&quot;, &quot;BPM2&quot;:&quot;${BPM2}&quot;, &quot;DEVICE&quot;:&quot;BPMS:BPN15:400&quot;}</string>
-     </stringlist>
-    </property>
-   </widget>
   </widget>
  </widget>
  <customwidgets>
@@ -224,11 +198,6 @@
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
   </customwidget>
   <customwidget>
    <class>PyDMTemplateRepeater</class>
