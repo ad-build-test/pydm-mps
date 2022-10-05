@@ -208,7 +208,7 @@
     </property>
     <property name="macros" stdset="0">
      <stringlist>
-      <string>{&quot;MPS_PREFIX&quot;=&quot;${MPS_PREFIX}&quot;, &quot;BPM2&quot;=&quot;${BPM2}&quot;, &quot;PV_PREFIX=&quot;${PV_PREFIX}&quot;}</string>
+      <string>{&quot;MPS_PREFIX&quot;:&quot;MPLN:BPN15:MP01:3&quot;, &quot;BPM2&quot;:&quot;${BPM2}&quot;, &quot;DEVICE&quot;:&quot;BPMS:BPN15:400&quot;}</string>
      </stringlist>
     </property>
    </widget>
