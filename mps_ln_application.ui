@@ -190,6 +190,11 @@
  </widget>
  <customwidgets>
   <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
@@ -198,11 +203,6 @@
    <class>PyDMTemplateRepeater</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.template_repeater</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>
