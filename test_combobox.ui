@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>696</width>
-    <height>421</height>
+    <width>1342</width>
+    <height>853</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,24 +16,27 @@
   <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>120</y>
-     <width>79</width>
-     <height>23</height>
+     <x>10</x>
+     <y>10</y>
+     <width>131</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>40</y>
-     <width>471</width>
-     <height>371</height>
+     <x>10</x>
+     <y>50</y>
+     <width>1320</width>
+     <height>800</height>
     </rect>
    </property>
    <property name="toolTip">
     <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="macros" stdset="0">
     <string>{&quot;DEVICE&quot;=${DEVICE}}</string>
@@ -42,8 +45,41 @@
     <string>test_waveform.ui</string>
    </property>
   </widget>
+  <widget class="PyDMDrawingRectangle" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1341</width>
+     <height>861</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="brush" stdset="0">
+    <brush brushstyle="SolidPattern">
+     <color alpha="255">
+      <red>193</red>
+      <green>193</green>
+      <blue>193</blue>
+     </color>
+    </brush>
+   </property>
+  </widget>
+  <zorder>Background</zorder>
+  <zorder>comboBox</zorder>
+  <zorder>PyDMEmbeddedDisplay</zorder>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMDrawingRectangle</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
