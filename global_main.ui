@@ -282,12 +282,15 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
+    <property name="redirectCommandOutput" stdset="0">
+     <bool>true</bool>
+    </property>
     <property name="allowMultipleExecutions" stdset="0">
      <bool>true</bool>
     </property>
     <property name="commands" stdset="0">
      <stringlist>
-      <string>caput SIOC:SYS0:MP01:RESET_ALL.PROC 1; caput SIOC:SYS0:MP03:RESET_ALL.PROC 1</string>
+      <string>$PYDM/mps/reset_all.sh</string>
      </stringlist>
     </property>
    </widget>
@@ -309,12 +312,15 @@
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
-    <property name="allowMultipleExecutions" stdset="0">
+    <property name="redirectCommandOutput" stdset="0">
      <bool>true</bool>
+    </property>
+    <property name="allowMultipleExecutions" stdset="0">
+     <bool>false</bool>
     </property>
     <property name="commands" stdset="0">
      <stringlist>
-      <string>caput SIOC:SYS0:MP01:UNLATCHALL.PROC 1; caput SIOC:SYS0:MP03:UNLATCHALL.PROC 1</string>
+      <string>$PYDM/mps/unlatch_all.sh</string>
      </stringlist>
     </property>
    </widget>
@@ -874,7 +880,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Speedometer</string>
+      <string>Speed Limit</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
