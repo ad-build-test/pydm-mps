@@ -41,7 +41,7 @@
     <rect>
      <x>9</x>
      <y>9</y>
-     <width>301</width>
+     <width>531</width>
      <height>21</height>
     </rect>
    </property>
@@ -49,6 +49,9 @@
     <font>
      <pointsize>14</pointsize>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
     <string>${DEVICE}</string>

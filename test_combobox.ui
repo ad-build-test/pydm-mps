@@ -42,7 +42,7 @@
     <string>{&quot;DEVICE&quot;=${DEVICE}}</string>
    </property>
    <property name="filename" stdset="0">
-    <string>test_waveform.ui</string>
+    <string>test_waveform.py</string>
    </property>
   </widget>
   <widget class="PyDMDrawingRectangle" name="Background">
