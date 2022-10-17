@@ -84,7 +84,7 @@ class ComboBoxMacroSelector(Display):
         
     def write_macros(self):
         
-        self.reset_nav_buttons()
+        self.set_nav_buttons()
 
         print('writing')
         print(self.macros()['DEVICE'])
@@ -103,8 +103,9 @@ class ComboBoxMacroSelector(Display):
             self.ui.comboBox.setCurrentIndex(next_lblm)
             self.macros()['DEVICE'] = self.lblms[next_lblm]
             self.write_macros()
-            if next_lblm == (self.ui.comboBox.count()-1):
-                self.ui.Next.setEnabled(False)
+
+            self.set_nav_buttons()
+
 
     def prev_lblm(self):
 
@@ -116,14 +117,19 @@ class ComboBoxMacroSelector(Display):
             self.ui.comboBox.setCurrentIndex(prev_lblm)
             self.macros()['DEVICE'] = self.lblms[prev_lblm]
             self.write_macros()
-            if prev_lblm == 0:
-                self.ui.Previous.setEnabled(False)
 
-    def reset_nav_buttons(self):
+            self.set_nav_buttons()
+    
+    def set_nav_buttons(self):
         
-        if self.ui.comboBox.currentIndex() < self.ui.comboBox.count() and self.ui.comboBox.currentIndex() > 0:
+        if self.ui.comboBox.currentIndex() < (self.ui.comboBox.count()-1):
             self.ui.Next.setEnabled(True)
+        else:
+            self.ui.Next.setEnabled(False)
+        if self.ui.comboBox.currentIndex() > 0:
             self.ui.Previous.setEnabled(True)
+        else:
+            self.ui.Previous.setEnabled(False)
 
     @staticmethod
     def ui_filename():
