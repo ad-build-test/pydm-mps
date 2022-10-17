@@ -149,7 +149,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>${DEVICE}</string>
+     <string>${DEVICE}FAST_AMP_GAIN</string>
     </property>
    </widget>
    <widget class="PyDMCheckbox" name="bypass">
@@ -168,7 +168,7 @@
      <string>Bypass</string>
     </property>
     <property name="channel" stdset="0">
-     <string>${DEVICE}</string>
+     <string>${DEVICE}FAST_AMP_BYP</string>
     </property>
    </widget>
    <widget class="PyDMRelatedDisplayButton" name="threshold_RD">
@@ -225,7 +225,7 @@
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>${DEVICE}</string>
+     <string>${DEVICE}FAST_AMP_V</string>
     </property>
    </widget>
    <widget class="PyDMLabel" name="beam_loss">
