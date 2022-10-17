@@ -30,21 +30,6 @@
     <number>0</number>
    </property>
    <item>
-    <widget class="QLabel" name="device_title">
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-     </property>
-     <property name="text">
-      <string>${DEVICE}</string>
-     </property>
-    </widget>
-   </item>
-   <item>
     <widget class="PyDMTabWidget" name="PyDMTabWidget">
      <property name="toolTip">
       <string/>
@@ -56,7 +41,7 @@
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <property name="alarmChannels">
       <stringlist>
@@ -107,7 +92,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -131,8 +116,8 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;red&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (raw)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (EGU)&quot;, &quot;color&quot;: &quot;dodgerblue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (egu)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;red&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (raw)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (EGU)&quot;, &quot;color&quot;: &quot;dodgerblue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (egu)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -174,7 +159,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -216,7 +201,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;red&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;red&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -267,11 +252,23 @@
              <property name="rules" stdset="0">
               <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
              </property>
+             <property name="precision" stdset="0">
+              <number>0</number>
+             </property>
              <property name="showUnits" stdset="0">
               <bool>true</bool>
              </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveBorder" stdset="0">
+              <bool>true</bool>
+             </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}FAST_OFFSET_WF</string>
+              <string>${DEVICE}:FAST_OFFSET_WF</string>
              </property>
             </widget>
            </item>
@@ -314,11 +311,23 @@
              <property name="rules" stdset="0">
               <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
              </property>
+             <property name="precision" stdset="0">
+              <number>0</number>
+             </property>
              <property name="showUnits" stdset="0">
               <bool>true</bool>
              </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveBorder" stdset="0">
+              <bool>true</bool>
+             </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}FAST_SLOPE_WF</string>
+              <string>${DEVICE}:FAST_SLOPE_WF</string>
              </property>
             </widget>
            </item>
@@ -365,11 +374,23 @@
              <property name="rules" stdset="0">
               <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
              </property>
+             <property name="precision" stdset="0">
+              <number>0</number>
+             </property>
              <property name="showUnits" stdset="0">
               <bool>true</bool>
              </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveBorder" stdset="0">
+              <bool>true</bool>
+             </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}FAST_WF_START</string>
+              <string>${DEVICE}:FAST_WF_START</string>
              </property>
             </widget>
            </item>
@@ -412,11 +433,23 @@
              <property name="rules" stdset="0">
               <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
              </property>
+             <property name="precision" stdset="0">
+              <number>0</number>
+             </property>
              <property name="showUnits" stdset="0">
               <bool>true</bool>
              </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveBorder" stdset="0">
+              <bool>true</bool>
+             </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}FAST_WF_NELM</string>
+              <string>${DEVICE}:FAST_WF_NELM</string>
              </property>
             </widget>
            </item>
@@ -477,7 +510,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;dodgerblue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;dodgerblue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -516,11 +549,23 @@
              <property name="rules" stdset="0">
               <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
              </property>
+             <property name="precision" stdset="0">
+              <number>0</number>
+             </property>
              <property name="showUnits" stdset="0">
               <bool>true</bool>
              </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveBorder" stdset="0">
+              <bool>true</bool>
+             </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}FAST_OFFSET_WF</string>
+              <string>${DEVICE}:FAST_OFFSET_WF</string>
              </property>
             </widget>
            </item>
@@ -551,11 +596,23 @@
              <property name="rules" stdset="0">
               <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
              </property>
+             <property name="precision" stdset="0">
+              <number>0</number>
+             </property>
              <property name="showUnits" stdset="0">
               <bool>true</bool>
              </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveBorder" stdset="0">
+              <bool>true</bool>
+             </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}FAST_SLOPE_WF</string>
+              <string>${DEVICE}:FAST_SLOPE_WF</string>
              </property>
             </widget>
            </item>
@@ -654,7 +711,7 @@
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>${DEVICE}FAST_AMP_GAIN</string>
+             <string>${DEVICE}:FAST_AMP_GAIN</string>
             </property>
            </widget>
           </item>
@@ -666,8 +723,14 @@
             <property name="text">
              <string>Bypass</string>
             </property>
+            <property name="alarmSensitiveContent" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="alarmSensitiveBorder" stdset="0">
+             <bool>true</bool>
+            </property>
             <property name="channel" stdset="0">
-             <string>${DEVICE}FAST_AMP_BYP</string>
+             <string>${DEVICE}:FAST_AMP_BYP</string>
             </property>
            </widget>
           </item>
@@ -703,14 +766,23 @@
           <property name="alignment">
            <set>Qt::AlignCenter</set>
           </property>
+          <property name="precision" stdset="0">
+           <number>0</number>
+          </property>
           <property name="showUnits" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="precisionFromPV" stdset="0">
            <bool>true</bool>
           </property>
           <property name="alarmSensitiveContent" stdset="0">
            <bool>true</bool>
           </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
           <property name="channel" stdset="0">
-           <string>${DEVICE}FAST_AMP_V</string>
+           <string>${DEVICE}:FAST_AMP_V</string>
           </property>
          </widget>
         </item>
@@ -781,8 +853,41 @@
           <property name="toolTip">
            <string/>
           </property>
+          <property name="precision" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="showUnits" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="precisionFromPV" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>false</bool>
+          </property>
           <property name="channel" stdset="0">
-           <string>${DEVICE}</string>
+           <string>${DEVICE}:FAST_AMP_GAIN</string>
+          </property>
+          <property name="tracking" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="ignoreMouseWheel" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="showLimitLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="showValueLabel" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="userDefinedLimits" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="num_steps" stdset="0">
+           <number>99</number>
           </property>
          </widget>
         </item>
@@ -802,7 +907,7 @@
            <string/>
           </property>
           <property name="channel" stdset="0">
-           <string>${DEVICE}AutoRearm</string>
+           <string>${DEVICE}:AutoRearm</string>
           </property>
          </widget>
         </item>
