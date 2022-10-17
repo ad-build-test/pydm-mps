@@ -71,7 +71,7 @@ class ComboBoxMacroSelector(Display):
         self.ui.comboBox.addItems(self.lblms)
         
         #set previous button to disabled
-
+        self.ui.Previous.setEnabled(False)
 
     def read_comboBox(self):
         #
@@ -84,6 +84,8 @@ class ComboBoxMacroSelector(Display):
         
     def write_macros(self):
         
+        self.reset_nav_buttons()
+
         print('writing')
         print(self.macros()['DEVICE'])
         print(self.prev_text + ':RWF_U16.VALA') 
@@ -116,6 +118,12 @@ class ComboBoxMacroSelector(Display):
             self.write_macros()
             if prev_lblm == 0:
                 self.ui.Previous.setEnabled(False)
+
+    def reset_nav_buttons(self):
+        
+        if self.ui.comboBox.currentIndex() < self.ui.comboBox.count() and self.ui.comboBox.currentIndex() > 0:
+            self.ui.Next.setEnabled(True)
+            self.ui.Previous.setEnabled(True)
 
     @staticmethod
     def ui_filename():
