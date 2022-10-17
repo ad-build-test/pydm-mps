@@ -9,14 +9,19 @@ class LBLMmain(Display):
         super(LBLMmain, self).__init__(parent=parent, args=args, macros=macros)
 
         self.gray_out()
+        self.ui.bypass.toggled.connect(self.gray_out)
+        
 
 
     def gray_out(self):
-        if self.bypass.isChecked:
+        print(self.bypass.isChecked())
+        print("gray_out test")
+        if self.bypass.isChecked():
             self.gain_request_slid.setEnabled(False)
+            print("false")
         else:
             self.gain_request_slid.setEnabled(True)
-    
+            print("True")
 
     @staticmethod
     def ui_filename():
