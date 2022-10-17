@@ -1,6 +1,9 @@
 from os import path
 from pydm import Display
 
+from pydm.widgets.checkbox import PyDMCheckbox
+from pydm.widgets.slider import PyDMSlider
+
 class LBLMmain(Display):
     def __init__(self, parent=None, args=[], macros=None):
         super(LBLMmain, self).__init__(parent=parent, args=args, macros=macros)

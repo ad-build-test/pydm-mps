@@ -13,101 +13,59 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QComboBox" name="comboBox">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>261</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>50</y>
-     <width>1320</width>
-     <height>800</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
-   </property>
-   <property name="macros" stdset="0">
-    <string>{&quot;DEVICE&quot;=${DEVICE}}</string>
-   </property>
-   <property name="filename" stdset="0">
-    <string>test_waveform.py</string>
-   </property>
-  </widget>
-  <widget class="PyDMDrawingRectangle" name="Background">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1341</width>
-     <height>861</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string/>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="brush" stdset="0">
-    <brush brushstyle="SolidPattern">
-     <color alpha="255">
-      <red>193</red>
-      <green>193</green>
-      <blue>193</blue>
-     </color>
-    </brush>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Previous">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>20</y>
-     <width>80</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Previous</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Next">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>20</y>
-     <width>80</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Next</string>
-   </property>
-  </widget>
-  <zorder>Background</zorder>
-  <zorder>comboBox</zorder>
-  <zorder>PyDMEmbeddedDisplay</zorder>
-  <zorder>Previous</zorder>
-  <zorder>Next</zorder>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,2,1">
+     <item>
+      <widget class="QPushButton" name="Previous">
+       <property name="text">
+        <string>Previous</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Next">
+       <property name="text">
+        <string>Next</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;DEVICE&quot;=${DEVICE}}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>test_waveform.py</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <customwidgets>
-  <customwidget>
-   <class>PyDMDrawingRectangle</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
-  </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
