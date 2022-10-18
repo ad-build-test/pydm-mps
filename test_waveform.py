@@ -18,9 +18,11 @@ class LBLMmain(Display):
         print("gray_out test")
         if self.bypass.isChecked():
             self.gain_request_slid.setEnabled(False)
+            self.gain_request_edit.setEnabled(False)
             print("false")
         else:
             self.gain_request_slid.setEnabled(True)
+            self.gain_request_edit.setEnabled(True)
             print("True")
 
     @staticmethod

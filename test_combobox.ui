@@ -11,9 +11,9 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>SC LBLM PLIC</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
    <property name="leftMargin">
     <number>5</number>
    </property>
@@ -82,8 +82,7 @@ background-color: rgba(255, 255, 255, 0);</string>
 background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
-         <string>SC
-SUBSYSTEM</string>
+         <string>GLOBAL APPLICATION</string>
         </property>
        </widget>
       </item>
@@ -101,7 +100,7 @@ SUBSYSTEM</string>
 background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
-         <string>SC Application Title</string>
+         <string>SC LBLM PLIC</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>

@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
    <property name="leftMargin">
     <number>0</number>
    </property>
@@ -76,6 +76,18 @@
          <property name="styleSheet">
           <string notr="true"/>
          </property>
+         <property name="backgroundBrush">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>230</red>
+            <green>230</green>
+            <blue>230</blue>
+           </color>
+          </brush>
+         </property>
+         <property name="optimizationFlags">
+          <set>QGraphicsView::DontClipPainter</set>
+         </property>
          <property name="showXGrid">
           <bool>true</bool>
          </property>
@@ -87,12 +99,17 @@
            <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
+         <property name="xLabels">
+          <stringlist>
+           <string>2.8 ns intervals</string>
+          </stringlist>
+         </property>
          <property name="showLegend">
           <bool>false</bool>
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;blue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -101,6 +118,18 @@
         <widget class="PyDMWaveformPlot" name="PyDMWaveformPlot_5">
          <property name="toolTip">
           <string/>
+         </property>
+         <property name="backgroundBrush">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>230</red>
+            <green>230</green>
+            <blue>230</blue>
+           </color>
+          </brush>
+         </property>
+         <property name="optimizationFlags">
+          <set>QGraphicsView::DontClipPainter</set>
          </property>
          <property name="showXGrid">
           <bool>true</bool>
@@ -114,10 +143,18 @@
            <string>{&quot;name&quot;: &quot;Amplitude (egu)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
+         <property name="xLabels">
+          <stringlist>
+           <string>2.8 ns Intervals</string>
+          </stringlist>
+         </property>
+         <property name="showLegend">
+          <bool>false</bool>
+         </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;red&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (raw)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (EGU)&quot;, &quot;color&quot;: &quot;dodgerblue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (egu)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#008700&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (raw)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (EGU)&quot;, &quot;color&quot;: &quot;#cc6600&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (egu)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -146,6 +183,15 @@
          <property name="toolTip">
           <string/>
          </property>
+         <property name="backgroundBrush">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>230</red>
+            <green>230</green>
+            <blue>230</blue>
+           </color>
+          </brush>
+         </property>
          <property name="showXGrid">
           <bool>true</bool>
          </property>
@@ -157,9 +203,14 @@
            <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
+         <property name="xLabels">
+          <stringlist>
+           <string>2.8 ns Intervals</string>
+          </stringlist>
+         </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;white&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;blue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -188,6 +239,15 @@
          <property name="toolTip">
           <string/>
          </property>
+         <property name="backgroundBrush">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>230</red>
+            <green>230</green>
+            <blue>230</blue>
+           </color>
+          </brush>
+         </property>
          <property name="showXGrid">
           <bool>true</bool>
          </property>
@@ -199,9 +259,14 @@
            <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
+         <property name="xLabels">
+          <stringlist>
+           <string>2.8 ns Intervals</string>
+          </stringlist>
+         </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;red&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#008700&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -497,6 +562,15 @@
          <property name="toolTip">
           <string/>
          </property>
+         <property name="backgroundBrush">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>230</red>
+            <green>230</green>
+            <blue>230</blue>
+           </color>
+          </brush>
+         </property>
          <property name="showXGrid">
           <bool>true</bool>
          </property>
@@ -508,9 +582,14 @@
            <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0, &quot;maxRange&quot;: 1.0, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
+         <property name="xLabels">
+          <stringlist>
+           <string>2.8 ns Intervals</string>
+          </stringlist>
+         </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;dodgerblue&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:FAST_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#cc6600&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -659,6 +738,93 @@
      <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
        <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0">
+          <item>
+           <widget class="QLabel" name="gain_request_lab_2">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Gain Requested RBV:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PyDMLabel" name="PyDMLabel">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="alarmSensitiveContent" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>${DEVICE}:FAST_AMP_GAIN_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::MinimumExpanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="voltage_lab">
+          <property name="text">
+           <string>Voltage</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="PyDMRelatedDisplayButton" name="threshold_RD">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="text">
+           <string>MPS Threshold Display</string>
+          </property>
+         </widget>
+        </item>
         <item row="3" column="3">
          <widget class="PyDMLabel" name="beam_loss">
           <property name="minimumSize">
@@ -679,72 +845,38 @@
           <property name="alignment">
            <set>Qt::AlignCenter</set>
           </property>
+          <property name="precision" stdset="0">
+           <number>0</number>
+          </property>
           <property name="showUnits" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="precisionFromPV" stdset="0">
            <bool>true</bool>
           </property>
           <property name="alarmSensitiveContent" stdset="0">
            <bool>true</bool>
           </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
           <property name="channel" stdset="0">
-           <string>${DEVICE}</string>
+           <string>${DEVICE}:I0_LOSS</string>
           </property>
          </widget>
         </item>
-        <item row="2" column="0">
-         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,1">
-          <item>
-           <widget class="QLabel" name="gain_request_lab">
-            <property name="text">
-             <string>Gain Requested</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="PyDMLineEdit" name="gain_request_edit">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="showUnits" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>${DEVICE}:FAST_AMP_GAIN</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="PyDMCheckbox" name="bypass">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="text">
-             <string>Bypass</string>
-            </property>
-            <property name="alarmSensitiveContent" stdset="0">
-             <bool>false</bool>
-            </property>
-            <property name="alarmSensitiveBorder" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>${DEVICE}:FAST_AMP_BYP</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item row="3" column="2">
-         <widget class="QLabel" name="beam_loss_lab">
-          <property name="text">
-           <string>Measured Beam Loss</string>
+        <item row="2" column="7">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
           </property>
-         </widget>
+         </spacer>
         </item>
         <item row="2" column="3">
          <widget class="PyDMLabel" name="voltage">
@@ -786,13 +918,13 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="4">
-         <widget class="PyDMRelatedDisplayButton" name="threshold_RD">
-          <property name="toolTip">
-           <string/>
-          </property>
+        <item row="3" column="2">
+         <widget class="QLabel" name="beam_loss_lab">
           <property name="text">
-           <string>MPS Threshold Display</string>
+           <string>Measured Beam Loss</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -810,43 +942,68 @@
          </widget>
         </item>
         <item row="1" column="0">
-         <spacer name="verticalSpacer">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Fixed</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>17</width>
-            <height>27</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="2" column="6">
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="2" column="2">
-         <widget class="QLabel" name="voltage_lab">
-          <property name="text">
-           <string>Voltage</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,0">
+          <item>
+           <widget class="QLabel" name="gain_request_lab">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Gain Requested:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PyDMLineEdit" name="gain_request_edit">
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>${DEVICE}:FAST_AMP_GAIN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="PyDMCheckbox" name="bypass">
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Bypass</string>
+            </property>
+            <property name="alarmSensitiveContent" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="alarmSensitiveBorder" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>${DEVICE}:FAST_AMP_BYP</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item row="3" column="0">
          <widget class="PyDMSlider" name="gain_request_slid">
@@ -891,6 +1048,16 @@
           </property>
          </widget>
         </item>
+        <item row="2" column="5">
+         <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>${DEVICE}:AutoRearm</string>
+          </property>
+         </widget>
+        </item>
         <item row="3" column="4">
          <widget class="PyDMRelatedDisplayButton" name="unit_RD">
           <property name="toolTip">
@@ -901,13 +1068,40 @@
           </property>
          </widget>
         </item>
-        <item row="2" column="5">
-         <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+        <item row="2" column="6">
+         <widget class="PyDMRelatedDisplayButton" name="threshold_RD_2">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Vis test</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="PyDMPushButton" name="PyDMPushButton">
           <property name="toolTip">
            <string/>
           </property>
           <property name="channel" stdset="0">
-           <string>${DEVICE}:AutoRearm</string>
+           <string>loc://test?type=</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QCheckBox" name="freeze_2">
+          <property name="text">
+           <string>Freeze</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="PyDMCheckbox" name="freeze">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Freeze</string>
           </property>
          </widget>
         </item>
@@ -954,6 +1148,11 @@
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
