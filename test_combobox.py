@@ -16,10 +16,6 @@ class ComboBoxMacroSelector(Display):
         super(ComboBoxMacroSelector, self).__init__(parent=parent, args=args, macros=macros)
         
         self.lblm_selection = 0
-        if self.macros() == {}:
-            print('True')
-        else:
-            print('False')
         
         self.load_database()
         self.get_sorted_lblms()
@@ -36,7 +32,6 @@ class ComboBoxMacroSelector(Display):
         for file in listdir(environ.get("PHYSICS_TOP") + "/mps_configuration/current"):
             if file.endswith(".db"):
                 self.db_file = environ.get("PHYSICS_TOP") + "/mps_configuration/current/" + file
-                print(self.db_file) 
 
     def get_lblm_type(self):
         #we want to query the database again, but this time we want all lblms
@@ -117,8 +112,6 @@ class ComboBoxMacroSelector(Display):
                 self.lblm_label_list.append(dev + " (WS)")
             else:
                 self.lblm_label_list.append(dev)
-        print(self.lblm_label_list)
-        print(self.all_lblms)
 
     def init_comboBox(self):
         #ca://BLEN:HTR:350:10:RWF_U16.VALA
@@ -141,7 +134,6 @@ class ComboBoxMacroSelector(Display):
         #self.macros()['DEVICE'] = self.all_lblms[self.ui.comboBox.currentIndex()]
         #print(self.macros()['DEVICE'])
         self.macros()['IS_WS'] = self.lblm_type[self.ui.comboBox.currentIndex()]
-        print(self.macros())
         
         if self.macros()['DEVICE'] == '-Select LBLM-':
             print('Not Writing')
@@ -153,7 +145,6 @@ class ComboBoxMacroSelector(Display):
         self.set_nav_buttons()
 
         print('writing')
-        print(self.macros()['DEVICE'])
         self.ui.PyDMEmbeddedDisplay._needs_load = True
         self.ui.PyDMEmbeddedDisplay.load_if_needed()
 
@@ -163,8 +154,6 @@ class ComboBoxMacroSelector(Display):
         next_lblm = lblm_index + 1
         if next_lblm < self.ui.comboBox.count():
             self.ui.Next.setEnabled(True)
-            print(self.ui.comboBox.count())
-            print(next_lblm)
             self.ui.comboBox.setCurrentIndex(next_lblm)
             self.macros()['DEVICE'] = self.all_lblms[next_lblm]
             self.write_macros()
@@ -177,8 +166,6 @@ class ComboBoxMacroSelector(Display):
         lblm_index = self.ui.comboBox.currentIndex()
         prev_lblm = lblm_index - 1
         if (prev_lblm) >= 0:
-            print(lblm_index)
-            print(prev_lblm)
             self.ui.comboBox.setCurrentIndex(prev_lblm)
             self.macros()['DEVICE'] = self.all_lblms[prev_lblm]
             self.write_macros()
