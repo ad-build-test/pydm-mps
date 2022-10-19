@@ -10,6 +10,7 @@ class LBLMmain(Display):
 
         self.gray_out()
         self.ui.bypass.toggled.connect(self.gray_out)
+        self.ui.freeze.toggled.connect(self.freeze_plot)
         """
         if bool(int(self.macros()["IS_WS"])):
             self.ui.vis_test.show()
@@ -28,6 +29,14 @@ class LBLMmain(Display):
             self.gain_request_slid.setEnabled(True)
             self.gain_request_edit.setEnabled(True)
             print("True")
+
+    def freeze_plot(self):
+        print('Freezing plots')
+        self.ui.PyDMWaveformPlot.pausePlotting()
+        self.ui.PyDMWaveformPlot_2.pausePlotting()
+        self.ui.PyDMWaveformPlot_3.pausePlotting()
+        self.ui.PyDMWaveformPlot_4.pausePlotting()
+        self.ui.PyDMWaveformPlot_5.pausePlotting()
 
     @staticmethod
     def ui_filename():
