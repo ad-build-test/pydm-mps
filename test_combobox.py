@@ -131,7 +131,7 @@ class ComboBoxMacroSelector(Display):
 
     def read_comboBox(self):
         # Dont think im actually using prev_text
-        #self.macros()['DEVICE'] = self.all_lblms[self.ui.comboBox.currentIndex()]
+        self.macros()['DEVICE'] = self.all_lblms[self.ui.comboBox.currentIndex()]
         #print(self.macros()['DEVICE'])
         self.macros()['IS_WS'] = self.lblm_type[self.ui.comboBox.currentIndex()]
         
@@ -142,6 +142,7 @@ class ComboBoxMacroSelector(Display):
         
     def write_macros(self):
         
+
         self.set_nav_buttons()
 
         print('writing')
