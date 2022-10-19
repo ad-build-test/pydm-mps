@@ -8,19 +8,18 @@ class LBLMmain(Display):
     def __init__(self, parent=None, args=[], macros=None):
         super(LBLMmain, self).__init__(parent=parent, args=args, macros=macros)
 
-        self.gray_out()
-        self.ui.bypass.toggled.connect(self.gray_out)
+        self.bypass_gain_request()
+        self.ws_visibility()
+        self.ui.bypass.toggled.connect(self.bypass_gain_request)
         self.ui.freeze.toggled.connect(self.freeze_plot)
-        """
-        if bool(int(self.macros()["IS_WS"])):
-            self.ui.vis_test.show()
-        else:
-            self.ui.vis_test.hide()
-        """
 
-    def gray_out(self):
+
+    def bypass_gain_request(self):
+        """
+        disables the gain request controls when the bypass box is checked
+        """
         print(self.bypass.isChecked())
-        print("gray_out test")
+        print("bypass_gain_request test")
         if self.bypass.isChecked():
             self.gain_request_slid.setEnabled(False)
             self.gain_request_edit.setEnabled(False)
@@ -29,6 +28,18 @@ class LBLMmain(Display):
             self.gain_request_slid.setEnabled(True)
             self.gain_request_edit.setEnabled(True)
             print("True")
+
+    def ws_visibility(self):
+        """
+        Hides and shows wirescaner specific widges
+        """
+        
+        if bool(int(self.macros()["IS_WS"])):
+            self.ui.ws_widgets.show()
+        else:
+            self.ui.ws_widgets.hide()
+        
+
 
     def freeze_plot(self):
         print('Freezing plots')

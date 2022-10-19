@@ -10,6 +10,12 @@
     <height>800</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -51,7 +57,7 @@
        <string></string>
       </stringlist>
      </property>
-     <widget class="QWidget" name="tab">
+     <widget class="QWidget" name="all_trace_tab">
       <attribute name="title">
        <string>All Traces</string>
       </attribute>
@@ -161,7 +167,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_2">
+     <widget class="QWidget" name="buffer_trace_tab">
       <attribute name="title">
        <string>Waveform in Buffer</string>
       </attribute>
@@ -217,7 +223,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_3">
+     <widget class="QWidget" name="raw_trace_tab">
       <attribute name="title">
        <string>Raw Waveform (w Region on Interest)</string>
       </attribute>
@@ -279,7 +285,7 @@
          <item>
           <layout class="QGridLayout" name="gridLayout_2">
            <item row="0" column="0">
-            <widget class="QLabel" name="label_13">
+            <widget class="QLabel" name="scale_slope_lab">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -295,7 +301,7 @@
             </widget>
            </item>
            <item row="1" column="1">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+            <widget class="PyDMLineEdit" name="scale_offset_edit">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -338,7 +344,7 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QLabel" name="label_14">
+            <widget class="QLabel" name="scale_offset_lab">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -354,7 +360,7 @@
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit">
+            <widget class="PyDMLineEdit" name="scale_slope_edit">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -401,7 +407,7 @@
          <item>
           <layout class="QGridLayout" name="gridLayout_3">
            <item row="0" column="0">
-            <widget class="QLabel" name="label_15">
+            <widget class="QLabel" name="wf_length_lab">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -417,7 +423,7 @@
             </widget>
            </item>
            <item row="1" column="1">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+            <widget class="PyDMLineEdit" name="wf_start_edit">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -460,7 +466,7 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QLabel" name="label_16">
+            <widget class="QLabel" name="wf_start_lab">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -476,7 +482,7 @@
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_4">
+            <widget class="PyDMLineEdit" name="wf_length_edit">
              <property name="maximumSize">
               <size>
                <width>150</width>
@@ -540,7 +546,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="tab_4">
+     <widget class="QWidget" name="egu_trace_tab">
       <attribute name="title">
        <string>Waveform in EGU</string>
       </attribute>
@@ -602,7 +608,7 @@
          <item>
           <layout class="QGridLayout" name="gridLayout_6">
            <item row="0" column="0">
-            <widget class="QLabel" name="label_21">
+            <widget class="QLabel" name="scale_slope_lab_2">
              <property name="text">
               <string>Scale Slope</string>
              </property>
@@ -612,7 +618,7 @@
             </widget>
            </item>
            <item row="1" column="1">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_9">
+            <widget class="PyDMLineEdit" name="scale_offset_edit_2">
              <property name="toolTip">
               <string/>
              </property>
@@ -649,7 +655,7 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QLabel" name="label_22">
+            <widget class="QLabel" name="scale_offset_lab_2">
              <property name="text">
               <string>Scale Offset</string>
              </property>
@@ -659,7 +665,7 @@
             </widget>
            </item>
            <item row="0" column="1">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit_10">
+            <widget class="PyDMLineEdit" name="scale_slope_edit_2">
              <property name="toolTip">
               <string/>
              </property>
@@ -731,636 +737,708 @@
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">PyDMFrame {
-  background-color: rgb(214,214,214);
-}</string>
+      <string notr="true"/>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_2">
-          <item>
-           <widget class="QLabel" name="controls">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
-            <property name="text">
-             <string>LBLM controls</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0">
-            <item>
-             <widget class="QLabel" name="gain_request_lab">
-              <property name="minimumSize">
-               <size>
-                <width>150</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Gain Requested:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMLineEdit" name="gain_request_edit">
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:FAST_AMP_GAIN</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMCheckbox" name="bypass">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Bypass</string>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="alarmSensitiveBorder" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:FAST_AMP_BYP</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,1,0">
-            <item>
-             <widget class="QLabel" name="gain_request_lab_2">
-              <property name="minimumSize">
-               <size>
-                <width>150</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Gain Requested RBV:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="PyDMLabel" name="gain_request_rbv">
-              <property name="minimumSize">
-               <size>
-                <width>150</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:FAST_AMP_GAIN_RBV</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::MinimumExpanding</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="PyDMSlider" name="gain_request_slid">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="precision" stdset="0">
-             <number>0</number>
-            </property>
-            <property name="showUnits" stdset="0">
-             <bool>false</bool>
-            </property>
-            <property name="precisionFromPV" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="alarmSensitiveContent" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="alarmSensitiveBorder" stdset="0">
-             <bool>false</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>${DEVICE}:FAST_AMP_GAIN</string>
-            </property>
-            <property name="tracking" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="ignoreMouseWheel" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="showLimitLabels" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="showValueLabel" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="userDefinedLimits" stdset="0">
-             <bool>false</bool>
-            </property>
-            <property name="num_steps" stdset="0">
-             <number>99</number>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="PyDMFrame" name="PyDMFrame">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_11">
+             <item>
+              <widget class="QLabel" name="LBLM_lab">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(174, 174, 174);border-radius: 6px;</string>
+               </property>
+               <property name="text">
+                <string>LBLM controls</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="gain_request_lab">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>Gain Requested:</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="PyDMCheckbox" name="bypass">
+                     <property name="minimumSize">
+                      <size>
+                       <width>68</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>Bypass</string>
+                     </property>
+                     <property name="alarmSensitiveContent" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="alarmSensitiveBorder" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                     <property name="channel" stdset="0">
+                      <string>${DEVICE}:FAST_AMP_BYP</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="PyDMLineEdit" name="gain_request_edit">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="showUnits" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                     <property name="channel" stdset="0">
+                      <string>${DEVICE}:FAST_AMP_GAIN</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLabel" name="gain_request_lab_rbv">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>Gain Requested RBV:</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="1">
+                    <widget class="PyDMLabel" name="gain_request_rbv">
+                     <property name="minimumSize">
+                      <size>
+                       <width>100</width>
+                       <height>24</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>150</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="alarmSensitiveContent" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                     <property name="channel" stdset="0">
+                      <string>${DEVICE}:FAST_AMP_GAIN_RBV</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="PyDMSlider" name="gain_request_slid">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="precision" stdset="0">
+                    <number>0</number>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="precisionFromPV" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveContent" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveBorder" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:FAST_AMP_GAIN</string>
+                   </property>
+                   <property name="tracking" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="ignoreMouseWheel" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showLimitLabels" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showValueLabel" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="userDefinedLimits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="num_steps" stdset="0">
+                    <number>99</number>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_5">
+                 <item row="2" column="1">
+                  <widget class="PyDMLabel" name="beam_loss_rbv">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="precision" stdset="0">
+                    <number>0</number>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="precisionFromPV" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveContent" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveBorder" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:I0_LOSS</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="beam_loss_lab">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Measured Beam Loss</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QCheckBox" name="freeze">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>Freeze Plot</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="voltage_lab">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+                   </property>
+                   <property name="text">
+                    <string>Voltage</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="PyDMRelatedDisplayButton" name="threshold_RD">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string>MPS Threshold Display</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="PyDMRelatedDisplayButton" name="unit_RD">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string>Unit Conversion/Calibration</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="PyDMLabel" name="voltage_rbv">
+                   <property name="minimumSize">
+                    <size>
+                     <width>100</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="precision" stdset="0">
+                    <number>0</number>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="precisionFromPV" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveContent" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveBorder" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:FAST_AMP_V</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_9">
-          <item>
-           <widget class="QLabel" name="duration_lab">
-            <property name="minimumSize">
-             <size>
-              <width>150</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>Duration Pre-Edge (ns)</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <layout class="QGridLayout" name="gridLayout_4">
-            <item row="1" column="0">
-             <widget class="PyDMLineEdit" name="pre_edit">
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:TIME_PRE</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="QLabel" name="post_lab">
-              <property name="minimumSize">
-               <size>
-                <width>150</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Post-Edge</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="pre_lab">
-              <property name="minimumSize">
-               <size>
-                <width>150</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Pre-Edge</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="2">
-             <widget class="PyDMLineEdit" name="post_edit">
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:TIME_MID</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="2">
-             <widget class="PyDMSlider" name="post_slid">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="precision" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveBorder" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:TIME_POS</string>
-              </property>
-              <property name="tracking" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="ignoreMouseWheel" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="showLimitLabels" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="showValueLabel" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="userDefinedLimits" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="num_steps" stdset="0">
-               <number>99</number>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="PyDMSlider" name="pre_slid">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="precision" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveBorder" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:TIME_PRE</string>
-              </property>
-              <property name="tracking" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="ignoreMouseWheel" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="showLimitLabels" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="showValueLabel" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="userDefinedLimits" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="num_steps" stdset="0">
-               <number>99</number>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="PyDMSlider" name="inter_slid">
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="precision" stdset="0">
-               <number>0</number>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="precisionFromPV" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveContent" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="alarmSensitiveBorder" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:TIME_MID</string>
-              </property>
-              <property name="tracking" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="ignoreMouseWheel" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="showLimitLabels" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="showValueLabel" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="userDefinedLimits" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="num_steps" stdset="0">
-               <number>99</number>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QLabel" name="inter_lab">
-              <property name="minimumSize">
-               <size>
-                <width>150</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Inter-Edge</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="PyDMLineEdit" name="inter_edit">
-              <property name="maximumSize">
-               <size>
-                <width>150</width>
-                <height>16777215</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="showUnits" stdset="0">
-               <bool>true</bool>
-              </property>
-              <property name="channel" stdset="0">
-               <string>${DEVICE}:TIME_MID</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
+         <widget class="PyDMFrame" name="ws_widgets">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(174, 174, 174);border-radius: 6px;</string>
+             </property>
+             <property name="text">
+              <string>Wire Scanner Specific</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QLabel" name="duration_lab">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(174, 174, 174);border-radius: 6px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Durations (ns)</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="3" column="2">
+                  <widget class="PyDMLineEdit" name="post_edit">
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:TIME_POS</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="PyDMSlider" name="pre_slid">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="precision" stdset="0">
+                    <number>0</number>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="precisionFromPV" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveContent" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveBorder" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:TIME_PRE</string>
+                   </property>
+                   <property name="tracking" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="ignoreMouseWheel" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showLimitLabels" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showValueLabel" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="userDefinedLimits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="num_steps" stdset="0">
+                    <number>99</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="PyDMSlider" name="inter_slid">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="precision" stdset="0">
+                    <number>0</number>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="precisionFromPV" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveContent" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveBorder" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:TIME_MID</string>
+                   </property>
+                   <property name="tracking" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="ignoreMouseWheel" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showLimitLabels" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showValueLabel" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="userDefinedLimits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="num_steps" stdset="0">
+                    <number>99</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="pre_lab">
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Pre-Edge</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="PyDMLineEdit" name="pre_edit">
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:TIME_PRE</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="inter_lab">
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Inter-Edge</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="PyDMSlider" name="post_slid">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="precision" stdset="0">
+                    <number>0</number>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="precisionFromPV" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveContent" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="alarmSensitiveBorder" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:TIME_POS</string>
+                   </property>
+                   <property name="tracking" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="ignoreMouseWheel" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showLimitLabels" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="showValueLabel" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="userDefinedLimits" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="num_steps" stdset="0">
+                    <number>99</number>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="PyDMLineEdit" name="inter_edit">
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="showUnits" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="channel" stdset="0">
+                    <string>${DEVICE}:TIME_MID</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QLabel" name="post_lab">
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Post-Edge</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="PyDMEnumComboBox" name="ws_enable">
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="channel" stdset="0">
+                <string>${DEVICE}:AutoRearm</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
         </item>
         <item>
-         <layout class="QGridLayout" name="gridLayout_5">
-          <item row="1" column="2">
-           <widget class="PyDMRelatedDisplayButton" name="threshold_RD">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="text">
-             <string>MPS Threshold Display</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="PyDMRelatedDisplayButton" name="unit_RD">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="text">
-             <string>Unit Conversion/Calibration</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="voltage_lab">
-            <property name="text">
-             <string>Voltage</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="PyDMLabel" name="voltage_rbv">
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="precision" stdset="0">
-             <number>0</number>
-            </property>
-            <property name="showUnits" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="precisionFromPV" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="alarmSensitiveContent" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="alarmSensitiveBorder" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>${DEVICE}:FAST_AMP_V</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="PyDMCheckbox" name="freeze">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="text">
-             <string>Freeze</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="PyDMLabel" name="beam_loss_rbv">
-            <property name="minimumSize">
-             <size>
-              <width>100</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>24</height>
-             </size>
-            </property>
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-            <property name="precision" stdset="0">
-             <number>0</number>
-            </property>
-            <property name="showUnits" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="precisionFromPV" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="alarmSensitiveContent" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="alarmSensitiveBorder" stdset="0">
-             <bool>true</bool>
-            </property>
-            <property name="channel" stdset="0">
-             <string>${DEVICE}:I0_LOSS</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="beam_loss_lab">
-            <property name="text">
-             <string>Measured Beam Loss</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QCheckBox" name="freeze_2">
-            <property name="text">
-             <string>Freeze</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="3">
-           <widget class="PyDMEnumComboBox" name="ws_enable">
-            <property name="toolTip">
-             <string/>
-            </property>
-            <property name="channel" stdset="0">
-             <string>${DEVICE}:AutoRearm</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </item>
