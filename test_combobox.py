@@ -157,6 +157,7 @@ class ComboBoxMacroSelector(Display):
             self.ui.Next.setEnabled(True)
             self.ui.comboBox.setCurrentIndex(next_lblm)
             self.macros()['DEVICE'] = self.all_lblms[next_lblm]
+            self.macros()['IS_WS'] = self.lblm_type[next_lblm]
             self.write_macros()
 
             self.set_nav_buttons()
@@ -169,6 +170,7 @@ class ComboBoxMacroSelector(Display):
         if (prev_lblm) >= 0:
             self.ui.comboBox.setCurrentIndex(prev_lblm)
             self.macros()['DEVICE'] = self.all_lblms[prev_lblm]
+            self.macros()['IS_WS'] = self.lblm_type[prev_lblm]
             self.write_macros()
 
             self.set_nav_buttons()
