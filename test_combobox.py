@@ -104,8 +104,6 @@ class ComboBoxMacroSelector(Display):
             else:
                 self.lblm_type.append(1)
         
-        print(self.lblm_type)
-            
     def label_devices(self):
         self.lblm_label_list = []
         
@@ -116,21 +114,30 @@ class ComboBoxMacroSelector(Display):
             else:
                 self.lblm_label_list.append(dev)
         print(self.lblm_label_list)
+        print(self.all_lblms)
 
     def init_comboBox(self):
         #TODO: need to check if there is a defined macro for a specific LBLM. If so, we want to load that LBLM, otherwise
         #ca://BLEN:HTR:350:10:RWF_U16.VALA
+        
         #get this list from macros probably, if it is just the name, we will need to append :FAST_WF to the end.
         #lblm_list = ['-Select LBLM-', 'BLEN:HTR:350:10', 'ca://test2', 'ca://test3']
         self.ui.comboBox.addItems(self.lblm_label_list)
         
+        if self.macros()['DEVICE'] is None:
+            #start at 0
+            pass
+        else:
+            #start at the index of that item
+            pass
         #set previous button to disabled
         self.ui.Previous.setEnabled(False)
 
     def read_comboBox(self):
-        #
+        # Dont think im actually using prev_text
         self.prev_text = self.macros()['DEVICE']
-        self.macros()['DEVICE'] = self.ui.comboBox.currentText()
+        self.macros()['DEVICE'] = self.all_lblms[self.ui.comboBox.currentIndex()]
+        self.macros()['IS_WS'] = self.lblm_type[self.ui.comboBox.currentIndex()]
         if self.macros()['DEVICE'] == '-Select LBLM-' or None:
             print('Not Writing')
         else:
@@ -142,7 +149,6 @@ class ComboBoxMacroSelector(Display):
 
         print('writing')
         print(self.macros()['DEVICE'])
-        print(self.prev_text + ':RWF_U16.VALA') 
         self.ui.PyDMEmbeddedDisplay._needs_load = True
         self.ui.PyDMEmbeddedDisplay.load_if_needed()
 
