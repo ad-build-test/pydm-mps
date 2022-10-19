@@ -738,6 +738,46 @@
      <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
        <layout class="QGridLayout" name="gridLayout">
+        <item row="3" column="4">
+         <widget class="PyDMRelatedDisplayButton" name="unit_RD">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Unit Conversion/Calibration</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QCheckBox" name="freeze_2">
+          <property name="text">
+           <string>Freeze</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="controls">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>LBLM controls</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="PyDMRelatedDisplayButton" name="threshold_RD">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="text">
+           <string>MPS Threshold Display</string>
+          </property>
+         </widget>
+        </item>
         <item row="2" column="0">
          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0">
           <item>
@@ -805,139 +845,13 @@
           </item>
          </layout>
         </item>
-        <item row="2" column="2">
-         <widget class="QLabel" name="voltage_lab">
-          <property name="text">
-           <string>Voltage</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="4">
-         <widget class="PyDMRelatedDisplayButton" name="threshold_RD">
+        <item row="1" column="2">
+         <widget class="PyDMCheckbox" name="freeze">
           <property name="toolTip">
            <string/>
           </property>
           <property name="text">
-           <string>MPS Threshold Display</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="3">
-         <widget class="PyDMLabel" name="beam_loss">
-          <property name="minimumSize">
-           <size>
-            <width>100</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>24</height>
-           </size>
-          </property>
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-          <property name="precision" stdset="0">
-           <number>0</number>
-          </property>
-          <property name="showUnits" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="precisionFromPV" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="alarmSensitiveContent" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="alarmSensitiveBorder" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="channel" stdset="0">
-           <string>${DEVICE}:I0_LOSS</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="7">
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item row="2" column="3">
-         <widget class="PyDMLabel" name="voltage">
-          <property name="minimumSize">
-           <size>
-            <width>100</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>24</height>
-           </size>
-          </property>
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-          <property name="precision" stdset="0">
-           <number>0</number>
-          </property>
-          <property name="showUnits" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="precisionFromPV" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="alarmSensitiveContent" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="alarmSensitiveBorder" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="channel" stdset="0">
-           <string>${DEVICE}:FAST_AMP_V</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="2">
-         <widget class="QLabel" name="beam_loss_lab">
-          <property name="text">
-           <string>Measured Beam Loss</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="controls">
-          <property name="styleSheet">
-           <string notr="true"/>
-          </property>
-          <property name="text">
-           <string>LBLM controls</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           <string>Freeze</string>
           </property>
          </widget>
         </item>
@@ -1005,6 +919,129 @@
           </item>
          </layout>
         </item>
+        <item row="3" column="3">
+         <widget class="PyDMLabel" name="beam_loss">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="precision" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="showUnits" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="precisionFromPV" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="channel" stdset="0">
+           <string>${DEVICE}:I0_LOSS</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="8">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="2" column="6">
+         <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>${DEVICE}:AutoRearm</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="PyDMLabel" name="voltage">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="precision" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="showUnits" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="precisionFromPV" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="channel" stdset="0">
+           <string>${DEVICE}:FAST_AMP_V</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="beam_loss_lab">
+          <property name="text">
+           <string>Measured Beam Loss</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="voltage_lab">
+          <property name="text">
+           <string>Voltage</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
         <item row="3" column="0">
          <widget class="PyDMSlider" name="gain_request_slid">
           <property name="toolTip">
@@ -1049,59 +1086,76 @@
          </widget>
         </item>
         <item row="2" column="5">
-         <widget class="PyDMEnumComboBox" name="PyDMEnumComboBox">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="channel" stdset="0">
-           <string>${DEVICE}:AutoRearm</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="4">
-         <widget class="PyDMRelatedDisplayButton" name="unit_RD">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="text">
-           <string>Unit Conversion/Calibration</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="6">
-         <widget class="PyDMRelatedDisplayButton" name="threshold_RD_2">
+         <widget class="PyDMRelatedDisplayButton" name="vis_test">
           <property name="toolTip">
            <string/>
           </property>
           <property name="text">
            <string>Vis test</string>
           </property>
+          <property name="rules" stdset="0">
+           <string>[]</string>
+          </property>
+          <property name="filenames" stdset="0">
+           <stringlist/>
+          </property>
+          <property name="titles" stdset="0">
+           <stringlist/>
+          </property>
+          <property name="showIcon" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="macros" stdset="0">
+           <stringlist>
+            <string>{}</string>
+           </stringlist>
+          </property>
+          <property name="openInNewWindow" stdset="0">
+           <bool>false</bool>
+          </property>
          </widget>
         </item>
-        <item row="0" column="5">
-         <widget class="PyDMPushButton" name="PyDMPushButton">
+        <item row="1" column="6">
+         <widget class="PyDMPushButton" name="PyDMPushButton_5">
           <property name="toolTip">
            <string/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Show</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
           </property>
           <property name="channel" stdset="0">
-           <string>loc://test?type=</string>
+           <string>loc://wg_vis.int</string>
+          </property>
+          <property name="pressValue" stdset="0">
+           <string>1</string>
           </property>
          </widget>
         </item>
-        <item row="1" column="3">
-         <widget class="QCheckBox" name="freeze_2">
-          <property name="text">
-           <string>Freeze</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="2">
-         <widget class="PyDMCheckbox" name="freeze">
+        <item row="0" column="6">
+         <widget class="PyDMPushButton" name="PyDMPushButton_6">
           <property name="toolTip">
            <string/>
           </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
           <property name="text">
-           <string>Freeze</string>
+           <string>Hide</string>
+          </property>
+          <property name="channel" stdset="0">
+           <string>loc://wg_vis.int?type=int&amp;init=1</string>
+          </property>
+          <property name="pressValue" stdset="0">
+           <string>0</string>
           </property>
          </widget>
         </item>
