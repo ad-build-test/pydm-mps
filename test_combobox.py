@@ -18,7 +18,7 @@ class ComboBoxMacroSelector(Display):
         self.lblm_selection = 0
 
         self.load_database()
-        self.get_lblms()
+        self.get_sorted_lblms()
         #self.ui.PyDMTimePlot.clearCurves()
         self.init_comboBox()
         self.read_comboBox()
@@ -43,32 +43,86 @@ class ComboBoxMacroSelector(Display):
         
         pass
 
-    def get_lblms(self):
+    def get_sorted_lblms(self):
         
         #reader = MPSConfig(self.db_file)
         
         #reader = MpsDbReader(self.db_file)
         #dt = reader.session.query(models.DeviceType).filter(models.DeviceType.name=='BLM').one()
-        self.lblms = []
         with MpsDbReader(self.db_file) as session:
-              dt = session.query(models.DeviceType).filter(models.DeviceType.name=='BLM').one()
-              print(dt)
-              devices = session.query(models.Device).filter(models.Device.device_type_id==dt.id).all()
-              for d in devices:
-                  if d.name.find('LBLM') > -1:
-                      self.lblms.append(d.name[4:])
-                      print(d.name)
-        #query the mps_database to get list of lblms
+            dt_blm = session.query(models.DeviceType).filter(models.DeviceType.name=='BLM').one()
+            all_devices = session.query(models.Device).filter(models.Device.device_type_id==dt_blm.id).order_by(models.Device.z_location).all()
+            dt_wf = session.query(models.DeviceType).filter(models.DeviceType.name=='WF').one()
+            wf_lblms = session.query(models.Device).filter(models.Device.device_type_id==dt_wf.id).all()
+            
+            self.get_all_devices(all_devices)
+  
+            self.get_lblm_wf_list(wf_lblms)
 
-    def sort_lblms(self):
-        #order by z position
-        pass
+            self.get_lblm_type_list()
+            
+            self.label_devices()
+
+    def get_all_devices(self, devices_db):
+        
+        self.all_lblms = []
+
+        for dev in devices_db:
+
+            if dev.name.find('LBLM') > -1:
+                
+                if dev.name.endswith('S'):
+                    self.all_lblms.append(dev.name[4:-1])
+                elif dev.name.endswith('A') or dev.name.endswith('B'):
+                    self.all_lblms.append(dev.name[4:])
+
+    def get_lblm_wf_list(self, lblms_wf_db):
+        
+        self.lblm_wf_list = []
+        
+        for wf in lblms_wf_db:
+            
+            if wf.name.find('WF') > -1:
+                self.lblm_wf_list.append(wf.name[3:])
+                print(wf.name[3:])
+        #for lblm in lblms:
+        #    if lblm.name[3:] in self.all_lblms:
+        #        #then it is not a ws
+        #        ws_list.append(0)
+        #    else:
+        #        print(lblm.name[3:])
+        #        #it is a ws
+        #        ws_list.append(1)
     
+    def get_lblm_type_list(self):
+        self.lblm_type = []
+
+        for dev in self.all_lblms:
+            
+            if dev in self.lblm_wf_list:
+                self.lblm_type.append(0)
+            else:
+                self.lblm_type.append(1)
+        
+        print(self.lblm_type)
+            
+    def label_devices(self):
+        self.lblm_label_list = []
+        
+        for i, dev in enumerate(self.all_lblms):
+            
+            if self.lblm_type[i]:
+                self.lblm_label_list.append(dev + " *")
+            else:
+                self.lblm_label_list.append(dev)
+        print(self.lblm_label_list)
+
     def init_comboBox(self):
+        #TODO: need to check if there is a defined macro for a specific LBLM. If so, we want to load that LBLM, otherwise
         #ca://BLEN:HTR:350:10:RWF_U16.VALA
         #get this list from macros probably, if it is just the name, we will need to append :FAST_WF to the end.
         #lblm_list = ['-Select LBLM-', 'BLEN:HTR:350:10', 'ca://test2', 'ca://test3']
-        self.ui.comboBox.addItems(self.lblms)
+        self.ui.comboBox.addItems(self.lblm_label_list)
         
         #set previous button to disabled
         self.ui.Previous.setEnabled(False)
@@ -101,7 +155,7 @@ class ComboBoxMacroSelector(Display):
             print(self.ui.comboBox.count())
             print(next_lblm)
             self.ui.comboBox.setCurrentIndex(next_lblm)
-            self.macros()['DEVICE'] = self.lblms[next_lblm]
+            self.macros()['DEVICE'] = self.all_lblms[next_lblm]
             self.write_macros()
 
             self.set_nav_buttons()
@@ -115,7 +169,7 @@ class ComboBoxMacroSelector(Display):
             print(lblm_index)
             print(prev_lblm)
             self.ui.comboBox.setCurrentIndex(prev_lblm)
-            self.macros()['DEVICE'] = self.lblms[prev_lblm]
+            self.macros()['DEVICE'] = self.all_lblms[prev_lblm]
             self.write_macros()
 
             self.set_nav_buttons()
