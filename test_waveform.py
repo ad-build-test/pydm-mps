@@ -10,7 +10,11 @@ class LBLMmain(Display):
 
         self.gray_out()
         self.ui.bypass.toggled.connect(self.gray_out)
-        
+
+        if bool(int(self.macros()["IS_WS"])):
+            self.ui.vis_test.show()
+        else:
+            self.ui.vis_test.hide()
 
 
     def gray_out(self):
