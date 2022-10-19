@@ -16,7 +16,7 @@ class ComboBoxMacroSelector(Display):
         super(ComboBoxMacroSelector, self).__init__(parent=parent, args=args, macros=macros)
         
         self.lblm_selection = 0
-
+        
         self.load_database()
         self.get_sorted_lblms()
         #self.ui.PyDMTimePlot.clearCurves()
@@ -32,7 +32,6 @@ class ComboBoxMacroSelector(Display):
         for file in listdir(environ.get("PHYSICS_TOP") + "/mps_configuration/current"):
             if file.endswith(".db"):
                 self.db_file = environ.get("PHYSICS_TOP") + "/mps_configuration/current/" + file
-                print(self.db_file) 
 
     def get_lblm_type(self):
         #we want to query the database again, but this time we want all lblms
@@ -110,35 +109,33 @@ class ComboBoxMacroSelector(Display):
         for i, dev in enumerate(self.all_lblms):
             
             if self.lblm_type[i]:
-                self.lblm_label_list.append(dev + " *")
+                self.lblm_label_list.append(dev + " (WS)")
             else:
                 self.lblm_label_list.append(dev)
-        print(self.lblm_label_list)
-        print(self.all_lblms)
 
     def init_comboBox(self):
-        #TODO: need to check if there is a defined macro for a specific LBLM. If so, we want to load that LBLM, otherwise
         #ca://BLEN:HTR:350:10:RWF_U16.VALA
         
         #get this list from macros probably, if it is just the name, we will need to append :FAST_WF to the end.
         #lblm_list = ['-Select LBLM-', 'BLEN:HTR:350:10', 'ca://test2', 'ca://test3']
         self.ui.comboBox.addItems(self.lblm_label_list)
-        
-        if self.macros()['DEVICE'] is None:
-            #start at 0
-            pass
-        else:
+        if self.macros()['DEVICE'] != 'None':
+            start_index = self.all_lblms.index(self.macros()['DEVICE'])
+            self.ui.comboBox.setCurrentIndex(start_index)
+            # get index of item in all_lblm list
+            # set the index in combobox
+            # write_macros but might already be doing it.
             #start at the index of that item
-            pass
         #set previous button to disabled
-        self.ui.Previous.setEnabled(False)
+        self.set_nav_buttons()
 
     def read_comboBox(self):
         # Dont think im actually using prev_text
-        self.prev_text = self.macros()['DEVICE']
-        self.macros()['DEVICE'] = self.all_lblms[self.ui.comboBox.currentIndex()]
+        #self.macros()['DEVICE'] = self.all_lblms[self.ui.comboBox.currentIndex()]
+        #print(self.macros()['DEVICE'])
         self.macros()['IS_WS'] = self.lblm_type[self.ui.comboBox.currentIndex()]
-        if self.macros()['DEVICE'] == '-Select LBLM-' or None:
+        
+        if self.macros()['DEVICE'] == '-Select LBLM-':
             print('Not Writing')
         else:
             self.write_macros()
@@ -148,7 +145,6 @@ class ComboBoxMacroSelector(Display):
         self.set_nav_buttons()
 
         print('writing')
-        print(self.macros()['DEVICE'])
         self.ui.PyDMEmbeddedDisplay._needs_load = True
         self.ui.PyDMEmbeddedDisplay.load_if_needed()
 
@@ -158,8 +154,6 @@ class ComboBoxMacroSelector(Display):
         next_lblm = lblm_index + 1
         if next_lblm < self.ui.comboBox.count():
             self.ui.Next.setEnabled(True)
-            print(self.ui.comboBox.count())
-            print(next_lblm)
             self.ui.comboBox.setCurrentIndex(next_lblm)
             self.macros()['DEVICE'] = self.all_lblms[next_lblm]
             self.write_macros()
@@ -172,8 +166,6 @@ class ComboBoxMacroSelector(Display):
         lblm_index = self.ui.comboBox.currentIndex()
         prev_lblm = lblm_index - 1
         if (prev_lblm) >= 0:
-            print(lblm_index)
-            print(prev_lblm)
             self.ui.comboBox.setCurrentIndex(prev_lblm)
             self.macros()['DEVICE'] = self.all_lblms[prev_lblm]
             self.write_macros()
