@@ -114,35 +114,33 @@ class ComboBoxMacroSelector(Display):
                 self.lblm_label_list.append(dev)
 
     def init_comboBox(self):
-        #ca://BLEN:HTR:350:10:RWF_U16.VALA
         
-        #get this list from macros probably, if it is just the name, we will need to append :FAST_WF to the end.
-        #lblm_list = ['-Select LBLM-', 'BLEN:HTR:350:10', 'ca://test2', 'ca://test3']
         self.ui.comboBox.addItems(self.lblm_label_list)
-        if self.macros()['DEVICE'] != 'None':
+        if self.macros() == {}:
+            # Note: This should not be done this way, but there is no setter. 
+            #       A request has been made to the pydm team - KEL
+            self._macros = {'DEVICE': None, 'IS_WS': self.lblm_type[self.ui.comboBox.currentIndex()]}
+            # get index of item in all_lblm list
+            print(self.macros())
+        else:
             start_index = self.all_lblms.index(self.macros()['DEVICE'])
             self.ui.comboBox.setCurrentIndex(start_index)
-            # get index of item in all_lblm list
-            # set the index in combobox
-            # write_macros but might already be doing it.
-            #start at the index of that item
-        #set previous button to disabled
+            self.macros()['IS_WS'] = self.lblm_type[start_index]
+        
         self.set_nav_buttons()
 
     def read_comboBox(self):
-        # Dont think im actually using prev_text
         self.macros()['DEVICE'] = self.all_lblms[self.ui.comboBox.currentIndex()]
-        #print(self.macros()['DEVICE'])
         self.macros()['IS_WS'] = self.lblm_type[self.ui.comboBox.currentIndex()]
         
-        if self.macros()['DEVICE'] == '-Select LBLM-':
-            print('Not Writing')
-        else:
-            self.write_macros()
+        print(self.macros()) 
+        self.write_macros()
         
     def write_macros(self):
-        
-
+        '''
+        Write the macros to the PyDMEmbeddedDisplay by reloading the PyDMEmbeddedDisplay
+        Author: Kyle Leleux (kelelux)
+        ''' 
         self.set_nav_buttons()
 
         print('writing')
