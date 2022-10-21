@@ -44,7 +44,7 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(200, 200, 200);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -52,93 +52,123 @@
    <property name="frameShadow">
     <enum>QFrame::Plain</enum>
    </property>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>5</x>
-      <y>0</y>
-      <width>50</width>
-      <height>25</height>
-     </rect>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>2</number>
     </property>
-    <property name="text">
-     <string>${CH}</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>0</y>
-      <width>300</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>${NAME}</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>3</y>
-      <width>19</width>
-      <height>19</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="channel" stdset="0">
-     <string>ca://${PV}</string>
-    </property>
-    <property name="showLabels" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="bigEndian" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="shift" stdset="0">
+    <property name="leftMargin">
      <number>0</number>
     </property>
-    <property name="labels" stdset="0">
-     <stringlist/>
+    <property name="topMargin">
+     <number>1</number>
     </property>
-   </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>0</y>
-      <width>100</width>
-      <height>24</height>
-     </rect>
+    <property name="rightMargin">
+     <number>0</number>
     </property>
-    <property name="toolTip">
-     <string/>
+    <property name="bottomMargin">
+     <number>1</number>
     </property>
-    <property name="text">
-     <string>Change Thr...</string>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${PV}&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: false}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${VIS}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>$PYDM/mps/mps_sw_analog_threshold.ui</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>${CH}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>${NAME}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+      <property name="maximumSize">
+       <size>
+        <width>25</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="channel" stdset="0">
+       <string>ca://${PV}</string>
+      </property>
+      <property name="showLabels" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="bigEndian" stdset="0">
+       <bool>true</bool>
+      </property>
+      <property name="shift" stdset="0">
+       <number>0</number>
+      </property>
+      <property name="labels" stdset="0">
+       <stringlist/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="PyDMFrame" name="PyDMFrame">
+      <property name="maximumSize">
+       <size>
+        <width>125</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>125</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>125</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>Change Thr...</string>
+       </property>
+       <property name="rules" stdset="0">
+        <string>[{&quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${PV}&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: false}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${VIS}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+       </property>
+       <property name="filenames" stdset="0">
+        <stringlist>
+         <string>$PYDM/mps/mps_sw_analog_threshold.ui</string>
+        </stringlist>
+       </property>
+       <property name="showIcon" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="openInNewWindow" stdset="0">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <customwidgets>
@@ -146,6 +176,12 @@
    <class>PyDMByteIndicator</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMFrame</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.frame</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
