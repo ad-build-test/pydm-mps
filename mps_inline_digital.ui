@@ -75,7 +75,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>${PV}</string>
+     <string>${NAME}</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -94,7 +94,7 @@
      <string/>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://${DISP_PV}</string>
+     <string>ca://${PV}</string>
     </property>
     <property name="showLabels" stdset="0">
      <bool>false</bool>
@@ -103,7 +103,7 @@
      <bool>true</bool>
     </property>
     <property name="shift" stdset="0">
-     <number>${SHIFT}</number>
+     <number>0</number>
     </property>
     <property name="labels" stdset="0">
      <stringlist/>
@@ -125,7 +125,7 @@
      <string>Change Thr...</string>
     </property>
     <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${PV}_SCMPS&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${VISIBLE}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+     <string>[{&quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${PV}&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: false}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${VIS}&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
@@ -143,14 +143,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMByteIndicator</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
