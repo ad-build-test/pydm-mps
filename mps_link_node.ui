@@ -397,7 +397,7 @@ background-color: rgb(70, 70, 70);</string>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
     <property name="geometry">
      <rect>
-      <x>33</x>
+      <x>75</x>
       <y>285</y>
       <width>100</width>
       <height>30</height>
@@ -421,7 +421,7 @@ background-color: rgb(70, 70, 70);</string>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
     <property name="geometry">
      <rect>
-      <x>133</x>
+      <x>200</x>
       <y>285</y>
       <width>100</width>
       <height>30</height>
@@ -442,30 +442,6 @@ background-color: rgb(70, 70, 70);</string>
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
-    <property name="geometry">
-     <rect>
-      <x>233</x>
-      <y>285</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Faults...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>$PYDM/mps/mps_ln_logic.ui</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
   </widget>
   <zorder>frame_5</zorder>
   <zorder>PyDMLabel</zorder>
@@ -478,9 +454,9 @@ background-color: rgb(70, 70, 70);</string>
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
@@ -488,9 +464,9 @@ background-color: rgb(70, 70, 70);</string>
    <header>pydm.widgets.embedded_display</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>

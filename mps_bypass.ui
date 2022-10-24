@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>300</width>
-    <height>407</height>
+    <height>377</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>300</width>
-    <height>407</height>
+    <height>377</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>300</width>
-    <height>407</height>
+    <height>377</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -31,11 +31,11 @@
      <x>0</x>
      <y>0</y>
      <width>300</width>
-     <height>407</height>
+     <height>377</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(200, 200, 200);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -49,7 +49,7 @@
       <x>10</x>
       <y>20</y>
       <width>280</width>
-      <height>100</height>
+      <height>80</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -74,58 +74,11 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>30</y>
-       <width>100</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Current State:</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="PyDMLabel" name="PyDMLabel">
-     <property name="geometry">
-      <rect>
-       <x>120</x>
-       <y>30</y>
-       <width>150</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(70, 70, 70);</string>
-     </property>
-     <property name="text">
-      <string>Current State</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="alarmSensitiveContent" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="alarmSensitiveBorder" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${DEVICE_BYP}_SCMPSC</string>
-     </property>
-    </widget>
     <widget class="QLabel" name="label_4">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>50</y>
+       <y>30</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -141,7 +94,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>70</y>
+       <y>50</y>
        <width>100</width>
        <height>20</height>
       </rect>
@@ -157,7 +110,7 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>50</y>
+       <y>30</y>
        <width>150</width>
        <height>20</height>
       </rect>
@@ -188,7 +141,7 @@
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>70</y>
+       <y>50</y>
        <width>150</width>
        <height>20</height>
       </rect>
@@ -236,7 +189,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>150</y>
+      <y>120</y>
       <width>280</width>
       <height>205</height>
      </rect>
@@ -459,7 +412,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>140</y>
+      <y>112</y>
       <width>95</width>
       <height>20</height>
      </rect>
@@ -475,7 +428,7 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>356</y>
+      <y>326</y>
       <width>250</width>
       <height>50</height>
      </rect>
@@ -484,7 +437,7 @@
      <string/>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(200, 200, 200);</string>
+     <string notr="true"/>
     </property>
     <property name="filename" stdset="0">
      <string>lcls_mps_lockup_sidebyside_digital.png</string>
@@ -499,9 +452,9 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
-   <class>PyDMLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>pydm.widgets.line_edit</header>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEnumComboBox</class>
@@ -515,14 +468,14 @@
    <container>1</container>
   </customwidget>
   <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
  </customwidgets>
  <resources/>

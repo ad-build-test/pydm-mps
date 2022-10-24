@@ -248,7 +248,7 @@ color: rgb(12, 255, 68);</string>
      <string/>
     </property>
     <property name="text">
-     <string>Thr / Expert...</string>
+     <string>More Info...</string>
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
