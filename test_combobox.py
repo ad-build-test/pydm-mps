@@ -43,11 +43,11 @@ class ComboBoxMacroSelector(Display):
         pass
 
     def get_sorted_lblms(self):
-        
-        #reader = MPSConfig(self.db_file)
-        
-        #reader = MpsDbReader(self.db_file)
-        #dt = reader.session.query(models.DeviceType).filter(models.DeviceType.name=='BLM').one()
+        '''
+        Query the MPS database for both all BLM devices and all waveform
+        PVs. BLM devices are sorted by z-location.
+        Author: Kyle Leleux (kleleux)
+        '''
         with MpsDbReader(self.db_file) as session:
             dt_blm = session.query(models.DeviceType).filter(models.DeviceType.name=='BLM').one()
             all_devices = session.query(models.Device).filter(models.Device.device_type_id==dt_blm.id).order_by(models.Device.z_location).all()
@@ -63,7 +63,12 @@ class ComboBoxMacroSelector(Display):
             self.label_devices()
 
     def get_all_devices(self, devices_db):
-        
+        '''
+        Gets a list of all devices and parses out some repeats. 
+        Devices ending in H and S provide the same waveform (???),
+        so we remove repeated and remove the "BLM:" prefix.
+        Author: Kyle Leleux (kleleux)
+        ''' 
         self.all_lblms = []
 
         for dev in devices_db:
@@ -76,7 +81,12 @@ class ComboBoxMacroSelector(Display):
                     self.all_lblms.append(dev.name[4:])
 
     def get_lblm_wf_list(self, lblms_wf_db):
-        
+        '''
+        Gets the waveform pv list, which are only available for the LBLMs
+        so we use this to label LBLMs and WS. Also, we remove the "WF:"
+        from the string.
+        Author: Kyle Leleux (kleleux)
+        '''     
         self.lblm_wf_list = []
         
         for wf in lblms_wf_db:
@@ -84,16 +94,13 @@ class ComboBoxMacroSelector(Display):
             if wf.name.find('WF') > -1:
                 self.lblm_wf_list.append(wf.name[3:])
                 print(wf.name[3:])
-        #for lblm in lblms:
-        #    if lblm.name[3:] in self.all_lblms:
-        #        #then it is not a ws
-        #        ws_list.append(0)
-        #    else:
-        #        print(lblm.name[3:])
-        #        #it is a ws
-        #        ws_list.append(1)
     
     def get_lblm_type_list(self):
+        '''
+        Compares a list of non-LBLMs and tests it with the full device 
+        list to label WS and LBLMs
+        Author: Kyle Leleux (kleleux)
+        '''
         self.lblm_type = []
 
         for dev in self.all_lblms:
@@ -104,6 +111,11 @@ class ComboBoxMacroSelector(Display):
                 self.lblm_type.append(1)
         
     def label_devices(self):
+        '''
+        Take the lblm_type list and use it to clearly label the WS devices
+        on the display.
+        Author: Kyle Leleux (kleleux)
+        '''
         self.lblm_label_list = []
         
         for i, dev in enumerate(self.all_lblms):
@@ -114,7 +126,11 @@ class ComboBoxMacroSelector(Display):
                 self.lblm_label_list.append(dev)
 
     def init_comboBox(self):
-        
+        '''
+        Launches the combobox whether macros are defined or not and 
+        sets the navigation buttons accordingly.
+        Author: Kyle Leleux (kleleux)
+        ''' 
         self.ui.comboBox.addItems(self.lblm_label_list)
         if self.macros() == {}:
             # Note: This should not be done this way, but there is no setter. 
@@ -138,7 +154,10 @@ class ComboBoxMacroSelector(Display):
         
     def write_macros(self):
         '''
-        Write the macros to the PyDMEmbeddedDisplay by reloading the PyDMEmbeddedDisplay
+        Write the macros to the PyDMEmbeddedDisplay by reloading 
+        the PyDMEmbeddedDisplay.
+        Note: PyDM now has a feature that should be used in place of 
+        loading it manually - KEL (10/21/22)
         Author: Kyle Leleux (kelelux)
         ''' 
         self.set_nav_buttons()
@@ -148,7 +167,11 @@ class ComboBoxMacroSelector(Display):
         self.ui.PyDMEmbeddedDisplay.load_if_needed()
 
     def next_lblm(self):
-        
+        '''
+        Increments the combobox index by 1 to move to the next device
+        and reloads the embedded display to update the macros.
+        Author: Kyle Leleux (kleleux)
+        ''' 
         lblm_index = self.ui.comboBox.currentIndex()
         next_lblm = lblm_index + 1
         if next_lblm < self.ui.comboBox.count():
@@ -162,6 +185,11 @@ class ComboBoxMacroSelector(Display):
 
 
     def prev_lblm(self):
+        '''
+        Decrements the combobox index by 1 to move to the previous device
+        and reloads the embedded display to update the macros.
+        Author: Kyle Leleux (kleleux)
+        ''' 
 
         lblm_index = self.ui.comboBox.currentIndex()
         prev_lblm = lblm_index - 1
@@ -174,7 +202,11 @@ class ComboBoxMacroSelector(Display):
             self.set_nav_buttons()
     
     def set_nav_buttons(self):
-        
+        '''
+        Grays out the next or previous push buttons based on if the 
+        combobox index is at the limits of the list.
+        Author: Kyle Leleux (kleleux)
+        ''' 
         if self.ui.comboBox.currentIndex() < (self.ui.comboBox.count()-1):
             self.ui.Next.setEnabled(True)
         else:
