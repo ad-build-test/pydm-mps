@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1394</width>
+    <width>1400</width>
     <height>800</height>
    </rect>
   </property>
@@ -814,6 +814,9 @@
                      <property name="text">
                       <string>Bypass</string>
                      </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
                      <property name="alarmSensitiveContent" stdset="0">
                       <bool>false</bool>
                      </property>
@@ -827,6 +830,9 @@
                    </item>
                    <item row="0" column="1">
                     <widget class="PyDMLineEdit" name="gain_request_edit">
+                     <property name="enabled">
+                      <bool>false</bool>
+                     </property>
                      <property name="minimumSize">
                       <size>
                        <width>100</width>
@@ -842,7 +848,22 @@
                      <property name="toolTip">
                       <string/>
                      </property>
+                     <property name="rules" stdset="0">
+                      <string>[{&quot;name&quot;: &quot;Ena&quot;, &quot;property&quot;: &quot;Enable&quot;, &quot;initial_value&quot;: &quot;True&quot;, &quot;expression&quot;: &quot;ch[0]==0&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${DEVICE}:FAST_AMP_BYP.RVAL&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: false}]}]</string>
+                     </property>
+                     <property name="precision" stdset="0">
+                      <number>0</number>
+                     </property>
                      <property name="showUnits" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                     <property name="precisionFromPV" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                     <property name="alarmSensitiveContent" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="alarmSensitiveBorder" stdset="0">
                       <bool>true</bool>
                      </property>
                      <property name="channel" stdset="0">
@@ -904,11 +925,17 @@
                  </item>
                  <item>
                   <widget class="PyDMSlider" name="gain_request_slid">
+                   <property name="enabled">
+                    <bool>false</bool>
+                   </property>
                    <property name="toolTip">
                     <string/>
                    </property>
                    <property name="styleSheet">
                     <string notr="true"/>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;name&quot;: &quot;Ena&quot;, &quot;property&quot;: &quot;Enable&quot;, &quot;initial_value&quot;: &quot;True&quot;, &quot;expression&quot;: &quot;ch[0]==0&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${DEVICE}:FAST_AMP_BYP.RVAL&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: false}]}]</string>
                    </property>
                    <property name="precision" stdset="0">
                     <number>0</number>
@@ -945,6 +972,9 @@
                    </property>
                    <property name="num_steps" stdset="0">
                     <number>99</number>
+                   </property>
+                   <property name="step_size" stdset="0">
+                    <number>0</number>
                    </property>
                   </widget>
                  </item>

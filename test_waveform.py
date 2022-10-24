@@ -1,34 +1,17 @@
 from os import path
 from pydm import Display
-
-from pydm.widgets.checkbox import PyDMCheckbox
+from epics import caget
+import time
 from pydm.widgets.slider import PyDMSlider
+from pydm.widgets.label import PyDMLabel
 
 class LBLMmain(Display):
     def __init__(self, parent=None, args=[], macros=None):
         super(LBLMmain, self).__init__(parent=parent, args=args, macros=macros)
-
-        self.bypass_gain_request()
+        
         self.ws_visibility()
-        self.ui.bypass.toggled.connect(self.bypass_gain_request)
         self.ui.freeze.toggled.connect(self.freeze_plot)
-
-
-    def bypass_gain_request(self):
-        """
-        disables the gain request controls when the bypass box is checked
-        """
-        print(self.bypass.isChecked())
-        print("bypass_gain_request test")
-        if self.bypass.isChecked():
-            self.gain_request_slid.setEnabled(False)
-            self.gain_request_edit.setEnabled(False)
-            print("false")
-        else:
-            self.gain_request_slid.setEnabled(True)
-            self.gain_request_edit.setEnabled(True)
-            print("True")
-
+            
     def ws_visibility(self):
         """
         Hides and shows wirescaner specific widges
