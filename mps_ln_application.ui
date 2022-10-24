@@ -61,7 +61,7 @@
       <x>10</x>
       <y>230</y>
       <width>652</width>
-      <height>306</height>
+      <height>300</height>
      </rect>
     </property>
     <property name="frameShape">
@@ -70,25 +70,34 @@
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
     </property>
-    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater">
-     <property name="geometry">
-      <rect>
-       <x>1</x>
-       <y>10</y>
-       <width>650</width>
-       <height>295</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="templateFilename" stdset="0">
-      <string>$PYDM/mps/mps_ln_channel.ui</string>
-     </property>
-     <property name="dataSource" stdset="0">
-      <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_chan.json</string>
-     </property>
-    </widget>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="templateFilename" stdset="0">
+        <string>$PYDM/mps/mps_ln_channel.ui</string>
+       </property>
+       <property name="dataSource" stdset="0">
+        <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_chan.json</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
    </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
