@@ -6,197 +6,67 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>90</height>
+    <width>500</width>
+    <height>25</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QFrame" name="frame">
-   <property name="geometry">
-    <rect>
-     <x>1</x>
-     <y>1</y>
-     <width>298</width>
-     <height>88</height>
-    </rect>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>1</number>
    </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(200, 200, 200);</string>
+   <property name="leftMargin">
+    <number>5</number>
    </property>
-   <property name="frameShape">
-    <enum>QFrame::Box</enum>
+   <property name="topMargin">
+    <number>1</number>
    </property>
-   <property name="frameShadow">
-    <enum>QFrame::Plain</enum>
+   <property name="rightMargin">
+    <number>5</number>
    </property>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>63</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Ch ${CH}</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>30</y>
-      <width>125</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>${DEVICE_NAME}</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>165</x>
-      <y>30</y>
-      <width>125</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(70, 70, 70);
-color: rgb(12, 255, 68);</string>
-    </property>
-    <property name="text">
-     <string>${PV_PREFIX}</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>55</y>
-      <width>90</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>${THR0}</string>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:APP_ID&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${THR0_P}&quot;, &quot;name&quot;: &quot;Hide&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_application_threshold.ui</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>{&quot;DEVICE&quot;:&quot;${PV_PREFIX}&quot;,&quot;THR&quot;:&quot;${THR0}&quot;}</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-    <property name="geometry">
-     <rect>
-      <x>105</x>
-      <y>55</y>
-      <width>90</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>${THR1}</string>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:APP_ID&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${THR1_P}&quot;, &quot;name&quot;: &quot;Hide&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_application_threshold.ui</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>{&quot;DEVICE&quot;:&quot;${PV_PREFIX}&quot;,&quot;THR&quot;:&quot;${THR1}&quot;}</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>55</y>
-      <width>90</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>${THR2}</string>
-    </property>
-    <property name="rules" stdset="0">
-     <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}:APP_ID&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;${THR2_P}&quot;, &quot;name&quot;: &quot;Hide&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>mps_application_threshold.ui</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>{&quot;DEVICE&quot;:&quot;${PV_PREFIX}&quot;,&quot;THR&quot;:&quot;${THR2}&quot;}</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
-  </widget>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>50</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>${CH}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>${DEVICE_NAME}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>${PV_PREFIX}</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>

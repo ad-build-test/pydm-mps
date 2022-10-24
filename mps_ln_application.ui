@@ -60,7 +60,7 @@
      <rect>
       <x>10</x>
       <y>230</y>
-      <width>321</width>
+      <width>652</width>
       <height>306</height>
      </rect>
     </property>
@@ -75,7 +75,7 @@
       <rect>
        <x>1</x>
        <y>10</y>
-       <width>319</width>
+       <width>650</width>
        <height>295</height>
       </rect>
      </property>
@@ -90,41 +90,6 @@
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_4">
-    <property name="geometry">
-     <rect>
-      <x>341</x>
-      <y>230</y>
-      <width>321</width>
-      <height>306</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_2">
-     <property name="geometry">
-      <rect>
-       <x>1</x>
-       <y>10</y>
-       <width>319</width>
-       <height>295</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="templateFilename" stdset="0">
-      <string>$PYDM/mps/mps_ln_channel.ui</string>
-     </property>
-     <property name="dataSource" stdset="0">
-      <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_bay0.json</string>
-     </property>
-    </widget>
-   </widget>
    <widget class="QLabel" name="label_13">
     <property name="geometry">
      <rect>
@@ -136,19 +101,6 @@
     </property>
     <property name="text">
      <string>Bay 1</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_14">
-    <property name="geometry">
-     <rect>
-      <x>351</x>
-      <y>220</y>
-      <width>40</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Bay 0</string>
     </property>
    </widget>
    <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
