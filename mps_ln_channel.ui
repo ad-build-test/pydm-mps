@@ -52,19 +52,6 @@
      </property>
     </widget>
    </item>
-   <item>
-    <widget class="QLabel" name="label_3">
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string>${PV_PREFIX}</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
   </layout>
  </widget>
  <resources/>

@@ -104,12 +104,15 @@
      <rect>
       <x>20</x>
       <y>220</y>
-      <width>40</width>
+      <width>150</width>
       <height>15</height>
      </rect>
     </property>
     <property name="text">
-     <string>Bay 1</string>
+     <string>Analog Input Channels</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
