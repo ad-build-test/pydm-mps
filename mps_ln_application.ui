@@ -86,7 +86,7 @@
       <string>$PYDM/mps/mps_ln_channel.ui</string>
      </property>
      <property name="dataSource" stdset="0">
-      <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_bay1.json</string>
+      <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_chan.json</string>
      </property>
     </widget>
    </widget>
