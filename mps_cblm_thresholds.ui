@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>674</width>
-    <height>465</height>
+    <width>679</width>
+    <height>695</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -90,6 +90,9 @@
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="bottomMargin">
+        <number>12</number>
+       </property>
        <item>
         <widget class="QLabel" name="label_17">
          <property name="minimumSize">
@@ -144,7 +147,7 @@ background-color: rgb(70, 70, 70);</string>
           <bool>false</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}</string>
+          <string>ca://${DEVICE}:I0_LOSS</string>
          </property>
         </widget>
        </item>
@@ -153,13 +156,16 @@ background-color: rgb(70, 70, 70);</string>
          <property name="minimumSize">
           <size>
            <width>200</width>
-           <height>110</height>
+           <height>120</height>
           </size>
          </property>
          <property name="title">
           <string>Channel Information:</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_13">
+          <property name="verticalSpacing">
+           <number>6</number>
+          </property>
           <item row="0" column="0">
            <widget class="QLabel" name="label_22">
             <property name="text">
@@ -195,7 +201,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}_THR_CH</string>
+             <string>ca://${DEVICE}:I0_LOSS_THR_CH</string>
             </property>
            </widget>
           </item>
@@ -234,7 +240,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}_THR_BYTEMAP</string>
+             <string>ca://${DEVICE}:I0_LOSS_THR_BYTEMAP</string>
             </property>
            </widget>
           </item>
@@ -273,7 +279,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}_SS_RBV</string>
+             <string>ca://${DEVICE}:I0_LOSS_SS_RBV</string>
             </property>
            </widget>
           </item>
@@ -312,7 +318,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}_SO_RBV</string>
+             <string>ca://${DEVICE}:I0_LOSS_SO_RBV</string>
             </property>
            </widget>
           </item>
@@ -326,8 +332,8 @@ background-color: rgb(70, 70, 70);</string>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
-           <width>20</width>
-           <height>40</height>
+           <width>205</width>
+           <height>314</height>
           </size>
          </property>
         </spacer>
@@ -369,7 +375,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}&quot;,&quot;THR&quot;:&quot;T4&quot;,&quot;NUM&quot;:&quot;4&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I0_LOSS&quot;,&quot;THR&quot;:&quot;T4&quot;,&quot;NUM&quot;:&quot;4&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.ui</string>
@@ -397,7 +403,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}&quot;,&quot;THR&quot;:&quot;T1&quot;,&quot;NUM&quot;:&quot;1&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I0_LOSS&quot;,&quot;THR&quot;:&quot;T1&quot;,&quot;NUM&quot;:&quot;1&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.ui</string>
@@ -425,7 +431,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I0_LOSS&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.ui</string>
@@ -453,7 +459,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}&quot;,&quot;THR&quot;:&quot;T2&quot;,&quot;NUM&quot;:&quot;2&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I0_LOSS&quot;,&quot;THR&quot;:&quot;T2&quot;,&quot;NUM&quot;:&quot;2&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.ui</string>
@@ -481,7 +487,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}&quot;,&quot;THR&quot;:&quot;T3&quot;,&quot;NUM&quot;:&quot;3&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I0_LOSS&quot;,&quot;THR&quot;:&quot;T3&quot;,&quot;NUM&quot;:&quot;3&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.ui</string>
@@ -489,7 +495,7 @@ background-color: rgb(70, 70, 70);</string>
            </widget>
           </item>
           <item row="5" column="0">
-           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_16">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_17">
             <property name="minimumSize">
              <size>
               <width>360</width>
@@ -509,7 +515,328 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}&quot;,&quot;THR&quot;:&quot;T5&quot;,&quot;NUM&quot;:&quot;5&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I0_LOSS&quot;,&quot;THR&quot;:&quot;T5&quot;,&quot;NUM&quot;:&quot;5&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.ui</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_18">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>${DEVICE}:I1_LOSS</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="PyDMLabel" name="PyDMLabel_16">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="precision" stdset="0">
+          <number>3</number>
+         </property>
+         <property name="showUnits" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="precisionFromPV" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:I1_LOSS</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>130</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Channel Information:</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_14">
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Thr Chn</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_17">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Thr Ch</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:I0_LOSS_THR_CH</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>Byte Map</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_18">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Byte Map</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:I1_LOSS_THR_BYTEMAP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>Scale Slope</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_19">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Scale Slope</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:I1_LOSS_SS_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>Scale Off</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_20">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Scale Offset</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:I1_LOSS_SO_RBV</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QGroupBox" name="groupBox_9">
+         <property name="minimumSize">
+          <size>
+           <width>444</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Standard (NC)</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_21">
+          <item row="0" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I0_LOSS&quot;,&quot;THR&quot;:&quot;T0_NC&quot;,&quot;NUM&quot;:&quot;I0&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.ui</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_18">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:I1_LOSS&quot;,&quot;THR&quot;:&quot;T0_NC&quot;,&quot;NUM&quot;:&quot;I1&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.ui</string>

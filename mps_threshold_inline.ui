@@ -80,7 +80,7 @@
      </property>
      <property name="filenames" stdset="0">
       <stringlist>
-       <string>mps_application_threshold.ui</string>
+       <string>${FILENAME}</string>
       </stringlist>
      </property>
      <property name="macros" stdset="0">
