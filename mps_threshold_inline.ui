@@ -85,7 +85,7 @@
      </property>
      <property name="macros" stdset="0">
       <stringlist>
-       <string>{&quot;DEVICE&quot;:&quot;${PV_PREFIX}&quot;,&quot;THR&quot;:&quot;${THR}&quot;}</string>
+       <string>{&quot;DEVICE&quot;:&quot;${PV_PREFIX}&quot;,&quot;THR&quot;:&quot;${THR}&quot;,&quot;${MPS_PREFIX}&quot;:&quot;MPS_PREFIX&quot;,&quot;BPM2&quot;:&quot;${BPM2}&quot;}</string>
       </stringlist>
      </property>
      <property name="openInNewWindow" stdset="0">
