@@ -563,7 +563,7 @@ when TDUNDB is in</string>
                    <string/>
                   </property>
                   <property name="text">
-                   <string>Analog Inputs...</string>
+                   <string>LTUS Analog Inputs...</string>
                   </property>
                   <property name="filenames" stdset="0">
                    <stringlist>
@@ -583,7 +583,7 @@ when TDUNDB is in</string>
                   </property>
                  </widget>
                 </item>
-                <item row="1" column="0">
+                <item row="2" column="0">
                  <spacer name="verticalSpacer_13">
                   <property name="orientation">
                    <enum>Qt::Vertical</enum>
@@ -595,6 +595,38 @@ when TDUNDB is in</string>
                    </size>
                   </property>
                  </spacer>
+                </item>
+                <item row="1" column="0">
+                 <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_13">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>LTU0 Analog Inputs...</string>
+                  </property>
+                  <property name="filenames" stdset="0">
+                   <stringlist>
+                    <string>mps_threshold_area.ui</string>
+                   </stringlist>
+                  </property>
+                  <property name="showIcon" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="macros" stdset="0">
+                   <stringlist>
+                    <string>{&quot;AREA&quot;:&quot;LTU0&quot;}</string>
+                   </stringlist>
+                  </property>
+                  <property name="openInNewWindow" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
                 </item>
                </layout>
               </widget>
