@@ -290,7 +290,7 @@ background-color: rgb(70, 70, 70);</string>
        <bool>true</bool>
       </property>
       <property name="channel" stdset="0">
-       <string>ca://${P}_${THR}_H_EN</string>
+       <string>ca://${P}_${THR}_H_EN_RBV</string>
       </property>
       <property name="offColor" stdset="0">
        <color>
