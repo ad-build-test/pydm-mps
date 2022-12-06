@@ -939,6 +939,83 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QFrame" name="frame_5">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>210</y>
+     <width>200</width>
+     <height>225</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand_3">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>10</y>
+      <width>150</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>BLM Display</string>
+    </property>
+    <property name="environmentVariables" stdset="0">
+     <string/>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="redirectCommandOutput" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="allowMultipleExecutions" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="titles" stdset="0">
+     <stringlist/>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>xterm -T &quot;BLM CUD xterm&quot; -e &quot;python /usr/local/lcls/tools/BLM_CUD/blm_display.py --mode sc_bsyd&quot;</string>
+     </stringlist>
+    </property>
+    <property name="passwordProtected" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="password" stdset="0">
+     <string/>
+    </property>
+    <property name="protectedPassword" stdset="0">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>200</y>
+     <width>96</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tools/Displays</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>
