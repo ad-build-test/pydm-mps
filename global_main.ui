@@ -969,34 +969,16 @@
     <property name="text">
      <string>BLM Display</string>
     </property>
-    <property name="environmentVariables" stdset="0">
-     <string/>
-    </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
     </property>
     <property name="redirectCommandOutput" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="allowMultipleExecutions" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="titles" stdset="0">
-     <stringlist/>
+     <bool>true</bool>
     </property>
     <property name="commands" stdset="0">
      <stringlist>
-      <string>xterm -T &quot;BLM CUD xterm&quot; -e &quot;python /usr/local/lcls/tools/BLM_CUD/blm_display.py --mode sc_bsyd&quot;</string>
+      <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display</string>
      </stringlist>
-    </property>
-    <property name="passwordProtected" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="password" stdset="0">
-     <string/>
-    </property>
-    <property name="protectedPassword" stdset="0">
-     <string/>
     </property>
    </widget>
   </widget>
