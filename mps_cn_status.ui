@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
+    <width>608</width>
     <height>25</height>
    </rect>
   </property>
@@ -191,7 +191,7 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${CN}:APP${APP}_MODE</string>
+      <string>ca://${CN}:APP${APP}_ENABLE</string>
      </property>
     </widget>
    </item>
@@ -288,37 +288,6 @@ background-color: rgb(70, 70, 70);</string>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${CN}:APP${APP}_ENABLE_RBV</string>
-     </property>
-     <property name="offColor" stdset="0">
-      <color>
-       <red>100</red>
-       <green>100</green>
-       <blue>100</blue>
-      </color>
-     </property>
-     <property name="showLabels" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="labels" stdset="0">
-      <stringlist>
-       <string></string>
-      </stringlist>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
-     <property name="maximumSize">
-      <size>
-       <width>20</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="channel" stdset="0">
-      <string>ca://${CN}:APP${APP}_LOGIC_RBV</string>
      </property>
      <property name="offColor" stdset="0">
       <color>
