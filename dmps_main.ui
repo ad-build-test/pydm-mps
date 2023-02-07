@@ -283,7 +283,7 @@
             </property>
             <property name="filenames" stdset="0">
              <stringlist>
-              <string>mps_threshold_area.ui</string>
+              <string>mps_threshold_area.py</string>
              </stringlist>
             </property>
             <property name="showIcon" stdset="0">
@@ -328,7 +328,7 @@
             </property>
             <property name="filenames" stdset="0">
              <stringlist>
-              <string>mps_threshold_area.ui</string>
+              <string>mps_threshold_area.py</string>
              </stringlist>
             </property>
             <property name="showIcon" stdset="0">
