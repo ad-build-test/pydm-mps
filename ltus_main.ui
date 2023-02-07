@@ -245,7 +245,7 @@ when TDUNDB is in</string>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,1,3,0">
+           <layout class="QGridLayout" name="gridLayout_2" columnstretch="1,0,0,0,0">
             <item row="0" column="0">
              <widget class="QTabWidget" name="tabWidget">
               <property name="maximumSize">
@@ -454,7 +454,7 @@ when TDUNDB is in</string>
               </widget>
              </widget>
             </item>
-            <item row="0" column="1">
+            <item row="0" column="2">
              <widget class="QTabWidget" name="tabWidget_2">
               <property name="maximumSize">
                <size>
@@ -517,19 +517,6 @@ when TDUNDB is in</string>
              </widget>
             </item>
             <item row="0" column="3">
-             <spacer name="horizontalSpacer_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item row="0" column="2">
              <widget class="QTabWidget" name="tabWidget_8">
               <property name="maximumSize">
                <size>
@@ -567,7 +554,7 @@ when TDUNDB is in</string>
                   </property>
                   <property name="filenames" stdset="0">
                    <stringlist>
-                    <string>mps_threshold_area.ui</string>
+                    <string>mps_threshold_area.py</string>
                    </stringlist>
                   </property>
                   <property name="showIcon" stdset="0">
@@ -612,7 +599,7 @@ when TDUNDB is in</string>
                   </property>
                   <property name="filenames" stdset="0">
                    <stringlist>
-                    <string>mps_threshold_area.ui</string>
+                    <string>mps_threshold_area.py</string>
                    </stringlist>
                   </property>
                   <property name="showIcon" stdset="0">
@@ -631,6 +618,78 @@ when TDUNDB is in</string>
                </layout>
               </widget>
              </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QTabWidget" name="tabWidget_4">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_4">
+               <attribute name="title">
+                <string>LBLM PLIC</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_12">
+                <item row="0" column="0">
+                 <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+                  <property name="minimumSize">
+                   <size>
+                    <width>150</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Launch LTUS PLIC...</string>
+                  </property>
+                  <property name="filenames" stdset="0">
+                   <stringlist>
+                    <string>$PYDM/misc/lblm_global.py</string>
+                   </stringlist>
+                  </property>
+                  <property name="showIcon" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="macros" stdset="0">
+                   <stringlist>
+                    <string>{&quot;DEVICE&quot;:&quot;LBLM:LTUS:105:A&quot;}</string>
+                   </stringlist>
+                  </property>
+                  <property name="openInNewWindow" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <spacer name="verticalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
             </item>
            </layout>
           </widget>
