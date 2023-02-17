@@ -879,7 +879,7 @@
                  <bool>true</bool>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>$(DEVICE):SC_ANA_PK_DEL_TRG_RBV</string>
+                 <string>${DEVICE}:SC_ANA_PK_DEL_TRG_RBV</string>
                 </property>
                </widget>
               </item>
@@ -919,7 +919,7 @@
                  <bool>true</bool>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>$(DEVICE):SC_COARSE_DEL_RBV</string>
+                 <string>${DEVICE}:SC_COARSE_DEL_RBV</string>
                 </property>
                </widget>
               </item>
@@ -959,7 +959,7 @@
                  <bool>true</bool>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>$(DEVICE):SC_ANA_PK_WDT_TRG_RBV</string>
+                 <string>${DEVICE}:SC_ANA_PK_WDT_TRG_RBV</string>
                 </property>
                </widget>
               </item>
@@ -976,7 +976,7 @@
                  <string/>
                 </property>
                 <property name="channel" stdset="0">
-                 <string/>
+                 <string>${DEVICE}:SC_ANA_PD_WDT_TRG</string>
                 </property>
                 <property name="displayFormat" stdset="0">
                  <enum>PyDMLineEdit::Decimal</enum>
@@ -989,7 +989,7 @@
                  <string/>
                 </property>
                 <property name="channel" stdset="0">
-                 <string/>
+                 <string>${DEVICE}:SC_ANA_PD_DEL_TRG</string>
                 </property>
                 <property name="displayFormat" stdset="0">
                  <enum>PyDMLineEdit::Decimal</enum>
@@ -1009,7 +1009,7 @@
                  <string/>
                 </property>
                 <property name="channel" stdset="0">
-                 <string/>
+                 <string>${DEVICE}:SC_COARSE_DEL</string>
                 </property>
                 <property name="displayFormat" stdset="0">
                  <enum>PyDMLineEdit::Decimal</enum>
@@ -1036,7 +1036,7 @@
                  <string/>
                 </property>
                 <property name="channel" stdset="0">
-                 <string/>
+                 <string>${DEVICE}:SC_ANA_PK_DEL_TRG</string>
                 </property>
                 <property name="displayFormat" stdset="0">
                  <enum>PyDMLineEdit::Decimal</enum>
@@ -1079,7 +1079,7 @@
                  <bool>true</bool>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>$(DEVICE):SC_ANA_PD_WDT_TRG_RBV</string>
+                 <string>${DEVICE}:SC_ANA_PD_WDT_TRG_RBV</string>
                 </property>
                </widget>
               </item>
@@ -1089,7 +1089,7 @@
                  <string/>
                 </property>
                 <property name="channel" stdset="0">
-                 <string/>
+                 <string>${DEVICE}:SC_ANA_PK_WDT_TRG</string>
                 </property>
                 <property name="displayFormat" stdset="0">
                  <enum>PyDMLineEdit::Decimal</enum>
@@ -1132,7 +1132,7 @@
                  <bool>true</bool>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>$(DEVICE):SC_ANA_PD_DEL_TRG_RBV</string>
+                 <string>${DEVICE}:SC_ANA_PD_DEL_TRG_RBV</string>
                 </property>
                </widget>
               </item>
@@ -1263,7 +1263,7 @@
                     <bool>true</bool>
                    </property>
                    <property name="channel" stdset="0">
-                    <string>$(DEVICE):NC_ANA_PK_WDT_TRG_RBV</string>
+                    <string>${DEVICE}:NC_ANA_PK_WDT_TRG_RBV</string>
                    </property>
                   </widget>
                  </item>
@@ -1280,7 +1280,7 @@
                     <string/>
                    </property>
                    <property name="channel" stdset="0">
-                    <string/>
+                    <string>${DEVICE}:NC_ANA_PD_WDT_TRG</string>
                    </property>
                    <property name="displayFormat" stdset="0">
                     <enum>PyDMLineEdit::Decimal</enum>
@@ -1323,7 +1323,7 @@
                     <bool>true</bool>
                    </property>
                    <property name="channel" stdset="0">
-                    <string>$(DEVICE):NC_ANA_PD_WDT_TRG_RBV</string>
+                    <string>${DEVICE}:NC_ANA_PD_WDT_TRG_RBV</string>
                    </property>
                   </widget>
                  </item>
@@ -1333,7 +1333,7 @@
                     <string/>
                    </property>
                    <property name="channel" stdset="0">
-                    <string/>
+                    <string>${DEVICE}:NC_ANA_PD_DEL_TRG</string>
                    </property>
                    <property name="displayFormat" stdset="0">
                     <enum>PyDMLineEdit::Decimal</enum>
@@ -1353,7 +1353,7 @@
                     <string/>
                    </property>
                    <property name="channel" stdset="0">
-                    <string/>
+                    <string>${DEVICE}:NC_ANA_PK_DEL_TRG</string>
                    </property>
                    <property name="displayFormat" stdset="0">
                     <enum>PyDMLineEdit::Decimal</enum>
@@ -1396,7 +1396,7 @@
                     <bool>true</bool>
                    </property>
                    <property name="channel" stdset="0">
-                    <string>$(DEVICE):NC_ANA_PD_DEL_TRG_RBV</string>
+                    <string>${DEVICE}:NC_ANA_PD_DEL_TRG_RBV</string>
                    </property>
                   </widget>
                  </item>
@@ -1436,7 +1436,7 @@
                     <bool>true</bool>
                    </property>
                    <property name="channel" stdset="0">
-                    <string>$(DEVICE):NC_ANA_PK_DEL_TRG_RBV</string>
+                    <string>${DEVICE}:NC_ANA_PK_DEL_TRG_RBV</string>
                    </property>
                   </widget>
                  </item>
@@ -1446,7 +1446,7 @@
                     <string/>
                    </property>
                    <property name="channel" stdset="0">
-                    <string/>
+                    <string>${DEVICE}:NC_ANA_PK_WDT_TRG</string>
                    </property>
                    <property name="displayFormat" stdset="0">
                     <enum>PyDMLineEdit::Decimal</enum>
@@ -1489,7 +1489,7 @@
                     <bool>true</bool>
                    </property>
                    <property name="channel" stdset="0">
-                    <string>$(DEVICE):NC_COARSE_DEL_RBV</string>
+                    <string>${DEVICE}:NC_COARSE_DEL_RBV</string>
                    </property>
                   </widget>
                  </item>
@@ -1499,7 +1499,7 @@
                     <string/>
                    </property>
                    <property name="channel" stdset="0">
-                    <string/>
+                    <string>${DEVICE}:NC_COARSE_DEL</string>
                    </property>
                    <property name="displayFormat" stdset="0">
                     <enum>PyDMLineEdit::Decimal</enum>
@@ -1757,87 +1757,7 @@ background : white;
           </layout>
          </widget>
         </item>
-        <item>
-         <widget class="QCheckBox" name="lcls_mode">
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <pointsize>9</pointsize>
-           </font>
-          </property>
-          <property name="autoFillBackground">
-           <bool>false</bool>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QCheckBox:editable
-{
-background : white;
-}</string>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="checked">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="PyDMByteIndicator" name="lcls_mode_rbv">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="alarmSensitiveContent" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="alarmSensitiveBorder" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="channel" stdset="0">
-           <string>ca://${P}_${THR}_L_EN_RBV</string>
-          </property>
-          <property name="offColor" stdset="0">
-           <color>
-            <red>255</red>
-            <green>0</green>
-            <blue>0</blue>
-           </color>
-          </property>
-          <property name="showLabels" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="bigEndian" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="circles" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="numBits" stdset="0">
-           <number>1</number>
-          </property>
-          <property name="shift" stdset="0">
-           <number>0</number>
-          </property>
-          <property name="labels" stdset="0">
-           <stringlist>
-            <string></string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
        </layout>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_2">
-        <property name="text">
-         <string>For bug reporting and feature requests please see CATER: 160144</string>
-        </property>
-       </widget>
       </item>
      </layout>
     </widget>
@@ -1859,11 +1779,6 @@ background : white;
    <class>PyDMWaveformPlot</class>
    <extends>QGraphicsView</extends>
    <header>pydm.widgets.waveformplot</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMByteIndicator</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.byte</header>
   </customwidget>
   <customwidget>
    <class>PyDMFrame</class>
