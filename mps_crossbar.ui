@@ -95,7 +95,7 @@
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:MODE</string>
+      <string>ca://${TPR}:MODE</string>
      </property>
      <property name="orientation" stdset="0">
       <enum>Qt::Horizontal</enum>
@@ -144,7 +144,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:MODE</string>
+      <string>ca://${TPR}:MODE</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_8">
@@ -200,7 +200,7 @@ background-color: rgb(70, 70, 70);</string>
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:RXLNKSTATUS</string>
+      <string>ca://${TPR}:RXLNKSTATUS</string>
      </property>
     </widget>
    </widget>
@@ -253,7 +253,7 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB0:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB0:OUTPUTCONFIG</string>
      </property>
      <property name="marginTop" stdset="0">
       <number>0</number>
@@ -292,7 +292,7 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB3:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB3:OUTPUTCONFIG</string>
      </property>
      <property name="marginTop" stdset="0">
       <number>0</number>
@@ -331,7 +331,7 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB1:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB1:OUTPUTCONFIG</string>
      </property>
      <property name="marginTop" stdset="0">
       <number>0</number>
@@ -370,7 +370,7 @@ background-color: rgb(70, 70, 70);</string>
       <string/>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB2:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB2:OUTPUTCONFIG</string>
      </property>
      <property name="marginTop" stdset="0">
       <number>0</number>
@@ -480,7 +480,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB0:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB0:OUTPUTCONFIG</string>
      </property>
     </widget>
     <widget class="PyDMLabel" name="PyDMLabel_2">
@@ -508,7 +508,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB3:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB3:OUTPUTCONFIG</string>
      </property>
     </widget>
     <widget class="PyDMLabel" name="PyDMLabel_3">
@@ -536,7 +536,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB1:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB1:OUTPUTCONFIG</string>
      </property>
     </widget>
     <widget class="PyDMLabel" name="PyDMLabel_4">
@@ -564,7 +564,7 @@ background-color: rgb(70, 70, 70);</string>
       <set>Qt::AlignCenter</set>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TCRB2:OUTPUTCONFIG</string>
+      <string>ca://${TPR}:TCRB2:OUTPUTCONFIG</string>
      </property>
     </widget>
    </widget>
@@ -634,7 +634,7 @@ background-color: rgb(70, 70, 70);</string>
       <string>Reset</string>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TIMING_RX_ERR</string>
+      <string>ca://${TPR}:TIMING_RX_ERR</string>
      </property>
      <property name="pressValue" stdset="0">
       <string>0</string>
@@ -662,7 +662,7 @@ background-color: rgb(70, 70, 70);</string>
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>ca://${P}:TIMING_RX_ERR_RBV</string>
+      <string>ca://${TPR}:TIMING_RX_ERR_RBV</string>
      </property>
     </widget>
    </widget>
