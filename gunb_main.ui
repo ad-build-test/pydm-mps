@@ -192,153 +192,142 @@
                 <string>PBLM Diagnostics</string>
                </attribute>
                <layout class="QGridLayout" name="gridLayout_10">
-                <item row="0" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+                <item row="3" column="0">
+                 <widget class="PyDMFrame" name="PyDMFrame_4">
                   <property name="minimumSize">
                    <size>
-                    <width>150</width>
-                    <height>20</height>
+                    <width>174</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>174</width>
+                    <height>29</height>
                    </size>
                   </property>
                   <property name="toolTip">
                    <string/>
                   </property>
-                  <property name="text">
-                   <string>PBLM:GUNB:622</string>
-                  </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
-                  </property>
-                  <property name="titles" stdset="0">
-                   <stringlist/>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=PBLM:GUNB:622</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
+                  <property name="alarmSensitiveBorder" stdset="0">
                    <bool>true</bool>
                   </property>
-                 </widget>
-                </item>
-                <item row="1" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
-                  <property name="minimumSize">
-                   <size>
-                    <width>150</width>
-                    <height>20</height>
-                   </size>
+                  <property name="channel" stdset="0">
+                   <string>SBLM:GUNB:753:UP_TIME_SECSUM</string>
                   </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="text">
-                   <string>SBLM:GUNB:622</string>
-                  </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
-                  </property>
-                  <property name="titles" stdset="0">
-                   <stringlist>
-                    <string>SBLM:GUNB:622</string>
-                    <string></string>
-                   </stringlist>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=SBLM:GUNB:622</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
-                   <bool>true</bool>
-                  </property>
+                  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+                   <property name="geometry">
+                    <rect>
+                     <x>3</x>
+                     <y>3</y>
+                     <width>168</width>
+                     <height>23</height>
+                    </rect>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string>SBLM:GUNB:753</string>
+                   </property>
+                   <property name="filenames" stdset="0">
+                    <stringlist>
+                     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                    </stringlist>
+                   </property>
+                   <property name="titles" stdset="0">
+                    <stringlist>
+                     <string>SBLM:GUNB:753</string>
+                     <string></string>
+                    </stringlist>
+                   </property>
+                   <property name="showIcon" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="macros" stdset="0">
+                    <stringlist>
+                     <string>BLM=SBLM:GUNB:753</string>
+                    </stringlist>
+                   </property>
+                   <property name="openInNewWindow" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
                  </widget>
                 </item>
                 <item row="2" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+                 <widget class="PyDMFrame" name="PyDMFrame_3">
                   <property name="minimumSize">
                    <size>
-                    <width>150</width>
-                    <height>20</height>
+                    <width>174</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>174</width>
+                    <height>29</height>
                    </size>
                   </property>
                   <property name="toolTip">
                    <string/>
                   </property>
-                  <property name="text">
-                   <string>PBLM:GUNB:753</string>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
                   </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
+                  <property name="channel" stdset="0">
+                   <string>PBLM:GUNB:753:UP_TIME_SECSUM</string>
                   </property>
-                  <property name="titles" stdset="0">
-                   <stringlist>
+                  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+                   <property name="geometry">
+                    <rect>
+                     <x>3</x>
+                     <y>3</y>
+                     <width>168</width>
+                     <height>23</height>
+                    </rect>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="text">
                     <string>PBLM:GUNB:753</string>
-                    <string></string>
-                   </stringlist>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=PBLM:GUNB:753</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item row="3" column="0">
-                 <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
-                  <property name="minimumSize">
-                   <size>
-                    <width>150</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="text">
-                   <string>SBLM:GUNB:753</string>
-                  </property>
-                  <property name="filenames" stdset="0">
-                   <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                   </stringlist>
-                  </property>
-                  <property name="titles" stdset="0">
-                   <stringlist>
-                    <string>SBLM:GUNB:753</string>
-                    <string></string>
-                   </stringlist>
-                  </property>
-                  <property name="showIcon" stdset="0">
-                   <bool>false</bool>
-                  </property>
-                  <property name="macros" stdset="0">
-                   <stringlist>
-                    <string>BLM=SBLM:GUNB:753</string>
-                   </stringlist>
-                  </property>
-                  <property name="openInNewWindow" stdset="0">
-                   <bool>true</bool>
-                  </property>
+                   </property>
+                   <property name="filenames" stdset="0">
+                    <stringlist>
+                     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                    </stringlist>
+                   </property>
+                   <property name="titles" stdset="0">
+                    <stringlist>
+                     <string>PBLM:GUNB:753</string>
+                     <string></string>
+                    </stringlist>
+                   </property>
+                   <property name="showIcon" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="macros" stdset="0">
+                    <stringlist>
+                     <string>BLM=PBLM:GUNB:753</string>
+                    </stringlist>
+                   </property>
+                   <property name="openInNewWindow" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
                  </widget>
                 </item>
                 <item row="4" column="0">
@@ -363,6 +352,141 @@
                     <string>edm -x -m &quot;dev=HVM:GUNB:MP01,dev0=SBLM:GUNB:622,dev1=SBLM:GUNB:753,dev2=HVM:GUNB:100,dev3=HVM:GUNB:200&quot; $EDM/ws/caen_hv_DT5533.edl</string>
                    </stringlist>
                   </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="PyDMFrame" name="PyDMFrame_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>174</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>174</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>SBLM:GUNB:622:UP_TIME_SECSUM</string>
+                  </property>
+                  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+                   <property name="geometry">
+                    <rect>
+                     <x>3</x>
+                     <y>3</y>
+                     <width>168</width>
+                     <height>23</height>
+                    </rect>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string>SBLM:GUNB:622</string>
+                   </property>
+                   <property name="filenames" stdset="0">
+                    <stringlist>
+                     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                    </stringlist>
+                   </property>
+                   <property name="titles" stdset="0">
+                    <stringlist>
+                     <string>SBLM:GUNB:622</string>
+                     <string></string>
+                    </stringlist>
+                   </property>
+                   <property name="showIcon" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="macros" stdset="0">
+                    <stringlist>
+                     <string>BLM=SBLM:GUNB:622</string>
+                    </stringlist>
+                   </property>
+                   <property name="openInNewWindow" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="PyDMFrame" name="PyDMFrame">
+                  <property name="minimumSize">
+                   <size>
+                    <width>174</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>174</width>
+                    <height>29</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>PBLM:GUNB:622:UP_TIME_SECSUM</string>
+                  </property>
+                  <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+                   <property name="geometry">
+                    <rect>
+                     <x>3</x>
+                     <y>3</y>
+                     <width>168</width>
+                     <height>23</height>
+                    </rect>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>150</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="text">
+                    <string>PBLM:GUNB:622</string>
+                   </property>
+                   <property name="filenames" stdset="0">
+                    <stringlist>
+                     <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                    </stringlist>
+                   </property>
+                   <property name="titles" stdset="0">
+                    <stringlist/>
+                   </property>
+                   <property name="showIcon" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                   <property name="macros" stdset="0">
+                    <stringlist>
+                     <string>BLM=PBLM:GUNB:622</string>
+                    </stringlist>
+                   </property>
+                   <property name="openInNewWindow" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
                  </widget>
                 </item>
                </layout>
@@ -549,6 +673,12 @@
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMFrame</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.frame</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
