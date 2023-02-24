@@ -92,7 +92,8 @@ class CBLMSelector(Display):
     def read_comboBox(self):
         self.macros()["DEVICE"] = self.all_cblms[self.ui.comboBox.currentIndex()]
         #self.macros()['IS_WS'] = self.cblm_type[self.ui.comboBox.currentIndex()]
-        
+        self.macros()["TPR"] = caget(self.macros()["DEVICE"] + ':TPR')
+        self.macros()["IOC"] = caget(self.macros()["DEVICE"] + ':IOC')
         self.write_macros()
         
     def write_macros(self):
