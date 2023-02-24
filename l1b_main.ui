@@ -328,7 +328,7 @@
                    <bool>true</bool>
                   </property>
                   <property name="channel" stdset="0">
-                   <string>ca://PBLM:COL1:390:UP_TIME_SECSUM</string>
+                   <string>PBLM:COL1:390:UP_TIME_SECSUM</string>
                   </property>
                   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
                    <property name="geometry">

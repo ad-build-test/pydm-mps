@@ -38,7 +38,7 @@
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-213</y>
+           <y>-223</y>
            <width>1035</width>
            <height>885</height>
           </rect>
@@ -350,7 +350,7 @@
                        <bool>true</bool>
                       </property>
                       <property name="channel" stdset="0">
-                       <string>PBLM:BPN22:424:UP_TIME_SEC_SUM</string>
+                       <string>PBLM:BPN22:424:UP_TIME_SECSUM</string>
                       </property>
                       <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
                        <property name="geometry">

@@ -585,6 +585,12 @@ when TDUND Is In</string>
             </item>
             <item row="1" column="0">
              <widget class="QTabWidget" name="tabWidget">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>230</height>
+               </size>
+              </property>
               <property name="currentIndex">
                <number>0</number>
               </property>
