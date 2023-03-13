@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1383</width>
+    <width>1388</width>
     <height>858</height>
    </rect>
   </property>
@@ -80,10 +80,10 @@
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:X&quot;,&quot;THR&quot;:&quot;T0_LC1&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:X&quot;,&quot;THR&quot;:&quot;T0_LC1&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
@@ -490,10 +490,10 @@ background-color: rgb(70, 70, 70);</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:X&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:X&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
@@ -533,10 +533,10 @@ background-color: rgb(70, 70, 70);</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:X&quot;,&quot;THR&quot;:&quot;T0_ALT&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:X&quot;,&quot;THR&quot;:&quot;T0_ALT&quot;,&quot;NUM&quot;:&quot;0&quot;, &quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
@@ -600,10 +600,10 @@ background-color: rgb(70, 70, 70);</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:Y&quot;,&quot;THR&quot;:&quot;T0_LC1&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:Y&quot;,&quot;THR&quot;:&quot;T0_LC1&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
@@ -998,10 +998,10 @@ background-color: rgb(70, 70, 70);</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:Y&quot;,&quot;THR&quot;:&quot;T0_ALT&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:Y&quot;,&quot;THR&quot;:&quot;T0_ALT&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
@@ -1047,10 +1047,10 @@ background-color: rgb(70, 70, 70);</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:Y&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:Y&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
@@ -1138,10 +1138,10 @@ background-color: rgb(70, 70, 70);</string>
                       <enum>QFrame::NoFrame</enum>
                      </property>
                      <property name="macros" stdset="0">
-                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T1&quot;,&quot;NUM&quot;:&quot;1&quot;}</string>
+                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T1&quot;,&quot;NUM&quot;:&quot;1&quot;,&quot;FORMAT&quot;:&quot;EXP&quot;}</string>
                      </property>
                      <property name="filename" stdset="0">
-                      <string>mps_inline_threshold_rbv.ui</string>
+                      <string>mps_inline_threshold_rbv.py</string>
                      </property>
                     </widget>
                    </item>
@@ -1166,10 +1166,10 @@ background-color: rgb(70, 70, 70);</string>
                       <enum>QFrame::NoFrame</enum>
                      </property>
                      <property name="macros" stdset="0">
-                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T4&quot;,&quot;NUM&quot;:&quot;4&quot;}</string>
+                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T4&quot;,&quot;NUM&quot;:&quot;4&quot;,&quot;FORMAT&quot;:&quot;EXP&quot;}</string>
                      </property>
                      <property name="filename" stdset="0">
-                      <string>mps_inline_threshold_rbv.ui</string>
+                      <string>mps_inline_threshold_rbv.py</string>
                      </property>
                     </widget>
                    </item>
@@ -1194,10 +1194,10 @@ background-color: rgb(70, 70, 70);</string>
                       <enum>QFrame::NoFrame</enum>
                      </property>
                      <property name="macros" stdset="0">
-                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T2&quot;,&quot;NUM&quot;:&quot;2&quot;}</string>
+                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T2&quot;,&quot;NUM&quot;:&quot;2&quot;,&quot;FORMAT&quot;:&quot;EXP&quot;}</string>
                      </property>
                      <property name="filename" stdset="0">
-                      <string>mps_inline_threshold_rbv.ui</string>
+                      <string>mps_inline_threshold_rbv.py</string>
                      </property>
                     </widget>
                    </item>
@@ -1222,10 +1222,10 @@ background-color: rgb(70, 70, 70);</string>
                       <enum>QFrame::NoFrame</enum>
                      </property>
                      <property name="macros" stdset="0">
-                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T3&quot;,&quot;NUM&quot;:&quot;3&quot;}</string>
+                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T3&quot;,&quot;NUM&quot;:&quot;3&quot;,&quot;FORMAT&quot;:&quot;EXP&quot;}</string>
                      </property>
                      <property name="filename" stdset="0">
-                      <string>mps_inline_threshold_rbv.ui</string>
+                      <string>mps_inline_threshold_rbv.py</string>
                      </property>
                     </widget>
                    </item>
@@ -1250,10 +1250,10 @@ background-color: rgb(70, 70, 70);</string>
                       <enum>QFrame::NoFrame</enum>
                      </property>
                      <property name="macros" stdset="0">
-                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T5&quot;,&quot;NUM&quot;:&quot;5&quot;}</string>
+                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T5&quot;,&quot;NUM&quot;:&quot;5&quot;,&quot;FORMAT&quot;:&quot;EXP&quot;}</string>
                      </property>
                      <property name="filename" stdset="0">
-                      <string>mps_inline_threshold_rbv.ui</string>
+                      <string>mps_inline_threshold_rbv.py</string>
                      </property>
                     </widget>
                    </item>
@@ -1278,10 +1278,10 @@ background-color: rgb(70, 70, 70);</string>
                       <enum>QFrame::NoFrame</enum>
                      </property>
                      <property name="macros" stdset="0">
-                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                      <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;EXP&quot;}</string>
                      </property>
                      <property name="filename" stdset="0">
-                      <string>mps_inline_threshold_rbv.ui</string>
+                      <string>mps_inline_threshold_rbv.py</string>
                      </property>
                     </widget>
                    </item>
@@ -1616,10 +1616,10 @@ background-color: rgb(70, 70, 70);</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T0_IDL&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T0_IDL&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
@@ -1716,10 +1716,10 @@ background-color: rgb(70, 70, 70);</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T0_LC1&quot;,&quot;NUM&quot;:&quot;0&quot;}</string>
+                  <string>{&quot;P&quot;:&quot;${DEVICE}:TMIT&quot;,&quot;THR&quot;:&quot;T0_LC1&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>mps_inline_threshold_rbv.ui</string>
+                  <string>mps_inline_threshold_rbv.py</string>
                  </property>
                 </widget>
                </item>
