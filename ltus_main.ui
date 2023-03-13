@@ -279,6 +279,12 @@ when TDUNDB is in</string>
                   <property name="toolTip">
                    <string/>
                   </property>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>PBLM:LTUS:982:UP_TIME_SECSUM</string>
+                  </property>
                   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_11">
                    <property name="geometry">
                     <rect>
@@ -339,6 +345,12 @@ when TDUNDB is in</string>
                   <property name="toolTip">
                    <string/>
                   </property>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>PBLM:LTUS:235:UP_TIME_SECSUM</string>
+                  </property>
                   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
                    <property name="geometry">
                     <rect>
@@ -398,6 +410,12 @@ when TDUNDB is in</string>
                   </property>
                   <property name="toolTip">
                    <string/>
+                  </property>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>PBLM:LTUS:345:UP_TIME_SECSUM</string>
                   </property>
                   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_9">
                    <property name="geometry">
@@ -472,6 +490,12 @@ when TDUNDB is in</string>
                   <property name="toolTip">
                    <string/>
                   </property>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>PBLM:LTUS:372:UP_TIME_SECSUM</string>
+                  </property>
                   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_10">
                    <property name="geometry">
                     <rect>
@@ -531,6 +555,12 @@ when TDUNDB is in</string>
                   </property>
                   <property name="toolTip">
                    <string/>
+                  </property>
+                  <property name="alarmSensitiveBorder" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>PBLM:LTUS:116:UP_TIME_SECSUM</string>
                   </property>
                   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_7">
                    <property name="geometry">

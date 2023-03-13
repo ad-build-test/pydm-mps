@@ -90,7 +90,7 @@ color: rgb(12, 255, 68);</string>
     <string/>
    </property>
    <property name="styleSheet">
-    <string notr="true">border-color: rgb(0, 0, 0);</string>
+    <string notr="true"/>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -218,55 +218,6 @@ color: rgb(12, 255, 68);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-    <property name="geometry">
-     <rect>
-      <x>202</x>
-      <y>0</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>60</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>150</width>
-      <height>20</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>9</pointsize>
-     </font>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>More Info...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>${FILENAME}</string>
-     </stringlist>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="macros" stdset="0">
-     <stringlist>
-      <string>{&quot;P&quot;:&quot;${MPS_PREFIX}&quot;,&quot;CRATE&quot;:&quot;${CRATE}&quot;}</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="PyDMLabel" name="PyDMLabel_2">
     <property name="geometry">
      <rect>
@@ -294,6 +245,110 @@ color: rgb(12, 255, 68);</string>
     <property name="channel" stdset="0">
      <string>ca://${MPS_PREFIX}:MPS_EN_RBV</string>
     </property>
+   </widget>
+   <widget class="PyDMFrame" name="PyDMFrame_2">
+    <property name="geometry">
+     <rect>
+      <x>202</x>
+      <y>0</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>60</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>150</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="alarmSensitiveContent" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="alarmSensitiveBorder" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string>${ALARM}</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="leftMargin">
+      <number>1</number>
+     </property>
+     <property name="topMargin">
+      <number>1</number>
+     </property>
+     <property name="rightMargin">
+      <number>1</number>
+     </property>
+     <property name="bottomMargin">
+      <number>1</number>
+     </property>
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+         <property name="minimumSize">
+          <size>
+           <width>58</width>
+           <height>14</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>148</width>
+           <height>14</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>More Info...</string>
+         </property>
+         <property name="filenames" stdset="0">
+          <stringlist>
+           <string>${FILENAME}</string>
+          </stringlist>
+         </property>
+         <property name="showIcon" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="macros" stdset="0">
+          <stringlist>
+           <string>{&quot;P&quot;:&quot;${MPS_PREFIX}&quot;}</string>
+          </stringlist>
+         </property>
+         <property name="openInNewWindow" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <zorder>PyDMFrame</zorder>

@@ -7,15 +7,21 @@
     <x>0</x>
     <y>0</y>
     <width>500</width>
-    <height>25</height>
+    <height>30</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>30</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <property name="spacing">
-    <number>1</number>
+    <number>5</number>
    </property>
    <property name="leftMargin">
     <number>5</number>
@@ -31,19 +37,34 @@
    </property>
    <item>
     <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>75</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>50</width>
+       <width>75</width>
        <height>16777215</height>
       </size>
      </property>
      <property name="text">
       <string>${CH}</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
     </widget>
    </item>
    <item>
     <widget class="QLabel" name="label_2">
+     <property name="minimumSize">
+      <size>
+       <width>225</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="text">
       <string>${DEVICE_NAME}</string>
      </property>
@@ -52,8 +73,69 @@
      </property>
     </widget>
    </item>
+   <item>
+    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Thresholds...</string>
+     </property>
+     <property name="rules" stdset="0">
+      <string>[{&quot;name&quot;: &quot;New Rule&quot;, &quot;property&quot;: &quot;Visible&quot;, &quot;initial_value&quot;: &quot;&quot;, &quot;expression&quot;: &quot;${VIS}&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${DEVICE_THR}&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: true}]}]</string>
+     </property>
+     <property name="filenames" stdset="0">
+      <stringlist>
+       <string>$PYDM/mps/mps_lblm_thresholds.ui</string>
+      </stringlist>
+     </property>
+     <property name="titles" stdset="0">
+      <stringlist/>
+     </property>
+     <property name="showIcon" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="macros" stdset="0">
+      <stringlist>
+       <string>{}</string>
+      </stringlist>
+     </property>
+     <property name="openInNewWindow" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="passwordProtected" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="password" stdset="0">
+      <string/>
+     </property>
+     <property name="protectedPassword" stdset="0">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

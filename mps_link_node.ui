@@ -327,6 +327,12 @@ background-color: rgb(70, 70, 70);</string>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(70, 70, 70);</string>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
     <property name="text">
      <string>NC Mode</string>
     </property>
@@ -337,7 +343,7 @@ background-color: rgb(70, 70, 70);</string>
      <bool>true</bool>
     </property>
     <property name="channel" stdset="0">
-     <string>ca://SIOC:${LOCA}:${IOC_UNIT}:LCLSMODE_RBV</string>
+     <string>ca://SIOC:${LOCA}:${IOC_UNIT}:FACMODE_RBV</string>
     </property>
    </widget>
   </widget>
@@ -394,37 +400,13 @@ background-color: rgb(70, 70, 70);</string>
      <string>$PHYSICS_TOP/mps_configuration/current/display/slots/${SLOT_FILE}</string>
     </property>
    </widget>
-   <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-    <property name="geometry">
-     <rect>
-      <x>75</x>
-      <y>285</y>
-      <width>100</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Expert...</string>
-    </property>
-    <property name="filenames" stdset="0">
-     <stringlist>
-      <string>$PYDM/mps/mps_expert.ui</string>
-     </stringlist>
-    </property>
-    <property name="openInNewWindow" stdset="0">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>285</y>
-      <width>100</width>
-      <height>30</height>
+      <x>192</x>
+      <y>287</y>
+      <width>146</width>
+      <height>26</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -441,6 +423,72 @@ background-color: rgb(70, 70, 70);</string>
     <property name="openInNewWindow" stdset="0">
      <bool>true</bool>
     </property>
+   </widget>
+   <widget class="PyDMFrame" name="PyDMFrame">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>285</y>
+      <width>150</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="alarmSensitiveBorder" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://MPLN_LN:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <property name="leftMargin">
+      <number>2</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>2</number>
+     </property>
+     <property name="bottomMargin">
+      <number>2</number>
+     </property>
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Link Node Core...</string>
+         </property>
+         <property name="filenames" stdset="0">
+          <stringlist>
+           <string>$PYDM/mps/mps_link_node_core.ui</string>
+          </stringlist>
+         </property>
+         <property name="macros" stdset="0">
+          <stringlist>
+           <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;IOC&quot;:&quot;SIOC:${LOCA}:${IOC_UNIT}&quot;}</string>
+          </stringlist>
+         </property>
+         <property name="openInNewWindow" stdset="0">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <zorder>frame_5</zorder>
@@ -462,6 +510,12 @@ background-color: rgb(70, 70, 70);</string>
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMFrame</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.frame</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>PyDMRelatedDisplayButton</class>
