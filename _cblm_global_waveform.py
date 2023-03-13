@@ -35,6 +35,7 @@ class CBLMmain(Display):
         """
     
     def connect_mode(self):
+        #TODO: Confirm we are changing whats enabled depending on the active mode. -KEL
         PV_mode = "ca://" + self.macros()['IOC'] + ':FACMODE_RBV'
         # DOES NOT CONNECT -KEL
         self.mode = caget(self.macros()['IOC'] + ':FACMODE_RBV')
