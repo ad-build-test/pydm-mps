@@ -67,7 +67,6 @@ class CBLMSelector(Display):
             if dev.name.find('CBLM') > -1:
                 #TODO: Remove the BLM: from beginning to get the PV Name 
                 self.all_cblms.append(dev.name[4:])
-        print(self.all_cblms)
 
     def init_comboBox(self):
         '''
