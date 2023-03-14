@@ -74,47 +74,6 @@
     </widget>
    </item>
    <item>
-    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="text">
-      <string>Thresholds...</string>
-     </property>
-     <property name="rules" stdset="0">
-      <string>[{&quot;name&quot;: &quot;New Rule&quot;, &quot;property&quot;: &quot;Visible&quot;, &quot;initial_value&quot;: &quot;&quot;, &quot;expression&quot;: &quot;${VIS}&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${DEVICE_THR}&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: true}]}]</string>
-     </property>
-     <property name="filenames" stdset="0">
-      <stringlist>
-       <string>$PYDM/mps/mps_lblm_thresholds.ui</string>
-      </stringlist>
-     </property>
-     <property name="titles" stdset="0">
-      <stringlist/>
-     </property>
-     <property name="showIcon" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="macros" stdset="0">
-      <stringlist>
-       <string>{}</string>
-      </stringlist>
-     </property>
-     <property name="openInNewWindow" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="passwordProtected" stdset="0">
-      <bool>false</bool>
-     </property>
-     <property name="password" stdset="0">
-      <string/>
-     </property>
-     <property name="protectedPassword" stdset="0">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item>
     <spacer name="horizontalSpacer">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -129,13 +88,6 @@
    </item>
   </layout>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
