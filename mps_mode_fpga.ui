@@ -598,26 +598,6 @@
                <property name="verticalSpacing">
                 <number>2</number>
                </property>
-               <item row="1" column="0">
-                <widget class="QLabel" name="label_4">
-                 <property name="text">
-                  <string>Version:</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QLabel" name="label_3">
-                 <property name="text">
-                  <string>Uptime Counter:</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                </widget>
-               </item>
                <item row="2" column="0">
                 <widget class="QLabel" name="label_5">
                  <property name="text">
@@ -628,8 +608,8 @@
                  </property>
                 </widget>
                </item>
-               <item row="1" column="1">
-                <widget class="PyDMLabel" name="PyDMLabel_2">
+               <item row="3" column="1">
+                <widget class="PyDMLabel" name="PyDMLabel_12">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -653,10 +633,7 @@ background-color: rgb(70, 70, 70);</string>
                   <set>Qt::AlignCenter</set>
                  </property>
                  <property name="channel" stdset="0">
-                  <string>ca://${P}:FPGA_VER</string>
-                 </property>
-                 <property name="displayFormat" stdset="0">
-                  <enum>PyDMLabel::Hex</enum>
+                  <string>ca://${P}:CONFIG_VERSION</string>
                  </property>
                 </widget>
                </item>
@@ -698,35 +675,6 @@ background-color: rgb(70, 70, 70);</string>
                  </property>
                 </widget>
                </item>
-               <item row="0" column="1">
-                <widget class="PyDMLabel" name="PyDMLabel">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>120</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">color: rgb(12, 255, 68);
-background-color: rgb(70, 70, 70);</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="channel" stdset="0">
-                  <string>ca://${P}:FPGA_UPTIMECNT</string>
-                 </property>
-                </widget>
-               </item>
                <item row="3" column="0">
                 <widget class="QLabel" name="label_12">
                  <property name="text">
@@ -737,8 +685,106 @@ background-color: rgb(70, 70, 70);</string>
                  </property>
                 </widget>
                </item>
-               <item row="3" column="1">
-                <widget class="PyDMLabel" name="PyDMLabel_12">
+               <item row="0" column="1">
+                <widget class="PyDMFrame" name="PyDMFrame">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>120</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::Box</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>2</number>
+                 </property>
+                 <property name="alarmSensitiveBorder" stdset="0">
+                  <bool>true</bool>
+                 </property>
+                 <property name="channel" stdset="0">
+                  <string>ca://${P}:FPGA_UPTIMECNT_WDOG</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_6">
+                  <property name="leftMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>2</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>2</number>
+                  </property>
+                  <item row="0" column="0">
+                   <layout class="QGridLayout" name="gridLayout_5">
+                    <item row="0" column="0">
+                     <widget class="PyDMLabel" name="PyDMLabel">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>21</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>116</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>ca://${P}:FPGA_UPTIMECNT</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>Version:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>Uptime Counter:</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="PyDMLabel" name="PyDMLabel_2">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -762,7 +808,10 @@ background-color: rgb(70, 70, 70);</string>
                   <set>Qt::AlignCenter</set>
                  </property>
                  <property name="channel" stdset="0">
-                  <string>ca://${P}:CONFIG_VERSION</string>
+                  <string>ca://${P}:FPGA_VER</string>
+                 </property>
+                 <property name="displayFormat" stdset="0">
+                  <enum>PyDMLabel::Hex</enum>
                  </property>
                 </widget>
                </item>
@@ -865,6 +914,12 @@ background-color: rgb(70, 70, 70);</string>
    <class>PyDMEnumComboBox</class>
    <extends>QComboBox</extends>
    <header>pydm.widgets.enum_combo_box</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMFrame</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.frame</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>PyDMLineEdit</class>
