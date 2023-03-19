@@ -130,22 +130,6 @@
               </spacer>
              </item>
              <item>
-              <spacer name="horizontalSpacer_3">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Maximum</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>60</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
               <widget class="QLabel" name="label_2">
                <property name="text">
                 <string>Status</string>
@@ -516,7 +500,7 @@
                        <string/>
                       </property>
                       <property name="rules" stdset="0">
-                       <string>[{&quot;name&quot;: &quot;Disable&quot;, &quot;property&quot;: &quot;Enable&quot;, &quot;initial_value&quot;: &quot;&quot;, &quot;expression&quot;: &quot;ch[0]&lt;1&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${IOC}:FACMODE_AUTO.RVAL&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: true}]}]</string>
+                       <string>[]</string>
                       </property>
                       <property name="alarmSensitiveContent" stdset="0">
                        <bool>false</bool>
@@ -528,7 +512,7 @@
                        <string/>
                       </property>
                       <property name="channel" stdset="0">
-                       <string>ca://${IOC}:FACMODE</string>
+                       <string>ca://${IOC}:FACMODE_USER</string>
                       </property>
                      </widget>
                     </item>
@@ -622,7 +606,7 @@
            <widget class="PyDMFrame" name="PyDMFrame_3">
             <property name="maximumSize">
              <size>
-              <width>160</width>
+              <width>200</width>
               <height>16777215</height>
              </size>
             </property>
@@ -641,11 +625,32 @@
             <property name="channel" stdset="0">
              <string>ca://${IOC}:FACMODE_STAT</string>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_7">
-             <item>
-              <layout class="QVBoxLayout" name="verticalLayout_8">
-               <item>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QGridLayout" name="gridLayout_5">
+               <property name="verticalSpacing">
+                <number>6</number>
+               </property>
+               <item row="0" column="1">
                 <widget class="PyDMLabel" name="PyDMLabel_2">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>25</height>
+                  </size>
+                 </property>
                  <property name="toolTip">
                   <string/>
                  </property>
@@ -669,8 +674,14 @@
                  </property>
                 </widget>
                </item>
-               <item>
+               <item row="1" column="1">
                 <widget class="PyDMLabel" name="PyDMLabel_3">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>25</height>
+                  </size>
+                 </property>
                  <property name="toolTip">
                   <string/>
                  </property>
@@ -688,6 +699,20 @@
                  </property>
                  <property name="channel" stdset="0">
                   <string>ca://${IOC}:FACMODE_STAT</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>Mode RBV:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>Mode Stat:</string>
                  </property>
                 </widget>
                </item>

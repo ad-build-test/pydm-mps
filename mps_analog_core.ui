@@ -1,0 +1,3860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1140</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MPS Analog Core: ${P}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 150, 168);</string>
+       </property>
+       <property name="text">
+        <string>MPS Analog Core: ${P}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMTabWidget" name="PyDMTabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="currentTabAlarmChannel" stdset="0">
+        <cstring>MPLN_INFO:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</cstring>
+       </property>
+       <property name="alarmChannels">
+        <stringlist>
+         <string>MPLN_INFO:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</string>
+         <string></string>
+         <string></string>
+         <string>MPLN_AC:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</string>
+         <string>MPLN_AP:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</string>
+        </stringlist>
+       </property>
+       <widget class="QWidget" name="information">
+        <attribute name="title">
+         <string>Information</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="filename" stdset="0">
+              <string>$PYDM/mps/mps_mode_fpga.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_6">
+        <attribute name="title">
+         <string>Inputs</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QFrame" name="frame_9">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <property name="spacing">
+               <number>1</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <property name="spacing">
+                 <number>5</number>
+                </property>
+                <item>
+                 <spacer name="horizontalSpacer_12">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>10</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_52">
+                  <property name="minimumSize">
+                   <size>
+                    <width>75</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>75</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Channel</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_53">
+                  <property name="minimumSize">
+                   <size>
+                    <width>200</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Input</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_11">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="templateFilename" stdset="0">
+              <string>$PYDM/mps/mps_ln_channel.ui</string>
+             </property>
+             <property name="dataSource" stdset="0">
+              <string>$PHYSICS_TOP/mps_configuration/current/display/thresholds/app${AID}_chan.json</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="communication">
+        <attribute name="title">
+         <string>Communication</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="filename" stdset="0">
+              <string>$PYDM/mps/mps_salt_tx.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTabWidget" name="tabWidget">
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <widget class="QWidget" name="tab">
+              <attribute name="title">
+               <string>Message</string>
+              </attribute>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QTabWidget" name="tabWidget_2">
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="tab_2">
+                    <attribute name="title">
+                     <string>Tx Message Information</string>
+                    </attribute>
+                    <layout class="QGridLayout" name="gridLayout_4">
+                     <item row="0" column="0">
+                      <layout class="QGridLayout" name="gridLayout_3">
+                       <property name="verticalSpacing">
+                        <number>2</number>
+                       </property>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_3">
+                         <property name="text">
+                          <string>Last Message App ID:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_5">
+                         <property name="text">
+                          <string>Last Message TS:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_4">
+                         <property name="text">
+                          <string>Last Message NC Flag:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_2">
+                         <property name="text">
+                          <string>Message Count:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;name&quot;: &quot;New Rule&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;initial_value&quot;: &quot;&quot;, &quot;expression&quot;: &quot;'0x{:X}'.format(ch[0] if ch[0]&gt;=0 else ch[0]+2**32)&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${P}:MSG_CNT&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: true}]}]</string>
+                         </property>
+                         <property name="precision" stdset="0">
+                          <number>0</number>
+                         </property>
+                         <property name="showUnits" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                         <property name="precisionFromPV" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="alarmSensitiveBorder" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="PyDMToolTip" stdset="0">
+                          <string/>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string/>
+                         </property>
+                         <property name="displayFormat" stdset="0">
+                          <enum>PyDMLabel::String</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_2">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_APP_ID</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_3">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_LC1_EN</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_4">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_TMSTMP</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="0">
+                      <spacer name="verticalSpacer">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item row="0" column="1">
+                      <spacer name="horizontalSpacer">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTabWidget" name="tabWidget_3">
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="tab_4">
+                    <attribute name="title">
+                     <string>Last Message Bytes</string>
+                    </attribute>
+                    <layout class="QGridLayout" name="gridLayout_6">
+                     <item row="1" column="0">
+                      <spacer name="verticalSpacer_2">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                     <item row="0" column="0">
+                      <layout class="QGridLayout" name="gridLayout_5">
+                       <property name="verticalSpacing">
+                        <number>2</number>
+                       </property>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_7">
+                         <property name="text">
+                          <string>Byte 1</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="QLabel" name="label_8">
+                         <property name="text">
+                          <string>Byte 2</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QLabel" name="label_9">
+                         <property name="text">
+                          <string>Byte 3</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QLabel" name="label_10">
+                         <property name="text">
+                          <string>Byte 4</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_6">
+                         <property name="text">
+                          <string>Byte 0</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="0">
+                        <widget class="QLabel" name="label_11">
+                         <property name="text">
+                          <string>Byte 5</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_6">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_BYTE_0</string>
+                         </property>
+                         <property name="displayFormat" stdset="0">
+                          <enum>PyDMLabel::Hex</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_7">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_BYTE_1</string>
+                         </property>
+                         <property name="displayFormat" stdset="0">
+                          <enum>PyDMLabel::Hex</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_8">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_BYTE_2</string>
+                         </property>
+                         <property name="displayFormat" stdset="0">
+                          <enum>PyDMLabel::Hex</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_9">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_BYTE_3</string>
+                         </property>
+                         <property name="displayFormat" stdset="0">
+                          <enum>PyDMLabel::Hex</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_10">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_BYTE_4</string>
+                         </property>
+                         <property name="displayFormat" stdset="0">
+                          <enum>PyDMLabel::Hex</enum>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="1">
+                        <widget class="PyDMLabel" name="PyDMLabel_11">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>25</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="alarmSensitiveContent" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                         <property name="channel" stdset="0">
+                          <string>ca://${P}:LAST_MSG_BYTE_5</string>
+                         </property>
+                         <property name="displayFormat" stdset="0">
+                          <enum>PyDMLabel::Hex</enum>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="0" column="1">
+                      <spacer name="horizontalSpacer_3">
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>40</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="analog">
+        <attribute name="title">
+         <string>Analog Core</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>2</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QFrame" name="frame_4">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QHBoxLayout" name="horizontalLayout_8">
+                   <property name="leftMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_7">
+                     <item>
+                      <widget class="QFrame" name="frame_7">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_10">
+                        <item row="1" column="0">
+                         <layout class="QGridLayout" name="gridLayout_9">
+                          <property name="verticalSpacing">
+                           <number>2</number>
+                          </property>
+                          <item row="0" column="1">
+                           <widget class="QLabel" name="label_14">
+                            <property name="text">
+                             <string>Raw Data</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="1">
+                           <widget class="PyDMLabel" name="PyDMLabel_12">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ADC_DATA_0</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="1">
+                           <widget class="PyDMLabel" name="PyDMLabel_14">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ADC_DATA_2</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="4">
+                           <widget class="PyDMLabel" name="PyDMLabel_23">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MAX_VAL_2</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="4">
+                           <widget class="PyDMLabel" name="PyDMLabel_22">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MAX_VAL_1</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="4">
+                           <widget class="QLabel" name="label_17">
+                            <property name="text">
+                             <string>Maximum</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="2">
+                           <widget class="PyDMLabel" name="PyDMLabel_17">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MIN_VAL_2</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QLabel" name="label_16">
+                            <property name="text">
+                             <string>Average</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="3">
+                           <widget class="PyDMLabel" name="PyDMLabel_18">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_AVG_VAL_0</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2">
+                           <widget class="QLabel" name="label_15">
+                            <property name="text">
+                             <string>Minimum</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="1">
+                           <widget class="PyDMLabel" name="PyDMLabel_13">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ADC_DATA_1</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_12">
+                            <property name="text">
+                             <string>Channel 0</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="PyDMLabel" name="PyDMLabel_15">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MIN_VAL_0</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="0">
+                           <widget class="QLabel" name="label_13">
+                            <property name="text">
+                             <string>Channel 1</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="3">
+                           <widget class="PyDMLabel" name="PyDMLabel_20">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_AVG_VAL_2</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="0">
+                           <widget class="QLabel" name="label_18">
+                            <property name="text">
+                             <string>Channel 2</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="4">
+                           <widget class="PyDMLabel" name="PyDMLabel_21">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MAX_VAL_0</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="2">
+                           <widget class="PyDMLabel" name="PyDMLabel_16">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MIN_VAL_1</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="3">
+                           <widget class="PyDMLabel" name="PyDMLabel_19">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_AVG_VAL_1</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QFrame" name="frame_5">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>25</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::NoFrame</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_6">
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_3">
+                             <item>
+                              <widget class="QLabel" name="label_19">
+                               <property name="font">
+                                <font>
+                                 <pointsize>12</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Bay 0</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <spacer name="horizontalSpacer_4">
+                               <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                <size>
+                                 <width>40</width>
+                                 <height>20</height>
+                                </size>
+                               </property>
+                              </spacer>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="label_20">
+                               <property name="text">
+                                <string>Data Valid Flag:</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="PyDMLabel" name="PyDMLabel_5">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>50</width>
+                                 <height>0</height>
+                                </size>
+                               </property>
+                               <property name="maximumSize">
+                                <size>
+                                 <width>16777215</width>
+                                 <height>16777215</height>
+                                </size>
+                               </property>
+                               <property name="toolTip">
+                                <string/>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::Box</enum>
+                               </property>
+                               <property name="lineWidth">
+                                <number>2</number>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="rules" stdset="0">
+                                <string>[{&quot;name&quot;: &quot;New Rule&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;initial_value&quot;: &quot;&quot;, &quot;expression&quot;: &quot;'{0}'.format(hex(ch[0]).upper())&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${P}:ADC_VALID_0&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: true}]}]</string>
+                               </property>
+                               <property name="precision" stdset="0">
+                                <number>0</number>
+                               </property>
+                               <property name="showUnits" stdset="0">
+                                <bool>false</bool>
+                               </property>
+                               <property name="precisionFromPV" stdset="0">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alarmSensitiveContent" stdset="0">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alarmSensitiveBorder" stdset="0">
+                                <bool>true</bool>
+                               </property>
+                               <property name="PyDMToolTip" stdset="0">
+                                <string/>
+                               </property>
+                               <property name="channel" stdset="0">
+                                <string>ca://${P}:ADC_VALID_0</string>
+                               </property>
+                               <property name="displayFormat" stdset="0">
+                                <enum>PyDMLabel::String</enum>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_6">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>500</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_8">
+                        <item row="1" column="0">
+                         <layout class="QGridLayout" name="gridLayout_7">
+                          <property name="verticalSpacing">
+                           <number>2</number>
+                          </property>
+                          <item row="1" column="1">
+                           <widget class="PyDMLabel" name="PyDMLabel_24">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ADC_DATA_3</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="1">
+                           <widget class="QLabel" name="label_24">
+                            <property name="text">
+                             <string>Raw Data</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="2">
+                           <widget class="QLabel" name="label_25">
+                            <property name="text">
+                             <string>Minimum</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="0">
+                           <widget class="QLabel" name="label_21">
+                            <property name="text">
+                             <string>Channel 3</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="2">
+                           <widget class="PyDMLabel" name="PyDMLabel_27">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MIN_VAL_3</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="2">
+                           <widget class="PyDMLabel" name="PyDMLabel_29">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MIN_VAL_5</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="3">
+                           <widget class="PyDMLabel" name="PyDMLabel_31">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_AVG_VAL_4</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="3">
+                           <widget class="PyDMLabel" name="PyDMLabel_32">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_AVG_VAL_5</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="1">
+                           <widget class="PyDMLabel" name="PyDMLabel_25">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ADC_DATA_4</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="1">
+                           <widget class="PyDMLabel" name="PyDMLabel_26">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ADC_DATA_5</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="3">
+                           <widget class="QLabel" name="label_26">
+                            <property name="text">
+                             <string>Average</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="0">
+                           <widget class="QLabel" name="label_23">
+                            <property name="text">
+                             <string>Channel 5</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="2">
+                           <widget class="PyDMLabel" name="PyDMLabel_28">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MIN_VAL_4</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="3">
+                           <widget class="PyDMLabel" name="PyDMLabel_30">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_AVG_VAL_3</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="0">
+                           <widget class="QLabel" name="label_22">
+                            <property name="text">
+                             <string>Channel 4</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="0" column="4">
+                           <widget class="QLabel" name="label_27">
+                            <property name="text">
+                             <string>Maximum</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="1" column="4">
+                           <widget class="PyDMLabel" name="PyDMLabel_33">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MAX_VAL_3</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="2" column="4">
+                           <widget class="PyDMLabel" name="PyDMLabel_34">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MAX_VAL_4</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                          <item row="3" column="4">
+                           <widget class="PyDMLabel" name="PyDMLabel_35">
+                            <property name="minimumSize">
+                             <size>
+                              <width>100</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="toolTip">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="showUnits" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="alarmSensitiveContent" stdset="0">
+                             <bool>true</bool>
+                            </property>
+                            <property name="channel" stdset="0">
+                             <string>ca://${P}:ANA_MAX_VAL_5</string>
+                            </property>
+                            <property name="displayFormat" stdset="0">
+                             <enum>PyDMLabel::Default</enum>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QFrame" name="frame_3">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>25</height>
+                           </size>
+                          </property>
+                          <property name="frameShape">
+                           <enum>QFrame::NoFrame</enum>
+                          </property>
+                          <property name="frameShadow">
+                           <enum>QFrame::Raised</enum>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_10">
+                           <property name="topMargin">
+                            <number>0</number>
+                           </property>
+                           <property name="bottomMargin">
+                            <number>0</number>
+                           </property>
+                           <item>
+                            <layout class="QHBoxLayout" name="horizontalLayout_9">
+                             <item>
+                              <widget class="QLabel" name="label_28">
+                               <property name="font">
+                                <font>
+                                 <pointsize>12</pointsize>
+                                </font>
+                               </property>
+                               <property name="text">
+                                <string>Bay 1</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <spacer name="horizontalSpacer_5">
+                               <property name="orientation">
+                                <enum>Qt::Horizontal</enum>
+                               </property>
+                               <property name="sizeHint" stdset="0">
+                                <size>
+                                 <width>40</width>
+                                 <height>20</height>
+                                </size>
+                               </property>
+                              </spacer>
+                             </item>
+                             <item>
+                              <widget class="QLabel" name="label_29">
+                               <property name="text">
+                                <string>Data Valid Flag:</string>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="PyDMLabel" name="PyDMLabel_36">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>50</width>
+                                 <height>25</height>
+                                </size>
+                               </property>
+                               <property name="toolTip">
+                                <string/>
+                               </property>
+                               <property name="frameShape">
+                                <enum>QFrame::Box</enum>
+                               </property>
+                               <property name="lineWidth">
+                                <number>2</number>
+                               </property>
+                               <property name="alignment">
+                                <set>Qt::AlignCenter</set>
+                               </property>
+                               <property name="rules" stdset="0">
+                                <string>[{&quot;name&quot;: &quot;New Rule&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;initial_value&quot;: &quot;&quot;, &quot;expression&quot;: &quot;'{0}'.format(hex(ch[0]).upper())&quot;, &quot;channels&quot;: [{&quot;channel&quot;: &quot;ca://${P}:ADC_VALID_1&quot;, &quot;trigger&quot;: true, &quot;use_enum&quot;: true}]}]</string>
+                               </property>
+                               <property name="precision" stdset="0">
+                                <number>0</number>
+                               </property>
+                               <property name="showUnits" stdset="0">
+                                <bool>false</bool>
+                               </property>
+                               <property name="precisionFromPV" stdset="0">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alarmSensitiveContent" stdset="0">
+                                <bool>true</bool>
+                               </property>
+                               <property name="alarmSensitiveBorder" stdset="0">
+                                <bool>true</bool>
+                               </property>
+                               <property name="PyDMToolTip" stdset="0">
+                                <string/>
+                               </property>
+                               <property name="channel" stdset="0">
+                                <string>ca://${P}:ADC_VALID_1</string>
+                               </property>
+                               <property name="displayFormat" stdset="0">
+                                <enum>PyDMLabel::String</enum>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_2">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_12">
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item row="1" column="2">
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="1">
+               <layout class="QGridLayout" name="gridLayout_11">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_35">
+                  <property name="text">
+                   <string>Channel 4</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_31">
+                  <property name="text">
+                   <string>Channel 0</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_33">
+                  <property name="text">
+                   <string>Channel 2</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_34">
+                  <property name="text">
+                   <string>Channel 3</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_37">
+                  <property name="text">
+                   <string>Integrator 0</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_32">
+                  <property name="text">
+                   <string>Channel 1</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_39">
+                  <property name="text">
+                   <string>Integrator 2</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_36">
+                  <property name="text">
+                   <string>Channel 5</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_38">
+                  <property name="text">
+                   <string>Integrator 1</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QLabel" name="label_40">
+                  <property name="text">
+                   <string>Integrator 3</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_37">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_0</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_38">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_1</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_39">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_2</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_40">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_3</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_41">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_4</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_42">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_5</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_43">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_6</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_44">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_7</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_45">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_8</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_46">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_9</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_47">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_10</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_48">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_11</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_49">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_12</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_50">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_13</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_51">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_14</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_52">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_15</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_53">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_16</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_54">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_17</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_55">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_18</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_56">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_19</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_57">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_20</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_58">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_21</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_59">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_22</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_60">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_23</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_30">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Processed Data</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="processing">
+        <attribute name="title">
+         <string>Analog Processing</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_14">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
+          <number>9</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_13">
+           <item row="1" column="0">
+            <widget class="QTabWidget" name="tabWidget_4">
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <widget class="QWidget" name="tab_3">
+              <attribute name="title">
+               <string>NC</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_16">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_15">
+                 <item row="0" column="0">
+                  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="macros" stdset="0">
+                    <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;LCLS&quot;:&quot;1&quot;}</string>
+                   </property>
+                   <property name="filename" stdset="0">
+                    <string>$PYDM/mps/mps_analog_processing.ui</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="tab_5">
+              <attribute name="title">
+               <string>SC</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_18">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_17">
+                 <item row="0" column="0">
+                  <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+                   <property name="toolTip">
+                    <string/>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
+                   <property name="macros" stdset="0">
+                    <string>{&quot;P&quot;:&quot;${P}&quot;,&quot;LCLS&quot;:&quot;2&quot;}</string>
+                   </property>
+                   <property name="filename" stdset="0">
+                    <string>$PYDM/mps/mps_analog_processing.ui</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QFrame" name="frame_8">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_19">
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item row="1" column="2">
+               <spacer name="horizontalSpacer_10">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="1">
+               <layout class="QGridLayout" name="gridLayout_20">
+                <property name="spacing">
+                 <number>2</number>
+                </property>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_41">
+                  <property name="text">
+                   <string>Channel 4</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_42">
+                  <property name="text">
+                   <string>Channel 0</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_43">
+                  <property name="text">
+                   <string>Channel 2</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_44">
+                  <property name="text">
+                   <string>Channel 3</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_45">
+                  <property name="text">
+                   <string>Integrator 0</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_46">
+                  <property name="text">
+                   <string>Channel 1</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_47">
+                  <property name="text">
+                   <string>Integrator 2</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_48">
+                  <property name="text">
+                   <string>Channel 5</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_49">
+                  <property name="text">
+                   <string>Integrator 1</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QLabel" name="label_50">
+                  <property name="text">
+                   <string>Integrator 3</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_61">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_0</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_62">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_1</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_63">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_2</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_64">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_3</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_65">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_4</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="PyDMLabel" name="PyDMLabel_66">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_5</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_67">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_6</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_68">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_7</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_69">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_8</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_70">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_9</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_71">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_10</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="2">
+                 <widget class="PyDMLabel" name="PyDMLabel_72">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_11</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_73">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_12</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_74">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_13</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_75">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_14</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_76">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_15</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_77">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_16</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="3">
+                 <widget class="PyDMLabel" name="PyDMLabel_78">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_17</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_79">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_18</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_80">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_19</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_81">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_20</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_82">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_21</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_83">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_22</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="4">
+                 <widget class="PyDMLabel" name="PyDMLabel_84">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="showUnits" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="alarmSensitiveContent" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                  <property name="channel" stdset="0">
+                   <string>ca://${P}:ANA_BSA_DATA_23</string>
+                  </property>
+                  <property name="displayFormat" stdset="0">
+                   <enum>PyDMLabel::Default</enum>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="1" column="0">
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="label_51">
+                <property name="font">
+                 <font>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Processed Data</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="PyDMDrawingImage" name="PyDMDrawingImage_2">
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>250</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="filename" stdset="0">
+          <string>lcls_mps_lockup_sidebyside_digital.png</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>pydm.widgets.tab_bar</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMTemplateRepeater</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.template_repeater</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -35,6 +35,7 @@ class CBLMmain(Display):
         """
     
     def connect_mode(self):
+        #TODO: Confirm we are changing whats enabled depending on the active mode. -KEL
         PV_mode = "ca://" + self.macros()['IOC'] + ':FACMODE_RBV'
         # DOES NOT CONNECT -KEL
         self.mode = caget(self.macros()['IOC'] + ':FACMODE_RBV')
@@ -51,13 +52,11 @@ class CBLMmain(Display):
         #self.coarse_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_COARSE_DEL_RBV')
         self.coarse_delay_nc_channel = PyDMChannel(address=PV_coarse_delay_nc, value_slot=self.update_coarse_delay_val_nc)
         self.coarse_delay_nc_channel.connect()
-        print('Connecting 1')
         
         PV_peak_delay_nc = "ca://" + self.macros()['DEVICE'] + ':NC_ANA_PK_DEL_TRG_RBV'
         #self.peak_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PK_DEL_TRG_RBV')
         self.peak_delay_nc_channel = PyDMChannel(address=PV_peak_delay_nc, value_slot=self.update_peak_delay_val_nc)
         self.peak_delay_nc_channel.connect()
-        print('Connecting 2')
         
         PV_peak_width_nc = "ca://" + self.macros()['DEVICE'] + ':NC_ANA_PK_WDT_TRG_RBV'
         #self.peak_width_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PK_WDT_TRG_RBV')
@@ -266,11 +265,9 @@ class CBLMmain(Display):
 
     def update_coarse_delay_val_nc(self, coarse_delay_val):
         self.coarse_delay_val_nc = coarse_delay_val
-        print(f'coarse_del = {coarse_delay_val}, {self.coarse_delay_val_nc}')
         self.update_coarse_delay()
 
     def update_coarse_delay_val_sc(self, coarse_delay_val):
-        print('Updating coarse delay val sc')
         self.coarse_delay_val_sc = coarse_delay_val
         self.update_coarse_delay()
 
@@ -279,7 +276,6 @@ class CBLMmain(Display):
         if self.mode == 0:
             if self.initialize_coarse_delay_flag == 0:
                 self.called += 1
-                print(self.called)
 
                 self.coarse_delay_curve1.setValue(str(self.coarse_delay_val_nc))
                 self.coarse_delay_curve2.setValue(str(self.coarse_delay_val_nc))
@@ -287,10 +283,8 @@ class CBLMmain(Display):
                 self.coarse_delay_curve4.setValue(str(self.coarse_delay_val_nc))
                 self.coarse_delay_curve5.setValue(str(self.coarse_delay_val_nc))
                 self.coarse_delay_curve6.setValue(str(self.coarse_delay_val_nc))
-                print('Updating 1.1...')
                 self.update_peak_delay_val_nc(self.peak_delay_val_nc)
             elif self.initialize_coarse_delay_flag == 1:
-                print('Initializing 1.1...')
                 self.initialize_coarse_delay(self.coarse_delay_val_nc)
                 self.initialize_coarse_delay_flag = 0
 
@@ -303,21 +297,17 @@ class CBLMmain(Display):
                 self.coarse_delay_curve5.setValue(str(self.coarse_delay_val_sc))
                 self.coarse_delay_curve6.setValue(str(self.coarse_delay_val_sc))
                 self.update_peak_delay_val_sc(self.peak_delay_val_sc)
-                print('Updating 1.2..')
             elif self.initialize_coarse_delay_flag == 1:
                 self.initialize_coarse_delay(self.coarse_delay_val_sc)
-                print('Initializing 1.2')
                 self.initialize_coarse_delay_flag = 0
 
     def update_peak_delay_val_nc(self, peak_delay_val):
         self.peak_delay_val_nc = peak_delay_val
         self.peak_delay_val_nc_offset = self.peak_delay_val_nc + self.coarse_delay_val_nc
-        print(f'peak_del = {peak_delay_val}, {self.peak_delay_val_nc}')
         self.update_peak_delay()
 
     def update_peak_delay_val_sc(self, peak_delay_val):
         self.peak_delay_val_sc = peak_delay_val
-        print('Updating peak delay sc')
         self.peak_delay_val_sc_offset = self.peak_delay_val_sc + self.coarse_delay_val_sc
         self.update_peak_delay()
 
@@ -331,11 +321,9 @@ class CBLMmain(Display):
                 self.peak_delay_curve4.setValue(str(self.peak_delay_val_nc_offset))
                 self.peak_delay_curve5.setValue(str(self.peak_delay_val_nc_offset))
                 self.peak_delay_curve6.setValue(str(self.peak_delay_val_nc_offset))
-                print('Updating 2...') 
                 self.update_peak_width_val_nc(self.peak_width_val_nc)
             elif self.initialize_peak_delay_flag == 1:
                 self.initialize_peak_delay(self.peak_delay_val_nc)
-                print('Initializing 2...')
                 self.initialize_peak_delay_flag = 0
 
         elif self.mode == 1:
@@ -355,7 +343,6 @@ class CBLMmain(Display):
         self.peak_width_val_nc = peak_width_val
         self.peak_width_val_nc_offset = self.peak_width_val_nc + self.peak_delay_val_nc
         self.update_peak_width()
-        #print(f'peak_wid = {peak_width_val}, {self.peak_width_val_nc}')
 
     def update_peak_width_val_sc(self, peak_width_val):
         self.peak_width_val_sc = peak_width_val
@@ -374,7 +361,6 @@ class CBLMmain(Display):
                 self.peak_width_curve6.setValue(str(self.peak_width_val_nc_offset))
                 self.update_pedestal_delay_val_nc(self.pedestal_delay_val_nc)
             elif self.initialize_peak_width_flag == 1:
-                print('Initializing 3...')
                 self.initialize_peak_width(self.peak_width_val_nc)
                 self.initialize_peak_width_flag = 0
         elif self.mode == 1:
@@ -394,7 +380,6 @@ class CBLMmain(Display):
         self.pedestal_delay_val_nc = pedestal_delay_val
         self.pedestal_delay_val_nc_offset = self.pedestal_delay_val_nc + self.coarse_delay_val_nc
         self.update_pedestal_delay()
-        #print(f'ped_del = {pedestal_delay_val}, {self.pedestal_delay_val_nc}')
 
     def update_pedestal_delay_val_sc(self, pedestal_delay_val):
         self.pedestal_delay_val_sc = pedestal_delay_val
@@ -432,7 +417,6 @@ class CBLMmain(Display):
         self.pedestal_width_val_nc = pedestal_width_val
         self.pedestal_width_val_nc_offset = self.pedestal_width_val_nc + self.pedestal_delay_val_nc
         self.update_pedestal_width()
-        #print(f'ped_wid = {pedestal_width_val}, {self.pedestal_width_val_nc}')
 
     def update_pedestal_width_val_sc(self, pedestal_width_val):
         self.pedestal_width_val_sc = pedestal_width_val
