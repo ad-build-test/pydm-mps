@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1191</width>
-    <height>893</height>
+    <width>1196</width>
+    <height>775</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,6 +16,12 @@
   <layout class="QGridLayout" name="gridLayout_12">
    <item row="0" column="0">
     <widget class="QFrame" name="frame_9">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="frameShape">
       <enum>QFrame::NoFrame</enum>
      </property>
@@ -23,6 +29,1194 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QGridLayout" name="gridLayout_11">
+      <item row="0" column="0">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="minimumSize">
+         <size>
+          <width>1000</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1000</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>984</width>
+           <height>918</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_18">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox">
+            <property name="minimumSize">
+             <size>
+              <width>900</width>
+              <height>900</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>950</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Map and Status</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="2" column="0">
+              <widget class="QFrame" name="frame_8">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>300</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_10" columnstretch="1,0,0,0,0">
+                <item row="0" column="1">
+                 <widget class="QFrame" name="frame_11">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_16">
+                   <item row="0" column="0">
+                    <widget class="QTabWidget" name="tabWidget">
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <widget class="QWidget" name="tab">
+                      <attribute name="title">
+                       <string>BLM HV</string>
+                      </attribute>
+                      <layout class="QGridLayout" name="gridLayout_13">
+                       <item row="4" column="0">
+                        <spacer name="verticalSpacer_3">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item row="0" column="0">
+                        <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
+                         <property name="minimumSize">
+                          <size>
+                           <width>150</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="text">
+                          <string>MPS - BLMH HV Control</string>
+                         </property>
+                         <property name="filenames" stdset="0">
+                          <stringlist>
+                           <string>mps_undh_blmhv.edl</string>
+                          </stringlist>
+                         </property>
+                         <property name="showIcon" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="QLabel" name="label_2">
+                         <property name="text">
+                          <string>Expert:</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_5">
+                         <property name="minimumSize">
+                          <size>
+                           <width>150</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="text">
+                          <string>MPS - B921 HVPS</string>
+                         </property>
+                         <property name="filenames" stdset="0">
+                          <stringlist>
+                           <string>mps_hvps_crate</string>
+                          </stringlist>
+                         </property>
+                         <property name="showIcon" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                         <property name="macros" stdset="0">
+                          <stringlist>
+                           <string>P=HVPS:UND0:MP02</string>
+                          </stringlist>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
+                         <property name="minimumSize">
+                          <size>
+                           <width>150</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="text">
+                          <string>MPS - B913 HVPS</string>
+                         </property>
+                         <property name="filenames" stdset="0">
+                          <stringlist>
+                           <string>mps_hvps_crate</string>
+                          </stringlist>
+                         </property>
+                         <property name="showIcon" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                         <property name="macros" stdset="0">
+                          <stringlist>
+                           <string>P=HVPS:UND0:MP01</string>
+                          </stringlist>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QFrame" name="frame_12">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_17">
+                   <item row="0" column="0">
+                    <widget class="QTabWidget" name="tabWidget_8">
+                     <property name="maximumSize">
+                      <size>
+                       <width>175</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <widget class="QWidget" name="tab_10">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>250</height>
+                       </size>
+                      </property>
+                      <attribute name="title">
+                       <string>Analog Inputs</string>
+                      </attribute>
+                      <layout class="QGridLayout" name="gridLayout_23">
+                       <item row="0" column="0">
+                        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_12">
+                         <property name="minimumSize">
+                          <size>
+                           <width>150</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="text">
+                          <string>UNDH Analog Inputs...</string>
+                         </property>
+                         <property name="filenames" stdset="0">
+                          <stringlist>
+                           <string>mps_threshold_area.py</string>
+                          </stringlist>
+                         </property>
+                         <property name="showIcon" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                         <property name="macros" stdset="0">
+                          <stringlist>
+                           <string>{&quot;AREA&quot;:&quot;UNDH&quot;}</string>
+                          </stringlist>
+                         </property>
+                         <property name="openInNewWindow" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="0">
+                        <spacer name="verticalSpacer_13">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item row="1" column="0">
+                        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_13">
+                         <property name="minimumSize">
+                          <size>
+                           <width>150</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="text">
+                          <string>UND0 Analog Inputs...</string>
+                         </property>
+                         <property name="filenames" stdset="0">
+                          <stringlist>
+                           <string>mps_threshold_area.py</string>
+                          </stringlist>
+                         </property>
+                         <property name="showIcon" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                         <property name="macros" stdset="0">
+                          <stringlist>
+                           <string>{&quot;AREA&quot;:&quot;UND0&quot;}</string>
+                          </stringlist>
+                         </property>
+                         <property name="openInNewWindow" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QFrame" name="frame_6">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Plain</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_8">
+                   <item row="1" column="0">
+                    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>BLM Resistance Mon...</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>$PYDM/mps/mps_undh_rmon.ui</string>
+                      </stringlist>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="openInNewWindow" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="PyDMShellCommand" name="PyDMShellCommand">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>BLM Z-Plot</string>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="commands" stdset="0">
+                      <stringlist>
+                       <string>python2 /usr/local/lcls/tools/python/BLM_CUD/blm_display.py --mode=hxr</string>
+                      </stringlist>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="5" column="0">
+                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_6">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>MPS - HXRSS...</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>mps_hxrss</string>
+                      </stringlist>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>BLM Keep Alive Mon...</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>$PYDM/mps/mps_undh_cblm_alive.ui</string>
+                      </stringlist>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>false</bool>
+                     </property>
+                     <property name="openInNewWindow" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>MPS - Cavity BPMs...</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>bpm_undh_mps_main</string>
+                      </stringlist>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <property name="text">
+                      <string>MPS - BLM Expert...</string>
+                     </property>
+                     <property name="filenames" stdset="0">
+                      <stringlist>
+                       <string>mps_blm_expert_1</string>
+                      </stringlist>
+                     </property>
+                     <property name="showIcon" stdset="0">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="6" column="0">
+                    <spacer name="verticalSpacer_5">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QFrame" name="frame_10">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_9">
+                   <item row="0" column="0">
+                    <widget class="QTabWidget" name="tabWidget_3">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <widget class="QWidget" name="tab_2">
+                      <attribute name="title">
+                       <string>LBLM PLIC</string>
+                      </attribute>
+                      <layout class="QGridLayout" name="gridLayout_14">
+                       <item row="0" column="0">
+                        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
+                         <property name="minimumSize">
+                          <size>
+                           <width>180</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="text">
+                          <string>Launch UNDH PLIC...</string>
+                         </property>
+                         <property name="filenames" stdset="0">
+                          <stringlist>
+                           <string>$PYDM/misc/lblm_global.py</string>
+                          </stringlist>
+                         </property>
+                         <property name="showIcon" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                         <property name="macros" stdset="0">
+                          <stringlist>
+                           <string>{&quot;DEVICE&quot;:&quot;LBLM:UNDH:4050:A&quot;}</string>
+                          </stringlist>
+                         </property>
+                         <property name="openInNewWindow" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <spacer name="verticalSpacer_6">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QTabWidget" name="tabWidget_4">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <property name="currentIndex">
+                      <number>0</number>
+                     </property>
+                     <widget class="QWidget" name="tab_3">
+                      <attribute name="title">
+                       <string>CBLM Waveforms</string>
+                      </attribute>
+                      <layout class="QGridLayout" name="gridLayout_15">
+                       <item row="0" column="0">
+                        <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
+                         <property name="minimumSize">
+                          <size>
+                           <width>180</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="toolTip">
+                          <string/>
+                         </property>
+                         <property name="text">
+                          <string>Launch UNDH Waveforms...</string>
+                         </property>
+                         <property name="filenames" stdset="0">
+                          <stringlist>
+                           <string>$PYDM/mps/cblm_global.py</string>
+                          </stringlist>
+                         </property>
+                         <property name="showIcon" stdset="0">
+                          <bool>false</bool>
+                         </property>
+                         <property name="macros" stdset="0">
+                          <stringlist>
+                           <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDH:1375&quot;}</string>
+                          </stringlist>
+                         </property>
+                         <property name="openInNewWindow" stdset="0">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="0">
+                        <spacer name="verticalSpacer_7">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QFrame" name="frame_2">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>40</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="0" column="1">
+                 <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Group 23</string>
+                  </property>
+                  <property name="filenames" stdset="0">
+                   <stringlist>
+                    <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup23.ui</string>
+                   </stringlist>
+                  </property>
+                  <property name="showIcon" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="openInNewWindow" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Group 18</string>
+                  </property>
+                  <property name="filenames" stdset="0">
+                   <stringlist>
+                    <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup18.ui</string>
+                   </stringlist>
+                  </property>
+                  <property name="showIcon" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="openInNewWindow" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Group 22</string>
+                  </property>
+                  <property name="filenames" stdset="0">
+                   <stringlist>
+                    <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup22.ui</string>
+                   </stringlist>
+                  </property>
+                  <property name="showIcon" stdset="0">
+                   <bool>false</bool>
+                  </property>
+                  <property name="openInNewWindow" stdset="0">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+               <property name="minimumSize">
+                <size>
+                 <width>875</width>
+                 <height>320</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="toolTip">
+                <string/>
+               </property>
+               <property name="filename" stdset="0">
+                <string>$PHYSICS_TOP/mps_configuration/current/display/areas/mps_undh_link_nodes.ui</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QFrame" name="frame_5">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>120</height>
+                </size>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="0" column="1">
+                 <widget class="QFrame" name="frame_4">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_6">
+                   <item row="0" column="0">
+                    <widget class="PyDMFrame" name="PyDMFrame_4">
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_5">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label">
+                        <property name="text">
+                         <string>Radiation Dose Monitoring</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
+                        <property name="minimumSize">
+                         <size>
+                          <width>150</width>
+                          <height>20</height>
+                         </size>
+                        </property>
+                        <property name="toolTip">
+                         <string/>
+                        </property>
+                        <property name="text">
+                         <string>DOSFET HXR</string>
+                        </property>
+                        <property name="filenames" stdset="0">
+                         <stringlist>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                          <string>dosfet</string>
+                         </stringlist>
+                        </property>
+                        <property name="titles" stdset="0">
+                         <stringlist>
+                          <string>HXU 13-16 DOSFETs</string>
+                          <string>HXU 17-20 DOSFETs</string>
+                          <string>HXU 21-24 DOSFETs</string>
+                          <string>HXU 25-28 DOSFETs</string>
+                          <string>HXU 29-32 DOSFETs</string>
+                          <string>HXU 33-36 DOSFETs</string>
+                          <string>HXU 37-40 DOSFETs</string>
+                          <string>HXU 41-44 DOSFETs</string>
+                          <string>HXU 45-48 DOSFETs</string>
+                         </stringlist>
+                        </property>
+                        <property name="showIcon" stdset="0">
+                         <bool>false</bool>
+                        </property>
+                        <property name="macros" stdset="0">
+                         <stringlist>
+                          <string>device=RADM:UNDH:RM01,PA=RADM:UNDH:1377:,PB=RADM:UNDH:1477:,PC=RADM:UNDH:1577:,PD=RADM:UNDH:1677:</string>
+                          <string>device=RADM:UNDH:RM02,PA=RADM:UNDH:1777:,PB=RADM:UNDH:1877:,PC=RADM:UNDH:1977:,PD=RADM:UNDH:2077:</string>
+                          <string>device=RADM:UNDH:RM03,PA=RADM:UNDH:2177:,PB=RADM:UNDH:2277:,PC=RADM:UNDH:2377:,PD=RADM:UNDH:2477:</string>
+                          <string>device=RADM:UNDH:RM04,PA=RADM:UNDH:2577:,PB=RADM:UNDH:2677:,PC=RADM:UNDH:2777:,PD=RADM:UNDH:2877:</string>
+                          <string>device=RADM:UNDH:RM05,PA=RADM:UNDH:2977:,PB=RADM:UNDH:3077:,PC=RADM:UNDH:3177:,PD=RADM:UNDH:3277:</string>
+                          <string>device=RADM:UNDH:RM06,PA=RADM:UNDH:3377:,PB=RADM:UNDH:3477:,PC=RADM:UNDH:3577:,PD=RADM:UNDH:3677:</string>
+                          <string>device=RADM:UNDH:RM07,PA=RADM:UNDH:3777:,PB=RADM:UNDH:3877:,PC=RADM:UNDH:3977:,PD=RADM:UNDH:4077:</string>
+                          <string>device=RADM:UNDH:RM08,PA=RADM:UNDH:4177:,PB=RADM:UNDH:4277:,PC=RADM:UNDH:4377:,PD=RADM:UNDH:4477:</string>
+                          <string>device=RADM:UNDH:RM09,PA=RADM:UNDH:4577:,PB=RADM:UNDH:4677:,PC=RADM:UNDH:RM09:C:,PD=RADM:UNDH:RM09:D:</string>
+                         </stringlist>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <spacer name="verticalSpacer_4">
+                        <property name="orientation">
+                         <enum>Qt::Vertical</enum>
+                        </property>
+                        <property name="sizeHint" stdset="0">
+                         <size>
+                          <width>20</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </spacer>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QFrame" name="frame_3">
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout_4">
+                   <item row="0" column="0">
+                    <widget class="PyDMFrame" name="PyDMFrame_2">
+                     <property name="minimumSize">
+                      <size>
+                       <width>520</width>
+                       <height>80</height>
+                      </size>
+                     </property>
+                     <property name="toolTip">
+                      <string/>
+                     </property>
+                     <widget class="QLabel" name="label_4">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>10</y>
+                        <width>80</width>
+                        <height>15</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>Link Node ID</string>
+                      </property>
+                     </widget>
+                     <widget class="QLabel" name="label_5">
+                      <property name="geometry">
+                       <rect>
+                        <x>158</x>
+                        <y>10</y>
+                        <width>65</width>
+                        <height>15</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>Heartbeat</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                     <widget class="QLabel" name="label_6">
+                      <property name="geometry">
+                       <rect>
+                        <x>235</x>
+                        <y>10</y>
+                        <width>88</width>
+                        <height>15</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>Type</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                     <widget class="QLabel" name="label_7">
+                      <property name="geometry">
+                       <rect>
+                        <x>328</x>
+                        <y>10</y>
+                        <width>58</width>
+                        <height>15</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>FPGA ver</string>
+                      </property>
+                     </widget>
+                     <widget class="QLabel" name="label_8">
+                      <property name="geometry">
+                       <rect>
+                        <x>385</x>
+                        <y>10</y>
+                        <width>85</width>
+                        <height>15</height>
+                       </rect>
+                      </property>
+                      <property name="text">
+                       <string>Database ver</string>
+                      </property>
+                     </widget>
+                     <widget class="PyDMFrame" name="PyDMFrame_5">
+                      <property name="geometry">
+                       <rect>
+                        <x>40</x>
+                        <y>36</y>
+                        <width>112</width>
+                        <height>32</height>
+                       </rect>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="alarmSensitiveBorder" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>MPS:UNDH:MP01:STATSUMY</string>
+                      </property>
+                      <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
+                       <property name="geometry">
+                        <rect>
+                         <x>4</x>
+                         <y>4</y>
+                         <width>104</width>
+                         <height>24</height>
+                        </rect>
+                       </property>
+                       <property name="toolTip">
+                        <string/>
+                       </property>
+                       <property name="text">
+                        <string>eioc-undh-mp01</string>
+                       </property>
+                       <property name="showIcon" stdset="0">
+                        <bool>false</bool>
+                       </property>
+                       <property name="commands" stdset="0">
+                        <stringlist>
+                         <string>edm -m &quot;PRIM=BLM,IOC_UNIT=MP01,LOCA=UNDH,LOCA1=LTUH,LOCA2=LTUH,LOCA3=LTUH,LOCA4=LTUH,LOCA5=UNDH,LOCA6=UNDH,LOCA7=UNDH,LOCA8=UNDH,UNIT=MP01,UNIT1=722,UNIT2=732,UNIT3=BLF545,UNIT4=BLF859,UNIT5=121,UNIT6=921,UNIT7=BLF1,UNIT8=BLF17,EVLOCA=und1&quot; -x mps_blm_linknode2</string>
+                        </stringlist>
+                       </property>
+                      </widget>
+                     </widget>
+                     <widget class="PyDMLabel" name="PyDMLabel">
+                      <property name="geometry">
+                       <rect>
+                        <x>10</x>
+                        <y>40</y>
+                        <width>24</width>
+                        <height>24</height>
+                       </rect>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="alarmSensitiveContent" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>BLM:UNDH:MP01:LN_ID</string>
+                      </property>
+                     </widget>
+                     <widget class="PyDMLabel" name="PyDMLabel_2">
+                      <property name="geometry">
+                       <rect>
+                        <x>158</x>
+                        <y>40</y>
+                        <width>72</width>
+                        <height>24</height>
+                       </rect>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="alarmSensitiveContent" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>EIOC:UNDH:MP01:HEARTBEAT</string>
+                      </property>
+                     </widget>
+                     <widget class="PyDMLabel" name="PyDMLabel_3">
+                      <property name="geometry">
+                       <rect>
+                        <x>235</x>
+                        <y>40</y>
+                        <width>88</width>
+                        <height>24</height>
+                       </rect>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="alarmSensitiveContent" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>BLM:UNDH:MP01:LN_TYPE</string>
+                      </property>
+                     </widget>
+                     <widget class="PyDMLabel" name="PyDMLabel_4">
+                      <property name="geometry">
+                       <rect>
+                        <x>328</x>
+                        <y>40</y>
+                        <width>48</width>
+                        <height>24</height>
+                       </rect>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="alarmSensitiveContent" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>BLM:UNDH:MP01:FPGA_VERSION</string>
+                      </property>
+                      <property name="displayFormat" stdset="0">
+                       <enum>PyDMLabel::Hex</enum>
+                      </property>
+                     </widget>
+                     <widget class="PyDMLabel" name="PyDMLabel_5">
+                      <property name="geometry">
+                       <rect>
+                        <x>381</x>
+                        <y>40</y>
+                        <width>95</width>
+                        <height>24</height>
+                       </rect>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="alarmSensitiveContent" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>BLM:UNDH:MP01:DB_VERSION.SVAL</string>
+                      </property>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <spacer name="horizontalSpacer_4">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
       <item row="0" column="2">
        <widget class="QFrame" name="frame">
         <property name="frameShape">
@@ -81,1143 +1275,6 @@
          </item>
         </layout>
        </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QGroupBox" name="groupBox">
-        <property name="title">
-         <string>Map and Status</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_2">
-         <item row="2" column="0">
-          <widget class="QFrame" name="frame_8">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>275</height>
-            </size>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QGridLayout" name="gridLayout_10" columnstretch="1,0,0,0,0,0">
-            <item row="0" column="1">
-             <widget class="QFrame" name="frame_11">
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <layout class="QGridLayout" name="gridLayout_16">
-               <item row="0" column="0">
-                <widget class="QTabWidget" name="tabWidget">
-                 <property name="currentIndex">
-                  <number>0</number>
-                 </property>
-                 <widget class="QWidget" name="tab">
-                  <attribute name="title">
-                   <string>BLM HV</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_13">
-                   <item row="4" column="0">
-                    <spacer name="verticalSpacer_3">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_3">
-                     <property name="minimumSize">
-                      <size>
-                       <width>150</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="toolTip">
-                      <string/>
-                     </property>
-                     <property name="text">
-                      <string>MPS - BLMH HV Control</string>
-                     </property>
-                     <property name="filenames" stdset="0">
-                      <stringlist>
-                       <string>mps_undh_blmhv.edl</string>
-                      </stringlist>
-                     </property>
-                     <property name="showIcon" stdset="0">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QLabel" name="label_2">
-                     <property name="text">
-                      <string>Expert:</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_5">
-                     <property name="minimumSize">
-                      <size>
-                       <width>150</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="toolTip">
-                      <string/>
-                     </property>
-                     <property name="text">
-                      <string>MPS - B921 HVPS</string>
-                     </property>
-                     <property name="filenames" stdset="0">
-                      <stringlist>
-                       <string>mps_hvps_crate</string>
-                      </stringlist>
-                     </property>
-                     <property name="showIcon" stdset="0">
-                      <bool>false</bool>
-                     </property>
-                     <property name="macros" stdset="0">
-                      <stringlist>
-                       <string>P=HVPS:UND0:MP02</string>
-                      </stringlist>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_4">
-                     <property name="minimumSize">
-                      <size>
-                       <width>150</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="toolTip">
-                      <string/>
-                     </property>
-                     <property name="text">
-                      <string>MPS - B913 HVPS</string>
-                     </property>
-                     <property name="filenames" stdset="0">
-                      <stringlist>
-                       <string>mps_hvps_crate</string>
-                      </stringlist>
-                     </property>
-                     <property name="showIcon" stdset="0">
-                      <bool>false</bool>
-                     </property>
-                     <property name="macros" stdset="0">
-                      <stringlist>
-                       <string>P=HVPS:UND0:MP01</string>
-                      </stringlist>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QFrame" name="frame_6">
-              <property name="frameShape">
-               <enum>QFrame::Box</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Plain</enum>
-              </property>
-              <layout class="QGridLayout" name="gridLayout_8">
-               <item row="1" column="0">
-                <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>150</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string>BLM Resistance Mon...</string>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>$PYDM/mps/mps_undh_rmon.ui</string>
-                  </stringlist>
-                 </property>
-                 <property name="showIcon" stdset="0">
-                  <bool>false</bool>
-                 </property>
-                 <property name="openInNewWindow" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="0">
-                <widget class="PyDMShellCommand" name="PyDMShellCommand">
-                 <property name="minimumSize">
-                  <size>
-                   <width>150</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string>BLM Z-Plot</string>
-                 </property>
-                 <property name="showIcon" stdset="0">
-                  <bool>false</bool>
-                 </property>
-                 <property name="commands" stdset="0">
-                  <stringlist>
-                   <string>python2 /usr/local/lcls/tools/python/BLM_CUD/blm_display.py --mode=hxr</string>
-                  </stringlist>
-                 </property>
-                </widget>
-               </item>
-               <item row="5" column="0">
-                <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_6">
-                 <property name="minimumSize">
-                  <size>
-                   <width>150</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string>MPS - HXRSS...</string>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>mps_hxrss</string>
-                  </stringlist>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-                 <property name="minimumSize">
-                  <size>
-                   <width>150</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string>BLM Keep Alive Mon...</string>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>$PYDM/mps/mps_undh_cblm_alive.ui</string>
-                  </stringlist>
-                 </property>
-                 <property name="showIcon" stdset="0">
-                  <bool>false</bool>
-                 </property>
-                 <property name="openInNewWindow" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="0">
-                <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>150</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string>MPS - Cavity BPMs...</string>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>bpm_undh_mps_main</string>
-                  </stringlist>
-                 </property>
-                 <property name="showIcon" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="0">
-                <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton">
-                 <property name="minimumSize">
-                  <size>
-                   <width>150</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="text">
-                  <string>MPS - BLM Expert...</string>
-                 </property>
-                 <property name="filenames" stdset="0">
-                  <stringlist>
-                   <string>mps_blm_expert_1</string>
-                  </stringlist>
-                 </property>
-                 <property name="showIcon" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="6" column="0">
-                <spacer name="verticalSpacer_5">
-                 <property name="orientation">
-                  <enum>Qt::Vertical</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item row="0" column="3">
-             <widget class="QFrame" name="frame_10">
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <layout class="QGridLayout" name="gridLayout_9">
-               <item row="0" column="0">
-                <widget class="QTabWidget" name="tabWidget_3">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>100</height>
-                  </size>
-                 </property>
-                 <property name="currentIndex">
-                  <number>0</number>
-                 </property>
-                 <widget class="QWidget" name="tab_2">
-                  <attribute name="title">
-                   <string>LBLM PLIC</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_14">
-                   <item row="0" column="0">
-                    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_6">
-                     <property name="minimumSize">
-                      <size>
-                       <width>180</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="toolTip">
-                      <string/>
-                     </property>
-                     <property name="text">
-                      <string>Launch UNDH PLIC...</string>
-                     </property>
-                     <property name="filenames" stdset="0">
-                      <stringlist>
-                       <string>$PYDM/misc/lblm_global.py</string>
-                      </stringlist>
-                     </property>
-                     <property name="showIcon" stdset="0">
-                      <bool>false</bool>
-                     </property>
-                     <property name="macros" stdset="0">
-                      <stringlist>
-                       <string>{&quot;DEVICE&quot;:&quot;LBLM:UNDH:4050:A&quot;}</string>
-                      </stringlist>
-                     </property>
-                     <property name="openInNewWindow" stdset="0">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <spacer name="verticalSpacer_6">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                  </layout>
-                 </widget>
-                </widget>
-               </item>
-               <item row="1" column="0">
-                <widget class="QTabWidget" name="tabWidget_4">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>100</height>
-                  </size>
-                 </property>
-                 <property name="currentIndex">
-                  <number>0</number>
-                 </property>
-                 <widget class="QWidget" name="tab_3">
-                  <attribute name="title">
-                   <string>CBLM Waveforms</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_15">
-                   <item row="0" column="0">
-                    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_7">
-                     <property name="minimumSize">
-                      <size>
-                       <width>180</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="toolTip">
-                      <string/>
-                     </property>
-                     <property name="text">
-                      <string>Launch UNDH Waveforms...</string>
-                     </property>
-                     <property name="filenames" stdset="0">
-                      <stringlist>
-                       <string>$PYDM/mps/cblm_global.py</string>
-                      </stringlist>
-                     </property>
-                     <property name="showIcon" stdset="0">
-                      <bool>false</bool>
-                     </property>
-                     <property name="macros" stdset="0">
-                      <stringlist>
-                       <string>{&quot;DEVICE&quot;:&quot;CBLM:UNDH:1375&quot;}</string>
-                      </stringlist>
-                     </property>
-                     <property name="openInNewWindow" stdset="0">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <spacer name="verticalSpacer_7">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                  </layout>
-                 </widget>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="QFrame" name="frame_7">
-              <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="4">
-             <widget class="QFrame" name="frame_12">
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <layout class="QGridLayout" name="gridLayout_17">
-               <item row="0" column="0">
-                <widget class="QTabWidget" name="tabWidget_8">
-                 <property name="maximumSize">
-                  <size>
-                   <width>175</width>
-                   <height>16777215</height>
-                  </size>
-                 </property>
-                 <property name="currentIndex">
-                  <number>0</number>
-                 </property>
-                 <widget class="QWidget" name="tab_10">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>250</height>
-                   </size>
-                  </property>
-                  <attribute name="title">
-                   <string>Analog Inputs</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_23">
-                   <item row="0" column="0">
-                    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_12">
-                     <property name="minimumSize">
-                      <size>
-                       <width>150</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="toolTip">
-                      <string/>
-                     </property>
-                     <property name="text">
-                      <string>UNDH Analog Inputs...</string>
-                     </property>
-                     <property name="filenames" stdset="0">
-                      <stringlist>
-                       <string>mps_threshold_area.py</string>
-                      </stringlist>
-                     </property>
-                     <property name="showIcon" stdset="0">
-                      <bool>false</bool>
-                     </property>
-                     <property name="macros" stdset="0">
-                      <stringlist>
-                       <string>{&quot;AREA&quot;:&quot;UNDH&quot;}</string>
-                      </stringlist>
-                     </property>
-                     <property name="openInNewWindow" stdset="0">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0">
-                    <spacer name="verticalSpacer_13">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_13">
-                     <property name="minimumSize">
-                      <size>
-                       <width>150</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                     <property name="toolTip">
-                      <string/>
-                     </property>
-                     <property name="text">
-                      <string>UND0 Analog Inputs...</string>
-                     </property>
-                     <property name="filenames" stdset="0">
-                      <stringlist>
-                       <string>mps_threshold_area.py</string>
-                      </stringlist>
-                     </property>
-                     <property name="showIcon" stdset="0">
-                      <bool>false</bool>
-                     </property>
-                     <property name="macros" stdset="0">
-                      <stringlist>
-                       <string>{&quot;AREA&quot;:&quot;UND0&quot;}</string>
-                      </stringlist>
-                     </property>
-                     <property name="openInNewWindow" stdset="0">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item row="0" column="5">
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QFrame" name="frame_2">
-           <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QGridLayout" name="gridLayout_3">
-            <item row="0" column="1">
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_4">
-              <property name="minimumSize">
-               <size>
-                <width>100</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Group 23</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup23.ui</string>
-               </stringlist>
-              </property>
-              <property name="showIcon" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_3">
-              <property name="minimumSize">
-               <size>
-                <width>100</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Group 18</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup18.ui</string>
-               </stringlist>
-              </property>
-              <property name="showIcon" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_5">
-              <property name="minimumSize">
-               <size>
-                <width>100</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Group 22</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup22.ui</string>
-               </stringlist>
-              </property>
-              <property name="showIcon" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="3">
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-           <property name="minimumSize">
-            <size>
-             <width>875</width>
-             <height>320</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="filename" stdset="0">
-            <string>$PHYSICS_TOP/mps_configuration/current/display/areas/mps_undh_link_nodes.ui</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QFrame" name="frame_5">
-           <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QGridLayout" name="gridLayout_7">
-            <item row="0" column="1">
-             <widget class="QFrame" name="frame_4">
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <layout class="QGridLayout" name="gridLayout_6">
-               <item row="0" column="0">
-                <widget class="PyDMFrame" name="PyDMFrame_4">
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <layout class="QGridLayout" name="gridLayout_5">
-                  <item row="0" column="0">
-                   <widget class="QLabel" name="label">
-                    <property name="text">
-                     <string>Radiation Dose Monitoring</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="0">
-                   <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_8">
-                    <property name="minimumSize">
-                     <size>
-                      <width>150</width>
-                      <height>20</height>
-                     </size>
-                    </property>
-                    <property name="toolTip">
-                     <string/>
-                    </property>
-                    <property name="text">
-                     <string>DOSFET HXR</string>
-                    </property>
-                    <property name="filenames" stdset="0">
-                     <stringlist>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                      <string>dosfet</string>
-                     </stringlist>
-                    </property>
-                    <property name="titles" stdset="0">
-                     <stringlist>
-                      <string>HXU 13-16 DOSFETs</string>
-                      <string>HXU 17-20 DOSFETs</string>
-                      <string>HXU 21-24 DOSFETs</string>
-                      <string>HXU 25-28 DOSFETs</string>
-                      <string>HXU 29-32 DOSFETs</string>
-                      <string>HXU 33-36 DOSFETs</string>
-                      <string>HXU 37-40 DOSFETs</string>
-                      <string>HXU 41-44 DOSFETs</string>
-                      <string>HXU 45-48 DOSFETs</string>
-                     </stringlist>
-                    </property>
-                    <property name="showIcon" stdset="0">
-                     <bool>false</bool>
-                    </property>
-                    <property name="macros" stdset="0">
-                     <stringlist>
-                      <string>device=RADM:UNDH:RM01,PA=RADM:UNDH:1377:,PB=RADM:UNDH:1477:,PC=RADM:UNDH:1577:,PD=RADM:UNDH:1677:</string>
-                      <string>device=RADM:UNDH:RM02,PA=RADM:UNDH:1777:,PB=RADM:UNDH:1877:,PC=RADM:UNDH:1977:,PD=RADM:UNDH:2077:</string>
-                      <string>device=RADM:UNDH:RM03,PA=RADM:UNDH:2177:,PB=RADM:UNDH:2277:,PC=RADM:UNDH:2377:,PD=RADM:UNDH:2477:</string>
-                      <string>device=RADM:UNDH:RM04,PA=RADM:UNDH:2577:,PB=RADM:UNDH:2677:,PC=RADM:UNDH:2777:,PD=RADM:UNDH:2877:</string>
-                      <string>device=RADM:UNDH:RM05,PA=RADM:UNDH:2977:,PB=RADM:UNDH:3077:,PC=RADM:UNDH:3177:,PD=RADM:UNDH:3277:</string>
-                      <string>device=RADM:UNDH:RM06,PA=RADM:UNDH:3377:,PB=RADM:UNDH:3477:,PC=RADM:UNDH:3577:,PD=RADM:UNDH:3677:</string>
-                      <string>device=RADM:UNDH:RM07,PA=RADM:UNDH:3777:,PB=RADM:UNDH:3877:,PC=RADM:UNDH:3977:,PD=RADM:UNDH:4077:</string>
-                      <string>device=RADM:UNDH:RM08,PA=RADM:UNDH:4177:,PB=RADM:UNDH:4277:,PC=RADM:UNDH:4377:,PD=RADM:UNDH:4477:</string>
-                      <string>device=RADM:UNDH:RM09,PA=RADM:UNDH:4577:,PB=RADM:UNDH:4677:,PC=RADM:UNDH:RM09:C:,PD=RADM:UNDH:RM09:D:</string>
-                     </stringlist>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="2" column="0">
-                   <spacer name="verticalSpacer_4">
-                    <property name="orientation">
-                     <enum>Qt::Vertical</enum>
-                    </property>
-                    <property name="sizeHint" stdset="0">
-                     <size>
-                      <width>20</width>
-                      <height>40</height>
-                     </size>
-                    </property>
-                   </spacer>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QFrame" name="frame_3">
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
-              </property>
-              <layout class="QGridLayout" name="gridLayout_4">
-               <item row="0" column="0">
-                <widget class="PyDMFrame" name="PyDMFrame_2">
-                 <property name="minimumSize">
-                  <size>
-                   <width>520</width>
-                   <height>80</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <widget class="QLabel" name="label_4">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>10</y>
-                    <width>80</width>
-                    <height>15</height>
-                   </rect>
-                  </property>
-                  <property name="text">
-                   <string>Link Node ID</string>
-                  </property>
-                 </widget>
-                 <widget class="QLabel" name="label_5">
-                  <property name="geometry">
-                   <rect>
-                    <x>158</x>
-                    <y>10</y>
-                    <width>65</width>
-                    <height>15</height>
-                   </rect>
-                  </property>
-                  <property name="text">
-                   <string>Heartbeat</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                 <widget class="QLabel" name="label_6">
-                  <property name="geometry">
-                   <rect>
-                    <x>235</x>
-                    <y>10</y>
-                    <width>88</width>
-                    <height>15</height>
-                   </rect>
-                  </property>
-                  <property name="text">
-                   <string>Type</string>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                 </widget>
-                 <widget class="QLabel" name="label_7">
-                  <property name="geometry">
-                   <rect>
-                    <x>328</x>
-                    <y>10</y>
-                    <width>58</width>
-                    <height>15</height>
-                   </rect>
-                  </property>
-                  <property name="text">
-                   <string>FPGA ver</string>
-                  </property>
-                 </widget>
-                 <widget class="QLabel" name="label_8">
-                  <property name="geometry">
-                   <rect>
-                    <x>385</x>
-                    <y>10</y>
-                    <width>85</width>
-                    <height>15</height>
-                   </rect>
-                  </property>
-                  <property name="text">
-                   <string>Database ver</string>
-                  </property>
-                 </widget>
-                 <widget class="PyDMFrame" name="PyDMFrame_5">
-                  <property name="geometry">
-                   <rect>
-                    <x>40</x>
-                    <y>36</y>
-                    <width>112</width>
-                    <height>32</height>
-                   </rect>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="alarmSensitiveBorder" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>MPS:UNDH:MP01:STATSUMY</string>
-                  </property>
-                  <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
-                   <property name="geometry">
-                    <rect>
-                     <x>4</x>
-                     <y>4</y>
-                     <width>104</width>
-                     <height>24</height>
-                    </rect>
-                   </property>
-                   <property name="toolTip">
-                    <string/>
-                   </property>
-                   <property name="text">
-                    <string>eioc-undh-mp01</string>
-                   </property>
-                   <property name="showIcon" stdset="0">
-                    <bool>false</bool>
-                   </property>
-                   <property name="commands" stdset="0">
-                    <stringlist>
-                     <string>edm -m &quot;PRIM=BLM,IOC_UNIT=MP01,LOCA=UNDH,LOCA1=LTUH,LOCA2=LTUH,LOCA3=LTUH,LOCA4=LTUH,LOCA5=UNDH,LOCA6=UNDH,LOCA7=UNDH,LOCA8=UNDH,UNIT=MP01,UNIT1=722,UNIT2=732,UNIT3=BLF545,UNIT4=BLF859,UNIT5=121,UNIT6=921,UNIT7=BLF1,UNIT8=BLF17,EVLOCA=und1&quot; -x mps_blm_linknode2</string>
-                    </stringlist>
-                   </property>
-                  </widget>
-                 </widget>
-                 <widget class="PyDMLabel" name="PyDMLabel">
-                  <property name="geometry">
-                   <rect>
-                    <x>10</x>
-                    <y>40</y>
-                    <width>24</width>
-                    <height>24</height>
-                   </rect>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                  <property name="alarmSensitiveContent" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>BLM:UNDH:MP01:LN_ID</string>
-                  </property>
-                 </widget>
-                 <widget class="PyDMLabel" name="PyDMLabel_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>158</x>
-                    <y>40</y>
-                    <width>72</width>
-                    <height>24</height>
-                   </rect>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                  <property name="alarmSensitiveContent" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>EIOC:UNDH:MP01:HEARTBEAT</string>
-                  </property>
-                 </widget>
-                 <widget class="PyDMLabel" name="PyDMLabel_3">
-                  <property name="geometry">
-                   <rect>
-                    <x>235</x>
-                    <y>40</y>
-                    <width>88</width>
-                    <height>24</height>
-                   </rect>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                  <property name="alarmSensitiveContent" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>BLM:UNDH:MP01:LN_TYPE</string>
-                  </property>
-                 </widget>
-                 <widget class="PyDMLabel" name="PyDMLabel_4">
-                  <property name="geometry">
-                   <rect>
-                    <x>328</x>
-                    <y>40</y>
-                    <width>48</width>
-                    <height>24</height>
-                   </rect>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                  <property name="alarmSensitiveContent" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>BLM:UNDH:MP01:FPGA_VERSION</string>
-                  </property>
-                  <property name="displayFormat" stdset="0">
-                   <enum>PyDMLabel::Hex</enum>
-                  </property>
-                 </widget>
-                 <widget class="PyDMLabel" name="PyDMLabel_5">
-                  <property name="geometry">
-                   <rect>
-                    <x>381</x>
-                    <y>40</y>
-                    <width>95</width>
-                    <height>24</height>
-                   </rect>
-                  </property>
-                  <property name="toolTip">
-                   <string/>
-                  </property>
-                  <property name="alignment">
-                   <set>Qt::AlignCenter</set>
-                  </property>
-                  <property name="alarmSensitiveContent" stdset="0">
-                   <bool>true</bool>
-                  </property>
-                  <property name="channel" stdset="0">
-                   <string>BLM:UNDH:MP01:DB_VERSION.SVAL</string>
-                  </property>
-                 </widget>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-            <item row="0" column="2">
-             <spacer name="horizontalSpacer_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
       </item>
      </layout>
     </widget>
