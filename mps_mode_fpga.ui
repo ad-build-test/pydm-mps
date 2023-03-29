@@ -62,28 +62,6 @@
                  </property>
                 </widget>
                </item>
-               <item row="3" column="8">
-                <widget class="PyDMLabel" name="PyDMLabel_11">
-                 <property name="minimumSize">
-                  <size>
-                   <width>120</width>
-                   <height>25</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="alarmSensitiveContent" stdset="0">
-                  <bool>true</bool>
-                 </property>
-                 <property name="channel" stdset="0">
-                  <string>ca://${P}:MPS_VER_RBV</string>
-                 </property>
-                </widget>
-               </item>
                <item row="1" column="6">
                 <widget class="QLabel" name="label_9">
                  <property name="text">
@@ -91,25 +69,6 @@
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="7">
-                <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
-                 <property name="minimumSize">
-                  <size>
-                   <width>120</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string/>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="channel" stdset="0">
-                  <string>ca://${P}:MPS_VER</string>
                  </property>
                 </widget>
                </item>
@@ -171,16 +130,6 @@
                  </property>
                  <property name="channel" stdset="0">
                   <string>ca://${P}:BYTE_COUNT</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="6">
-                <widget class="QLabel" name="label_11">
-                 <property name="text">
-                  <string>MPS Version:</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -540,6 +489,25 @@
                   </size>
                  </property>
                 </spacer>
+               </item>
+               <item row="3" column="7">
+                <widget class="PyDMPushButton" name="PyDMPushButton">
+                 <property name="toolTip">
+                  <string/>
+                 </property>
+                 <property name="text">
+                  <string>Reset Errors</string>
+                 </property>
+                 <property name="channel" stdset="0">
+                  <string>ca://${P}:RESET_ERR</string>
+                 </property>
+                 <property name="pressValue" stdset="0">
+                  <string>1</string>
+                 </property>
+                 <property name="releaseValue" stdset="0">
+                  <string>0</string>
+                 </property>
+                </widget>
                </item>
               </layout>
              </item>
@@ -925,6 +893,11 @@ background-color: rgb(70, 70, 70);</string>
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
   </customwidget>
  </customwidgets>
  <resources/>
