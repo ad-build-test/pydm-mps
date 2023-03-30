@@ -82,7 +82,7 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>-360</y>
+          <y>0</y>
           <width>1293</width>
           <height>1242</height>
          </rect>
@@ -309,7 +309,7 @@
                          <bool>true</bool>
                         </property>
                         <property name="channel" stdset="0">
-                         <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:UPTIME</string>
+                         <string>ca://TPR:${LOCA}:${IOC_UNIT}:${INST}:FIDCNT</string>
                         </property>
                        </widget>
                       </item>
@@ -509,7 +509,7 @@
                       <item row="3" column="0">
                        <widget class="QLabel" name="label_4">
                         <property name="text">
-                         <string>Uptime:</string>
+                         <string>Fiducial Count:</string>
                         </property>
                         <property name="alignment">
                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
