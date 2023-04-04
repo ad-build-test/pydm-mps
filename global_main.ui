@@ -1036,6 +1036,11 @@
    <extends>QPushButton</extends>
    <header>pydm.widgets.related_display_button</header>
   </customwidget>
+  <customwidget>
+   <class>PyDMShellCommand</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.shell_command</header>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
