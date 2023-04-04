@@ -29,7 +29,7 @@
     <enum>QFrame::NoFrame</enum>
    </property>
    <property name="macros" stdset="0">
-    <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP03&quot;}</string>
+    <string>{&quot;P&quot;:&quot;SIOC:SYS0:MP00&quot;}</string>
    </property>
    <property name="filename" stdset="0">
     <string>mps_global_beam_class.ui</string>
@@ -264,66 +264,6 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="PyDMShellCommand" name="PyDMShellCommand">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>40</y>
-      <width>150</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Reset All</string>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="redirectCommandOutput" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="allowMultipleExecutions" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="commands" stdset="0">
-     <stringlist>
-      <string>$PYDM/mps/reset_all.sh</string>
-     </stringlist>
-    </property>
-   </widget>
-   <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>10</y>
-      <width>150</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>Unlatch All</string>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="redirectCommandOutput" stdset="0">
-     <bool>true</bool>
-    </property>
-    <property name="allowMultipleExecutions" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="commands" stdset="0">
-     <stringlist>
-      <string>$PYDM/mps/unlatch_all.sh</string>
-     </stringlist>
-    </property>
-   </widget>
    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
     <property name="geometry">
      <rect>
@@ -376,6 +316,62 @@
     </property>
     <property name="circles" stdset="0">
      <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Unlatch All</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://SIOC:SYS0:MP00:UNLATCHALL</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+    <property name="writeWhenRelease" stdset="0">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="PyDMPushButton" name="PyDMPushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Reset All</string>
+    </property>
+    <property name="channel" stdset="0">
+     <string>ca://SIOC:SYS0:MP00:RESET_ALL</string>
+    </property>
+    <property name="pressValue" stdset="0">
+     <string>1</string>
+    </property>
+    <property name="releaseValue" stdset="0">
+     <string>0</string>
+    </property>
+    <property name="writeWhenRelease" stdset="0">
+     <bool>true</bool>
     </property>
    </widget>
   </widget>
@@ -972,14 +968,14 @@
    <header>pydm.widgets.enum_combo_box</header>
   </customwidget>
   <customwidget>
+   <class>PyDMPushButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.pushbutton</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMRelatedDisplayButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.related_display_button</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMShellCommand</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.shell_command</header>
   </customwidget>
  </customwidgets>
  <resources/>

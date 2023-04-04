@@ -61,7 +61,7 @@
      <string notr="true">background-color: rgb(255, 150, 168);</string>
     </property>
     <property name="text">
-     <string>${P} Crossbar Control</string>
+     <string>${TPR} Crossbar Control</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
