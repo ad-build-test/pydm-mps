@@ -68,6 +68,7 @@
          <string>MPLN_DIG:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</string>
          <string></string>
          <string>MPLN_NC:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</string>
+         <string></string>
         </stringlist>
        </property>
        <widget class="QWidget" name="information">
@@ -5585,35 +5586,17 @@
                <number>0</number>
               </property>
               <item row="0" column="1">
-               <widget class="QTabWidget" name="tabWidget_12">
-                <property name="currentIndex">
-                 <number>0</number>
+               <spacer name="horizontalSpacer_19">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
                 </property>
-                <widget class="QWidget" name="tab_25">
-                 <attribute name="title">
-                  <string>NC BSA</string>
-                 </attribute>
-                 <layout class="QGridLayout" name="gridLayout_55">
-                  <item row="0" column="0">
-                   <layout class="QGridLayout" name="gridLayout_54">
-                    <item row="0" column="0">
-                     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
-                      <property name="toolTip">
-                       <string/>
-                      </property>
-                      <property name="frameShape">
-                       <enum>QFrame::NoFrame</enum>
-                      </property>
-                      <property name="filename" stdset="0">
-                       <string>$PYDM/mps/mps_nc_bsa.ui</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </item>
-                 </layout>
-                </widget>
-               </widget>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
               <item row="0" column="0">
                <widget class="QTabWidget" name="network">
@@ -5999,19 +5982,6 @@
                  </layout>
                 </widget>
                </widget>
-              </item>
-              <item row="0" column="2">
-               <spacer name="horizontalSpacer_19">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
               </item>
              </layout>
             </widget>
@@ -7049,6 +7019,65 @@
             </size>
            </property>
           </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="bsa">
+        <attribute name="title">
+         <string>BSA Control</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_55">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_54">
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <item row="2" column="1">
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="filename" stdset="0">
+              <string>$PYDM/mps/mps_bsa.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <spacer name="horizontalSpacer_20">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
          </item>
         </layout>
        </widget>
