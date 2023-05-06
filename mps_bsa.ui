@@ -110,7 +110,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://TPR:${LOCA}:${IOC_UNIT}:1:SC_BSA_FLTCNT</string>
+              <string>ca://TPR:${LOCA}:${IOC_UNIT}:0:SC_BSA_FLTCNT</string>
              </property>
             </widget>
            </item>
@@ -142,7 +142,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://TPR:${LOCA}:${IOC_UNIT}:1:SC_BSA_STATUS</string>
+              <string>ca://TPR:${LOCA}:${IOC_UNIT}:0:SC_BSA_STATUS</string>
              </property>
             </widget>
            </item>
@@ -194,7 +194,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://TPR:${LOCA}:${IOC_UNIT}:1:BSSS_CTRL</string>
+              <string>ca://TPR:${LOCA}:${IOC_UNIT}:0:BSSS_CTRL</string>
              </property>
             </widget>
            </item>
@@ -216,7 +216,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://TPR:${LOCA}:${IOC_UNIT}:1:BSSS_PKTSZ</string>
+              <string>ca://TPR:${LOCA}:${IOC_UNIT}:0:BSSS_PKTSZ</string>
              </property>
             </widget>
            </item>
@@ -238,7 +238,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://TPR:${LOCA}:${IOC_UNIT}:1:BSSS_RATELIMIT</string>
+              <string>ca://TPR:${LOCA}:${IOC_UNIT}:0:BSSS_RATELIMIT</string>
              </property>
             </widget>
            </item>
@@ -260,7 +260,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://TPR:${LOCA}:${IOC_UNIT}:1:SC_BSA_ENABLE</string>
+              <string>ca://TPR:${LOCA}:${IOC_UNIT}:0:SC_BSA_ENABLE</string>
              </property>
             </widget>
            </item>
