@@ -51,7 +51,7 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
-        <number>0</number>
+        <number>1</number>
        </property>
        <property name="leftMargin">
         <number>0</number>
@@ -71,7 +71,10 @@
           <string/>
          </property>
          <property name="layoutSpacing" stdset="0">
-          <number>0</number>
+          <number>1</number>
+         </property>
+         <property name="countShownInDesigner" stdset="0">
+          <number>4</number>
          </property>
          <property name="templateFilename" stdset="0">
           <string>mps_cn_status.ui</string>

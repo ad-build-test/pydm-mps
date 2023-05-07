@@ -10181,7 +10181,7 @@ Enable:</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP03:1&quot;}</string>
+                  <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP03:0&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
                   <string>$PYDM/mps/mps_crossbar.ui</string>
@@ -10220,7 +10220,7 @@ Enable:</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP01:1&quot;}</string>
+                  <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP01:0&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
                   <string>$PYDM/mps/mps_crossbar.ui</string>
@@ -10259,7 +10259,7 @@ Enable:</string>
                   <enum>QFrame::NoFrame</enum>
                  </property>
                  <property name="macros" stdset="0">
-                  <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP02:1&quot;}</string>
+                  <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP02:0&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
                   <string>$PYDM/mps/mps_crossbar.ui</string>
