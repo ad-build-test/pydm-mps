@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>565</width>
-    <height>420</height>
+    <width>1036</width>
+    <height>376</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -33,39 +33,8 @@
     <number>5</number>
    </property>
    <property name="bottomMargin">
-    <number>0</number>
+    <number>10</number>
    </property>
-   <item>
-    <widget class="QLabel" name="label">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 150, 168);</string>
-     </property>
-     <property name="text">
-      <string>SC MPS Timing Interface
-${P}</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
    <item>
     <widget class="QFrame" name="frame">
      <property name="maximumSize">
@@ -100,7 +69,7 @@ ${P}</string>
        <widget class="QLabel" name="label_2">
         <property name="minimumSize">
          <size>
-          <width>80</width>
+          <width>100</width>
           <height>0</height>
          </size>
         </property>
@@ -111,9 +80,15 @@ ${P}</string>
       </item>
       <item>
        <widget class="QLabel" name="label_3">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>50</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -128,9 +103,15 @@ BC</string>
       </item>
       <item>
        <widget class="QLabel" name="label_4">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>50</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -145,9 +126,15 @@ BC</string>
       </item>
       <item>
        <widget class="QLabel" name="label_5">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -162,9 +149,15 @@ Mismatch</string>
       </item>
       <item>
        <widget class="QLabel" name="label_6">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -179,9 +172,15 @@ Fault</string>
       </item>
       <item>
        <widget class="QLabel" name="label_7">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -196,9 +195,15 @@ Low</string>
       </item>
       <item>
        <widget class="QLabel" name="label_10">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -213,9 +218,15 @@ High</string>
       </item>
       <item>
        <widget class="QLabel" name="label_11">
+        <property name="minimumSize">
+         <size>
+          <width>70</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>75</width>
+          <width>16777215</width>
           <height>16777215</height>
          </size>
         </property>
@@ -233,10 +244,16 @@ Counter</string>
    </item>
    <item>
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>25</height>
+       <height>16777215</height>
       </size>
      </property>
      <property name="toolTip">
@@ -255,10 +272,16 @@ Counter</string>
    </item>
    <item>
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>25</height>
+       <height>16777215</height>
       </size>
      </property>
      <property name="toolTip">
@@ -277,6 +300,12 @@ Counter</string>
    </item>
    <item>
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
@@ -299,10 +328,16 @@ Counter</string>
    </item>
    <item>
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>25</height>
+       <height>16777215</height>
       </size>
      </property>
      <property name="toolTip">
@@ -321,10 +356,16 @@ Counter</string>
    </item>
    <item>
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>25</height>
+       <height>16777215</height>
       </size>
      </property>
      <property name="toolTip">
@@ -343,10 +384,16 @@ Counter</string>
    </item>
    <item>
     <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
-       <height>25</height>
+       <height>16777215</height>
       </size>
      </property>
      <property name="toolTip">
@@ -636,45 +683,17 @@ Counter</string>
     </widget>
    </item>
    <item>
-    <widget class="QFrame" name="frame_3">
-     <property name="minimumSize">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
       <size>
-       <width>0</width>
-       <height>50</height>
+       <width>20</width>
+       <height>40</height>
       </size>
      </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>50</height>
-      </size>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
-      <property name="geometry">
-       <rect>
-        <x>5</x>
-        <y>0</y>
-        <width>250</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="toolTip">
-       <string/>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="filename" stdset="0">
-       <string>lcls_mps_lockup_sidebyside_digital.png</string>
-      </property>
-     </widget>
-    </widget>
+    </spacer>
    </item>
   </layout>
  </widget>
@@ -683,11 +702,6 @@ Counter</string>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>

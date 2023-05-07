@@ -584,25 +584,6 @@ background-color: rgb(70, 70, 70);</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>350</y>
-      <width>250</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="filename" stdset="0">
-     <string>lcls_mps_lockup_sidebyside_digital.png</string>
-    </property>
-   </widget>
    <widget class="QFrame" name="frame_4">
     <property name="geometry">
      <rect>
@@ -689,11 +670,6 @@ background-color: rgb(70, 70, 70);</string>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
    <header>pydm.widgets.label</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEnumButton</class>

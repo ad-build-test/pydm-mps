@@ -32,7 +32,7 @@
    <item>
     <widget class="QLabel" name="label">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(200, 200, 200);</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string>PGP Port ${N}</string>
@@ -45,7 +45,7 @@
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(70, 70, 70);</string>
+      <string notr="true"/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -64,7 +64,7 @@
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(70, 70, 70);</string>
+      <string notr="true"/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -86,7 +86,7 @@
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(70, 70, 70);</string>
+      <string notr="true"/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -108,7 +108,7 @@
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(70, 70, 70);</string>
+      <string notr="true"/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -130,7 +130,7 @@
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(70, 70, 70);</string>
+      <string notr="true"/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -152,7 +152,7 @@
       <string/>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(70, 70, 70);</string>
+      <string notr="true"/>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

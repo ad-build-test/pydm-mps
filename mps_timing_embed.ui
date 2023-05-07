@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>500</width>
-    <height>37</height>
+    <width>1047</width>
+    <height>51</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -39,7 +39,7 @@
     <widget class="QLabel" name="label">
      <property name="minimumSize">
       <size>
-       <width>80</width>
+       <width>100</width>
        <height>0</height>
       </size>
      </property>
@@ -55,9 +55,15 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>50</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
@@ -85,9 +91,15 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>50</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
@@ -115,9 +127,15 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_4">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>75</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
@@ -145,9 +163,15 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_5">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>75</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
@@ -175,9 +199,15 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_7">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>75</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
@@ -205,9 +235,15 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_8">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>75</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
@@ -235,9 +271,15 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_6">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>0</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
-       <width>75</width>
+       <width>16777215</width>
        <height>16777215</height>
       </size>
      </property>
