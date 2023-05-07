@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>929</width>
+    <height>1184</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 150, 168);</string>
+       </property>
+       <property name="text">
+        <string>MPS Groups</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="PyDMTabWidget" name="PyDMTabWidget">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="alarmChannels">
+        <stringlist>
+         <string></string>
+         <string></string>
+         <string></string>
+        </stringlist>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Central Node 3</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="PyDMTabWidget" name="PyDMTabWidget_2">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="whatsThis">
+              <string/>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <property name="alarmChannels">
+              <stringlist>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+              </stringlist>
+             </property>
+             <widget class="QWidget" name="group0">
+              <attribute name="title">
+               <string>Group 0</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group1">
+              <attribute name="title">
+               <string>Group 1</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group2">
+              <attribute name="title">
+               <string>Group 2</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group3">
+              <attribute name="title">
+               <string>Group 3</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group4">
+              <attribute name="title">
+               <string>Group 4</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group5">
+              <attribute name="title">
+               <string>Group 5</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group6">
+              <attribute name="title">
+               <string>Group 6</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group7">
+              <attribute name="title">
+               <string>Group 7</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="cn1">
+        <attribute name="title">
+         <string>Central Node 1</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="PyDMTabWidget" name="PyDMTabWidget_3">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="whatsThis">
+              <string/>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <property name="alarmChannels">
+              <stringlist>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+              </stringlist>
+             </property>
+             <widget class="QWidget" name="group8">
+              <attribute name="title">
+               <string>Group 8</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group9">
+              <attribute name="title">
+               <string>Group 9</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group10">
+              <attribute name="title">
+               <string>Group 10</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group11">
+              <attribute name="title">
+               <string>Group 11</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group12">
+              <attribute name="title">
+               <string>Group 12</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group13">
+              <attribute name="title">
+               <string>Group 13</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group14">
+              <attribute name="title">
+               <string>Group 14</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Central Node 2</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <widget class="PyDMTabWidget" name="PyDMTabWidget_4">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="whatsThis">
+              <string/>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <property name="alarmChannels">
+              <stringlist>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+               <string></string>
+              </stringlist>
+             </property>
+             <widget class="QWidget" name="group15">
+              <attribute name="title">
+               <string>Group 15</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group16">
+              <attribute name="title">
+               <string>Group 16</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group17">
+              <attribute name="title">
+               <string>Group 17</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group18">
+              <attribute name="title">
+               <string>Group 18</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group19">
+              <attribute name="title">
+               <string>Group 19</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group20">
+              <attribute name="title">
+               <string>Group 20</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group21">
+              <attribute name="title">
+               <string>Group 21</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group22">
+              <attribute name="title">
+               <string>Group 22</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group23">
+              <attribute name="title">
+               <string>Group 23</string>
+              </attribute>
+             </widget>
+             <widget class="QWidget" name="group24">
+              <attribute name="title">
+               <string>Group 24</string>
+              </attribute>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="PyDMDrawingImage" name="PyDMDrawingImage">
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>250</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="filename" stdset="0">
+          <string>lcls_mps_lockup_sidebyside_digital.png</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>pydm.widgets.tab_bar</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

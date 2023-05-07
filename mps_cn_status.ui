@@ -40,7 +40,7 @@
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>20</height>
+       <height>25</height>
       </size>
      </property>
      <property name="maximumSize">
@@ -66,7 +66,7 @@ background-color: rgb(70, 70, 70);</string>
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>20</height>
+       <height>25</height>
       </size>
      </property>
      <property name="maximumSize">
@@ -92,7 +92,7 @@ background-color: rgb(70, 70, 70);</string>
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>20</height>
+       <height>25</height>
       </size>
      </property>
      <property name="maximumSize">
@@ -118,7 +118,7 @@ background-color: rgb(70, 70, 70);</string>
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>20</height>
+       <height>25</height>
       </size>
      </property>
      <property name="maximumSize">
@@ -144,7 +144,7 @@ background-color: rgb(70, 70, 70);</string>
      <property name="minimumSize">
       <size>
        <width>0</width>
-       <height>0</height>
+       <height>25</height>
       </size>
      </property>
      <property name="maximumSize">
@@ -239,6 +239,12 @@ background-color: rgb(70, 70, 70);</string>
    </item>
    <item>
     <widget class="PyDMFrame" name="PyDMFrame_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
@@ -317,6 +323,12 @@ background-color: rgb(70, 70, 70);</string>
    </item>
    <item>
     <widget class="PyDMFrame" name="PyDMFrame_3">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="maximumSize">
       <size>
        <width>16777215</width>
