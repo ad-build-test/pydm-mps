@@ -446,7 +446,7 @@ Counter</string>
        <string>TPG Mon Error Clear</string>
       </property>
       <property name="channel" stdset="0">
-       <string>ca://${P}:BEAM_FAULT_CLR</string>
+       <string>ca://SIOC:SYS0:MP00:BEAM_FAULT_CLR</string>
       </property>
       <property name="pressValue" stdset="0">
        <string>1</string>
@@ -471,7 +471,7 @@ Counter</string>
        <string>Monitor Error Clear</string>
       </property>
       <property name="channel" stdset="0">
-       <string>ca://${P}:MON_ERR_CLR</string>
+       <string>ca://SIOC:SYS0:MP00:MON_ERR_CLR</string>
       </property>
       <property name="pressValue" stdset="0">
        <string>1</string>

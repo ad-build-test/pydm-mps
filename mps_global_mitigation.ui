@@ -12,19 +12,19 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>610</width>
-    <height>300</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>610</width>
-    <height>300</height>
+    <width>16777213</width>
+    <height>16777213</height>
    </size>
   </property>
   <property name="font">
    <font>
-    <pointsize>14</pointsize>
+    <pointsize>9</pointsize>
    </font>
   </property>
   <property name="windowTitle">
@@ -46,64 +46,6 @@
    <property name="spacing">
     <number>0</number>
    </property>
-   <item row="3" column="0">
-    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
-     <property name="minimumSize">
-      <size>
-       <width>600</width>
-       <height>25</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>25</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="macros" stdset="0">
-      <string>{&quot;DEVICE&quot;:&quot;Mechanical Shutter&quot;,&quot;P&quot;:&quot;MPLN:GUNB:MP01:1&quot;}</string>
-     </property>
-     <property name="filename" stdset="0">
-      <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>40</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 150, 168);</string>
-     </property>
-     <property name="text">
-      <string>SC MPS Mitigation Status</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="0">
     <widget class="QFrame" name="frame">
      <property name="minimumSize">
@@ -215,8 +157,38 @@
      </layout>
     </widget>
    </item>
-   <item row="5" column="0">
-    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 150, 168);</string>
+     </property>
+     <property name="text">
+      <string>SC MPS Mitigation Status</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
      <property name="minimumSize">
       <size>
        <width>600</width>
@@ -236,14 +208,42 @@
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;DEVICE&quot;:&quot;BKYSPH&quot;,&quot;P&quot;:&quot;MPLN:SPH:MP01:1&quot;}</string>
+      <string>{&quot;DEVICE&quot;:&quot;AOM&quot;,&quot;P&quot;:&quot;MPLN:GUNB:MP02:1&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
      </property>
     </widget>
    </item>
-   <item row="7" column="0">
+   <item row="6" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;DEVICE&quot;:&quot;BKYSPS&quot;,&quot;P&quot;:&quot;MPLN:SPS:MP02:1&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
     <widget class="QFrame" name="frame_2">
      <property name="minimumSize">
       <size>
@@ -321,8 +321,8 @@
      </layout>
     </widget>
    </item>
-   <item row="2" column="0">
-    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+   <item row="3" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
      <property name="minimumSize">
       <size>
        <width>600</width>
@@ -342,35 +342,7 @@
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;DEVICE&quot;:&quot;AOM&quot;,&quot;P&quot;:&quot;MPLN:GUNB:MP02:1&quot;}</string>
-     </property>
-     <property name="filename" stdset="0">
-      <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
-     </property>
-    </widget>
-   </item>
-   <item row="6" column="0">
-    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
-     <property name="minimumSize">
-      <size>
-       <width>600</width>
-       <height>25</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>25</height>
-      </size>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="macros" stdset="0">
-      <string>{&quot;DEVICE&quot;:&quot;BKYSPS&quot;,&quot;P&quot;:&quot;MPLN:SPS:MP02:1&quot;}</string>
+      <string>{&quot;DEVICE&quot;:&quot;Mechanical Shutter&quot;,&quot;P&quot;:&quot;MPLN:GUNB:MP01:1&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
@@ -398,14 +370,42 @@
       <enum>QFrame::NoFrame</enum>
      </property>
      <property name="macros" stdset="0">
-      <string>{&quot;DEVICE&quot;:&quot;BKRDG0&quot;,&quot;P&quot;:&quot;MPLN:L0B:MP04:1&quot;}</string>
+      <string>{&quot;DEVICE&quot;:&quot;BKRDG0/LHS&quot;,&quot;P&quot;:&quot;MPLN:L0B:MP04:1&quot;}</string>
      </property>
      <property name="filename" stdset="0">
       <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
      </property>
     </widget>
    </item>
-   <item row="8" column="0">
+   <item row="5" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;DEVICE&quot;:&quot;BKYSPH&quot;,&quot;P&quot;:&quot;MPLN:SPH:MP01:1&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
     <widget class="QFrame" name="frame_3">
      <property name="minimumSize">
       <size>
@@ -446,18 +446,46 @@
      </widget>
     </widget>
    </item>
+   <item row="7" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_7">
+     <property name="minimumSize">
+      <size>
+       <width>600</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>25</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="macros" stdset="0">
+      <string>{&quot;DEVICE&quot;:&quot;DASEL&quot;,&quot;P&quot;:&quot;MPLN:SPD:MP02:1&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>$PYDM/mps/mps_global_mitigation_embed.ui</string>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEmbeddedDisplay</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.embedded_display</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
   </customwidget>
  </customwidgets>
  <resources/>

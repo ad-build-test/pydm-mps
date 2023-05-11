@@ -3188,6 +3188,12 @@
                      <layout class="QVBoxLayout" name="verticalLayout_39">
                       <item>
                        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_22">
+                        <property name="minimumSize">
+                         <size>
+                          <width>330</width>
+                          <height>0</height>
+                         </size>
+                        </property>
                         <property name="toolTip">
                          <string/>
                         </property>
@@ -3203,23 +3209,13 @@
                        </widget>
                       </item>
                       <item>
-                       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_21">
-                        <property name="toolTip">
-                         <string/>
-                        </property>
-                        <property name="frameShape">
-                         <enum>QFrame::NoFrame</enum>
-                        </property>
-                        <property name="macros" stdset="0">
-                         <string>{&quot;DEST&quot;:&quot;MECH_SHUTTER&quot;}</string>
-                        </property>
-                        <property name="filename" stdset="0">
-                         <string>$PYDM/mps/mps_cn_soft_permits.ui</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item>
                        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_23">
+                        <property name="minimumSize">
+                         <size>
+                          <width>330</width>
+                          <height>0</height>
+                         </size>
+                        </property>
                         <property name="toolTip">
                          <string/>
                         </property>
@@ -3236,6 +3232,12 @@
                       </item>
                       <item>
                        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_24">
+                        <property name="minimumSize">
+                         <size>
+                          <width>330</width>
+                          <height>0</height>
+                         </size>
+                        </property>
                         <property name="toolTip">
                          <string/>
                         </property>
@@ -3252,6 +3254,12 @@
                       </item>
                       <item>
                        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_25">
+                        <property name="minimumSize">
+                         <size>
+                          <width>330</width>
+                          <height>0</height>
+                         </size>
+                        </property>
                         <property name="toolTip">
                          <string/>
                         </property>
@@ -3268,6 +3276,12 @@
                       </item>
                       <item>
                        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_26">
+                        <property name="minimumSize">
+                         <size>
+                          <width>330</width>
+                          <height>0</height>
+                         </size>
+                        </property>
                         <property name="toolTip">
                          <string/>
                         </property>
@@ -3284,6 +3298,12 @@
                       </item>
                       <item>
                        <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_27">
+                        <property name="minimumSize">
+                         <size>
+                          <width>330</width>
+                          <height>0</height>
+                         </size>
+                        </property>
                         <property name="toolTip">
                          <string/>
                         </property>
@@ -3292,6 +3312,28 @@
                         </property>
                         <property name="macros" stdset="0">
                          <string>{&quot;DEST&quot;:&quot;LASER&quot;}</string>
+                        </property>
+                        <property name="filename" stdset="0">
+                         <string>$PYDM/mps/mps_cn_soft_permits.ui</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_28">
+                        <property name="minimumSize">
+                         <size>
+                          <width>330</width>
+                          <height>0</height>
+                         </size>
+                        </property>
+                        <property name="toolTip">
+                         <string/>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::NoFrame</enum>
+                        </property>
+                        <property name="macros" stdset="0">
+                         <string>{&quot;DEST&quot;:&quot;LASER_HTR&quot;}</string>
                         </property>
                         <property name="filename" stdset="0">
                          <string>$PYDM/mps/mps_cn_soft_permits.ui</string>
@@ -4826,6 +4868,34 @@ Enable:</string>
                   </property>
                   <property name="macros" stdset="0">
                    <string>{&quot;DEST&quot;:&quot;LASER&quot;}</string>
+                  </property>
+                  <property name="filename" stdset="0">
+                   <string>$PYDM/mps/mps_cn_permits.ui</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_21">
+                  <property name="minimumSize">
+                   <size>
+                    <width>158</width>
+                    <height>214</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>158</width>
+                    <height>214</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::NoFrame</enum>
+                  </property>
+                  <property name="macros" stdset="0">
+                   <string>{&quot;DEST&quot;:&quot;LASER_HTR&quot;}</string>
                   </property>
                   <property name="filename" stdset="0">
                    <string>$PYDM/mps/mps_cn_permits.ui</string>
@@ -10184,9 +10254,35 @@ Enable:</string>
                   <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP03:0&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>$PYDM/mps/mps_crossbar.ui</string>
+                  <string>$PYDM/mps/mps_crossbar_embed.ui</string>
                  </property>
                 </widget>
+               </item>
+               <item row="1" column="0">
+                <spacer name="verticalSpacer_10">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="1">
+                <spacer name="horizontalSpacer_35">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
               </layout>
              </item>
@@ -10211,6 +10307,19 @@ Enable:</string>
              </property>
              <item row="0" column="0">
               <layout class="QGridLayout" name="gridLayout_30">
+               <item row="1" column="0">
+                <spacer name="verticalSpacer_11">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
                <item row="0" column="0">
                 <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_9">
                  <property name="toolTip">
@@ -10223,9 +10332,22 @@ Enable:</string>
                   <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP01:0&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>$PYDM/mps/mps_crossbar.ui</string>
+                  <string>$PYDM/mps/mps_crossbar_embed.ui</string>
                  </property>
                 </widget>
+               </item>
+               <item row="0" column="1">
+                <spacer name="horizontalSpacer_36">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
               </layout>
              </item>
@@ -10262,9 +10384,35 @@ Enable:</string>
                   <string>{&quot;TPR&quot;:&quot;TPR:SYS0:MP02:0&quot;}</string>
                  </property>
                  <property name="filename" stdset="0">
-                  <string>$PYDM/mps/mps_crossbar.ui</string>
+                  <string>$PYDM/mps/mps_crossbar_embed.ui</string>
                  </property>
                 </widget>
+               </item>
+               <item row="1" column="0">
+                <spacer name="verticalSpacer_12">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="1">
+                <spacer name="horizontalSpacer_37">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
               </layout>
              </item>

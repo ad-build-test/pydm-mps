@@ -218,7 +218,7 @@
      <x>210</x>
      <y>490</y>
      <width>200</width>
-     <height>190</height>
+     <height>210</height>
     </rect>
    </property>
    <property name="toolTip">
@@ -266,7 +266,7 @@
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>680</y>
+     <y>700</y>
      <width>200</width>
      <height>190</height>
     </rect>
@@ -466,10 +466,16 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>790</y>
-     <width>150</width>
-     <height>120</height>
+     <y>830</y>
+     <width>80</width>
+     <height>75</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>75</height>
+    </size>
    </property>
    <property name="toolTip">
     <string/>
@@ -484,14 +490,14 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMEmbeddedDisplay</class>
-   <extends>QFrame</extends>
-   <header>pydm.widgets.embedded_display</header>
-  </customwidget>
-  <customwidget>
    <class>PyDMDrawingImage</class>
    <extends>QWidget</extends>
    <header>pydm.widgets.drawing</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -41,6 +41,12 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -60,6 +66,12 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_2">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -82,6 +94,12 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_3">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -104,6 +122,12 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_4">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -126,6 +150,12 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_5">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="toolTip">
       <string/>
      </property>
@@ -148,6 +178,12 @@
    </item>
    <item>
     <widget class="PyDMLabel" name="PyDMLabel_6">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>25</height>
+      </size>
+     </property>
      <property name="toolTip">
       <string/>
      </property>

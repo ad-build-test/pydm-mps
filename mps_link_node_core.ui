@@ -175,6 +175,12 @@
                      <layout class="QGridLayout" name="gridLayout_8">
                       <item row="0" column="0">
                        <widget class="PyDMTabWidget" name="PyDMTabWidget_4">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
                         <property name="toolTip">
                          <string/>
                         </property>
@@ -210,6 +216,12 @@
                            <layout class="QGridLayout" name="gridLayout_10">
                             <item row="0" column="0">
                              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+                              <property name="maximumSize">
+                               <size>
+                                <width>1030</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
                               <property name="toolTip">
                                <string/>
                               </property>
@@ -220,7 +232,7 @@
                                <string>{&quot;N&quot;:&quot;0&quot;}</string>
                               </property>
                               <property name="filename" stdset="0">
-                               <string>$PYDM/mps/mps_pgp_status.ui</string>
+                               <string>$PYDM/mps/mps_pgp_status_embed.ui</string>
                               </property>
                              </widget>
                             </item>
@@ -243,6 +255,12 @@
                            <layout class="QGridLayout" name="gridLayout_12">
                             <item row="0" column="0">
                              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+                              <property name="maximumSize">
+                               <size>
+                                <width>1030</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
                               <property name="toolTip">
                                <string/>
                               </property>
@@ -253,7 +271,7 @@
                                <string>{&quot;N&quot;:&quot;1&quot;}</string>
                               </property>
                               <property name="filename" stdset="0">
-                               <string>$PYDM/mps/mps_pgp_status.ui</string>
+                               <string>$PYDM/mps/mps_pgp_status_embed.ui</string>
                               </property>
                              </widget>
                             </item>
@@ -279,6 +297,12 @@
                            <layout class="QGridLayout" name="gridLayout_14">
                             <item row="0" column="0">
                              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+                              <property name="maximumSize">
+                               <size>
+                                <width>1030</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
                               <property name="toolTip">
                                <string/>
                               </property>
@@ -289,7 +313,7 @@
                                <string>{&quot;N&quot;:&quot;2&quot;}</string>
                               </property>
                               <property name="filename" stdset="0">
-                               <string>$PYDM/mps/mps_pgp_status.ui</string>
+                               <string>$PYDM/mps/mps_pgp_status_embed.ui</string>
                               </property>
                              </widget>
                             </item>
@@ -321,6 +345,12 @@
                            <layout class="QGridLayout" name="gridLayout_16">
                             <item row="0" column="0">
                              <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_6">
+                              <property name="maximumSize">
+                               <size>
+                                <width>1030</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
                               <property name="toolTip">
                                <string/>
                               </property>
@@ -331,7 +361,7 @@
                                <string>{&quot;N&quot;:&quot;3&quot;}</string>
                               </property>
                               <property name="filename" stdset="0">
-                               <string>$PYDM/mps/mps_pgp_status.ui</string>
+                               <string>$PYDM/mps/mps_pgp_status_embed.ui</string>
                               </property>
                              </widget>
                             </item>
@@ -2205,7 +2235,13 @@
          <string>Digital Core</string>
         </attribute>
         <layout class="QVBoxLayout" name="verticalLayout_8">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
          <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
           <number>9</number>
          </property>
          <property name="bottomMargin">
@@ -3363,7 +3399,13 @@
          <string>Mitigation</string>
         </attribute>
         <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
          <property name="topMargin">
+          <number>9</number>
+         </property>
+         <property name="rightMargin">
           <number>9</number>
          </property>
          <property name="bottomMargin">
@@ -3390,13 +3432,13 @@
               </attribute>
               <layout class="QHBoxLayout" name="horizontalLayout_9">
                <property name="leftMargin">
-                <number>2</number>
+                <number>5</number>
                </property>
                <property name="topMargin">
                 <number>9</number>
                </property>
                <property name="rightMargin">
-                <number>2</number>
+                <number>5</number>
                </property>
                <property name="bottomMargin">
                 <number>9</number>
@@ -3446,16 +3488,16 @@
                          </attribute>
                          <layout class="QVBoxLayout" name="verticalLayout_13">
                           <property name="leftMargin">
-                           <number>0</number>
+                           <number>5</number>
                           </property>
                           <property name="topMargin">
-                           <number>2</number>
+                           <number>5</number>
                           </property>
                           <property name="rightMargin">
-                           <number>0</number>
+                           <number>5</number>
                           </property>
                           <property name="bottomMargin">
-                           <number>2</number>
+                           <number>5</number>
                           </property>
                           <item>
                            <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -4811,13 +4853,13 @@
               </attribute>
               <layout class="QVBoxLayout" name="verticalLayout_15">
                <property name="leftMargin">
-                <number>2</number>
+                <number>5</number>
                </property>
                <property name="topMargin">
                 <number>9</number>
                </property>
                <property name="rightMargin">
-                <number>2</number>
+                <number>5</number>
                </property>
                <property name="bottomMargin">
                 <number>9</number>
