@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1089</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>${DEVICE} Thresholds</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 150, 168);</string>
+     </property>
+     <property name="text">
+      <string>${DEVICE}:I0_LOSS Thresholds</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="bottomMargin">
+        <number>12</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>${DEVICE}</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="PyDMLabel" name="PyDMLabel_11">
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="precision" stdset="0">
+          <number>3</number>
+         </property>
+         <property name="showUnits" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="precisionFromPV" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>ca://${DEVICE}:CHRG</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>120</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Channel Information:</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <property name="verticalSpacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>Thr Chn</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_12">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Thr Ch</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:CHRG_THR_CH</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>Byte Map</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_13">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Byte Map</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:CHRG_THR_BYTEMAP</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>Scale Slope</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_14">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Scale Slope</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:CHRG_SS_RBV</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>Scale Off</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="PyDMLabel" name="PyDMLabel_15">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+            </property>
+            <property name="text">
+             <string>Scale Offset</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="showUnits" stdset="0">
+             <bool>true</bool>
+            </property>
+            <property name="channel" stdset="0">
+             <string>ca://${DEVICE}:CHRG_SO_RBV</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>205</width>
+           <height>314</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="groupBox_8">
+         <property name="minimumSize">
+          <size>
+           <width>444</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Standard (SC)</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_20">
+          <item row="4" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_15">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T4&quot;,&quot;NUM&quot;:&quot;4&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.py</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_13">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T2&quot;,&quot;NUM&quot;:&quot;2&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.py</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_12">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T1&quot;,&quot;NUM&quot;:&quot;1&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.py</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.py</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_17">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T5&quot;,&quot;NUM&quot;:&quot;5&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.py</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_14">
+            <property name="minimumSize">
+             <size>
+              <width>360</width>
+              <height>52</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>369</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="toolTip">
+             <string/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="macros" stdset="0">
+             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T3&quot;,&quot;NUM&quot;:&quot;3&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+            </property>
+            <property name="filename" stdset="0">
+             <string>mps_inline_threshold_rbv.py</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_13">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>131</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>131</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>No Beam (SC)</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_17">
+           <item row="1" column="0">
+            <widget class="QFrame" name="frame_18">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_34">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_29">
+                <property name="text">
+                 <string>Enable</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="PyDMLabel" name="PyDMLabel_23">
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string/>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(12, 255, 68);
+background-color: rgb(70, 70, 70);</string>
+                </property>
+                <property name="text">
+                 <string>Enabled</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="showUnits" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="channel" stdset="0">
+                 <string>ca://${DEVICE}:CHRG_IDL_EN</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_16">
+             <property name="minimumSize">
+              <size>
+               <width>360</width>
+               <height>52</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>369</width>
+               <height>70</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="macros" stdset="0">
+              <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T0_IDL&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+             </property>
+             <property name="filename" stdset="0">
+              <string>mps_inline_threshold_rbv.py</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
