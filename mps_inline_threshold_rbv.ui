@@ -251,9 +251,9 @@ background-color: rgb(70, 70, 70);</string>
       </property>
       <property name="offColor" stdset="0">
        <color>
-        <red>255</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>175</red>
+        <green>170</green>
+        <blue>175</blue>
        </color>
       </property>
       <property name="showLabels" stdset="0">
@@ -294,9 +294,9 @@ background-color: rgb(70, 70, 70);</string>
       </property>
       <property name="offColor" stdset="0">
        <color>
-        <red>255</red>
-        <green>0</green>
-        <blue>0</blue>
+        <red>175</red>
+        <green>170</green>
+        <blue>175</blue>
        </color>
       </property>
       <property name="showLabels" stdset="0">

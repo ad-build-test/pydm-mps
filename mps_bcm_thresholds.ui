@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1089</width>
-    <height>437</height>
+    <height>446</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -99,7 +99,7 @@ background-color: rgb(70, 70, 70);</string>
           <bool>false</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>ca://${DEVICE}:CHRG</string>
+          <string>ca://${DEVICE}:${THR}</string>
          </property>
         </widget>
        </item>
@@ -153,7 +153,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}:CHRG_THR_CH</string>
+             <string>ca://${DEVICE}:${THR}_THR_CH</string>
             </property>
            </widget>
           </item>
@@ -192,7 +192,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}:CHRG_THR_BYTEMAP</string>
+             <string>ca://${DEVICE}:${THR}_THR_BYTEMAP</string>
             </property>
            </widget>
           </item>
@@ -231,7 +231,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}:CHRG_SS_RBV</string>
+             <string>ca://${DEVICE}:${THR}_SS_RBV</string>
             </property>
            </widget>
           </item>
@@ -270,7 +270,7 @@ background-color: rgb(70, 70, 70);</string>
              <bool>true</bool>
             </property>
             <property name="channel" stdset="0">
-             <string>ca://${DEVICE}:CHRG_SO_RBV</string>
+             <string>ca://${DEVICE}:${THR}_SO_RBV</string>
             </property>
            </widget>
           </item>
@@ -327,7 +327,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T4&quot;,&quot;NUM&quot;:&quot;4&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:${THR}&quot;,&quot;THR&quot;:&quot;T4&quot;,&quot;NUM&quot;:&quot;4&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.py</string>
@@ -355,7 +355,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T2&quot;,&quot;NUM&quot;:&quot;2&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:${THR}&quot;,&quot;THR&quot;:&quot;T2&quot;,&quot;NUM&quot;:&quot;2&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.py</string>
@@ -383,7 +383,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T1&quot;,&quot;NUM&quot;:&quot;1&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:${THR}&quot;,&quot;THR&quot;:&quot;T1&quot;,&quot;NUM&quot;:&quot;1&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.py</string>
@@ -411,7 +411,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:${THR}&quot;,&quot;THR&quot;:&quot;T0&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.py</string>
@@ -439,7 +439,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T5&quot;,&quot;NUM&quot;:&quot;5&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:${THR}&quot;,&quot;THR&quot;:&quot;T5&quot;,&quot;NUM&quot;:&quot;5&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.py</string>
@@ -467,7 +467,7 @@ background-color: rgb(70, 70, 70);</string>
              <enum>QFrame::NoFrame</enum>
             </property>
             <property name="macros" stdset="0">
-             <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T3&quot;,&quot;NUM&quot;:&quot;3&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+             <string>{&quot;P&quot;:&quot;${DEVICE}:${THR}&quot;,&quot;THR&quot;:&quot;T3&quot;,&quot;NUM&quot;:&quot;3&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
             </property>
             <property name="filename" stdset="0">
              <string>mps_inline_threshold_rbv.py</string>
@@ -550,7 +550,7 @@ background-color: rgb(70, 70, 70);</string>
                  <bool>true</bool>
                 </property>
                 <property name="channel" stdset="0">
-                 <string>ca://${DEVICE}:CHRG_IDL_EN</string>
+                 <string>ca://${DEVICE}:${THR}_NO_BEAM_EN</string>
                 </property>
                </widget>
               </item>
@@ -578,7 +578,7 @@ background-color: rgb(70, 70, 70);</string>
               <enum>QFrame::NoFrame</enum>
              </property>
              <property name="macros" stdset="0">
-              <string>{&quot;P&quot;:&quot;${DEVICE}:CHRG&quot;,&quot;THR&quot;:&quot;T0_IDL&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
+              <string>{&quot;P&quot;:&quot;${DEVICE}:${THR}&quot;,&quot;THR&quot;:&quot;NO_BEAM&quot;,&quot;NUM&quot;:&quot;0&quot;,&quot;FORMAT&quot;:&quot;DEFAULT&quot;}</string>
              </property>
              <property name="filename" stdset="0">
               <string>mps_inline_threshold_rbv.py</string>
