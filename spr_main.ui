@@ -104,13 +104,16 @@
          <string/>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>2</number>
+        </property>
+        <property name="currentTabAlarmChannel" stdset="0">
+         <cstring>MPS:SPD:1:STATSUMY</cstring>
         </property>
         <property name="alarmChannels">
          <stringlist>
-          <string></string>
-          <string></string>
-          <string></string>
+          <string>MPS:SPH:1:STATSUMY</string>
+          <string>MPS:SPS:1:STATSUMY</string>
+          <string>MPS:SPD:1:STATSUMY</string>
          </stringlist>
         </property>
         <widget class="QWidget" name="SPH">
