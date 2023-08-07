@@ -341,12 +341,12 @@ class CBLMmain(Display):
 
     def update_peak_width_val_nc(self, peak_width_val):
         self.peak_width_val_nc = peak_width_val
-        self.peak_width_val_nc_offset = self.peak_width_val_nc + self.peak_delay_val_nc
+        self.peak_width_val_nc_offset = self.peak_width_val_nc + self.peak_delay_val_nc_offset
         self.update_peak_width()
 
     def update_peak_width_val_sc(self, peak_width_val):
         self.peak_width_val_sc = peak_width_val
-        self.peak_width_val_sc_offset = self.peak_width_val_sc + self.peak_delay_val_sc
+        self.peak_width_val_sc_offset = self.peak_width_val_sc + self.peak_delay_val_sc_offset
         self.update_peak_width()
 
     def update_peak_width(self):
@@ -415,12 +415,12 @@ class CBLMmain(Display):
 
     def update_pedestal_width_val_nc(self, pedestal_width_val):
         self.pedestal_width_val_nc = pedestal_width_val
-        self.pedestal_width_val_nc_offset = self.pedestal_width_val_nc + self.pedestal_delay_val_nc
+        self.pedestal_width_val_nc_offset = self.pedestal_width_val_nc + self.pedestal_delay_val_nc_offset
         self.update_pedestal_width()
 
     def update_pedestal_width_val_sc(self, pedestal_width_val):
         self.pedestal_width_val_sc = pedestal_width_val
-        self.pedestal_width_val_sc_offset = self.pedestal_width_val_sc + self.pedestal_delay_val_sc
+        self.pedestal_width_val_sc_offset = self.pedestal_width_val_sc + self.pedestal_delay_val_sc_offset
         self.update_pedestal_width()
 
     def update_pedestal_width(self):
