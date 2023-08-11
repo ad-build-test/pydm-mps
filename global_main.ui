@@ -3029,9 +3029,21 @@
                        <property name="redirectCommandOutput" stdset="0">
                         <bool>true</bool>
                        </property>
+                       <property name="allowMultipleExecutions" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="titles" stdset="0">
+                        <stringlist>
+                         <string>SC_BSYD</string>
+                         <string>SC_SXR</string>
+                         <string>SC_HXR</string>
+                        </stringlist>
+                       </property>
                        <property name="commands" stdset="0">
                         <stringlist>
-                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display</string>
+                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_bsyd</string>
+                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_sxr</string>
+                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_hxr</string>
                         </stringlist>
                        </property>
                       </widget>
