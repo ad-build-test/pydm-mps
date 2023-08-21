@@ -266,7 +266,7 @@
          <string notr="true">background-color: #F0F0FF;</string>
         </property>
         <property name="channel" stdset="0">
-         <string>MPS:SYS0:MP00:PICO</string>
+         <string>MPS:SYS0:MP00:BUNCH_CHARGE</string>
         </property>
        </widget>
       </item>
@@ -319,7 +319,7 @@
          <string notr="true">background-color: #F0F0FF;</string>
         </property>
         <property name="channel" stdset="0">
-         <string>MPS:SYS0:MP00:HERTZ</string>
+         <string>MPS:SYS0:MP00:RATE</string>
         </property>
        </widget>
       </item>

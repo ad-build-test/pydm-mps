@@ -172,7 +172,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>MPS:SYS0:MP00:MAXHZ${NUM}</string>
+      <string>MPS:SYS0:MP00:MAXRATE${NUM}</string>
      </property>
      <property name="displayFormat" stdset="0">
       <enum>PyDMLabel::Default</enum>
@@ -194,7 +194,7 @@
       <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
-      <string>MPS:SYS0:MP00:MAXPC${NUM}</string>
+      <string>MPS:SYS0:MP00:MAXCHARGE${NUM}</string>
      </property>
      <property name="displayFormat" stdset="0">
       <enum>PyDMLabel::Decimal</enum>
