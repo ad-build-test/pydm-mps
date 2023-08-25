@@ -3041,9 +3041,9 @@
                        </property>
                        <property name="commands" stdset="0">
                         <stringlist>
-                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_bsyd</string>
-                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_sxr</string>
-                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_hxr</string>
+                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_bsyd SCLHH</string>
+                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_sxr SCSHH</string>
+                         <string>/usr/local/lcls/tools/python/BLM_CUD/blm_display sc_hxr SCHHH</string>
                         </stringlist>
                        </property>
                       </widget>
