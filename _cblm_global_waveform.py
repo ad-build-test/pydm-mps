@@ -38,12 +38,11 @@ class CBLMmain(Display):
         """
     
     def connect_mode(self):
-        #TODO: Confirm we are changing whats enabled depending on the active mode. -KEL
         PV_mode = "ca://" + self.macros()['IOC'] + ':FACMODE_RBV'
-        # DOES NOT CONNECT -KEL
         self.mode = caget(self.macros()['IOC'] + ':FACMODE_RBV')
         self.mode_channel = PyDMChannel(address=PV_mode, value_slot=self.switch_mode)
         self.mode_channel.connect()
+        self.switch_mode_display()
     
     def connect_plot_channels(self):
         '''
@@ -298,6 +297,10 @@ class CBLMmain(Display):
         self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve5)
         self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve6)
 
+###################################################################################
+###############################UPDATE PLOT SETTINGS################################
+###################################################################################
+
     def update_coarse_delay_val_nc(self, coarse_delay_val):
         self.coarse_delay_val_nc = coarse_delay_val
         self.update_coarse_delay()
@@ -484,7 +487,10 @@ class CBLMmain(Display):
                 self.initialize_pedestal_width(self.pedestal_width_val_sc)
                 self.initialize_pedestal_width_flag = 0
                 self.initialize = 0
-###############################CURSOR SETTINGS#######################################################
+
+###################################################################################
+#########################UPDATE CURSOR PLOT SETTINGS###############################
+###################################################################################
 
     def update_cursor_start(self):
         self.cursor_start_val = self.ui.cursor_start.text()
@@ -532,7 +538,10 @@ class CBLMmain(Display):
     def update_difference(self):
         self.difference_val = int(self.cursor_end_val) - int(self.cursor_start_val)
         self.ui.difference.setText(str(self.difference_val))
-######################################################################################
+
+###################################################################################
+############################## Visibility Settings ################################
+###################################################################################
 
     def toggle_coarse_delay_visibility(self):
 
@@ -682,11 +691,12 @@ class CBLMmain(Display):
         self.ui.RawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve4)
         self.ui.Raw.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve5)
         self.ui.Egu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve6)
-    
+
+###################################################################################
+################################ Mode Settings ####################################
+###################################################################################
     def switch_mode(self, mode):
         # fetch readback value and call update value with mode:
-        # TODO: need to initialize with mode as well
-
         self.mode = mode
         self.switch_mode_display()
         
@@ -720,6 +730,7 @@ class CBLMmain(Display):
         self.ui.pedestal_delay_sc_rbv.setEnabled(self.mode)
         self.ui.pedestal_width_sc_rbv.setEnabled(self.mode)
 
+###################################################################################
     def num_points_egu_change(self, new_point_value):
         self.num_points_egu = new_point_value
         self.newXaxisEgu()
