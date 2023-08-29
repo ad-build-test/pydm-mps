@@ -484,7 +484,7 @@ class CBLMmain(Display):
                 self.initialize_pedestal_width(self.pedestal_width_val_sc)
                 self.initialize_pedestal_width_flag = 0
                 self.initialize = 0
-######################################################################################
+###############################CURSOR SETTINGS#######################################################
 
     def update_cursor_start(self):
         self.cursor_start_val = self.ui.cursor_start.text()
@@ -499,6 +499,9 @@ class CBLMmain(Display):
             self.cursor_start_curve4.setValue(str(self.cursor_start_val))
             self.cursor_start_curve5.setValue(str(self.cursor_start_val))
             self.cursor_start_curve6.setValue(str(self.cursor_start_val))
+            if not self.ui.cursor_start_vis.isChecked():
+                self.set_cursor_start_visible()
+                self.ui.cursor_start_vis.setChecked(True)
         elif self.initialize_cursor_start_flag == 1:
             self.initialize_cursor_start(self.cursor_start_val)
             self.initialize_cursor_start_flag = 0
@@ -517,10 +520,14 @@ class CBLMmain(Display):
             self.cursor_end_curve4.setValue(str(self.cursor_end_val))
             self.cursor_end_curve5.setValue(str(self.cursor_end_val))
             self.cursor_end_curve6.setValue(str(self.cursor_end_val))
+            if not self.ui.cursor_end_vis.isChecked():
+                self.set_cursor_end_visible()
+                self.ui.cursor_end_vis.setChecked(True)
         elif self.initialize_cursor_end_flag == 1:
             self.initialize_cursor_end(self.cursor_end_val)
             self.initialize_cursor_end_flag = 0
         self.update_difference()
+
 
     def update_difference(self):
         self.difference_val = int(self.cursor_end_val) - int(self.cursor_start_val)
@@ -643,6 +650,22 @@ class CBLMmain(Display):
             self.ui.RawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve4)
             self.ui.Raw.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve5)
             self.ui.Egu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve6)
+
+    def set_cursor_start_visible(self):
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve6)
+
+    def set_cursor_end_visible(self):
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve6)
 
     def set_cursor_start_invisible(self):
         self.ui.MainRawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve1)
