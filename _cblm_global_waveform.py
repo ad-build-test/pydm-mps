@@ -30,8 +30,8 @@ class CBLMmain(Display):
         self.connect_checkboxes()
         self.connect_cursor_line_edit()
         self.initialize_cursor_plots()
+        self.switch_mode_display()
 
-        #self.ws_visibility()
         """
         Initializing a bunch of stuff for having the plots display in time instead of raw counts
         Author: Ryan McClanahan
@@ -42,7 +42,7 @@ class CBLMmain(Display):
         self.mode = caget(self.macros()['IOC'] + ':FACMODE_RBV')
         self.mode_channel = PyDMChannel(address=PV_mode, value_slot=self.switch_mode)
         self.mode_channel.connect()
-        self.switch_mode_display()
+        #self.switch_mode_display()
     
     def connect_plot_channels(self):
         '''
@@ -708,7 +708,9 @@ class CBLMmain(Display):
             self.update_pedestal_width()
             
     def switch_mode_display(self):
-        
+       
+        print(self.mode)
+        print('Switching')
         self.ui.coarse_delay_nc.setEnabled(not(self.mode))
         self.ui.peak_delay_nc.setEnabled(not(self.mode))
         self.ui.peak_width_nc.setEnabled(not(self.mode))
