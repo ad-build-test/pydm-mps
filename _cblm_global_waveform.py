@@ -8,6 +8,7 @@ from pyqtgraph import InfiniteLine
 from pydm.widgets.channel import PyDMChannel
 import numpy as np
 
+#TODO: Come up with better color pallette - Kyle Leleux (kleleux 08/24/23)
 
 class CBLMmain(Display):
     def __init__(self, parent=None, args=[], macros=None):
@@ -19,28 +20,29 @@ class CBLMmain(Display):
         self.initialize_peak_width_flag = 1 
         self.initialize_pedestal_delay_flag = 1 
         self.initialize_pedestal_width_flag = 1 
+        self.initialize_cursor_start_flag = 1 
+        self.initialize_cursor_end_flag = 1 
 
         self.scale_plots()
         self.connect_mode()
         self.connect_plot_channels()
-        #self.connect_line_edit()
         #self.init_gain_request()
         self.connect_checkboxes()
+        self.connect_cursor_line_edit()
+        self.initialize_cursor_plots()
+        self.switch_mode_display()
 
-        #self.ws_visibility()
-        #self.ui.freeze.toggled.connect(self.freeze_plot)
         """
         Initializing a bunch of stuff for having the plots display in time instead of raw counts
         Author: Ryan McClanahan
         """
     
     def connect_mode(self):
-        #TODO: Confirm we are changing whats enabled depending on the active mode. -KEL
         PV_mode = "ca://" + self.macros()['IOC'] + ':FACMODE_RBV'
-        # DOES NOT CONNECT -KEL
         self.mode = caget(self.macros()['IOC'] + ':FACMODE_RBV')
         self.mode_channel = PyDMChannel(address=PV_mode, value_slot=self.switch_mode)
         self.mode_channel.connect()
+        #self.switch_mode_display()
     
     def connect_plot_channels(self):
         '''
@@ -49,27 +51,27 @@ class CBLMmain(Display):
         '''
         #Loading the Normal-conducting Channels
         PV_coarse_delay_nc = "ca://" + self.macros()['DEVICE'] + ':NC_COARSE_DEL_RBV'
-        #self.coarse_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_COARSE_DEL_RBV')
+        self.coarse_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_COARSE_DEL_RBV')
         self.coarse_delay_nc_channel = PyDMChannel(address=PV_coarse_delay_nc, value_slot=self.update_coarse_delay_val_nc)
         self.coarse_delay_nc_channel.connect()
         
         PV_peak_delay_nc = "ca://" + self.macros()['DEVICE'] + ':NC_ANA_PK_DEL_TRG_RBV'
-        #self.peak_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PK_DEL_TRG_RBV')
+        self.peak_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PK_DEL_TRG_RBV')
         self.peak_delay_nc_channel = PyDMChannel(address=PV_peak_delay_nc, value_slot=self.update_peak_delay_val_nc)
         self.peak_delay_nc_channel.connect()
         
         PV_peak_width_nc = "ca://" + self.macros()['DEVICE'] + ':NC_ANA_PK_WDT_TRG_RBV'
-        #self.peak_width_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PK_WDT_TRG_RBV')
+        self.peak_width_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PK_WDT_TRG_RBV')
         self.peak_width_nc_channel = PyDMChannel(address=PV_peak_width_nc, value_slot=self.update_peak_width_val_nc)
         self.peak_width_nc_channel.connect()
         
         PV_pedestal_delay_nc = "ca://" + self.macros()['DEVICE'] + ':NC_ANA_PD_DEL_TRG_RBV'
-        #self.pedestal_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PD_DEL_TRG_RBV')
+        self.pedestal_delay_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PD_DEL_TRG_RBV')
         self.pedestal_delay_nc_channel = PyDMChannel(address=PV_pedestal_delay_nc, value_slot=self.update_pedestal_delay_val_nc)
         self.pedestal_delay_nc_channel.connect()
         
         PV_pedestal_width_nc = "ca://" + self.macros()['DEVICE'] + ':NC_ANA_PD_WDT_TRG_RBV'
-        #self.pedestal_width_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PD_WDT_TRG_RBV')
+        self.pedestal_width_val_nc = caget(self.macros()['DEVICE'] + ':NC_ANA_PD_WDT_TRG_RBV')
         self.pedestal_width_nc_channel = PyDMChannel(address=PV_pedestal_width_nc, value_slot=self.update_pedestal_width_val_nc)
         self.pedestal_width_nc_channel.connect()
         
@@ -98,6 +100,11 @@ class CBLMmain(Display):
         self.pedestal_width_val_sc = caget(self.macros()['DEVICE'] + ':SC_ANA_PD_WDT_TRG_RBV')
         self.pedestal_width_sc_channel = PyDMChannel(address=PV_pedestal_width_sc, value_slot=self.update_pedestal_width_val_sc)
         self.pedestal_width_sc_channel.connect()
+
+        self.cursor_start_val = 0
+        self.cursor_end_val = 0
+        self.ui.cursor_start.setText(str(self.cursor_start_val))
+        self.ui.cursor_end.setText(str(self.cursor_end_val))
 
     def scale_plots(self):
 
@@ -128,27 +135,33 @@ class CBLMmain(Display):
         Author: Ryan McClanahan
         """
 
-    def initialize_plots(self):
+    def initialize_cursor_plots(self):
         # TODO: READ MODE. do i set it up like in line 42?
         #self.mode =
-        self.initialize_coarse_delay()
-        self.initialize_peak_delay()
-        self.initialize_peak_width()
-        self.initialize_pedestal_delay()
-        self.initialize_pedestal_width()
+        #self.initialize_coarse_delay()
+        #self.initialize_peak_delay()
+        #self.initialize_peak_width()
+        #self.initialize_pedestal_delay()
+        #self.initialize_pedestal_width()
+        self.update_cursor_start()
+        self.update_cursor_end()
+        self.set_cursor_start_invisible()
+        self.set_cursor_end_invisible()
 
-    def connect_line_edit(self):
+    def connect_cursor_line_edit(self):
         # Won't need once using channels - KEL
-        self.ui.coarse_delay_sc.returnPressed.connect(self.update_coarse_delay)
-        self.ui.peak_delay_sc.returnPressed.connect(self.update_peak_delay)
-        self.ui.peak_width_sc.returnPressed.connect(self.update_peak_width)
-        self.ui.pedestal_delay_sc.returnPressed.connect(self.update_pedestal_delay)
-        self.ui.pedestal_width_sc.returnPressed.connect(self.update_pedestal_width)
-        self.ui.coarse_delay_nc.returnPressed.connect(self.update_coarse_delay)
-        self.ui.peak_delay_nc.returnPressed.connect(self.update_peak_delay)
-        self.ui.peak_width_nc.returnPressed.connect(self.update_peak_width)
-        self.ui.pedestal_delay_nc.returnPressed.connect(self.update_pedestal_delay)
-        self.ui.pedestal_width_nc.returnPressed.connect(self.update_pedestal_width)
+        #self.ui.coarse_delay_sc.returnPressed.connect(self.update_coarse_delay)
+        #self.ui.peak_delay_sc.returnPressed.connect(self.update_peak_delay)
+        #self.ui.peak_width_sc.returnPressed.connect(self.update_peak_width)
+        #self.ui.pedestal_delay_sc.returnPressed.connect(self.update_pedestal_delay)
+        #self.ui.pedestal_width_sc.returnPressed.connect(self.update_pedestal_width)
+        #self.ui.coarse_delay_nc.returnPressed.connect(self.update_coarse_delay)
+        #self.ui.peak_delay_nc.returnPressed.connect(self.update_peak_delay)
+        #self.ui.peak_width_nc.returnPressed.connect(self.update_peak_width)
+        #self.ui.pedestal_delay_nc.returnPressed.connect(self.update_pedestal_delay)
+        #self.ui.pedestal_width_nc.returnPressed.connect(self.update_pedestal_width)
+        self.ui.cursor_start.returnPressed.connect(self.update_cursor_start)
+        self.ui.cursor_end.returnPressed.connect(self.update_cursor_end)
 
     def connect_checkboxes(self):
         self.ui.coarse_delay_vis.toggled.connect(self.toggle_coarse_delay_visibility)
@@ -156,6 +169,9 @@ class CBLMmain(Display):
         self.ui.peak_width_vis.toggled.connect(self.toggle_peak_width_visibility)
         self.ui.pedestal_delay_vis.toggled.connect(self.toggle_pedestal_delay_visibility)
         self.ui.pedestal_width_vis.toggled.connect(self.toggle_pedestal_width_visibility)
+        self.ui.cursor_start_vis.toggled.connect(self.toggle_cursor_start_visibility)
+        self.ui.cursor_end_vis.toggled.connect(self.toggle_cursor_end_visibility)
+        self.ui.freeze.toggled.connect(self.freeze_plot)
 
     def initialize_coarse_delay(self, coarse_delay_val):
         #self.peak_delay = caget(self.macros['DEVICE'] + ':NC_ANA_PK_DEL_TRG')
@@ -221,12 +237,6 @@ class CBLMmain(Display):
         self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.peak_width_curve6)
 
     def initialize_pedestal_delay(self, pedestal_delay_val):
-        #self.peak_delay = caget(self.macros['DEVICE'] + ':NC_ANA_PK_DEL_TRG')
-        # TODO: GET DELAY VALUE FOR SPECIFIC MODE - KEL
-        #if self.mode = 0:
-        #    self.pedestal_delay_val = 
-        #else:
-        #    self.pedestal_delay_val = 
         pedestal_delay_color = (153,0,153)
         self.pedestal_delay_curve1 = InfiniteLine(pedestal_delay_val, angle=90, pen={'color': pedestal_delay_color, 'width':2, 'dash': [2,4]})
         self.pedestal_delay_curve2 = InfiniteLine(pedestal_delay_val, angle=90, pen={'color': pedestal_delay_color, 'width':2, 'dash': [2,4]})
@@ -242,13 +252,6 @@ class CBLMmain(Display):
         self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.pedestal_delay_curve6)
     
     def initialize_pedestal_width(self, pedestal_width_val):
-        #self.peak_delay = caget(self.macros['DEVICE'] + ':NC_ANA_PK_DEL_TRG')
-        # TODO: GET DELAY VALUE FOR SPECIFIC MODE - KEL
-        #if self.mode = 0:
-        #    self.pedestal_width_val = 
-        #else:
-        #    self.pedestal_width_val = 
-        # TODO: GET VALUE FROM PYDM CHANNEL
         pedestal_width_color = (204,102,0)
         self.pedestal_width_curve1 = InfiniteLine(pedestal_width_val, angle=90, pen={'color': pedestal_width_color, 'width':2, 'dash': [2,4]})
         self.pedestal_width_curve2 = InfiniteLine(pedestal_width_val, angle=90, pen={'color': pedestal_width_color, 'width':2, 'dash': [2,4]})
@@ -262,6 +265,41 @@ class CBLMmain(Display):
         self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.pedestal_width_curve4)
         self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.pedestal_width_curve5)
         self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.pedestal_width_curve6)
+
+    def initialize_cursor_start(self, cursor_start_val):
+        #TODO: can set these as moveable but will need to grab the value it moves to. -Kyle Leleux (kleleux 08/24/23)
+        cursor_start_color = (0,0,0)
+        self.cursor_start_curve1 = InfiniteLine(cursor_start_val, angle=90, pen={'color': cursor_start_color, 'width':2, 'dash': [2,4]})
+        self.cursor_start_curve2 = InfiniteLine(cursor_start_val, angle=90, pen={'color': cursor_start_color, 'width':2, 'dash': [2,4]})
+        self.cursor_start_curve3 = InfiniteLine(cursor_start_val, angle=90, pen={'color': cursor_start_color, 'width':2, 'dash': [2,4]})
+        self.cursor_start_curve4 = InfiniteLine(cursor_start_val, angle=90, pen={'color': cursor_start_color, 'width':2, 'dash': [2,4]})
+        self.cursor_start_curve5 = InfiniteLine(cursor_start_val, angle=90, pen={'color': cursor_start_color, 'width':2, 'dash': [2,4]})
+        self.cursor_start_curve6 = InfiniteLine(cursor_start_val, angle=90, pen={'color': cursor_start_color, 'width':2, 'dash': [2,4]})
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve6)
+
+    def initialize_cursor_end(self, cursor_end_val):
+        cursor_end_color = (0,0,0)
+        self.cursor_end_curve1 = InfiniteLine(cursor_end_val, angle=90, pen={'color': cursor_end_color, 'width':2, 'dash': [2,4]})
+        self.cursor_end_curve2 = InfiniteLine(cursor_end_val, angle=90, pen={'color': cursor_end_color, 'width':2, 'dash': [2,4]})
+        self.cursor_end_curve3 = InfiniteLine(cursor_end_val, angle=90, pen={'color': cursor_end_color, 'width':2, 'dash': [2,4]})
+        self.cursor_end_curve4 = InfiniteLine(cursor_end_val, angle=90, pen={'color': cursor_end_color, 'width':2, 'dash': [2,4]})
+        self.cursor_end_curve5 = InfiniteLine(cursor_end_val, angle=90, pen={'color': cursor_end_color, 'width':2, 'dash': [2,4]})
+        self.cursor_end_curve6 = InfiniteLine(cursor_end_val, angle=90, pen={'color': cursor_end_color, 'width':2, 'dash': [2,4]})
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve6)
+
+###################################################################################
+###############################UPDATE PLOT SETTINGS################################
+###################################################################################
 
     def update_coarse_delay_val_nc(self, coarse_delay_val):
         self.coarse_delay_val_nc = coarse_delay_val
@@ -450,6 +488,61 @@ class CBLMmain(Display):
                 self.initialize_pedestal_width_flag = 0
                 self.initialize = 0
 
+###################################################################################
+#########################UPDATE CURSOR PLOT SETTINGS###############################
+###################################################################################
+
+    def update_cursor_start(self):
+        self.cursor_start_val = self.ui.cursor_start.text()
+        self.update_cursor_start_plot()
+
+    def update_cursor_start_plot(self):
+        
+        if self.initialize_cursor_start_flag == 0:
+            self.cursor_start_curve1.setValue(str(self.cursor_start_val))
+            self.cursor_start_curve2.setValue(str(self.cursor_start_val))
+            self.cursor_start_curve3.setValue(str(self.cursor_start_val))
+            self.cursor_start_curve4.setValue(str(self.cursor_start_val))
+            self.cursor_start_curve5.setValue(str(self.cursor_start_val))
+            self.cursor_start_curve6.setValue(str(self.cursor_start_val))
+            if not self.ui.cursor_start_vis.isChecked():
+                self.set_cursor_start_visible()
+                self.ui.cursor_start_vis.setChecked(True)
+        elif self.initialize_cursor_start_flag == 1:
+            self.initialize_cursor_start(self.cursor_start_val)
+            self.initialize_cursor_start_flag = 0
+        self.update_difference()
+
+    def update_cursor_end(self):
+        self.cursor_end_val = self.ui.cursor_end.text()
+        self.update_cursor_end_plot()
+
+    def update_cursor_end_plot(self):
+        
+        if self.initialize_cursor_end_flag == 0:
+            self.cursor_end_curve1.setValue(str(self.cursor_end_val))
+            self.cursor_end_curve2.setValue(str(self.cursor_end_val))
+            self.cursor_end_curve3.setValue(str(self.cursor_end_val))
+            self.cursor_end_curve4.setValue(str(self.cursor_end_val))
+            self.cursor_end_curve5.setValue(str(self.cursor_end_val))
+            self.cursor_end_curve6.setValue(str(self.cursor_end_val))
+            if not self.ui.cursor_end_vis.isChecked():
+                self.set_cursor_end_visible()
+                self.ui.cursor_end_vis.setChecked(True)
+        elif self.initialize_cursor_end_flag == 1:
+            self.initialize_cursor_end(self.cursor_end_val)
+            self.initialize_cursor_end_flag = 0
+        self.update_difference()
+
+
+    def update_difference(self):
+        self.difference_val = int(self.cursor_end_val) - int(self.cursor_start_val)
+        self.ui.difference.setText(str(self.difference_val))
+
+###################################################################################
+############################## Visibility Settings ################################
+###################################################################################
+
     def toggle_coarse_delay_visibility(self):
 
         if self.ui.coarse_delay_vis.isChecked():
@@ -535,10 +628,75 @@ class CBLMmain(Display):
             self.ui.Raw.curveAtIndex(0).getViewBox().removeItem(self.pedestal_width_curve5)
             self.ui.Egu.curveAtIndex(0).getViewBox().removeItem(self.pedestal_width_curve6)
 
+    def toggle_cursor_start_visibility(self):
+        if self.ui.cursor_start_vis.isChecked():
+            self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve1)
+            self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve2)
+            self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve3)
+            self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve4)
+            self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve5)
+            self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve6)
+        else:   
+            self.ui.MainRawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve1)
+            self.ui.MainRaw.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve2)
+            self.ui.MainEgu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve3)
+            self.ui.RawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve4)
+            self.ui.Raw.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve5)
+            self.ui.Egu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve6)
+
+    def toggle_cursor_end_visibility(self):
+        if self.ui.cursor_end_vis.isChecked():
+            self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve1)
+            self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve2)
+            self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve3)
+            self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve4)
+            self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve5)
+            self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve6)
+        else:   
+            self.ui.MainRawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve1)
+            self.ui.MainRaw.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve2)
+            self.ui.MainEgu.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve3)
+            self.ui.RawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve4)
+            self.ui.Raw.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve5)
+            self.ui.Egu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve6)
+
+    def set_cursor_start_visible(self):
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve6)
+
+    def set_cursor_end_visible(self):
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().addItem(self.cursor_end_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().addItem(self.cursor_start_curve6)
+
+    def set_cursor_start_invisible(self):
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve6)
+
+    def set_cursor_end_invisible(self):
+        self.ui.MainRawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve1)
+        self.ui.MainRaw.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve2)
+        self.ui.MainEgu.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve3)
+        self.ui.RawBuf.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve4)
+        self.ui.Raw.curveAtIndex(0).getViewBox().removeItem(self.cursor_end_curve5)
+        self.ui.Egu.curveAtIndex(0).getViewBox().removeItem(self.cursor_start_curve6)
+
+###################################################################################
+################################ Mode Settings ####################################
+###################################################################################
     def switch_mode(self, mode):
         # fetch readback value and call update value with mode:
-        # TODO: need to initialize with mode as well
-
         self.mode = mode
         self.switch_mode_display()
         
@@ -550,7 +708,9 @@ class CBLMmain(Display):
             self.update_pedestal_width()
             
     def switch_mode_display(self):
-        
+       
+        print(self.mode)
+        print('Switching')
         self.ui.coarse_delay_nc.setEnabled(not(self.mode))
         self.ui.peak_delay_nc.setEnabled(not(self.mode))
         self.ui.peak_width_nc.setEnabled(not(self.mode))
@@ -572,6 +732,7 @@ class CBLMmain(Display):
         self.ui.pedestal_delay_sc_rbv.setEnabled(self.mode)
         self.ui.pedestal_width_sc_rbv.setEnabled(self.mode)
 
+###################################################################################
     def num_points_egu_change(self, new_point_value):
         self.num_points_egu = new_point_value
         self.newXaxisEgu()

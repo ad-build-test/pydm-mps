@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SC LBLM PLIC</string>
+   <string>SC CBLM Waveform</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
    <property name="leftMargin">
@@ -92,7 +92,7 @@
 background-color: rgba(255, 255, 255, 0);</string>
         </property>
         <property name="text">
-         <string>SC CBLM PLIC</string>
+         <string>SC CBLM Waveform</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -218,6 +218,12 @@ background-color: rgba(255, 255, 255, 0);</string>
         <font>
          <pointsize>20</pointsize>
         </font>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+       </property>
+       <property name="minimumContentsLength">
+        <number>0</number>
        </property>
       </widget>
      </item>
