@@ -746,78 +746,6 @@
      </stringlist>
     </property>
    </widget>
-   <widget class="PyDMShellCommand" name="PyDMShellCommand">
-    <property name="geometry">
-     <rect>
-      <x>18</x>
-      <y>46</y>
-      <width>152</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>New MPS GUI...</string>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="commands" stdset="0">
-     <stringlist>
-      <string>HLAWrap /usr/local/lcls/physics/release/mpsgui/mpsgui-R2-0-0-clts/mpsgui</string>
-     </stringlist>
-    </property>
-   </widget>
-   <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
-    <property name="geometry">
-     <rect>
-      <x>18</x>
-      <y>76</y>
-      <width>152</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>MPS CUD...</string>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="commands" stdset="0">
-     <stringlist>
-      <string>HLAWrap /usr/local/lcls/physics/mpsgui/mpscud</string>
-     </stringlist>
-    </property>
-   </widget>
-   <widget class="PyDMShellCommand" name="PyDMShellCommand_3">
-    <property name="geometry">
-     <rect>
-      <x>18</x>
-      <y>106</y>
-      <width>152</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string/>
-    </property>
-    <property name="text">
-     <string>MPS Recent Faults CUD</string>
-    </property>
-    <property name="showIcon" stdset="0">
-     <bool>false</bool>
-    </property>
-    <property name="commands" stdset="0">
-     <stringlist>
-      <string>HLAWrap /usr/local/lcls/physics/mpsgui/mpscud_recentfaults</string>
-     </stringlist>
-    </property>
-   </widget>
    <widget class="PyDMShellCommand" name="PyDMShellCommand_4">
     <property name="geometry">
      <rect>
@@ -915,14 +843,86 @@ as for any LCLS MPS bypass</string>
      </color>
     </property>
    </widget>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>76</y>
+      <width>152</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Owner: Zach Domke</string>
+    </property>
+    <property name="text">
+     <string>PyDM MPS CUD...</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>$PHYSICS_TOP/nc_mps_gui/nc_mps_gui.bash -c summary</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>46</y>
+      <width>152</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Owner: Zach Domke</string>
+    </property>
+    <property name="text">
+     <string>PyDM MPS GUI...</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>$PHYSICS_TOP/nc_mps_gui/nc_mps_gui.bash</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand_3">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>106</y>
+      <width>152</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Owner: Zach Domke</string>
+    </property>
+    <property name="text">
+     <string>PyDM MPS Recent CUD...</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>$PHYSICS_TOP/nc_mps_gui/nc_mps_gui.bash -c recent</string>
+     </stringlist>
+    </property>
+   </widget>
    <zorder>PyDMDrawingRectangle</zorder>
    <zorder>PyDMEDMDisplayButton</zorder>
-   <zorder>PyDMShellCommand</zorder>
-   <zorder>PyDMShellCommand_2</zorder>
-   <zorder>PyDMShellCommand_3</zorder>
    <zorder>PyDMShellCommand_4</zorder>
    <zorder>PyDMEDMDisplayButton_2</zorder>
    <zorder>label_10</zorder>
+   <zorder>PyDMShellCommand_2</zorder>
+   <zorder>PyDMShellCommand</zorder>
+   <zorder>PyDMShellCommand_3</zorder>
   </widget>
   <widget class="PyDMFrame" name="PyDMFrame_3">
    <property name="geometry">
@@ -2065,6 +2065,110 @@ as for any LCLS MPS bypass</string>
     <string>lcls_mps_lockup_sidebyside_digital.png</string>
    </property>
   </widget>
+  <widget class="PyDMFrame" name="PyDMFrame_11">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>270</y>
+     <width>184</width>
+     <height>116</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>152</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Java MPS Recent CUD...</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>HLAWrap /usr/local/lcls/physics/mpsgui/mpscud_recentfaults</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>152</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Java MPS CUD...</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>HLAWrap /usr/local/lcls/physics/mpsgui/mpscud</string>
+     </stringlist>
+    </property>
+   </widget>
+   <widget class="PyDMShellCommand" name="PyDMShellCommand_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>152</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>Java MPS GUI...</string>
+    </property>
+    <property name="showIcon" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="commands" stdset="0">
+     <stringlist>
+      <string>HLAWrap /usr/local/lcls/physics/release/mpsgui/mpsgui-R2-0-0-clts/mpsgui</string>
+     </stringlist>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_25">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>262</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 6px;</string>
+   </property>
+   <property name="text">
+    <string>Old MPS GUI (Java)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
   <zorder>PyDMDrawingRectangle_8</zorder>
   <zorder>PyDMFrame_2</zorder>
   <zorder>PyDMFrame</zorder>
@@ -2087,8 +2191,16 @@ as for any LCLS MPS bypass</string>
   <zorder>label_17</zorder>
   <zorder>label_18</zorder>
   <zorder>PyDMDrawingImage_2</zorder>
+  <zorder>PyDMFrame_11</zorder>
+  <zorder>label_25</zorder>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>PyDMEDMDisplayButton</class>
+   <extends>PyDMRelatedDisplayButton</extends>
+   <header>edmbutton.edm_button</header>
+   <container>1</container>
+  </customwidget>
   <customwidget>
    <class>PyDMLabel</class>
    <extends>QLabel</extends>
@@ -2134,12 +2246,6 @@ as for any LCLS MPS bypass</string>
    <class>PyDMShellCommand</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.shell_command</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMEDMDisplayButton</class>
-   <extends>PyDMRelatedDisplayButton</extends>
-   <header>edmbutton.edm_button</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>
