@@ -23,6 +23,128 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>Map and Status</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+           <property name="minimumSize">
+            <size>
+             <width>875</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="filename" stdset="0">
+            <string>$PHYSICS_TOP/mps_configuration/current/display/areas/mps_fees_link_nodes.ui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <widget class="QFrame" name="frame_2">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0">
+             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>Group 21</string>
+              </property>
+              <property name="filenames" stdset="0">
+               <stringlist>
+                <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup21.ui</string>
+               </stringlist>
+              </property>
+              <property name="showIcon" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="openInNewWindow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton_2">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="toolTip">
+               <string/>
+              </property>
+              <property name="text">
+               <string>MPS Analog Inputs</string>
+              </property>
+              <property name="filenames" stdset="0">
+               <stringlist>
+                <string>mps_threshold_area.py</string>
+               </stringlist>
+              </property>
+              <property name="showIcon" stdset="0">
+               <bool>false</bool>
+              </property>
+              <property name="macros" stdset="0">
+               <stringlist>
+                <string>AREA=FEES</string>
+               </stringlist>
+              </property>
+              <property name="openInNewWindow" stdset="0">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
       <item row="0" column="2">
        <widget class="QFrame" name="frame">
         <property name="frameShape">
@@ -32,6 +154,19 @@
          <enum>QFrame::Raised</enum>
         </property>
         <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
          <item row="1" column="0">
           <widget class="PyDMDrawingImage" name="PyDMDrawingImage_2">
            <property name="minimumSize">
@@ -66,109 +201,6 @@
            </property>
           </widget>
          </item>
-         <item row="0" column="0">
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QGroupBox" name="groupBox">
-        <property name="title">
-         <string>Map and Status</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_3">
-         <item row="1" column="0">
-          <widget class="QFrame" name="frame_2">
-           <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QGridLayout" name="gridLayout_2">
-            <item row="0" column="0">
-             <widget class="PyDMRelatedDisplayButton" name="PyDMRelatedDisplayButton">
-              <property name="minimumSize">
-               <size>
-                <width>100</width>
-                <height>20</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string/>
-              </property>
-              <property name="text">
-               <string>Group 21</string>
-              </property>
-              <property name="filenames" stdset="0">
-               <stringlist>
-                <string>$PHYSICS_TOP/mps_configuration/current/display/groups/LinkNodeGroup21.ui</string>
-               </stringlist>
-              </property>
-              <property name="showIcon" stdset="0">
-               <bool>false</bool>
-              </property>
-              <property name="openInNewWindow" stdset="0">
-               <bool>true</bool>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
-           <property name="minimumSize">
-            <size>
-             <width>875</width>
-             <height>100</height>
-            </size>
-           </property>
-           <property name="toolTip">
-            <string/>
-           </property>
-           <property name="filename" stdset="0">
-            <string>$PHYSICS_TOP/mps_configuration/current/display/areas/mps_fees_link_nodes.ui</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
         </layout>
        </widget>
       </item>
@@ -192,9 +224,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>PyDMRelatedDisplayButton</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.related_display_button</header>
+   <class>PyDMDrawingImage</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.drawing</header>
   </customwidget>
   <customwidget>
    <class>PyDMEmbeddedDisplay</class>
@@ -202,9 +234,9 @@
    <header>pydm.widgets.embedded_display</header>
   </customwidget>
   <customwidget>
-   <class>PyDMDrawingImage</class>
-   <extends>QWidget</extends>
-   <header>pydm.widgets.drawing</header>
+   <class>PyDMRelatedDisplayButton</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.related_display_button</header>
   </customwidget>
  </customwidgets>
  <resources/>
