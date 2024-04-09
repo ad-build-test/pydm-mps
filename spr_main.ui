@@ -23,6 +23,19 @@
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
       <item row="0" column="3">
        <widget class="QFrame" name="frame">
         <property name="frameShape">
@@ -82,19 +95,6 @@
         </layout>
        </widget>
       </item>
-      <item row="0" column="1">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
       <item row="0" column="0">
        <widget class="PyDMTabWidget" name="PyDMTabWidget">
         <property name="toolTip">
@@ -104,10 +104,10 @@
          <string/>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>0</number>
         </property>
         <property name="currentTabAlarmChannel" stdset="0">
-         <cstring>MPS:SPD:1:STATSUMY</cstring>
+         <cstring>MPS:SPH:1:STATSUMY</cstring>
         </property>
         <property name="alarmChannels">
          <stringlist>
@@ -707,74 +707,6 @@
                     <string>PBLM Diagnostics</string>
                    </attribute>
                    <layout class="QGridLayout" name="gridLayout_17">
-                    <item row="0" column="0">
-                     <widget class="PyDMFrame" name="PyDMFrame_2">
-                      <property name="minimumSize">
-                       <size>
-                        <width>174</width>
-                        <height>29</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>174</width>
-                        <height>29</height>
-                       </size>
-                      </property>
-                      <property name="toolTip">
-                       <string/>
-                      </property>
-                      <property name="alarmSensitiveBorder" stdset="0">
-                       <bool>true</bool>
-                      </property>
-                      <property name="channel" stdset="0">
-                       <string>PBLM:SLTS:428:UP_TIME_SECSUM</string>
-                      </property>
-                      <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_6">
-                       <property name="geometry">
-                        <rect>
-                         <x>3</x>
-                         <y>3</y>
-                         <width>168</width>
-                         <height>23</height>
-                        </rect>
-                       </property>
-                       <property name="minimumSize">
-                        <size>
-                         <width>150</width>
-                         <height>20</height>
-                        </size>
-                       </property>
-                       <property name="toolTip">
-                        <string/>
-                       </property>
-                       <property name="text">
-                        <string>PBLM:SLTS:428</string>
-                       </property>
-                       <property name="filenames" stdset="0">
-                        <stringlist>
-                         <string>$EDM/bcs/bcs_pblm_status.edl</string>
-                        </stringlist>
-                       </property>
-                       <property name="titles" stdset="0">
-                        <stringlist>
-                         <string></string>
-                        </stringlist>
-                       </property>
-                       <property name="showIcon" stdset="0">
-                        <bool>false</bool>
-                       </property>
-                       <property name="macros" stdset="0">
-                        <stringlist>
-                         <string>BLM=PBLM:SLTS:428</string>
-                        </stringlist>
-                       </property>
-                       <property name="openInNewWindow" stdset="0">
-                        <bool>true</bool>
-                       </property>
-                      </widget>
-                     </widget>
-                    </item>
                     <item row="1" column="0">
                      <widget class="PyDMFrame" name="PyDMFrame_3">
                       <property name="minimumSize">
@@ -843,7 +775,7 @@
                       </widget>
                      </widget>
                     </item>
-                    <item row="2" column="0">
+                    <item row="3" column="0">
                      <spacer name="verticalSpacer_9">
                       <property name="orientation">
                        <enum>Qt::Vertical</enum>
@@ -855,6 +787,74 @@
                        </size>
                       </property>
                      </spacer>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="PyDMFrame" name="PyDMFrame_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>174</width>
+                        <height>29</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>174</width>
+                        <height>29</height>
+                       </size>
+                      </property>
+                      <property name="toolTip">
+                       <string/>
+                      </property>
+                      <property name="alarmSensitiveBorder" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="channel" stdset="0">
+                       <string>PBLM:SLTS:428:UP_TIME_SECSUM</string>
+                      </property>
+                      <widget class="PyDMEDMDisplayButton" name="PyDMEDMDisplayButton_6">
+                       <property name="geometry">
+                        <rect>
+                         <x>3</x>
+                         <y>3</y>
+                         <width>168</width>
+                         <height>23</height>
+                        </rect>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>150</width>
+                         <height>20</height>
+                        </size>
+                       </property>
+                       <property name="toolTip">
+                        <string/>
+                       </property>
+                       <property name="text">
+                        <string>PBLM:SLTS:428</string>
+                       </property>
+                       <property name="filenames" stdset="0">
+                        <stringlist>
+                         <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                        </stringlist>
+                       </property>
+                       <property name="titles" stdset="0">
+                        <stringlist>
+                         <string></string>
+                        </stringlist>
+                       </property>
+                       <property name="showIcon" stdset="0">
+                        <bool>false</bool>
+                       </property>
+                       <property name="macros" stdset="0">
+                        <stringlist>
+                         <string>BLM=PBLM:SLTS:428</string>
+                        </stringlist>
+                       </property>
+                       <property name="openInNewWindow" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </widget>
                     </item>
                    </layout>
                   </widget>
