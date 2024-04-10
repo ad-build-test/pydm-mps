@@ -18,6 +18,8 @@ class GuardianHelp(Display):
         self.logic_type_pv.connect()
 
         # TODO: fill in special case conditions
+        special_case_string = "{SPECIAL_CASE_DESC}".format(**macros)
+        self.ui.special_case_desc_label.setText(special_case_string)
 
         # Fill in other devices affected by tolerance
         devices_string = "{TOLERANCE_AFFECTED_DEVICES}".format(**macros)
