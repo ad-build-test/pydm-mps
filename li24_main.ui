@@ -187,7 +187,7 @@
      </property>
      <property name="commands" stdset="0">
       <stringlist>
-       <string>edm -m &quot;PRIM=PICM,LOCA2=LI24,LOCA3=LI24,LOCA4=LI24,LOCA5=LI24,LOCA6=LI24,LOCA7=LI24,LOCA8=LI24,LOCA1=LI24,LOCA=LI24,UNIT=MP11,UNIT1=791,UNIT2=811,UNIT3=16-3,UNIT4=16-4,UNIT5=16-5,UNIT6=16-6,UNIT7=16-7,UNIT8=16-8&quot; -x mps_pic1_linknode_ln16</string>
+       <string>edm -m &quot;PRIM=PICM,LOCA2=LI24,LOCA3=LI24,LOCA1=LI24,LOCA=LI24,UNIT=MP11,UNIT1=791,UNIT2=811,UNIT3=16-3,UNIT4=16-4,UNIT5=16-5,UNIT6=16-6,UNIT7=16-7,UNIT8=16-8&quot; -x mps_pic1_linknode_ln16</string>
       </stringlist>
      </property>
     </widget>
