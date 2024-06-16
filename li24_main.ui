@@ -38,10 +38,19 @@
      <string/>
     </property>
     <property name="macros" stdset="0">
-     <string>DEV=EIOC,LOCA=LI24,INST=MP01,DEV2=MPS,inst=mp01,loca=li24,DEV3=EIOC,file=mps_linknode</string>
+     <string>{&quot;DEV&quot;: &quot;EIOC&quot;, &quot;LOCA&quot;: &quot;LI24&quot;, &quot;INST&quot;: &quot;MP01&quot;, &quot;DEV2&quot;: &quot;MPS&quot;, &quot;inst&quot;: &quot;mp01&quot;, &quot;loca&quot;: &quot;li24&quot;, &quot;DEV3&quot;: &quot;EIOC&quot;, &quot;file&quot;: &quot;mps_linknode&quot;, &quot;LOCA1&quot;: &quot;LI24&quot;}</string>
     </property>
     <property name="filename" stdset="0">
      <string>LinkNode_embeded_2.ui</string>
+    </property>
+    <property name="loadWhenShown" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="disconnectWhenHidden" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="followSymlinks" stdset="0">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label">
