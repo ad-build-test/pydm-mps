@@ -67,10 +67,10 @@
         <string/>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>4</number>
        </property>
        <property name="currentTabAlarmChannel" stdset="0">
-        <cstring>MPLN_INFO:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</cstring>
+        <cstring>MPLN_AP:${LOCA}:${IOC_UNIT}:${INST}:STATSUMY</cstring>
        </property>
        <property name="alarmChannels">
         <stringlist>

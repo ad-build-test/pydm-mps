@@ -27,7 +27,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1058</width>
+        <width>1068</width>
         <height>912</height>
        </rect>
       </property>
@@ -72,7 +72,7 @@
              <item row="0" column="4">
               <widget class="QLabel" name="label_7">
                <property name="text">
-                <string>Int 0</string>
+                <string>Int 0 Decay</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -94,7 +94,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_8</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_4</string>
                </property>
               </widget>
              </item>
@@ -113,7 +113,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_20</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_10</string>
                </property>
               </widget>
              </item>
@@ -132,7 +132,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_4</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_2</string>
                </property>
               </widget>
              </item>
@@ -349,7 +349,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_2</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_0</string>
                </property>
               </widget>
              </item>
@@ -388,7 +388,7 @@
                 <bool>true</bool>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_1_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_1_RBV</string>
                </property>
               </widget>
              </item>
@@ -407,7 +407,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_1</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_1</string>
                </property>
               </widget>
              </item>
@@ -426,7 +426,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_3</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_1</string>
                </property>
               </widget>
              </item>
@@ -452,7 +452,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_12</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_6</string>
                </property>
               </widget>
              </item>
@@ -474,7 +474,7 @@
                 <bool>true</bool>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_3_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_1_RBV</string>
                </property>
               </widget>
              </item>
@@ -509,7 +509,7 @@
                 <bool>true</bool>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_2_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_0_RBV</string>
                </property>
               </widget>
              </item>
@@ -535,7 +535,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_16</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_8</string>
                </property>
               </widget>
              </item>
@@ -574,7 +574,7 @@
              <item row="0" column="10">
               <widget class="QLabel" name="label_10">
                <property name="text">
-                <string>Int 3</string>
+                <string>Int 1 Scale</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -584,7 +584,7 @@
              <item row="0" column="8">
               <widget class="QLabel" name="label_9">
                <property name="text">
-                <string>Int 2</string>
+                <string>Int 0 Scale</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -606,7 +606,7 @@
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_0</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_0</string>
                </property>
               </widget>
              </item>
@@ -644,7 +644,7 @@
                 <bool>true</bool>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_0_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_0_RBV</string>
                </property>
               </widget>
              </item>
@@ -658,7 +658,7 @@
              <item row="0" column="6">
               <widget class="QLabel" name="label_8">
                <property name="text">
-                <string>Int 1</string>
+                <string>Int1 Decay</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -883,7 +883,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_5</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_3</string>
                </property>
               </widget>
              </item>
@@ -920,7 +920,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_9</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_5</string>
                </property>
               </widget>
              </item>
@@ -957,7 +957,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_13</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_7</string>
                </property>
               </widget>
              </item>
@@ -994,7 +994,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_17</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_9</string>
                </property>
               </widget>
              </item>
@@ -1031,7 +1031,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_21</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_11</string>
                </property>
               </widget>
              </item>
@@ -1068,7 +1068,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_6</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_2</string>
                </property>
               </widget>
              </item>
@@ -1105,7 +1105,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_7</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_3</string>
                </property>
               </widget>
              </item>
@@ -1142,7 +1142,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_10</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_4</string>
                </property>
               </widget>
              </item>
@@ -1179,7 +1179,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_11</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_5</string>
                </property>
               </widget>
              </item>
@@ -1216,7 +1216,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_14</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_6</string>
                </property>
               </widget>
              </item>
@@ -1253,7 +1253,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_15</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_7</string>
                </property>
               </widget>
              </item>
@@ -1290,7 +1290,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_18</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_8</string>
                </property>
               </widget>
              </item>
@@ -1327,7 +1327,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_19</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_9</string>
                </property>
               </widget>
              </item>
@@ -1364,7 +1364,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_22</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_10</string>
                </property>
               </widget>
              </item>
@@ -1401,7 +1401,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_23</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_11</string>
                </property>
               </widget>
              </item>
@@ -1438,7 +1438,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_4_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_2_RBV</string>
                </property>
               </widget>
              </item>
@@ -1475,7 +1475,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_5_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_3_RBV</string>
                </property>
               </widget>
              </item>
@@ -1512,7 +1512,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_6_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_2_RBV</string>
                </property>
               </widget>
              </item>
@@ -1549,7 +1549,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_7_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_3_RBV</string>
                </property>
               </widget>
              </item>
@@ -1586,7 +1586,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_8_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_4_RBV</string>
                </property>
               </widget>
              </item>
@@ -1623,7 +1623,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_9_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_5_RBV</string>
                </property>
               </widget>
              </item>
@@ -1660,7 +1660,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_10_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_4_RBV</string>
                </property>
               </widget>
              </item>
@@ -1697,7 +1697,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_11_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_5_RBV</string>
                </property>
               </widget>
              </item>
@@ -1734,7 +1734,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_12_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_6_RBV</string>
                </property>
               </widget>
              </item>
@@ -1771,7 +1771,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_13_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_7_RBV</string>
                </property>
               </widget>
              </item>
@@ -1808,7 +1808,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_14_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_6_RBV</string>
                </property>
               </widget>
              </item>
@@ -1845,7 +1845,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_15_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_7_RBV</string>
                </property>
               </widget>
              </item>
@@ -1882,7 +1882,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_16_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_8_RBV</string>
                </property>
               </widget>
              </item>
@@ -1919,7 +1919,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_17_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_9_RBV</string>
                </property>
               </widget>
              </item>
@@ -1956,7 +1956,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_18_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_8_RBV</string>
                </property>
               </widget>
              </item>
@@ -1993,7 +1993,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_19_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_9_RBV</string>
                </property>
               </widget>
              </item>
@@ -2030,7 +2030,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_20_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_10_RBV</string>
                </property>
               </widget>
              </item>
@@ -2067,7 +2067,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_21_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTDCY_11_RBV</string>
                </property>
               </widget>
              </item>
@@ -2104,7 +2104,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_22_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_10_RBV</string>
                </property>
               </widget>
              </item>
@@ -2141,7 +2141,7 @@
                 <string/>
                </property>
                <property name="channel" stdset="0">
-                <string>ca://${P}:LC${LCLS}_ANA_INTCNT_23_RBV</string>
+                <string>ca://${P}:LC${LCLS}_ANA_INTSCL_11_RBV</string>
                </property>
               </widget>
              </item>

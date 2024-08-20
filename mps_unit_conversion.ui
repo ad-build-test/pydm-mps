@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>474</width>
-    <height>551</height>
+    <height>857</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -74,6 +74,147 @@
       </widget>
      </item>
      <item>
+      <widget class="QTabWidget" name="tabWidget_5">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_5">
+        <attribute name="title">
+         <string>Data</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0">
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>${P}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>${P}22</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>${P}CUHBR</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="PyDMLabel" name="PyDMLabel_11">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="precision" stdset="0">
+              <number>0</number>
+             </property>
+             <property name="showUnits" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${P}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="PyDMLabel" name="PyDMLabel_12">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="precision" stdset="0">
+              <number>5</number>
+             </property>
+             <property name="showUnits" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="alarmSensitiveBorder" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="PyDMToolTip" stdset="0">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${P}CUHBR</string>
+             </property>
+             <property name="enableRichText" stdset="0">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="PyDMLabel" name="PyDMLabel_13">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="precision" stdset="0">
+              <number>5</number>
+             </property>
+             <property name="showUnits" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="precisionFromPV" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="alarmSensitiveContent" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${P}22</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
       <widget class="QTabWidget" name="tabWidget">
        <property name="currentIndex">
         <number>0</number>
@@ -111,19 +252,6 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_3">
-             <property name="minimumSize">
-              <size>
-               <width>100</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Offset (EGU)</string>
-             </property>
-            </widget>
-           </item>
            <item row="1" column="0">
             <widget class="QLabel" name="label_2">
              <property name="minimumSize">
@@ -134,31 +262,6 @@
              </property>
              <property name="text">
               <string>Offset</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="PyDMLineEdit" name="PyDMLineEdit">
-             <property name="minimumSize">
-              <size>
-               <width>150</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${P}_SLOPE</string>
              </property>
             </widget>
            </item>
@@ -187,19 +290,28 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="1">
-            <widget class="QLabel" name="label_4">
+           <item row="0" column="1">
+            <widget class="PyDMLineEdit" name="PyDMLineEdit">
              <property name="minimumSize">
               <size>
                <width>150</width>
-               <height>25</height>
+               <height>0</height>
               </size>
              </property>
-             <property name="text">
-              <string>-1 * Slope * Offset</string>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
              </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="showUnits" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://${P}_SLOPE</string>
              </property>
             </widget>
            </item>
@@ -262,37 +374,6 @@
              </property>
              <property name="channel" stdset="0">
               <string>ca://${P}_OFFSET</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="2">
-            <widget class="PyDMLabel" name="PyDMLabel_4">
-             <property name="minimumSize">
-              <size>
-               <width>150</width>
-               <height>25</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="alarmSensitiveContent" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>ca://${P}_OFFSET_EGU</string>
              </property>
             </widget>
            </item>
@@ -367,7 +448,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${P}.ASLO</string>
+              <string>ca://${P}.ESLO</string>
              </property>
             </widget>
            </item>

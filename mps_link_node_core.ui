@@ -404,8 +404,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>1098</width>
-              <height>692</height>
+              <width>473</width>
+              <height>545</height>
              </rect>
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -2351,7 +2351,7 @@
                       <bool>true</bool>
                      </property>
                      <property name="channel" stdset="0">
-                      <string>ca://${P}:BYTE_COUNT</string>
+                      <string>ca://${P}:DIG_BYTECNT</string>
                      </property>
                     </widget>
                    </item>
