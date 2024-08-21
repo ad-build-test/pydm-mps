@@ -709,8 +709,6 @@ class CBLMmain(Display):
             
     def switch_mode_display(self):
        
-        print(self.mode)
-        print('Switching')
         self.ui.coarse_delay_nc.setEnabled(not(self.mode))
         self.ui.peak_delay_nc.setEnabled(not(self.mode))
         self.ui.peak_width_nc.setEnabled(not(self.mode))
