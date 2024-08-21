@@ -574,7 +574,7 @@ background-color: rgb(70, 70, 70);</string>
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${TPR}:TIMING_RX_ERR_RBV</string>
+              <string>ca://${TPR}:RXLNKSTATUS_LTCH</string>
              </property>
             </widget>
            </item>
@@ -599,10 +599,10 @@ background-color: rgb(70, 70, 70);</string>
               <string>Reset</string>
              </property>
              <property name="channel" stdset="0">
-              <string>ca://${TPR}:TIMING_RX_ERR</string>
+              <string>ca://${TPR}:RXLNKSTATUS_RESET</string>
              </property>
              <property name="pressValue" stdset="0">
-              <string>0</string>
+              <string>1</string>
              </property>
             </widget>
            </item>

@@ -38,10 +38,19 @@
      <string/>
     </property>
     <property name="macros" stdset="0">
-     <string>DEV=EIOC,LOCA=LI24,INST=MP01,DEV2=MPS,inst=mp01,loca=li24,DEV3=EIOC,file=mps_linknode</string>
+     <string>{&quot;DEV&quot;: &quot;EIOC&quot;, &quot;LOCA&quot;: &quot;LI24&quot;, &quot;INST&quot;: &quot;MP01&quot;, &quot;DEV2&quot;: &quot;MPS&quot;, &quot;inst&quot;: &quot;mp01&quot;, &quot;loca&quot;: &quot;li24&quot;, &quot;DEV3&quot;: &quot;EIOC&quot;, &quot;file&quot;: &quot;mps_linknode&quot;, &quot;LOCA1&quot;: &quot;LI24&quot;}</string>
     </property>
     <property name="filename" stdset="0">
      <string>LinkNode_embeded_2.ui</string>
+    </property>
+    <property name="loadWhenShown" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="disconnectWhenHidden" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="followSymlinks" stdset="0">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -178,7 +187,7 @@
      </property>
      <property name="commands" stdset="0">
       <stringlist>
-       <string>edm -m &quot;PRIM=PICM,LOCA=LI24,UNIT=MP11,UNIT1=791,UNIT2=811,UNIT3=16-3,UNIT4=16-4,UNIT5=16-5,UNIT6=16-6,UNIT7=16-7,UNIT8=16-8&quot; -x mps_pic1_linknode_ln16</string>
+       <string>edm -m &quot;PRIM=PICM,LOCA2=LI24,LOCA3=LI24,LOCA1=LI24,LOCA=LI24,UNIT=MP11,UNIT1=791,UNIT2=811,UNIT3=16-3,UNIT4=16-4,UNIT5=16-5,UNIT6=16-6,UNIT7=16-7,UNIT8=16-8&quot; -x mps_pic1_linknode_ln16</string>
       </stringlist>
      </property>
     </widget>
