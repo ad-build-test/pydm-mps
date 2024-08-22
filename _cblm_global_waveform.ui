@@ -105,7 +105,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -148,7 +148,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0816000000000001, &quot;maxRange&quot;: 1.0816000000000001, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -191,7 +191,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude (egu)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.0816000000000001, &quot;maxRange&quot;: 1.0816000000000001, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude (egu)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -250,7 +250,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -306,7 +306,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -383,7 +383,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}:FAST_OFFSET_WF</string>
+              <string>${DEVICE}:MPS_OFFSET_WF</string>
              </property>
             </widget>
            </item>
@@ -442,7 +442,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}:FAST_SLOPE_WF</string>
+              <string>${DEVICE}:MPS_SLOPE_WF</string>
              </property>
             </widget>
            </item>
@@ -505,7 +505,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}:FAST_WF_START</string>
+              <string>${DEVICE}:MPS_WF_START</string>
              </property>
             </widget>
            </item>
@@ -564,7 +564,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}:FAST_WF_NELM</string>
+              <string>${DEVICE}:MPS_WF_NELM</string>
              </property>
             </widget>
            </item>
@@ -629,7 +629,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -694,7 +694,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}:FAST_OFFSET_WF</string>
+              <string>${DEVICE}:MPS_OFFSET_WF</string>
              </property>
             </widget>
            </item>
@@ -741,7 +741,7 @@
               <bool>true</bool>
              </property>
              <property name="channel" stdset="0">
-              <string>${DEVICE}:FAST_SLOPE_WF</string>
+              <string>${DEVICE}:MPS_SLOPE_WF</string>
              </property>
             </widget>
            </item>
