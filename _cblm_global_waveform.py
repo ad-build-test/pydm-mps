@@ -110,6 +110,7 @@ class CBLMmain(Display):
 
         self.jesd_clock = 175.4
         self.ns_spacing = self.jesd_clock* 2 * 1e6 / 1e9
+        self.ns_spacing = 1
         PV_raw_buf = "ca://" + self.macros()["DEVICE"] + ":FAST_WF_RAW-BUF.NELM"
         self.num_points_channel_raw_buf = PyDMChannel(address=PV_raw_buf, value_slot=self.num_points_raw_buf_change)
         self.num_points_channel_raw_buf.connect()
