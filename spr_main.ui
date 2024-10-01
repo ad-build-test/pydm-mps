@@ -104,10 +104,10 @@
          <string/>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>2</number>
         </property>
         <property name="currentTabAlarmChannel" stdset="0">
-         <cstring>MPS:SPH:1:STATSUMY</cstring>
+         <cstring>MPS:SPD:1:STATSUMY</cstring>
         </property>
         <property name="alarmChannels">
          <stringlist>
@@ -227,7 +227,7 @@
                        </property>
                        <property name="filenames" stdset="0">
                         <stringlist>
-                         <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                         <string>$EDM/mps/mps_pblm_status.edl</string>
                         </stringlist>
                        </property>
                        <property name="titles" stdset="0">
@@ -753,7 +753,7 @@
                        </property>
                        <property name="filenames" stdset="0">
                         <stringlist>
-                         <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                         <string>$EDM/mps/mps_pblm_status.edl</string>
                         </stringlist>
                        </property>
                        <property name="titles" stdset="0">
@@ -834,7 +834,7 @@
                        </property>
                        <property name="filenames" stdset="0">
                         <stringlist>
-                         <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                         <string>$EDM/mps/mps_pblm_status.edl</string>
                         </stringlist>
                        </property>
                        <property name="titles" stdset="0">

@@ -193,7 +193,7 @@
                   </property>
                   <property name="filenames" stdset="0">
                    <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                    <string>$EDM/mps/mps_pblm_status.edl</string>
                    </stringlist>
                   </property>
                   <property name="titles" stdset="0">
@@ -280,7 +280,7 @@
                   </property>
                   <property name="filenames" stdset="0">
                    <stringlist>
-                    <string>$EDM/bcs/bcs_pblm_status.edl</string>
+                    <string>$EDM/mps/mps_pblm_status.edl</string>
                    </stringlist>
                   </property>
                   <property name="titles" stdset="0">
