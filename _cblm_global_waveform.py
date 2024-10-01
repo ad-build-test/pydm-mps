@@ -112,20 +112,21 @@ class CBLMmain(Display):
         self.ns_spacing = self.jesd_clock* 2 * 1e6 / 1e9
         self.ns_spacing = 1
         PV_raw_buf = "ca://" + self.macros()["DEVICE"] + ":FAST_WF_RAW-BUF.NELM"
+        PV_raw_buf = "ca://" + self.macros()["DEVICE"] + ":MPS_WF_RAW-BUF.NELM"
         self.num_points_channel_raw_buf = PyDMChannel(address=PV_raw_buf, value_slot=self.num_points_raw_buf_change)
         self.num_points_channel_raw_buf.connect()
 
         self.main_raw_buf = self.MainRawBuf.curveAtIndex(0)
         self.raw_buf = self.RawBuf.curveAtIndex(0)
 
-        #PV_raw = "ca://{DEVICE}:FAST_WF_RAW.NELM".format(**macros)
+        #PV_raw = "ca://{DEVICE}:MPS_WF_RAW.NELM".format(**macros)
         #self.num_points_channel_raw = PyDMChannel(address=PV_raw, value_slot=self.num_points_raw_change)
         #self.num_points_channel_raw.connect()
 
         #self.main_raw = self.MainRaw.curveAtIndex(0)
         #self.raw = self.Raw.curveAtIndex(0)
 
-        #PV_egu = "ca://{DEVICE}:FAST_WF.NELM".format(**macros)
+        #PV_egu = "ca://{DEVICE}:MPS_WF.NELM".format(**macros)
         #self.num_points_channel_egu = PyDMChannel(address=PV_egu, value_slot=self.num_points_egu_change)
         #self.num_points_channel_egu.connect()
 
@@ -761,6 +762,7 @@ class CBLMmain(Display):
  
     def newXaxisRawBuf(self):
         start = 0
+        print(self.num_points_raw_buf, self.ns_spacing)
         stop = self.num_points_raw_buf / self.ns_spacing
         x_axis_waveform = np.linspace(start, stop, int(self.num_points_raw_buf))
         self.main_raw_buf.receiveXWaveform(x_axis_waveform)
