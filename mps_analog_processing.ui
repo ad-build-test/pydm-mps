@@ -27,8 +27,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1068</width>
-        <height>912</height>
+        <width>1072</width>
+        <height>897</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout">
@@ -2615,7 +2615,7 @@
                    <bool>true</bool>
                   </property>
                   <property name="channel" stdset="0">
-                   <string>ca://${P}:LC${LCLS}_ANA_PRCVALSEL</string>
+                   <string>ca://${P}:LC${LCLS}_ANA_PRCVALSEL_RBV</string>
                   </property>
                  </widget>
                 </item>
