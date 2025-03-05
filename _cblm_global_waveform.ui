@@ -22,7 +22,7 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,0">
    <property name="spacing">
     <number>3</number>
    </property>
@@ -50,7 +50,7 @@
       <string notr="true"/>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>3</number>
      </property>
      <property name="alarmChannels">
       <stringlist>
@@ -105,7 +105,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.3159317792358398, &quot;maxRange&quot;: 1.3159317792358398, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -118,7 +118,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#787878&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW-BUF&quot;, &quot;x_channel&quot;: &quot;${DEVICE}:MPS_X_WF_RAW-BUF&quot;, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#787878&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -148,7 +148,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.265319018496, &quot;maxRange&quot;: 1.265319018496, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -161,7 +161,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#008700&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (raw)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW&quot;, &quot;x_channel&quot;: &quot;${DEVICE}:MPS_X_WF&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#008700&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (raw)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -191,7 +191,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude (egu)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.124864, &quot;maxRange&quot;: 1.124864, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude (egu)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.265319018496, &quot;maxRange&quot;: 1.265319018496, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -204,7 +204,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (EGU)&quot;, &quot;color&quot;: &quot;#cc6600&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (egu)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF&quot;, &quot;x_channel&quot;: &quot;${DEVICE}:MPS_X_WF&quot;, &quot;plot_style&quot;: null, &quot;name&quot;: &quot;Amplitude (EGU)&quot;, &quot;color&quot;: &quot;#cc6600&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude (egu)&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -250,7 +250,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.3685690504052734, &quot;maxRange&quot;: 1.3685690504052734, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -260,7 +260,7 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW-BUF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#787878&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW-BUF&quot;, &quot;x_channel&quot;: &quot;${DEVICE}:MPS_X_WF_RAW-BUF&quot;, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#787878&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 2, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
@@ -306,7 +306,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.4802442849183437, &quot;maxRange&quot;: 1.4802442849183437, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -316,277 +316,10 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#008700&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF_RAW&quot;, &quot;x_channel&quot;: &quot;${DEVICE}:MPS_X_WF&quot;, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;color&quot;: &quot;#008700&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 2, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
           </stringlist>
          </property>
         </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <property name="leftMargin">
-          <number>9</number>
-         </property>
-         <item>
-          <layout class="QGridLayout" name="gridLayout_2">
-           <item row="0" column="0">
-            <widget class="QLabel" name="scale_slope_lab">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Scale Slope</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="PyDMLineEdit" name="scale_offset_edit">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-             <property name="clearButtonEnabled">
-              <bool>false</bool>
-             </property>
-             <property name="rules" stdset="0">
-              <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-             </property>
-             <property name="precision" stdset="0">
-              <number>0</number>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="precisionFromPV" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="alarmSensitiveContent" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="alarmSensitiveBorder" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>${DEVICE}:MPS_OFFSET_WF</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="scale_offset_lab">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Scale Offset</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="PyDMLineEdit" name="scale_slope_edit">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-             <property name="clearButtonEnabled">
-              <bool>false</bool>
-             </property>
-             <property name="rules" stdset="0">
-              <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-             </property>
-             <property name="precision" stdset="0">
-              <number>0</number>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="precisionFromPV" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="alarmSensitiveContent" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="alarmSensitiveBorder" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>${DEVICE}:MPS_SLOPE_WF</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QGridLayout" name="gridLayout_3">
-           <item row="0" column="0">
-            <widget class="QLabel" name="wf_length_lab">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Waveform Length</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="PyDMLineEdit" name="wf_start_edit">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-             <property name="clearButtonEnabled">
-              <bool>false</bool>
-             </property>
-             <property name="rules" stdset="0">
-              <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-             </property>
-             <property name="precision" stdset="0">
-              <number>0</number>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="precisionFromPV" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="alarmSensitiveContent" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="alarmSensitiveBorder" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>${DEVICE}:MPS_WF_START</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="wf_start_lab">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Waveform Start</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="PyDMLineEdit" name="wf_length_edit">
-             <property name="maximumSize">
-              <size>
-               <width>150</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-             <property name="clearButtonEnabled">
-              <bool>false</bool>
-             </property>
-             <property name="rules" stdset="0">
-              <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-             </property>
-             <property name="precision" stdset="0">
-              <number>0</number>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="precisionFromPV" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="alarmSensitiveContent" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="alarmSensitiveBorder" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>${DEVICE}:MPS_WF_NELM</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeType">
-            <enum>QSizePolicy::Expanding</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
        </item>
       </layout>
      </widget>
@@ -629,7 +362,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.16985856, &quot;maxRange&quot;: 1.16985856, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: &quot;Amplitude (egu)&quot;, &quot;minRange&quot;: -1.8009435055069154, &quot;maxRange&quot;: 1.8009435055069154, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -639,135 +372,281 @@
          </property>
          <property name="curves">
           <stringlist>
-           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF&quot;, &quot;x_channel&quot;: null, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#cc6600&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 1, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 2}</string>
+           <string>{&quot;y_channel&quot;: &quot;${DEVICE}:MPS_WF&quot;, &quot;x_channel&quot;: &quot;${DEVICE}:MPS_X_WF&quot;, &quot;plot_style&quot;: &quot;Line&quot;, &quot;name&quot;: &quot;&quot;, &quot;color&quot;: &quot;#cc6600&quot;, &quot;lineStyle&quot;: 1, &quot;lineWidth&quot;: 2, &quot;symbol&quot;: null, &quot;symbolSize&quot;: 10, &quot;yAxisName&quot;: &quot;Amplitude&quot;, &quot;barWidth&quot;: null, &quot;upperThreshold&quot;: null, &quot;lowerThreshold&quot;: null, &quot;thresholdColor&quot;: &quot;white&quot;, &quot;redraw_mode&quot;: 1}</string>
           </stringlist>
          </property>
         </widget>
        </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <property name="leftMargin">
-          <number>9</number>
-         </property>
-         <item>
-          <layout class="QGridLayout" name="gridLayout_6">
-           <item row="0" column="0">
-            <widget class="QLabel" name="scale_slope_lab_2">
-             <property name="text">
-              <string>Scale Slope</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="PyDMLineEdit" name="scale_offset_edit_2">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-             <property name="clearButtonEnabled">
-              <bool>false</bool>
-             </property>
-             <property name="rules" stdset="0">
-              <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-             </property>
-             <property name="precision" stdset="0">
-              <number>0</number>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="precisionFromPV" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="alarmSensitiveContent" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="alarmSensitiveBorder" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>${DEVICE}:MPS_OFFSET_WF</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="scale_offset_lab_2">
-             <property name="text">
-              <string>Scale Offset</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="PyDMLineEdit" name="scale_slope_edit_2">
-             <property name="toolTip">
-              <string/>
-             </property>
-             <property name="styleSheet">
-              <string notr="true"/>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-             <property name="clearButtonEnabled">
-              <bool>false</bool>
-             </property>
-             <property name="rules" stdset="0">
-              <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
-             </property>
-             <property name="precision" stdset="0">
-              <number>0</number>
-             </property>
-             <property name="showUnits" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="precisionFromPV" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="alarmSensitiveContent" stdset="0">
-              <bool>false</bool>
-             </property>
-             <property name="alarmSensitiveBorder" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="channel" stdset="0">
-              <string>${DEVICE}:MPS_SLOPE_WF</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QGridLayout" name="gridLayout_7"/>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </item>
       </layout>
      </widget>
     </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="leftMargin">
+      <number>9</number>
+     </property>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="scale_slope_lab_3">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Scale Slope</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="PyDMLineEdit" name="scale_offset_edit_3">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+         </property>
+         <property name="precision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="showUnits" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="precisionFromPV" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>${DEVICE}:MPS_OFFSET_WF</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="scale_offset_lab_3">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Scale Offset</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="PyDMLineEdit" name="scale_slope_edit_3">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+         </property>
+         <property name="precision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="showUnits" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="precisionFromPV" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>${DEVICE}:MPS_SLOPE_WF</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_11">
+       <item row="0" column="0">
+        <widget class="QLabel" name="wf_length_lab_2">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Waveform Length</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="PyDMLineEdit" name="wf_start_edit_2">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_H_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+         </property>
+         <property name="precision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="showUnits" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="precisionFromPV" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>${DEVICE}:MPS_WF_START</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="wf_start_lab_2">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Waveform Start</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="PyDMLineEdit" name="wf_length_edit_2">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="rules" stdset="0">
+          <string>[{&quot;channels&quot;: [{&quot;trigger&quot;: true, &quot;channel&quot;: &quot;ca://${P}_${THR}_L_EN_RBV.RVAL&quot;}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==1&quot;, &quot;name&quot;: &quot;New Rule&quot;, &quot;initial_value&quot;: &quot;&quot;}]</string>
+         </property>
+         <property name="precision" stdset="0">
+          <number>0</number>
+         </property>
+         <property name="showUnits" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="precisionFromPV" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="alarmSensitiveContent" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="alarmSensitiveBorder" stdset="0">
+          <bool>true</bool>
+         </property>
+         <property name="channel" stdset="0">
+          <string>${DEVICE}:MPS_WF_NELM</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
    </item>
    <item>
     <widget class="PyDMFrame" name="PyDMFrame_2">
