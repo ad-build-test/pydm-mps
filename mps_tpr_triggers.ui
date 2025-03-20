@@ -563,7 +563,7 @@ Location:</string>
                         </property>
                         <property name="filenames" stdset="0">
                          <stringlist>
-                          <string>$PYDM/evnt/tprDiag.ui</string>
+                          <string>$PYDM/evnt/tprControls</string>
                          </stringlist>
                         </property>
                         <property name="openInNewWindow" stdset="0">

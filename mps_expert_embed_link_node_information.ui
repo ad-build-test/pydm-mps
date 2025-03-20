@@ -436,15 +436,11 @@
     </property>
     <property name="filenames" stdset="0">
      <stringlist>
-      <string>$PYDM/evnt/tprDiagSC.ui</string>
-      <string>$PYDM/evnt/tprDiagNC.ui</string>
+      <string>$PYDM/evnt/tprControls</string>
      </stringlist>
     </property>
     <property name="titles" stdset="0">
-     <stringlist>
-      <string>SC Expert...</string>
-      <string>NC Expert...</string>
-     </stringlist>
+     <stringlist/>
     </property>
     <property name="showIcon" stdset="0">
      <bool>false</bool>
