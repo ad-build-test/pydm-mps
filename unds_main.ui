@@ -382,7 +382,7 @@
                          </property>
                          <property name="macros" stdset="0">
                           <stringlist>
-                           <string>device=RADM:UNDH:RM03,PA=RADM:UNDH:RM03:A:,PB=RADM:UNDH:RM03:B:,PC=RADM:UNDH:RM03:C:,PD=RADM:UNDH:RM03:D:</string>
+                           <string>device=RADM:UNDS:RM03,PA=RADM:UNDS:RM03:A:,PB=RADM:UNDS:RM03:B:,PC=RADM:UNDS:RM03:C:,PD=RADM:UNDS:RM03:D:</string>
                           </stringlist>
                          </property>
                         </widget>
