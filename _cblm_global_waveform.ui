@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1400</width>
-    <height>800</height>
+    <height>902</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -105,7 +105,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.3159317792358398, &quot;maxRange&quot;: 1.3159317792358398, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.3685690504052734, &quot;maxRange&quot;: 1.3685690504052734, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -148,7 +148,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.265319018496, &quot;maxRange&quot;: 1.265319018496, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude (raw)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.3159317792358398, &quot;maxRange&quot;: 1.3159317792358398, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -191,7 +191,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude (egu)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.265319018496, &quot;maxRange&quot;: 1.265319018496, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude (egu)&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.3159317792358398, &quot;maxRange&quot;: 1.3159317792358398, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -250,7 +250,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.3685690504052734, &quot;maxRange&quot;: 1.3685690504052734, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.4233118124214843, &quot;maxRange&quot;: 1.4233118124214843, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -306,7 +306,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.4802442849183437, &quot;maxRange&quot;: 1.4802442849183437, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: null, &quot;minRange&quot;: -1.5394540563150774, &quot;maxRange&quot;: 1.5394540563150774, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -362,7 +362,7 @@
          </property>
          <property name="yAxes">
           <stringlist>
-           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: &quot;Amplitude (egu)&quot;, &quot;minRange&quot;: -1.8009435055069154, &quot;maxRange&quot;: 1.8009435055069154, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
+           <string>{&quot;name&quot;: &quot;Amplitude&quot;, &quot;orientation&quot;: &quot;left&quot;, &quot;label&quot;: &quot;Amplitude (egu)&quot;, &quot;minRange&quot;: -1.872981245727192, &quot;maxRange&quot;: 1.872981245727192, &quot;autoRange&quot;: true, &quot;logMode&quot;: false}</string>
           </stringlist>
          </property>
          <property name="xLabels">
@@ -565,7 +565,7 @@
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:MPS_WF_START</string>
+          <string>${DEVICE}:MPS_WF_START_EGU</string>
          </property>
         </widget>
        </item>
@@ -624,7 +624,7 @@
           <bool>true</bool>
          </property>
          <property name="channel" stdset="0">
-          <string>${DEVICE}:MPS_WF_NELM</string>
+          <string>${DEVICE}:MPS_WF_NELM_EGU</string>
          </property>
         </widget>
        </item>
