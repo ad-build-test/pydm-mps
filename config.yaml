@@ -1,0 +1,28 @@
+# [Required]
+# Basic component information
+repo: pydm-mps
+organization: ad-build-test
+url: https://github.com/ad-build-test/pydm-mps
+description: Pydm mps displays taken from /afs/slac/g/cd/swe/git/repos/slac/pydm_displays/mps.git
+
+# [Required]
+# Continous integration
+approvalRule: all
+testingCriteria: all
+issueTracker: github
+jiraProjectKey: n/a
+
+# [Required]
+# Environments this app runs on
+environments:
+   - ROCKY9
+
+# [Required]
+# Type of deployment
+# Types: [ioc, hla, tools, matlab, pydm]
+deploymentType: pydm
+
+# [Optional] 
+# Build method for building the component
+# Can be a simple command like 'make'
+# build: 
