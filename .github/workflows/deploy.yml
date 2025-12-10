@@ -78,7 +78,8 @@ jobs:
               payload: {
                 facility: '${{ steps.facilities.outputs.facilities }}',
                 tag: '${{ github.event.inputs.tag }}',
-                user: '${{ github.actor }}' 
+                user: '${{ github.actor }}',
+                deploymentType: 'pydm'
               },
               description: 'Deploying ${{ github.event.inputs.tag }} to ${{ steps.facilities.outputs.facilities }}'  // Changed
             });
