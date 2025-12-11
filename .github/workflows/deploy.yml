@@ -4,16 +4,32 @@ on:
   workflow_dispatch:
     inputs:
       deploy_to_dev:
+        description: 'DEV'
+        required: false
         type: boolean
+        default: false
       deploy_to_lcls:
+        description: 'LCLS'
+        required: false
         type: boolean
+        default: false
       deploy_to_facet:
+        description: 'FACET'
+        required: false
         type: boolean
+        default: false
       deploy_to_testfac:
+        description: 'TESTFAC'
+        required: false
         type: boolean
+        default: false
       deploy_to_sandbox:
+        description: 'SANDBOX'
+        required: false
         type: boolean
+        default: false
       tag:
+        description: 'Tag to deploy'
         required: true
         type: string
 
