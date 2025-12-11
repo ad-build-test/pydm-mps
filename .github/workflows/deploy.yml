@@ -19,7 +19,7 @@ on:
 
 jobs:
   deploy:
-    uses: your-org/github-workflows/.github/workflows/request-deployment.yml@main
+    uses: ad-build-test/build-system-playbooks/.github/workflows/request-deployment.yml@main
     with:
       deploy_to_dev: ${{ inputs.deploy_to_dev }}
       deploy_to_lcls: ${{ inputs.deploy_to_lcls }}
