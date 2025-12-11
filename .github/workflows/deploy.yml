@@ -1,95 +1,30 @@
-name: Request Deployment
+name: Request Deployment - PyDM Display
 
 on:
   workflow_dispatch:
     inputs:
       deploy_to_dev:
-        description: 'DEV'
-        required: false
         type: boolean
-        default: false
       deploy_to_lcls:
-        description: 'LCLS'
-        required: false
         type: boolean
-        default: false
       deploy_to_facet:
-        description: 'FACET'
-        required: false
         type: boolean
-        default: false
       deploy_to_testfac:
-        description: 'TESTFAC'
-        required: false
         type: boolean
-        default: false
       deploy_to_sandbox:
-        description: 'SANDBOX'
-        required: false
         type: boolean
-        default: false
       tag:
-        description: 'Tag to deploy'
         required: true
         type: string
 
-permissions:
-  deployments: write
-  contents: read
-  actions: read
-
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Facility List
-        id: facilities
-        run: |
-          FACILITIES=""
-            [ "${{ github.event.inputs.deploy_to_dev }}" == "true" ] && FACILITIES="${FACILITIES}DEV,"
-            [ "${{ github.event.inputs.deploy_to_lcls }}" == "true" ] && FACILITIES="${FACILITIES}LCLS,"
-            [ "${{ github.event.inputs.deploy_to_facet }}" == "true" ] && FACILITIES="${FACILITIES}FACET,"
-            [ "${{ github.event.inputs.deploy_to_testfac }}" == "true" ] && FACILITIES="${FACILITIES}TESTFAC,"
-            [ "${{ github.event.inputs.deploy_to_sandbox }}" == "true" ] && FACILITIES="${FACILITIES}SANDBOX,"
-            
-            # Remove trailing comma
-            FACILITIES=${FACILITIES%,}
-          
-          if [ -z "$FACILITIES" ]; then
-            echo "Error: No facilities selected"
-            exit 1
-          fi
-          
-          echo "facilities=$FACILITIES" >> $GITHUB_OUTPUT
-          echo "Selected facilities: $FACILITIES"
-      
-      - name: Create GitHub Deployment
-        id: deployment
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const deployment = await github.rest.repos.createDeployment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: '${{ github.event.inputs.tag }}',
-              environment: 'deployment',
-              required_contexts: [],
-              auto_merge: false,
-              payload: {
-                facility: '${{ steps.facilities.outputs.facilities }}',
-                tag: '${{ github.event.inputs.tag }}',
-                user: '${{ github.actor }}',
-                deploymentType: 'pydm'
-              },
-              description: 'Deploying ${{ github.event.inputs.tag }} to ${{ steps.facilities.outputs.facilities }}'  // Changed
-            });
-            
-            console.log('Deployment created with ID:', deployment.data.id);
-            console.log('Payload:', JSON.stringify(deployment.data.payload));
-            return deployment.data.id;
-      
-      - name: Log Deployment Details
-        run: |
-          echo "Deployment ID: ${{ steps.deployment.outputs.result }}"
-          echo "Tag: ${{ github.event.inputs.tag }}"
-          echo "Facility: ${{ steps.facilities.outputs.facilities }}"  // Changed
+    uses: your-org/github-workflows/.github/workflows/request-deployment.yml@main
+    with:
+      deploy_to_dev: ${{ inputs.deploy_to_dev }}
+      deploy_to_lcls: ${{ inputs.deploy_to_lcls }}
+      deploy_to_facet: ${{ inputs.deploy_to_facet }}
+      deploy_to_testfac: ${{ inputs.deploy_to_testfac }}
+      deploy_to_sandbox: ${{ inputs.deploy_to_sandbox }}
+      tag: ${{ inputs.tag }}
+      deployment_type: 'pydm'
