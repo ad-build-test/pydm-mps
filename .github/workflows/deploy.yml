@@ -32,7 +32,12 @@ on:
         description: 'Tag to deploy'
         required: true
         type: string
-
+        
+permissions:
+  deployments: write
+  contents: read
+  actions: read
+  
 jobs:
   deploy:
     uses: ad-build-test/build-system-playbooks/.github/workflows/request-deployment.yml@main
