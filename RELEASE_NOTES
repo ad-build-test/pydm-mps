@@ -6,6 +6,8 @@
 #        the MPS PyDM displays.
 #
 #==============================================================
+tag:R1.0.5  26-Mar-2026  P. Nisperos (pnispero)
+        Fix bug 3
 
 tag:R1.0.4  26-Mar-2026  P. Nisperos (pnispero)
         Re-onboard with software factory configuration
