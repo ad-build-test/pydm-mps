@@ -1,15 +1,6 @@
-name: Request Deployment - PyDM Display
-
 on:
   workflow_dispatch:
     inputs:
-      _header:
-        description: '───────── Facilities to deploy to ─────────'
-        required: false
-        type: choice
-        options:
-          - '(select facilities below)'
-        default: '(select facilities below)'
       deploy_to_dev:
         description: 'DEV'
         required: false
@@ -30,29 +21,23 @@ on:
         required: false
         type: boolean
         default: false
-      deploy_to_sandbox:
-        description: 'SANDBOX'
-        required: false
-        type: boolean
-        default: false
       tag:
         description: 'Tag to deploy'
         required: true
         type: string
-        
+
 permissions:
   deployments: write
   contents: read
   actions: read
-  
+
 jobs:
   deploy:
     uses: ad-build-test/build-system-playbooks/.github/workflows/request-deployment.yml@main
     with:
-      deploy_to_dev: ${{ inputs.deploy_to_dev }}
-      deploy_to_lcls: ${{ inputs.deploy_to_lcls }}
-      deploy_to_facet: ${{ inputs.deploy_to_facet }}
-      deploy_to_testfac: ${{ inputs.deploy_to_testfac }}
-      deploy_to_sandbox: ${{ inputs.deploy_to_sandbox }}
-      tag: ${{ inputs.tag }}
-      deployment_type: 'pydm'
+      deploy_to_dev: ${ inputs.deploy_to_dev }
+      deploy_to_lcls: ${ inputs.deploy_to_lcls }
+      deploy_to_facet: ${ inputs.deploy_to_facet }
+      deploy_to_testfac: ${ inputs.deploy_to_testfac }
+      tag: ${ inputs.tag }
+      playbook: 'pydm_module/pydm_deploy.yml'

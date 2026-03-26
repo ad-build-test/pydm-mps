@@ -5,24 +5,14 @@ organization: ad-build-test
 url: https://github.com/ad-build-test/pydm-mps
 description: Pydm mps displays taken from /afs/slac/g/cd/swe/git/repos/slac/pydm_displays/mps.git
 
-# [Required]
-# Continous integration
-approvalRule: all
-testingCriteria: all
-issueTracker: github
-jiraProjectKey: n/a
+# [Optional] Docker image for build pods
+# image: ghcr.io/ad-build-test/rocky9-env:latest
 
-# [Required]
-# Environments this app runs on
-environments:
-   - ROCKY9
+# [Optional] Build command — skip if no build step needed
+# build:
+#   command: "pip install -r requirements.txt"
 
-# [Required]
-# Type of deployment
-# Types: [ioc, hla, tools, matlab, pydm]
-deploymentType: pydm
-
-# [Optional] 
-# Build method for building the component
-# Can be a simple command like 'make'
-# build: 
+# [Optional] Deployment playbook
+deploy:
+  playbook: pydm_module/pydm_deploy.yml
+  
