@@ -3,11 +3,6 @@ name: Deploy
 on:
   workflow_dispatch:
     inputs:
-      deploy_to_sandbox:
-        description: 'SANDBOX'
-        required: false
-        type: boolean
-        default: false
       deploy_to_dev:
         description: 'DEV'
         required: false
